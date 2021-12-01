@@ -2934,4 +2934,3 @@ function login() {
 
   return promise;
 }
-/*Tester */
