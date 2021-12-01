@@ -1,7 +1,7 @@
 jQuery.noConflict();
 jQuery(function($){
 
-  /*Test */
+  
  window.savedlast=false;
  
   
