@@ -44,10 +44,10 @@
         </p>
         <input type="submit" class="btn--secondary" id="decline" name="decline" {% if settings.enable_multilang %}data-translate="customer.activate_account.cancel"{%endif%} value="{{ 'customer.activate_account.cancel' | t }}">
       </div>
-      {% if customer %}
+     
       <input type="hidden" name="first-name" value="{{ customer.first_name }}" data-uw-styling-context="true">
   
-{% endif %}
+
       
     {% endform %}
   </div>
