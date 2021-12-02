@@ -2791,6 +2791,32 @@ else {}
         });
     });
 
+
+    $(document).on("click",'form[action="/account/activate"]',function(e){
+        e.preventDefault();
+        $('form[action="/account/activate"]').find('.error').remove();
+        var pass = $('form[action="/account/activate"]').find("input[name='customer[password]']").val();
+
+        console.log(pass);
+        // var fname = $('form[action="/account/activate"]').find("input[name='customer[first_name]']").val();
+        // var lname = $('form[action="/account/activate"]').find("input[name='customer[last_name]']").val();
+        // var email = $('form[action="/account/activate"]').find("input[name='customer[email]']").val();
+        // var pass = $('form[action="/account/activate"]').find("input[name='customer[password]']").val();
+        // var data = {"fname":fname,"lname":lname,"email":email,"password":pass,"iqyou_welcome_email":false};
+        // // console.log(data);
+        // $.post("https://app.iqyouhealth.com/api/sign-up?api_key=c6701296-5027-4076-b80c-d64a77c2ddc7",JSON.stringify(data),function(res){
+        //     console.log("Response From IQYou");
+        //     console.log(res);
+        //     if(res.success){
+        //         $("#create_customer").submit();
+        //     }
+        //   else{
+        //     $("#create_customer").append('<p class="error">'+res.message+'</p>');
+        //   }
+        // });
+    });
+
+
 //     $("#create_customer").submit(function(){
 
 //       window.location = "/pages/signup";
