@@ -415,8 +415,10 @@ observer.observe(targetNode, observerConfig);
             });
             var notetodisplay='<div id="note-to-display"><p><strong>NOTE:</strong> <em>Unanswered questions are shown below in <strong style="color:red;">red</strong></em></p></div>';
             
-            closestForm.closest('form').prepend(notetodisplay);
             
+            if(closestForm.closest('form').find('#note-to-display').length===0){
+                closestForm.closest('form').prepend(notetodisplay);
+            }
             $('#qstn_confirm_modal').modal('hide');
         });
 
