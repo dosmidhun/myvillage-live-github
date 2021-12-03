@@ -2786,9 +2786,7 @@ else {}
                 $("#create_customer").submit();
             }
             else if(res.message==='An account already exists with this email address. Please re-enter your email address and password. If you already have an account please login using the above link!'){
-                // $("#create_customer").submit();
-                $("#create_customer").append('<p class="error">An account already exists with this email address. Please reset your  password.</p>');
-               
+                $("#create_customer").submit();
             }
           else{
             $("#create_customer").append('<p class="error">'+res.message+'</p>');
