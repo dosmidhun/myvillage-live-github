@@ -414,7 +414,7 @@ observer.observe(targetNode, observerConfig);
                
             });
             var notetodisplay='<div class="note-to-display"><p><strong>NOTE:</strong> <em>Unanswered questions are shown below in <strong style="color:red;">red</strong></em></p></div>';
-            $('.questn_list').prepend(html);
+            $('.questn_list').prepend(notetodisplay);
             $('#qstn_confirm_modal').modal('hide');
         });
 

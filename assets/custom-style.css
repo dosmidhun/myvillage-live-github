@@ -1549,7 +1549,8 @@ a.complete_qtns:hover { background: #979500; text-decoration: none; }
 .question b { font-weight: 400; font-size: 16px; line-height: 30px; letter-spacing: -.55px;}
 .question.colorbox-load b { font-weight: 300; font-size: 15px; line-height: 25px; font-style: italic;}
 .question { float: left; width: 50%; margin-bottom: 10px; text-align: left;}
-.form-type-radios { float: right; width: 50%; text-align: right; }
+.form-type-radios { float: right; width: 33%; text-align: right; }
+.questionrow > span{float: left; width: 67%;}
 .form-radios .form-type-radio { display: inline-block;margin-right: 25px; }
 .form-type-radios input[type=radio] { width: 20px; height: 20px; display: inline-block; border-radius: 50px; -webkit-appearance: auto;}
 .form-type-radios label, .form-item label { font-weight: 400; font-size: 16px; margin: 0; vertical-align: super;  margin-left: 10px; letter-spacing: -.55px;} 
@@ -3474,7 +3475,8 @@ img#head-image {
 }
 
 @media (max-width: 767px) {
-    
+    .form-type-radios { float: none; width: auto; text-align: left; }
+.questionrow > span{float: none; width: auto;}
     .top-cart .icon .fa-shopping-cart { font-size: 0; }
     .menu-block div { color: #00577f !important; }
     .header-mobile { display: none; }
