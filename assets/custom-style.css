@@ -3953,3 +3953,6 @@ font-size:60px;
      
 
 }
+#note-to-display{
+    display: block!important;
+}
