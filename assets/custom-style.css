@@ -3906,3 +3906,48 @@ p.pdf-link a {
 #mvg-membership_membership_button_free{
   display:none;
 }
+.qstn_confirm_modal_inner {
+    text-align:center;
+}
+#qstn_confirm_modal .closeit{
+background:none;
+border:none;
+font-size:60px;
+
+}
+#qstn_confirm_modal .modal-header{
+    text-align:right;
+}
+.qstn_confirm_modal_inner p.description {
+    font-size:20px
+}
+
+.qstn_confirm_modal_inner button{
+   padding:10px 15px;
+   margin:3px;
+   box-shadow:none;
+   border:1px solid #00577f!important;
+
+}
+.qstn_confirm_modal_inner button#goback-finish {
+     background:#00577f;
+     color:#fff;
+}
+.qstn_confirm_modal_inner button#goback-finish:hover{
+    background:#fff;
+     color:#00577f;
+}
+.qstn_confirm_modal_inner button#proceed-anyway {
+     background:#fff;
+     color:#00577f;
+     
+     
+
+}
+.qstn_confirm_modal_inner button#proceed-anyway:hover {
+    background:#00577f;
+     color:#fff;
+     
+     
+
+}
