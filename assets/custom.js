@@ -418,9 +418,9 @@ observer.observe(targetNode, observerConfig);
 
 
 
-
-
-
+        $(document).on("click","#qstn_confirm_modal closeit",function(e){
+            $('#qstn_confirm_modal').modal('hide');
+    });
 
 
 
