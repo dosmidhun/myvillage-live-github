@@ -2547,34 +2547,76 @@ else {}
                 });*/
             },
             complete:function(res){
-                $(".food_diet .form-type-radios").each(function(){
 
-                    var line_is_normal=true;
-                    var each_line_food_diet_radio=  $(this);
-                    $(each_line_food_diet_radio).find('input').each(function(){
 
-                        var each_input_food_diet_radio=  $(this);
+                $(document).on("click","#intake-wizard-intake-form #edit-save",function(e){
+                    e.preventDefault();
+                    
+                    $('#qstn_confirm_modal').modal('show');
+
+                            
                         
-                        if(each_input_food_diet_radio.is(':checked')){
-                            line_is_normal=false;
-                        }
-                        if(line_is_normal){
-                            each_line_food_diet_radio.prev().css( "color", "red" );
-                        }else{
-                            each_line_food_diet_radio.prev().css( "color", "black" );
-                        }
-                        each_input_food_diet_radio.click(function() {
+                    
+                });
+
+                $(document).on("click","#proceed-anyway",function(e){
+                    $("#intake-wizard-intake-for").submit();
+                });
+                $(document).on("click","#goback-finish",function(e){
+                    $(".food_diet .form-type-radios").each(function(){
+
+                        var line_is_normal=true;
+                        var each_line_food_diet_radio=  $(this);
+                        $(each_line_food_diet_radio).find('input').each(function(){
+    
+                            var each_input_food_diet_radio=  $(this);
                             
-                            $(this).parents('.form-type-radios').prev().css( "color", "black" );
-                            
-                         });
+                            if(each_input_food_diet_radio.is(':checked')){
+                                line_is_normal=false;
+                            }
+                            if(line_is_normal){
+                                each_line_food_diet_radio.prev().css( "color", "red" );
+                            }else{
+                                each_line_food_diet_radio.prev().css( "color", "black" );
+                            }
+                            each_input_food_diet_radio.click(function() {
+                                
+                                $(this).parents('.form-type-radios').prev().css( "color", "black" );
+                                
+                             });
+        
+                           
+                        });
+    
     
                        
                     });
-
-
-                   
+                    $('#qstn_confirm_modal').modal('hide');
                 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
             },
             error:function(xhr,status,err)
             {
