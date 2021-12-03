@@ -354,7 +354,7 @@ observer.observe(targetNode, observerConfig);
                   
                 },
                 complete: function(response) {
-                    $('#qstn_confirm_modal').modal('show');
+                    $('#qstn_confirm_modal').modal('hide');
                   console.log('jghjgjgjjjgjghjfj');
                   if( window.savedlast===true){
                     
