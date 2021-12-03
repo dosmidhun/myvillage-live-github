@@ -382,9 +382,9 @@ observer.observe(targetNode, observerConfig);
         });
         $(document).on("click","#goback-finish",function(e){
             console.log('Go back');
-            console.log(closestForm);
-            console.log(closestForm.find('.form-type-radios'));
-            closestForm.find('.form-type-radios').each(function(){
+            console.log(closestForm.closest('form'));
+            console.log(closestForm.closest('form').find('.form-type-radios'));
+            closestForm.closest('form').find('.form-type-radios').each(function(){
                 console.log($(this));
                 var line_is_normal=true;
                 var each_line_food_diet_radio=  $(this);
