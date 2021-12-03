@@ -307,53 +307,129 @@ observer.observe(targetNode, observerConfig);
 
     $(document).on('click', '#submitstate .form-submit,.form-submit', function (event) {
         event.preventDefault();
-        var $form = $(this).closest('form');
 
-        var id = $(this).attr("id");
-        var box;
-        var step = $(".health_top .health_box.active").attr("data-step");
-        if(id =='edit-save')
-        {
+        var closestForm= $(this);
+        
+            $('#qstn_confirm_modal').modal('show');
+
+         
+
+        $(document).on("click","#proceed-anyway",function(e){
             
-          box = "box"+parseInt(parseInt(step.substring(4))+1);
+            var $form = closestForm.closest('form');
 
-        }
-        else if(id=='edit-previous')
-        {
-            box = "box"+parseInt(parseInt(step.substring(4))-1);
-        }
-        else
-        {
-            box = "box"+parseInt(step.substring(4));
-            
-        }
-        step = "step"+parseInt(step.substring(4));
-
-        $.ajax({
-            url: 'https://app.iqyouhealth.com' + $form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
-            type: 'POST',
-            data: $form.serialize(),
-            success: function(response) {
-                $(".questn_list form").find(".msg").remove();
-                $(".health_top #"+box).click();
-                $(".questn_list ."+step+" form").append("<p class='msg'>"+response.message+"</p>");
-              
-              
-              
-              
-              
-              
-            },
-			complete: function(response) {
-              console.log('jghjgjgjjjgjghjfj');
-              if( window.savedlast===true){
+            var id = closestForm.attr("id");
+            var box;
+            var step = $(".health_top .health_box.active").attr("data-step");
+            if(id =='edit-save')
+            {
                 
-                window.savedlast=false;
-                window.location.reload();
-                
-              }
+              box = "box"+parseInt(parseInt(step.substring(4))+1);
+    
             }
+            else if(id=='edit-previous')
+            {
+                box = "box"+parseInt(parseInt(step.substring(4))-1);
+            }
+            else
+            {
+                box = "box"+parseInt(step.substring(4));
+                
+            }
+            step = "step"+parseInt(step.substring(4));
+    
+            $.ajax({
+                url: 'https://app.iqyouhealth.com' + $form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
+                type: 'POST',
+                data: $form.serialize(),
+                success: function(response) {
+                    $(".questn_list form").find(".msg").remove();
+                    $(".health_top #"+box).click();
+                    $(".questn_list ."+step+" form").append("<p class='msg'>"+response.message+"</p>");
+                  
+                  
+                  
+                  
+                  
+                  
+                },
+                complete: function(response) {
+                  console.log('jghjgjgjjjgjghjfj');
+                  if( window.savedlast===true){
+                    
+                    window.savedlast=false;
+                    window.location.reload();
+                    
+                  }
+                }
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         });
+        $(document).on("click","#goback-finish",function(e){
+            closestForm.find('.form-type-radios').each(function(){
+
+                var line_is_normal=true;
+                var each_line_food_diet_radio=  $(this);
+                $(each_line_food_diet_radio).find('input').each(function(){
+
+                    var each_input_food_diet_radio=  $(this);
+                    
+                    if(each_input_food_diet_radio.is(':checked')){
+                        line_is_normal=false;
+                    }
+                    if(line_is_normal){
+                        each_line_food_diet_radio.prev().css( "color", "red" );
+                    }else{
+                        each_line_food_diet_radio.prev().css( "color", "black" );
+                    }
+                    each_input_food_diet_radio.click(function() {
+                        
+                        $(this).parents('.form-type-radios').prev().css( "color", "black" );
+                        
+                     });
+
+                   
+                });
+
+
+               
+            });
+            $('#qstn_confirm_modal').modal('hide');
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
     });
 
 
@@ -2549,50 +2625,7 @@ else {}
             complete:function(res){
 
 
-                $(document).on("click","#intake-wizard-intake-form #edit-save",function(e){
-                    e.preventDefault();
-                    
-                    $('#qstn_confirm_modal').modal('show');
-
-                            
-                        
-                    
-                });
-
-                $(document).on("click","#proceed-anyway",function(e){
-                    $("#intake-wizard-intake-for").submit();
-                });
-                $(document).on("click","#goback-finish",function(e){
-                    $(".food_diet .form-type-radios").each(function(){
-
-                        var line_is_normal=true;
-                        var each_line_food_diet_radio=  $(this);
-                        $(each_line_food_diet_radio).find('input').each(function(){
-    
-                            var each_input_food_diet_radio=  $(this);
-                            
-                            if(each_input_food_diet_radio.is(':checked')){
-                                line_is_normal=false;
-                            }
-                            if(line_is_normal){
-                                each_line_food_diet_radio.prev().css( "color", "red" );
-                            }else{
-                                each_line_food_diet_radio.prev().css( "color", "black" );
-                            }
-                            each_input_food_diet_radio.click(function() {
-                                
-                                $(this).parents('.form-type-radios').prev().css( "color", "black" );
-                                
-                             });
-        
-                           
-                        });
-    
-    
-                       
-                    });
-                    $('#qstn_confirm_modal').modal('hide');
-                });
+                
 
 
 
