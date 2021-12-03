@@ -1347,7 +1347,7 @@ h1#mvg-membership_name { display: none; }
 .next_step_btn, .pay_btn { background: #00577f; border-color: #00577f; text-transform: capitalize; font-size: 17px; font-weight: 400; outline: none; width: 50%; display: inline-block;}
 .next_step_btn:hover, .pay_btn:hover { background: #979500; border-color: #979500; outline: none;}
 
-#lang_select_interval_mvg-membership, #mvg-membership_membership_billing_option { display: none !important; }
+/* #lang_select_interval_mvg-membership, #mvg-membership_membership_billing_option { display: none !important; } */
 .step2, .step3 { display: none; }
 .step2_title { display: none; }
 .popup_content .bold-form-group label.my-error-class { display: block; width: 100%; text-align: left; }
