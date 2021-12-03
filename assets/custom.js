@@ -122,7 +122,7 @@ observer.observe(targetNode, observerConfig);
     });
 
     $("button.close").click(function(){
-        console.log("working");
+        
         $('.modal').modal('hide');
 
     });
@@ -355,7 +355,7 @@ observer.observe(targetNode, observerConfig);
                 },
                 complete: function(response) {
                     $('#qstn_confirm_modal').modal('hide');
-                  console.log('jghjgjgjjjgjghjfj');
+                 
                   if( window.savedlast===true){
                     
                     window.savedlast=false;
@@ -382,11 +382,9 @@ observer.observe(targetNode, observerConfig);
 
         });
         $(document).on("click","#goback-finish",function(e){
-            console.log('Go back');
-            console.log(closestForm.closest('form'));
-            console.log(closestForm.closest('form').find('.form-type-radios'));
+           
             closestForm.closest('form').find('.form-type-radios').each(function(){
-                console.log($(this));
+                
                 var line_is_normal=true;
                 var each_line_food_diet_radio=  $(this);
                 $(each_line_food_diet_radio).find('input').each(function(){
@@ -2749,7 +2747,7 @@ else {}
             },
           complete: function(data) {
               $("#intake-wizard-smartquestions-form #edit-save").val('Save and close questionnaire');
-              console.log($("#intake-wizard-smartquestions-form #edit-save"),"88888888888888888888888888888888");
+              
              
              
              $("#intake-wizard-smartquestions-form #edit-save").click(function() {
