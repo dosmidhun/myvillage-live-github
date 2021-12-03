@@ -234,34 +234,34 @@ observer.observe(targetNode, observerConfig);
 
             },
             complete:function(res){
-                $(".my_health .form-type-radios").each(function(){
+                // $(".my_health .form-type-radios").each(function(){
 
-                    var line_is_normal=true;
-                    var each_line_my_health_radio=  $(this);
-                    $(each_line_my_health_radio).find('input').each(function(){
+                //     var line_is_normal=true;
+                //     var each_line_my_health_radio=  $(this);
+                //     $(each_line_my_health_radio).find('input').each(function(){
 
-                        var each_input_my_health_radio=  $(this);
+                //         var each_input_my_health_radio=  $(this);
                        
-                        if(each_input_my_health_radio.is(':checked')){
-                            line_is_normal=false;
-                        }
-                        if(line_is_normal){
-                            each_line_my_health_radio.prev().css( "color", "red" );
-                        }else{
-                            each_line_my_health_radio.prev().css( "color", "black" );
-                        }
-                        each_input_my_health_radio.click(function() {
+                //         if(each_input_my_health_radio.is(':checked')){
+                //             line_is_normal=false;
+                //         }
+                //         if(line_is_normal){
+                //             each_line_my_health_radio.prev().css( "color", "red" );
+                //         }else{
+                //             each_line_my_health_radio.prev().css( "color", "black" );
+                //         }
+                //         each_input_my_health_radio.click(function() {
                             
-                            $(this).parents('.form-type-radios').prev().css( "color", "black" );
+                //             $(this).parents('.form-type-radios').prev().css( "color", "black" );
                             
-                         });
+                //          });
     
                        
-                    });
+                //     });
 
 
                    
-                });
+                // });
             },
             
            
@@ -2560,34 +2560,34 @@ else {}
                 });
             },
             complete:function(res){
-                $(".family_history .form-type-radios").each(function(){
+                // $(".family_history .form-type-radios").each(function(){
 
-                    var line_is_normal=true;
-                    var each_line_family_history_radio=  $(this);
-                    $(each_line_family_history_radio).find('input').each(function(){
+                //     var line_is_normal=true;
+                //     var each_line_family_history_radio=  $(this);
+                //     $(each_line_family_history_radio).find('input').each(function(){
 
-                        var each_input_family_history_radio=  $(this);
+                //         var each_input_family_history_radio=  $(this);
                         
-                        if(each_input_family_history_radio.is(':checked')){
-                            line_is_normal=false;
-                        }
-                        if(line_is_normal){
-                            each_line_family_history_radio.prev().css( "color", "red" );
-                        }else{
-                            each_line_family_history_radio.prev().css( "color", "black" );
-                        }
-                        each_input_family_history_radio.click(function() {
+                //         if(each_input_family_history_radio.is(':checked')){
+                //             line_is_normal=false;
+                //         }
+                //         if(line_is_normal){
+                //             each_line_family_history_radio.prev().css( "color", "red" );
+                //         }else{
+                //             each_line_family_history_radio.prev().css( "color", "black" );
+                //         }
+                //         each_input_family_history_radio.click(function() {
                             
-                            $(this).parents('.form-type-radios').prev().css( "color", "black" );
+                //             $(this).parents('.form-type-radios').prev().css( "color", "black" );
                             
-                         });
+                //          });
     
                        
-                    });
+                //     });
 
 
                    
-                });
+                // });
             },
             error:function(xhr,status,err)
             {
@@ -2675,34 +2675,34 @@ else {}
                 });
             },
             complete:function(res){
-                $(".lifestyle .form-type-radios").each(function(){
+                // $(".lifestyle .form-type-radios").each(function(){
 
-                    var line_is_normal=true;
-                    var each_line_lifestyle_radio=  $(this);
-                    $(each_line_lifestyle_radio).find('input').each(function(){
+                //     var line_is_normal=true;
+                //     var each_line_lifestyle_radio=  $(this);
+                //     $(each_line_lifestyle_radio).find('input').each(function(){
 
-                        var each_input_lifestyle_radio=  $(this);
+                //         var each_input_lifestyle_radio=  $(this);
                         
-                        if(each_input_lifestyle_radio.is(':checked')){
-                            line_is_normal=false;
-                        }
-                        if(line_is_normal){
-                            each_line_lifestyle_radio.prev().css( "color", "red" );
-                        }else{
-                            each_line_lifestyle_radio.prev().css( "color", "black" );
-                        }
-                        each_input_lifestyle_radio.click(function() {
+                //         if(each_input_lifestyle_radio.is(':checked')){
+                //             line_is_normal=false;
+                //         }
+                //         if(line_is_normal){
+                //             each_line_lifestyle_radio.prev().css( "color", "red" );
+                //         }else{
+                //             each_line_lifestyle_radio.prev().css( "color", "black" );
+                //         }
+                //         each_input_lifestyle_radio.click(function() {
                             
-                            $(this).parents('.form-type-radios').prev().css( "color", "black" );
+                //             $(this).parents('.form-type-radios').prev().css( "color", "black" );
                             
-                         });
+                //          });
     
                        
-                    });
+                //     });
 
 
                    
-                });
+                // });
             },
             error:function(xhr,status,err)
             {
