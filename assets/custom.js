@@ -382,6 +382,7 @@ observer.observe(targetNode, observerConfig);
         });
         $(document).on("click","#goback-finish",function(e){
             console.log('Go back');
+            console.log(closestForm.find('.form-type-radios'));
             closestForm.find('.form-type-radios').each(function(){
                 console.log($(this));
                 var line_is_normal=true;
