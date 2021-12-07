@@ -4008,4 +4008,9 @@ font-size:60px;
     .health_money_container > h3{
         margin-bottom: 0;
     }
+    .base span {
+        font-weight: 600;
+        font-size: 27px;
+        color: #434343;
+    }
 }
