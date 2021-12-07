@@ -3956,3 +3956,25 @@ font-size:60px;
 #note-to-display{
     display: block!important;
 }
+.health_money_container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-items: center;
+}
+.health_money_container > *{
+    width: 100%;
+}
+
+.health_money_container .health_money {
+    background: #eee;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 15px;
+}
+
+.health_money_container .health_money h3 sub {
+    color:#000;
+    font-size:30px;
+    
+}
