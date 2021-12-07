@@ -1309,7 +1309,7 @@ a.member_btn:hover, a.member_btn:focus { text-decoration: none; background: #979
 .health_money h3 { font-size: 50px; line-height: 55px; color: #434343; font-weight: 400; font-family: Montserrat; color: #434343; margin: 0; text-transform: lowercase;}
 .health_money h3 span { font-weight: 700; font-family: Montserrat; }
 
-.buy_bow { display: inline-block; vertical-align: top; }
+.buy_bow { display:block; vertical-align: top; text-align: center; margin-top: 20px; }
 .health_money { display: inline-block; margin-right: 30px;}
 .buy_bow a.buy_btn {display: inline-block;
     background: #00577f;
