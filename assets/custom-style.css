@@ -1311,7 +1311,12 @@ a.member_btn:hover, a.member_btn:focus { text-decoration: none; background: #979
 
 .buy_bow { display: inline-block; vertical-align: top; }
 .health_money { display: inline-block; margin-right: 30px;}
-.buy_bow a.buy_btn { display: inline-block; background: #00577f; color: #fff; font-size: 20px; height: 70px; line-height: 70px; padding: 0px 50px; }
+.buy_bow a.buy_btn {display: inline-block;
+    background: #00577f;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 94px;
+    border-radius: 7px; }
 .buy_bow a.buy_btn:hover { text-decoration: none; background: #646315; }
 .payment_img { text-align: center; }
 
@@ -3960,6 +3965,8 @@ font-size:60px;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     justify-items: center;
+    align-items: center;
+    text-align: center;
 }
 .health_money_container > *{
     width: 100%;
@@ -3971,6 +3978,7 @@ font-size:60px;
     justify-content: center;
     text-align: center;
     padding: 12px 15px;
+    margin-right: 0;
 }
 .health_money .base .sub {font-size: 16px;font-weight: 600;color: #434343;}
 
@@ -3984,4 +3992,7 @@ font-size:60px;
     color: #434343;
 }
 
-.health_money > p {font-style: italic;}
+.health_money > p {font-style: italic;margin-top: 10px;}
+.buy_bow p {
+    margin-top: 15px!important;
+}
