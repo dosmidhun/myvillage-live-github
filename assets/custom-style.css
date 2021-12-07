@@ -1308,7 +1308,7 @@ a.member_btn:hover, a.member_btn:focus { text-decoration: none; background: #979
 .heakth_left_img img { width: 100%; }
 .health_money h3 { font-size: 50px; line-height: 55px; color: #434343; font-weight: 400; font-family: Montserrat; color: #434343; margin: 0; text-transform: lowercase;}
 .health_money h3 span { font-weight: 700; font-family: Montserrat; }
-.health_money p { font-size: 14px; color: #6f6e6e; }
+
 .buy_bow { display: inline-block; vertical-align: top; }
 .health_money { display: inline-block; margin-right: 30px;}
 .buy_bow a.buy_btn { display: inline-block; background: #00577f; color: #fff; font-size: 20px; height: 70px; line-height: 70px; padding: 0px 50px; }
@@ -3972,9 +3972,16 @@ font-size:60px;
     text-align: center;
     padding: 12px 15px;
 }
+.health_money .base .sub {font-size: 16px;font-weight: 600;color: #434343;}
 
-.health_money_container .health_money h3 sub {
-    color:#000;
-    font-size:30px;
-    
+.base {
+    font-weight: 300;
 }
+
+.base span {
+    font-weight: 700;
+    font-size: 30px;
+    color: #434343;
+}
+
+.health_money > p {font-style: italic;}
