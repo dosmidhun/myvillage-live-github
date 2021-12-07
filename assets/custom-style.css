@@ -3996,3 +3996,16 @@ font-size:60px;
 .buy_bow p {
     margin-top: 15px!important;
 }
+@media(max-width:500px){
+    .health_money_container {
+        display: grid;
+        grid-template-columns: 1fr 
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        grid-gap: 10px;
+    }
+    .health_money_container > h3{
+        margin-bottom: 0;
+    }
+}
