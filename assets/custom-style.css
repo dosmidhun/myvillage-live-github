@@ -3999,7 +3999,7 @@ font-size:60px;
 @media(max-width:500px){
     .health_money_container {
         display: grid;
-        grid-template-columns: 1fr 
+        grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
         text-align: center;
