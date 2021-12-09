@@ -1,6 +1,6 @@
 jQuery.noConflict();
 jQuery(function($){
-
+    $("#schedule_popup_now").removeClass('loading');
     
  window.savedlast=false;
  
@@ -37,7 +37,7 @@ var observerConfig = {
 
 
 setTimeout(function(){ 
-    $("#schedule_popup_now").removeClass('loading');
+    
 var targetNode = $("#call_back_btn .bta-widget-modal-back")[0];
   
 observer.observe(targetNode, observerConfig);
