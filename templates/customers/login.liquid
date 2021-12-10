@@ -31,7 +31,7 @@
     This form must use 'customer_login'
   {% endcomment %}
   {% form 'customer_login' %}
-  <input type="hidden" name="checkout_url" value="/">
+  <input type="hidden" name="checkout_url" value="/pages/membership-dashboard">
   <header class="page-header">
     <h1 {% if settings.enable_multilang %}data-translate="customer.login.title"{%endif%}>{{ 'customer.login.title' | t }}</h1>
   </header>
