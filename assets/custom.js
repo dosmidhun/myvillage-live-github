@@ -130,6 +130,7 @@ observer.observe(targetNode, observerConfig);
 
     var healthscore;
  	 window.localStorage.setItem('cus_id',"not-set");
+   window.localStorage.setItem('rows',"not-set");
     if(window.cus_id)
     {
 
@@ -305,7 +306,13 @@ observer.observe(targetNode, observerConfig);
 
     });
 
-     if(localStorage.getItem('cus_id')=="not-set")
+  if(localStorage.getItem('cus_id')=="not-set"){
+    
+    
+  }else{
+    
+    
+  }
 	var $form;
   var proceed=false;
     $(document).on("click","#proceed-anyway",function(e){
