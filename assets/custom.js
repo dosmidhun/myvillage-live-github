@@ -320,6 +320,7 @@ observer.observe(targetNode, observerConfig);
     
   
 	var form;
+  var click_button=null;
   var proceed=false;
     $(document).on("click","#proceed-anyway",function(e){
 		proceed=true;
@@ -328,14 +329,25 @@ observer.observe(targetNode, observerConfig);
       {
         form= $('.my_health  #intake-wizard-intake-form');
       }
-   
-        form.find('#edit-save').trigger('click');
+      if(click_button=="next"){
+        
+         form.find('#edit-save').trigger('click');
+      }
+      else if(click_button=="previous"){
+        form.find('#edit-previous').trigger('click');
+      }
+      else{
+        form.find('#edit-submit').trigger('click');
+      }
+        
       
     });
   
 
     $(document).on('click', '#submitstate .form-submit,.form-submit', function (event) {
         event.preventDefault();
+      
+      
 
         var closestForm= $(this);
         
@@ -351,7 +363,21 @@ observer.observe(targetNode, observerConfig);
             var box;
             var step = $(".health_top .health_box.active").attr("data-step");
       		var completedrow=false;
-     		 
+     		    if(id =='edit-save')
+            {
+                click_button="next";
+             
+    
+            }
+            else if(id=='edit-previous')
+            {
+              click_button="previous";
+            }
+            else
+            {
+               click_button="save";
+                
+            }
       
        
       
