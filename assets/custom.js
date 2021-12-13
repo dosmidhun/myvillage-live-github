@@ -323,7 +323,7 @@ observer.observe(targetNode, observerConfig);
   var proceed=false;
     $(document).on("click","#proceed-anyway",function(e){
 		proceed=true;
-      console.log(e);
+      console.log($form);
         $form.find('#edit-save').trigger('click');
       
     });
