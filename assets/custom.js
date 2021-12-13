@@ -404,7 +404,7 @@ observer.observe(targetNode, observerConfig);
     });
     $(document).on("click","#goback-finish",function(e){
            
-        $('.questn_list .form').find('.form-type-radios').each(function(){
+        $('.questn_list form').find('.form-type-radios').each(function(){
             
             var line_is_normal=true;
             var each_line_food_diet_radio=  $(this);
