@@ -352,6 +352,11 @@ observer.observe(targetNode, observerConfig);
 //              if($form.find('.questioncontainer .questionrow').length==$form.find('.questioncontainer .questionrow.modified').length){
       
       			var diff=$form.find('.questioncontainer .questionrow.modified').length - $form.find('.questioncontainer .questionrow.modified').length;
+       console.log("Total",$form.find('.questioncontainer .questionrow').length);
+      console.log("Total",$form.find('.questioncontainer .questionrow.modified').length);
+      
+      
+      
                     if(diff==$form.find('.questioncontainer .questionrow').length){
                if(id =='edit-save')
             {
@@ -396,8 +401,7 @@ observer.observe(targetNode, observerConfig);
                   }
                 }
             });
-                console.log("Total",$form.find('.questioncontainer .questionrow').length);
-      console.log("Total",$form.find('.questioncontainer .questionrow.modified').length);
+               
 				completedrow=true;
              }
       		else if(proceed){
