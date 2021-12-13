@@ -133,7 +133,7 @@ observer.observe(targetNode, observerConfig);
    
     if(window.cus_id)
     {
-      if(window.localStorage.getItem('cus_id')=="not-set"){
+      if(window.localStorage.getItem('cus_id')==="not-set"){
                  window.localStorage.setItem('rows',"not-set");
         }
 
