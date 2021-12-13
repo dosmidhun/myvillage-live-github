@@ -343,7 +343,7 @@ observer.observe(targetNode, observerConfig);
       		var completedrow=false;
      		 
       
-       if($form.find('.questioncontainer .questionrow').length<$form.find('.questioncontainer .questionrow.modified').length){
+       if($form.find('.questioncontainer .questionrow.modified').length==0){
          makeitred();
        }
       
