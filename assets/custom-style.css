@@ -4014,3 +4014,9 @@ font-size:60px;
         color: #434343;
     }
 }
+.my_medication #note-to-display{
+ display:none; 
+}
+.my_health #edit-previous{
+  display:none; 
+}
