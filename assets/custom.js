@@ -313,7 +313,7 @@ observer.observe(targetNode, observerConfig);
 
         var closestForm= $(this);
         
-            $('#qstn_confirm_modal').modal('show');
+           
 
          
 
@@ -324,13 +324,29 @@ observer.observe(targetNode, observerConfig);
             var id = closestForm.attr("id");
             var box;
             var step = $(".health_top .health_box.active").attr("data-step");
-            // if($form.find('.questioncontainer .completedrow').length==){
-
-            // }
+      		var completedrow=false;
+     		 
+      
+             if($form.find('.questioncontainer .questionrow').length==$form.find('.questioncontainer .questionrow.modified').length){
+				completedrow=true;
+             }
+     		 else{
+        		makeitred();
+       			$('#qstn_confirm_modal').modal('show');
+      
+               return false;
+     		 }
       console.log("Total",$form.find('.questioncontainer .questionrow').length);
       console.log("Total",$form.find('.questioncontainer .questionrow.modified').length);
+      		
       
-            if(id =='edit-save')
+      
+      
+      
+      
+      
+      
+            if(id =='edit-save' && completedrow)
             {
                 
               box = "box"+parseInt(parseInt(step.substring(4))+1);
@@ -407,7 +423,18 @@ observer.observe(targetNode, observerConfig);
     });
     $(document).on("click","#goback-finish",function(e){
            
-        $('.questn_list form').find('.form-type-radios').each(function(){
+       makeitred();
+        // var notetodisplay='<div id="note-to-display"><p><strong>NOTE:</strong> <em>Unanswered questions are shown below in <strong style="color:red;">red</strong></em></p></div>';
+        
+        
+        // if(closestForm.closest('form').find('#note-to-display').length===0){
+        //     closestForm.closest('form').prepend(notetodisplay);
+        // }
+        $('#qstn_confirm_modal').modal('hide');
+    });
+
+  function makeitred{
+    $('.questn_list form').find('.form-type-radios').each(function(){
             
             var line_is_normal=true;
             var each_line_food_diet_radio=  $(this);
@@ -436,17 +463,8 @@ observer.observe(targetNode, observerConfig);
 
 
            
-        });
-        // var notetodisplay='<div id="note-to-display"><p><strong>NOTE:</strong> <em>Unanswered questions are shown below in <strong style="color:red;">red</strong></em></p></div>';
-        
-        
-        // if(closestForm.closest('form').find('#note-to-display').length===0){
-        //     closestForm.closest('form').prepend(notetodisplay);
-        // }
-        $('#qstn_confirm_modal').modal('hide');
-    });
-
-
+        }); 
+  }
 
     $(document).on("click","#qstn_confirm_modal closeit",function(e){
         $('#qstn_confirm_modal').modal('hide');
