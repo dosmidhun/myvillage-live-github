@@ -444,7 +444,7 @@ observer.observe(targetNode, observerConfig);
                   if( window.savedlast===true){
                     
                     window.savedlast=false;
-                    window.location.reload();
+//                     window.location.reload();
                     
                   }
                 }
