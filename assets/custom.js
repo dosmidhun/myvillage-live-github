@@ -304,7 +304,9 @@ observer.observe(targetNode, observerConfig);
 
      
 
+    $(document).on("click","#proceed-anyway",function(e){
 
+    });
 
     $(document).on('click', '#submitstate .form-submit,.form-submit', function (event) {
         event.preventDefault();
@@ -322,6 +324,9 @@ observer.observe(targetNode, observerConfig);
             var id = closestForm.attr("id");
             var box;
             var step = $(".health_top .health_box.active").attr("data-step");
+            // if($form.find('.questioncontainer .completedrow').length==){
+
+            // }
             if(id =='edit-save')
             {
                 
@@ -399,7 +404,7 @@ observer.observe(targetNode, observerConfig);
     });
     $(document).on("click","#goback-finish",function(e){
            
-        $('questn_list .form').find('.form-type-radios').each(function(){
+        $('.questn_list .form').find('.form-type-radios').each(function(){
             
             var line_is_normal=true;
             var each_line_food_diet_radio=  $(this);
