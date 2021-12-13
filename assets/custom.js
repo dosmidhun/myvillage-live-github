@@ -324,7 +324,7 @@ observer.observe(targetNode, observerConfig);
     $(document).on("click","#proceed-anyway",function(e){
 		proceed=true;
       console.log(form.context);
-        $form.find('#edit-save').trigger('click');
+        form.find('#edit-save').trigger('click');
       
     });
   
