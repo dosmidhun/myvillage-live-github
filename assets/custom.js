@@ -457,6 +457,49 @@ observer.observe(targetNode, observerConfig);
                
                if(parseInt(step.substring(4))==5){
                  console.log('hi');
+                 if(id =='edit-save')
+            {
+                
+              box = "box"+parseInt(parseInt(step.substring(4))+1);
+    
+            }
+            else if(id=='edit-previous')
+            {
+                box = "box"+parseInt(parseInt(step.substring(4))-1);
+            }
+            else
+            {
+                box = "box"+parseInt(step.substring(4));
+                
+            }
+            step = "step"+parseInt(step.substring(4));
+    
+            $.ajax({
+                url: 'https://app.iqyouhealth.com' + $form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
+                type: 'POST',
+                data: $form.serialize(),
+                success: function(response) {
+                    $(".questn_list form").find(".msg").remove();
+                    $(".health_top #"+box).click();
+                    $(".questn_list ."+step+" form").append("<p class='msg'>"+response.message+"</p>");
+                  
+                  
+                  
+                  
+                  
+                  
+                },
+                complete: function(response) {
+                    $('#qstn_confirm_modal').modal('hide');
+                 
+                  if( window.savedlast===true){
+                    
+                    window.savedlast=false;
+                    window.location.reload();
+                    
+                  }
+                }
+            });
                  
                }
                else if(!completedrow){
