@@ -323,6 +323,9 @@ observer.observe(targetNode, observerConfig);
         $form.find('#edit-save').trigger('click');
       
     });
+  if($form.find('.questioncontainer .questionrow.modified').length==0){
+         makeitred();
+       }
 
     $(document).on('click', '#submitstate .form-submit,.form-submit', function (event) {
         event.preventDefault();
@@ -343,9 +346,7 @@ observer.observe(targetNode, observerConfig);
       		var completedrow=false;
      		 
       
-       if($form.find('.questioncontainer .questionrow.modified').length==0){
-         makeitred();
-       }
+       
       
 //              if($form.find('.questioncontainer .questionrow').length==$form.find('.questioncontainer .questionrow.modified').length){
                     if($form.find('.questioncontainer .questionrow.modified').length==0){
