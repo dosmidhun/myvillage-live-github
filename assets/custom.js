@@ -423,11 +423,12 @@ observer.observe(targetNode, observerConfig);
                   each_line_food_diet_radio.parent().addClass('modified');
                 }else{
                     each_line_food_diet_radio.prev().css( "color", "black" );
+                   each_line_food_diet_radio.parent().removeClass('modified');
                 }
                 each_input_food_diet_radio.click(function() {
                     
                     $(this).parents('.form-type-radios').prev().css( "color", "black" );
-                    
+                    $(this).parents('.form-type-radios').parent().addClass('modified');
                  });
 
                
