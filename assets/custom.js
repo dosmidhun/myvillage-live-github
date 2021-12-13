@@ -677,12 +677,12 @@ observer.observe(targetNode, observerConfig);
         }); 
     
     $('.questn_list form').each(function(){
-      
+      var modify_available=false;
     $(this).find('.form-type-radios').each(function(){
             
             var line_is_normal=true;
             var each_line_food_diet_radio=  $(this);
-      		var modify_available= false;
+      		modify_available= false;
             $(each_line_food_diet_radio).find('input').each(function(){
 
                 var each_input_food_diet_radio=  $(this);
