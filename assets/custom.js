@@ -319,11 +319,11 @@ observer.observe(targetNode, observerConfig);
 //     }
     
   
-	var $currentclick='';
+	var form;
   var proceed=false;
     $(document).on("click","#proceed-anyway",function(e){
 		proceed=true;
-      console.log($form.nextSibling);
+      console.log(form.context);
         $form.find('#edit-save').trigger('click');
       
     });
