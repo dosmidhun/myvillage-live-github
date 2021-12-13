@@ -4015,8 +4015,8 @@ font-size:60px;
     }
 }
 .my_medication #note-to-display{
- display:none; 
+ display:none!important; 
 }
 .my_health #edit-previous{
-  display:none; 
+  display:none!important;  
 }
