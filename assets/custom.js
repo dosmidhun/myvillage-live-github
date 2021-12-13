@@ -303,11 +303,11 @@ observer.observe(targetNode, observerConfig);
     });
 
      
-
+	var $form;
   var proceed=false;
     $(document).on("click","#proceed-anyway",function(e){
 		proceed=true;
-      closestForm.find('#edit-save').trigger('click');
+        $form.find('#edit-save').trigger('click');
       
     });
 
@@ -322,7 +322,7 @@ observer.observe(targetNode, observerConfig);
 
         // $(document).on("click","#proceed-anyway",function(e){
             
-            var $form = closestForm.closest('form');
+            $form = closestForm.closest('form');
 
             var id = closestForm.attr("id");
             var box;
