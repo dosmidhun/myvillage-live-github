@@ -358,6 +358,9 @@ observer.observe(targetNode, observerConfig);
         
            
  		window.localStorage.setItem('rows',"set");
+      if(window.localStorage.getItem('rows')==="set"){
+                makeitred();
+              }
          
 
         // $(document).on("click","#proceed-anyway",function(e){
