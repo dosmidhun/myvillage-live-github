@@ -239,6 +239,9 @@ observer.observe(targetNode, observerConfig);
 
             },
             complete:function(res){
+              if(localStorage.getItem('rows')==="set"){
+         makeitred();
+       }
                 // $(".my_health .form-type-radios").each(function(){
 
                 //     var line_is_normal=true;
@@ -323,9 +326,7 @@ observer.observe(targetNode, observerConfig);
         $form.find('#edit-save').trigger('click');
       
     });
-  if(localStorage.getItem('rows')==="set"){
-         makeitred();
-       }
+  
 
     $(document).on('click', '#submitstate .form-submit,.form-submit', function (event) {
         event.preventDefault();
@@ -2716,6 +2717,10 @@ else {}
                 });
             },
             complete:function(res){
+              
+              if(localStorage.getItem('rows')==="set"){
+         makeitred();
+       }
                 // $(".family_history .form-type-radios").each(function(){
 
                 //     var line_is_normal=true;
@@ -2788,7 +2793,9 @@ else {}
                 
 
 
-
+if(localStorage.getItem('rows')==="set"){
+         makeitred();
+       }
 
 
 
@@ -2831,6 +2838,10 @@ else {}
                 });
             },
             complete:function(res){
+              
+              if(localStorage.getItem('rows')==="set"){
+         makeitred();
+       }
                 // $(".lifestyle .form-type-radios").each(function(){
 
                 //     var line_is_normal=true;
