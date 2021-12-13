@@ -350,7 +350,9 @@ observer.observe(targetNode, observerConfig);
        
       
 //              if($form.find('.questioncontainer .questionrow').length==$form.find('.questioncontainer .questionrow.modified').length){
-                    if($form.find('.questioncontainer .questionrow.modified').length==0){
+      
+      			var diff=$form.find('.questioncontainer .questionrow.modified').length - $form.find('.questioncontainer .questionrow.modified').length;
+                    if(diff==$form.find('.questioncontainer .questionrow').length){
                if(id =='edit-save')
             {
                 
