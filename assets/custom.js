@@ -306,19 +306,16 @@ observer.observe(targetNode, observerConfig);
 
     });
 
-  if(localStorage.getItem('cus_id')==="not-set"){
-    
-    
-  }else{
+ 
      if(localStorage.getItem('rows')==="not-set"){
     
     
   }
     else{
-      
+      makeitred();
     }
     
-  }
+  
 	var $form;
   var proceed=false;
     $(document).on("click","#proceed-anyway",function(e){
@@ -346,13 +343,7 @@ observer.observe(targetNode, observerConfig);
       		var completedrow=false;
      		 
       
-      if(localStorage.getItem('rows')==="not-set"){
-    
-    
-  }
-    else{
-      makeitred();
-    }
+      
       
 //              if($form.find('.questioncontainer .questionrow').length==$form.find('.questioncontainer .questionrow.modified').length){
                     if($form.find('.questioncontainer .questionrow.modified').length==0){
