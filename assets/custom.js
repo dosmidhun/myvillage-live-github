@@ -455,8 +455,11 @@ observer.observe(targetNode, observerConfig);
       		}
      		 else{
                
-               
-               if(!completedrow){
+               if(parseInt(step.substring(4))==5){
+                 console.log('hi');
+                 
+               }
+               else if(!completedrow){
                  	makeitred();
        				$('#qstn_confirm_modal').modal('show');
                  return false;
