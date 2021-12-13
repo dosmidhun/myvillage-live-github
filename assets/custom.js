@@ -306,11 +306,17 @@ observer.observe(targetNode, observerConfig);
 
     });
 
-  if(localStorage.getItem('cus_id')=="not-set"){
+  if(localStorage.getItem('cus_id')==="not-set"){
     
     
   }else{
+     if(localStorage.getItem('rows')==="not-set"){
     
+    
+  }
+    else{
+      
+    }
     
   }
 	var $form;
@@ -327,7 +333,7 @@ observer.observe(targetNode, observerConfig);
         var closestForm= $(this);
         
            
-
+ 		window.localStorage.setItem('rows',"set");
          
 
         // $(document).on("click","#proceed-anyway",function(e){
