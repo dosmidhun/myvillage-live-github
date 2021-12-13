@@ -327,6 +327,9 @@ observer.observe(targetNode, observerConfig);
             // if($form.find('.questioncontainer .completedrow').length==){
 
             // }
+      console.log("Total",$form.find('.questioncontainer .questionrow').length);
+      console.log("Total",$form.find('.questioncontainer .questionrow.modified').length);
+      
             if(id =='edit-save')
             {
                 
@@ -417,6 +420,7 @@ observer.observe(targetNode, observerConfig);
                 }
                 if(line_is_normal){
                     each_line_food_diet_radio.prev().css( "color", "red" );
+                  each_line_food_diet_radio.parent().addClass('modified');
                 }else{
                     each_line_food_diet_radio.prev().css( "color", "black" );
                 }
