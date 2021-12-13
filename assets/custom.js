@@ -129,6 +129,7 @@ observer.observe(targetNode, observerConfig);
     });
 
     var healthscore;
+ 	 window.localStorage.setItem('cus_id',"not-set");
     if(window.cus_id)
     {
 
@@ -139,6 +140,8 @@ observer.observe(targetNode, observerConfig);
             crossDomain: true,
             success:function(res){
                 $(".questn_list").removeClass('loading');
+               window.localStorage.setItem('cus_id',window.cus_id);
+              
                 // $("#schedule_popup_now").removeClass('loading');
               
               
@@ -302,7 +305,7 @@ observer.observe(targetNode, observerConfig);
 
     });
 
-     
+     if(localStorage.getItem('cus_id')=="not-set")
 	var $form;
   var proceed=false;
     $(document).on("click","#proceed-anyway",function(e){
