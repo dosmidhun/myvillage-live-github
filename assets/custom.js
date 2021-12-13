@@ -324,6 +324,11 @@ observer.observe(targetNode, observerConfig);
     $(document).on("click","#proceed-anyway",function(e){
 		proceed=true;
       console.log(form);
+      if(form===undefined)
+      {
+        form= $('.my_health  #intake-wizard-intake-form');
+      }
+   
         form.find('#edit-save').trigger('click');
       
     });
