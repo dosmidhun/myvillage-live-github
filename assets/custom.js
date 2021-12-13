@@ -585,7 +585,7 @@ observer.observe(targetNode, observerConfig);
                 each_input_food_diet_radio.click(function() {
                     
                     $(this).parents('.form-type-radios').prev().css( "color", "black" );
-                    $(this).parent('.form-type-radios').parent().addClass('modified');
+                    $(this).parent('.form-type-radios').parent().removeClass('modified');
                  });
 
                
