@@ -2917,6 +2917,10 @@ if(localStorage.getItem('rows')==="set"){
              
             },
           complete: function(data) {
+            
+            if(localStorage.getItem('rows')==="set"){
+         makeitred();
+       }
               $("#intake-wizard-smartquestions-form #edit-save").val('Save and close questionnaire');
               
              
