@@ -315,7 +315,7 @@ observer.observe(targetNode, observerConfig);
 
          
 
-        $(document).on("click","#proceed-anyway",function(e){
+        // $(document).on("click","#proceed-anyway",function(e){
             
             var $form = closestForm.closest('form');
 
@@ -381,51 +381,8 @@ observer.observe(targetNode, observerConfig);
 
 
 
-        });
-        $(document).on("click","#goback-finish",function(e){
-           
-            closestForm.closest('form').find('.form-type-radios').each(function(){
-                
-                var line_is_normal=true;
-                var each_line_food_diet_radio=  $(this);
-                $(each_line_food_diet_radio).find('input').each(function(){
-
-                    var each_input_food_diet_radio=  $(this);
-                    
-                    if(each_input_food_diet_radio.is(':checked')){
-                        line_is_normal=false;
-                    }
-                    if(line_is_normal){
-                        each_line_food_diet_radio.prev().css( "color", "red" );
-                    }else{
-                        each_line_food_diet_radio.prev().css( "color", "black" );
-                    }
-                    each_input_food_diet_radio.click(function() {
-                        
-                        $(this).parents('.form-type-radios').prev().css( "color", "black" );
-                        
-                     });
-
-                   
-                });
-
-
-               
-            });
-            var notetodisplay='<div id="note-to-display"><p><strong>NOTE:</strong> <em>Unanswered questions are shown below in <strong style="color:red;">red</strong></em></p></div>';
-            
-            
-            if(closestForm.closest('form').find('#note-to-display').length===0){
-                closestForm.closest('form').prepend(notetodisplay);
-            }
-            $('#qstn_confirm_modal').modal('hide');
-        });
-
-
-
-        $(document).on("click","#qstn_confirm_modal closeit",function(e){
-            $('#qstn_confirm_modal').modal('hide');
-    });
+        // });
+        
 
 
 
@@ -440,7 +397,50 @@ observer.observe(targetNode, observerConfig);
 
        
     });
+    $(document).on("click","#goback-finish",function(e){
+           
+        $('questn_list .form').find('.form-type-radios').each(function(){
+            
+            var line_is_normal=true;
+            var each_line_food_diet_radio=  $(this);
+            $(each_line_food_diet_radio).find('input').each(function(){
 
+                var each_input_food_diet_radio=  $(this);
+                
+                if(each_input_food_diet_radio.is(':checked')){
+                    line_is_normal=false;
+                }
+                if(line_is_normal){
+                    each_line_food_diet_radio.prev().css( "color", "red" );
+                }else{
+                    each_line_food_diet_radio.prev().css( "color", "black" );
+                }
+                each_input_food_diet_radio.click(function() {
+                    
+                    $(this).parents('.form-type-radios').prev().css( "color", "black" );
+                    
+                 });
+
+               
+            });
+
+
+           
+        });
+        var notetodisplay='<div id="note-to-display"><p><strong>NOTE:</strong> <em>Unanswered questions are shown below in <strong style="color:red;">red</strong></em></p></div>';
+        
+        
+        if(closestForm.closest('form').find('#note-to-display').length===0){
+            closestForm.closest('form').prepend(notetodisplay);
+        }
+        $('#qstn_confirm_modal').modal('hide');
+    });
+
+
+
+    $(document).on("click","#qstn_confirm_modal closeit",function(e){
+        $('#qstn_confirm_modal').modal('hide');
+});
 
     $('#lap_report .lap_report_outer .update_health').text("Order Labs & DNA");
     $('#lap_report .lap_report_outer .update_health').attr("href","/collections/labs-dna");
