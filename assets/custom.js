@@ -433,7 +433,7 @@ observer.observe(targetNode, observerConfig);
         $('#qstn_confirm_modal').modal('hide');
     });
 
-  function makeitred{
+  function makeitred(){
     $('.questn_list form').find('.form-type-radios').each(function(){
             
             var line_is_normal=true;
