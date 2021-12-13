@@ -323,7 +323,7 @@ observer.observe(targetNode, observerConfig);
         $form.find('#edit-save').trigger('click');
       
     });
-  if($form.find('.questioncontainer .questionrow.modified').length==0){
+  if(localStorage.getItem('rows')==="set"){
          makeitred();
        }
 
