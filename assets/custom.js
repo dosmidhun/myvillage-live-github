@@ -351,7 +351,7 @@ observer.observe(targetNode, observerConfig);
       
 //              if($form.find('.questioncontainer .questionrow').length==$form.find('.questioncontainer .questionrow.modified').length){
       
-      			var diff=$form.find('.questioncontainer .questionrow.modified').length - $form.find('.questioncontainer .questionrow.modified').length;
+      			var diff=$form.find('.questioncontainer .questionrow').length - $form.find('.questioncontainer .questionrow.modified').length;
        console.log("Total",$form.find('.questioncontainer .questionrow').length);
       console.log("Total",$form.find('.questioncontainer .questionrow.modified').length);
       
