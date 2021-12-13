@@ -241,6 +241,7 @@ observer.observe(targetNode, observerConfig);
             complete:function(res){
               if(localStorage.getItem('rows')==="set"){
          makeitred();
+                
        }
                 // $(".my_health .form-type-radios").each(function(){
 
@@ -674,6 +675,43 @@ observer.observe(targetNode, observerConfig);
 
            
         }); 
+    
+    $('.questn_list form').each(function(){
+      
+    $(this).find('.form-type-radios').each(function(){
+            
+            var line_is_normal=true;
+            var each_line_food_diet_radio=  $(this);
+      		var modify_available= false;
+            $(each_line_food_diet_radio).find('input').each(function(){
+
+                var each_input_food_diet_radio=  $(this);
+                
+                
+              if(each_line_food_diet_radio.parent().hasClass('modified')){
+                modify_available=true;
+              }
+                
+                
+
+               
+            });
+      
+     
+        }); 
+      if(modify_available){
+            	var notetodisplay='<div id="note-to-display"><p><strong>NOTE:</strong> <em>Unanswered questions are shown below in <strong style="color:red;">red</strong></em></p></div>';
+        
+        
+        		if( $(this).find('#note-to-display').length===0){
+           			 $(this).prepend(notetodisplay);
+        		 }
+        modify_available=false;
+            }
+    
+    });
+    
+    
   }
 
     $(document).on("click","#qstn_confirm_modal closeit",function(e){
