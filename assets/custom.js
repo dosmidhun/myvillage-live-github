@@ -454,6 +454,8 @@ observer.observe(targetNode, observerConfig);
         
       		}
      		 else{
+               
+               
                if(!completedrow){
                  	makeitred();
        				$('#qstn_confirm_modal').modal('show');
