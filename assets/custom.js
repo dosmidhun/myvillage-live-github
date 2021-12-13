@@ -319,21 +319,12 @@ observer.observe(targetNode, observerConfig);
 //     }
     
   
-	var currentclick='';
+	var $currentclick='';
   var proceed=false;
     $(document).on("click","#proceed-anyway",function(e){
 		proceed=true;
-      console.log($form);
-      if(currentclick=="next"){
-         $form.find('#edit-save').trigger('click');
-      }else if(currentclick=="previous"){
-        $form.find('#edit-previous').trigger('click');
-      }
-      else{
-        $form.find('#edit-submit').trigger('click');
-      }
-        
-       
+      console.log($form.context.nextSibling.id);
+        $form.find('#edit-save').trigger('click');
       
     });
   
@@ -372,18 +363,15 @@ observer.observe(targetNode, observerConfig);
             {
                 
               box = "box"+parseInt(parseInt(step.substring(4))+1);
-               currentclick="next";
     
             }
             else if(id=='edit-previous')
             {
                 box = "box"+parseInt(parseInt(step.substring(4))-1);
-               currentclick="previous";
             }
             else
             {
                 box = "box"+parseInt(step.substring(4));
-               currentclick="save";
                 
             }
             step = "step"+parseInt(step.substring(4));
@@ -423,18 +411,15 @@ observer.observe(targetNode, observerConfig);
             {
                 
               box = "box"+parseInt(parseInt(step.substring(4))+1);
-              currentclick="next";
     
             }
             else if(id=='edit-previous')
             {
                 box = "box"+parseInt(parseInt(step.substring(4))-1);
-               currentclick="prev";
             }
             else
             {
                 box = "box"+parseInt(step.substring(4));
-               currentclick="save";
                 
             }
             step = "step"+parseInt(step.substring(4));
@@ -477,18 +462,15 @@ observer.observe(targetNode, observerConfig);
             {
                 
               box = "box"+parseInt(parseInt(step.substring(4))+1);
-               currentclick="next";
     
             }
             else if(id=='edit-previous')
             {
                 box = "box"+parseInt(parseInt(step.substring(4))-1);
-               currentclick="previous";
             }
             else
             {
                 box = "box"+parseInt(step.substring(4));
-               currentclick="save";
                 
             }
             step = "step"+parseInt(step.substring(4));
@@ -531,18 +513,15 @@ observer.observe(targetNode, observerConfig);
             {
                 
               box = "box"+parseInt(parseInt(step.substring(4))+1);
-               currentclick="next";
     
             }
             else if(id=='edit-previous')
             {
                 box = "box"+parseInt(parseInt(step.substring(4))-1);
-               currentclick="previous";
             }
             else
             {
                 box = "box"+parseInt(step.substring(4));
-               currentclick="save";
                 
             }
             step = "step"+parseInt(step.substring(4));
