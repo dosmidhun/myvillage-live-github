@@ -141,6 +141,9 @@ observer.observe(targetNode, observerConfig);
             crossDomain: true,
             success:function(res){
                 $(".questn_list").removeClass('loading');
+              if(window.localStorage.getItem('cus_id')=="not-set"){
+                 window.localStorage.setItem('rows',"not-set");
+              }
                window.localStorage.setItem('cus_id',window.cus_id);
               
                 // $("#schedule_popup_now").removeClass('loading');
