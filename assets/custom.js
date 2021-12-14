@@ -514,11 +514,11 @@ jQuery(function ($) {
                 $('#qstn_confirm_modal').modal('show');
                 return false;
             } else {
-              
+              console.log(parseInt(step.substring(4),'Hiii'));
               	if (parseInt(step.substring(4)) == 1) {
                		 $('#qstn_family_modal').modal('show');
 //                
-console.log(parseInt(step.substring(4),'Hiii'));
+
            			 } 
               
                 if (id == 'edit-save') {
