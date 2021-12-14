@@ -117,10 +117,16 @@ jQuery(function ($) {
         $(".order_top h3 span:not(.order_arrow)").text($(this).find('h4').text());
         $(".questn_list>div").hide();
         $(".questn_list ." + step).show();
-//       	if (parseInt(step.substring(4)) == 2) {
-//          $('#qstn_family_modal').modal('show');
+      	if (parseInt(step.substring(4)) == 2) {
+          
+          if( $('#qstn_family_modal').hasClass('in')){
+            
+          }else{
+             $('#qstn_family_modal').modal('show');
+          }
         
-//       }
+        
+      }
 
     });
 
