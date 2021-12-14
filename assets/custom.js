@@ -117,6 +117,16 @@ jQuery(function ($) {
         $(".order_top h3 span:not(.order_arrow)").text($(this).find('h4').text());
         $(".questn_list>div").hide();
         $(".questn_list ." + step).show();
+      	if (parseInt(step.substring(4)) == 2) {
+          
+          if( $('#qstn_family_modal').hasClass('in')){
+            
+          }else{
+             $('#qstn_family_modal').modal('show');
+          }
+        
+        
+      }
 
     });
 
@@ -127,12 +137,34 @@ jQuery(function ($) {
     //     });
 
     var healthscore;
-    window.localStorage.setItem('cus_id', "not-set");
+//     window.localStorage.setItem('cus_id', "not-set");
+  
+  function setRow(){
+    
+   var storage_local_string=window.localStorage.getItem('cus_row');
+   var storage_local_json = JSON.parse(storage_local_string);
+    if(storage_local_json.rows=="not-set"){
+    	 storage_local_json.rows="set";
+  		 localStorage.setItem('cus_row', JSON.stringify(storage_local_json));
+    }
+  
+  }
+  function checkRow(){
+    
+   var storage_local_string=window.localStorage.getItem('cus_row');
+   var storage_local_json = JSON.parse(storage_local_string);
+    if(storage_local_json.rows=="set"){
+    	return true;
+    }
+    else{
+      return false;
+    }
+  
+  }
 
     if (window.cus_id) {
-        if (window.localStorage.getItem('cus_id') === "not-set") {
-            window.localStorage.setItem('rows', "not-set");
-        }
+      
+       
 
         $.ajax({
 
@@ -316,6 +348,8 @@ jQuery(function ($) {
 
 
     var form;
+    var step;
+    var id_global;
     var click_button = null;
     var proceed = false;
     $(document).on("click", "#proceed-anyway", function (e) {
@@ -354,10 +388,10 @@ jQuery(function ($) {
         // $(document).on("click","#proceed-anyway",function(e){
 
         form = closestForm.closest('form');
-
-        var id = closestForm.attr("id");
+		id_global=closestForm.attr("id");
+        var id = id_global;
         var box;
-        var step = $(".health_top .health_box.active").attr("data-step");
+        step = $(".health_top .health_box.active").attr("data-step");
         var completedrow = false;
         if (id == 'edit-save') {
             click_button = "next";
@@ -381,14 +415,14 @@ jQuery(function ($) {
 
 
         if (diff == form.find('.questioncontainer .questionrow').length) {
-            if (parseInt(step.substring(4)) == 3) {
-                if (id == 'edit-previous') {
-                    $('#qstn_family_modal').modal('show');
-                }
+//             if (parseInt(step.substring(4)) == 3) {
+//                 if (id == 'edit-previous') {
+//                     $('#qstn_family_modal').modal('show');
+//                 }
 
-                //                
+//                 //                
 
-            }
+//             }
             if (id == 'edit-save') {
 
                 box = "box" + parseInt(parseInt(step.substring(4)) + 1);
@@ -431,19 +465,19 @@ jQuery(function ($) {
             completedrow = true;
         } else if (proceed) {
             console.log(parseInt(step.substring(4), 'Hiii'));
-            if (parseInt(step.substring(4)) == 1) {
-                $('#qstn_family_modal').modal('show');
-                //                
+//             if (parseInt(step.substring(4)) == 1) {
+//                 $('#qstn_family_modal').modal('show');
+//                 //                
 
-            }
-            if (parseInt(step.substring(4)) == 3) {
-                if (id == 'edit-previous') {
-                    $('#qstn_family_modal').modal('show');
-                }
+//             }
+//             if (parseInt(step.substring(4)) == 3) {
+//                 if (id == 'edit-previous') {
+//                     $('#qstn_family_modal').modal('show');
+//                 }
 
-                //                
+//                 //                
 
-            }
+//             }
 
             if (id == 'edit-save') {
 
@@ -623,8 +657,25 @@ jQuery(function ($) {
 
     });
     $(document).on("click", "#goback-finish", function (e) {
+       window.localStorage.setItem('rows', "set");
+       
 
-        makeitred();
+        makeitred();console.log(id_global,"sdddsdddddddddsssssssss",step.substring(4));
+      if (parseInt(step.substring(4)) == 6) {
+        
+         if (id_global == 'edit-save') {
+             box = "box" + 1;
+        $(".health_top #" + box).click();
+
+
+        }
+        
+        
+       
+         
+        
+        
+      }
         // var notetodisplay='<div id="note-to-display"><p><strong>NOTE:</strong> <em>Unanswered questions are shown below in <strong style="color:red;">red</strong></em></p></div>';
 
 
@@ -642,6 +693,7 @@ jQuery(function ($) {
         // if(closestForm.closest('form').find('#note-to-display').length===0){
         //     closestForm.closest('form').prepend(notetodisplay);
         // }
+      
         $('#qstn_family_modal').modal('hide');
     });
 
