@@ -174,7 +174,7 @@ jQuery(function ($) {
             success: function (res) {
                 $(".questn_list").removeClass('loading');
 
-                window.localStorage.setItem('cus_id', window.cus_id);
+                
 
                 // $("#schedule_popup_now").removeClass('loading');
 
@@ -270,7 +270,7 @@ jQuery(function ($) {
 
             },
             complete: function (res) {
-                if (localStorage.getItem('rows') === "set") {
+                if (checkRow()) {
                     makeitred();
 
                 }
@@ -379,8 +379,8 @@ jQuery(function ($) {
         var closestForm = $(this);
 
 
-        window.localStorage.setItem('rows', "set");
-        if (window.localStorage.getItem('rows') === "set") {
+        setRow();
+        if (checkRow()) {
             makeitred();
         }
 
@@ -657,7 +657,7 @@ jQuery(function ($) {
 
     });
     $(document).on("click", "#goback-finish", function (e) {
-       window.localStorage.setItem('rows', "set");
+        setRow();
        
 
         makeitred();console.log(id_global,"sdddsdddddddddsssssssss",step.substring(4));
@@ -2437,7 +2437,7 @@ jQuery(function ($) {
             },
             complete: function (res) {
 
-                if (localStorage.getItem('rows') === "set") {
+                if (checkRow()) {
                     makeitred();
                 }
                 // $(".family_history .form-type-radios").each(function(){
@@ -2511,7 +2511,7 @@ jQuery(function ($) {
 
 
 
-                if (localStorage.getItem('rows') === "set") {
+                if (checkRow()) {
                     makeitred();
                 }
 
@@ -2556,7 +2556,7 @@ jQuery(function ($) {
             },
             complete: function (res) {
 
-                if (localStorage.getItem('rows') === "set") {
+                if (checkRow()) {
                     makeitred();
                 }
                 // $(".lifestyle .form-type-radios").each(function(){
@@ -2625,7 +2625,7 @@ jQuery(function ($) {
             },
             complete: function (data) {
 
-                if (localStorage.getItem('rows') === "set") {
+                if (checkRow()) {
                     makeitred();
                 }
                 $("#intake-wizard-smartquestions-form #edit-save").val('Save and close questionnaire');
