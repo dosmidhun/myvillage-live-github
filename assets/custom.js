@@ -120,11 +120,11 @@ jQuery(function ($) {
 
     });
 
-    $("button.close").click(function () {
+//     $("button.close").click(function () {
 
-        $('.modal').modal('hide');
+//         $('.modal').modal('hide');
 
-    });
+//     });
 
     var healthscore;
     window.localStorage.setItem('cus_id', "not-set");
