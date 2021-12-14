@@ -652,6 +652,15 @@ jQuery(function ($) {
         // if(closestForm.closest('form').find('#note-to-display').length===0){
         //     closestForm.closest('form').prepend(notetodisplay);
         // }
+      if (parseInt(step.substring(4)) == 6) {
+        
+        
+        box = "box" + 1;
+        $(".health_top #" + box).click();
+         
+        
+        
+      }
         $('#qstn_family_modal').modal('hide');
     });
 
