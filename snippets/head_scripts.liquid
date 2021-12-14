@@ -45,7 +45,18 @@
   {% endif %}
   {% if customer.metafields.global.iqyou_has_account %}
     window.cus_id = "{{ customer.metafields.global.iqyou_user_key }}";
- 	var storage_local = '{"cus_id":"'+window.cus_id+'",  "cus_id_status":"set"}';
+     var storage_local_string=window.localStorage.getItem('cus_row');
+   var storage_local_json = JSON.parse(storage_local_string);
+    if(storage_local_json.rows=="not-set"){
+       var storage_local = '{"cus_id":"'+window.cus_id+'", "rows":"set", "cus_id_status":"set"}';
+        localStorage.setItem('cus_row', JSON.stringify(storage_local));
+     
+    }
+  else{
+		var storage_local = '{"cus_id":"'+window.cus_id+'", "rows":"not-set", "cus_id_status":"set"}';
+        localStorage.setItem('cus_row', JSON.stringify(storage_local));
+  }
+ 	
     localStorage.setItem('cus_row', storage_local);
 
     {% else %}
