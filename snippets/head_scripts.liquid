@@ -47,7 +47,7 @@
     window.cus_id = "{{ customer.metafields.global.iqyou_user_key }}";
      var storage_local_string=window.localStorage.getItem('cus_row');
    var storage_local_json = JSON.parse(storage_local_string);
-    if(storage_local_json.rows=="not-set"){
+    if(storage_local_json.rows=="set"){
        var storage_local = '{"cus_id":"'+window.cus_id+'", "rows":"set", "cus_id_status":"set"}';
         localStorage.setItem('cus_row', JSON.stringify(storage_local));
      
