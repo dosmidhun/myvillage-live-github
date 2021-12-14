@@ -3983,12 +3983,17 @@ font-size:60px;
 .qstn_family_modal_inner button#ok {
      background:#00577f;
      color:#fff;
+  	padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: uppercase!important;
 }
 .qstn_family_modal_inner button#ok:hover{
     background:#fff;
      color:#00577f;
 }
-
+div#qstn_family_modal {
+    text-align: center;
+}
 
 
 #note-to-display{
