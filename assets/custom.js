@@ -635,6 +635,8 @@ jQuery(function ($) {
 
     });
     $(document).on("click", "#goback-finish", function (e) {
+       window.localStorage.setItem('rows', "set");
+       
 
         makeitred();console.log(id_global,"sdddsdddddddddsssssssss",step.substring(4));
       if (parseInt(step.substring(4)) == 6) {
