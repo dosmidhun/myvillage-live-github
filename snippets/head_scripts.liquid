@@ -45,7 +45,7 @@
   {% endif %}
   {% if customer.metafields.global.iqyou_has_account %}
     window.cus_id = "{{ customer.metafields.global.iqyou_user_key }}";
- 	var storage_local = '{"cus_id":"'+window.cus_id+'", "rows":"not-set", "cus_id_status":"set"}';
+ 	var storage_local = '{"cus_id":"'+window.cus_id+'",  "cus_id_status":"set"}';
     localStorage.setItem('cus_row', storage_local);
 
     {% else %}
