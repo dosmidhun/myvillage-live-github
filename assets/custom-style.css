@@ -3958,6 +3958,39 @@ font-size:60px;
      
 
 }
+
+/**/
+#qstn_family_modal .closeit{
+background:none;
+border:none;
+font-size:60px;
+
+}
+#qstn_family_modal .modal-header{
+    text-align:right;
+}
+.qstn_family_modal_inner p.description {
+    font-size:20px
+}
+
+.qstn_family_modal_inner button{
+   padding:10px 15px;
+   margin:3px;
+   box-shadow:none;
+   border:1px solid #00577f!important;
+
+}
+.qstn_family_modal_inner button#ok {
+     background:#00577f;
+     color:#fff;
+}
+.qstn_family_modal_inner button#ok:hover{
+    background:#fff;
+     color:#00577f;
+}
+
+
+
 #note-to-display{
     display: block!important;
 }
