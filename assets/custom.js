@@ -508,18 +508,18 @@ jQuery(function ($) {
                 });
 
             } 
-          else if (parseInt(step.substring(4)) == 2) {
+          else if (parseInt(step.substring(4)) == 1) {
                 $('#qstn_family_modal').modal('show');
-                if (id == 'edit-save') {
+//                 if (id == 'edit-save') {
 
-                    box = "box" + parseInt(parseInt(step.substring(4)) + 1);
+//                     box = "box" + parseInt(parseInt(step.substring(4)) + 1);
 
-                } else if (id == 'edit-previous') {
-                    box = "box" + parseInt(parseInt(step.substring(4)) - 1);
-                } else {
-                    box = "box" + parseInt(step.substring(4));
+//                 } else if (id == 'edit-previous') {
+//                     box = "box" + parseInt(parseInt(step.substring(4)) - 1);
+//                 } else {
+//                     box = "box" + parseInt(step.substring(4));
 
-                }
+//                 }
                 step = "step" + parseInt(step.substring(4));
 
                 $.ajax({
