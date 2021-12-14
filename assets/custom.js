@@ -365,7 +365,7 @@ observer.observe(targetNode, observerConfig);
 
         // $(document).on("click","#proceed-anyway",function(e){
             
-            $form = closestForm.closest('form');
+            form = closestForm.closest('form');
 
             var id = closestForm.attr("id");
             var box;
