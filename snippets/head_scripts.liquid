@@ -45,11 +45,13 @@
   {% endif %}
   {% if customer.metafields.global.iqyou_has_account %}
     window.cus_id = "{{ customer.metafields.global.iqyou_user_key }}";
- 
+ 	var storage_local = '{"cus_id":"'+window.cus_id+'", "rows":"not-set"}';
+    localStorage.setItem('cus_row', storage_local);
 
     {% else %}
      window.cus_id =null;
-  
+    var storage_local = '{"cus_id":"not-set", "rows":"not-set"}';
+    localStorage.setItem('cus_row', storage_local);
     
     
     
