@@ -326,6 +326,7 @@ jQuery(function ($) {
 
 
     var form;
+    var step;
     var click_button = null;
     var proceed = false;
     $(document).on("click", "#proceed-anyway", function (e) {
@@ -367,7 +368,7 @@ jQuery(function ($) {
 
         var id = closestForm.attr("id");
         var box;
-        var step = $(".health_top .health_box.active").attr("data-step");
+        step = $(".health_top .health_box.active").attr("data-step");
         var completedrow = false;
         if (id == 'edit-save') {
             click_button = "next";
