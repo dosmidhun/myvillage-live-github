@@ -120,11 +120,11 @@ jQuery(function ($) {
 
     });
 
-//     $("button.close").click(function () {
+    //     $("button.close").click(function () {
 
-//         $('.modal').modal('hide');
+    //         $('.modal').modal('hide');
 
-//     });
+    //     });
 
     var healthscore;
     window.localStorage.setItem('cus_id', "not-set");
@@ -381,14 +381,14 @@ jQuery(function ($) {
 
 
         if (diff == form.find('.questioncontainer .questionrow').length) {
-          if (parseInt(step.substring(4)) == 3) {
-            if (id == 'edit-previous') {
-               $('#qstn_family_modal').modal('show');
-            }
-               		
-//                
+            if (parseInt(step.substring(4)) == 3) {
+                if (id == 'edit-previous') {
+                    $('#qstn_family_modal').modal('show');
+                }
 
-           			 } 
+                //                
+
+            }
             if (id == 'edit-save') {
 
                 box = "box" + parseInt(parseInt(step.substring(4)) + 1);
@@ -430,20 +430,20 @@ jQuery(function ($) {
 
             completedrow = true;
         } else if (proceed) {
-          console.log(parseInt(step.substring(4),'Hiii'));
-              	if (parseInt(step.substring(4)) == 1) {
-               		 $('#qstn_family_modal').modal('show');
-//                
+            console.log(parseInt(step.substring(4), 'Hiii'));
+            if (parseInt(step.substring(4)) == 1) {
+                $('#qstn_family_modal').modal('show');
+                //                
 
-           			 } 
-          if (parseInt(step.substring(4)) == 3) {
-            if (id == 'edit-previous') {
-               $('#qstn_family_modal').modal('show');
             }
-               		
-//                
+            if (parseInt(step.substring(4)) == 3) {
+                if (id == 'edit-previous') {
+                    $('#qstn_family_modal').modal('show');
+                }
 
-           			 } 
+                //                
+
+            }
 
             if (id == 'edit-save') {
 
@@ -529,15 +529,13 @@ jQuery(function ($) {
                     }
                 });
 
-            } 
-          
-          else if (!completedrow) {
+            } else if (!completedrow) {
                 makeitred();
                 $('#qstn_confirm_modal').modal('show');
                 return false;
             } else {
-              
-              
+
+
                 if (id == 'edit-save') {
 
                     box = "box" + parseInt(parseInt(step.substring(4)) + 1);
@@ -635,7 +633,7 @@ jQuery(function ($) {
         // }
         $('#qstn_confirm_modal').modal('hide');
     });
-   $(document).on("click", "#ok", function (e) {
+    $(document).on("click", "#ok", function (e) {
 
         makeitred();
         // var notetodisplay='<div id="note-to-display"><p><strong>NOTE:</strong> <em>Unanswered questions are shown below in <strong style="color:red;">red</strong></em></p></div>';
