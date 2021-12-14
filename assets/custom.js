@@ -636,9 +636,9 @@ jQuery(function ($) {
     });
     $(document).on("click", "#goback-finish", function (e) {
 
-        makeitred();
+        makeitred();console.log(id_global,"sdddsdddddddddsssssssss",step.substring(4));
       if (parseInt(step.substring(4)) == 6) {
-        console.log(id_global,"sdddsdddddddddsssssssss",step.substring(4));
+        
          if (id_global == 'edit-save') {
              box = "box" + 1;
         $(".health_top #" + box).click();
