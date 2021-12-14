@@ -693,7 +693,7 @@ jQuery(function ($) {
 
         // $(".dashboard_templt").addClass('loading');
         $('#health_qstns_modal .close').click(function () {
-            window.reload();
+            window.location.reload(true);
         });
 
         $('#lap_report .lap_table').on('click', '.view-dna-reports', function (event) {
