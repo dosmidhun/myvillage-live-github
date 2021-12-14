@@ -440,11 +440,7 @@ jQuery(function ($) {
                 //                
 
             }
-            
-
-                //                
-
-            }
+           
 
             if (id == 'edit-save') {
 
