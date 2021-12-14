@@ -366,7 +366,7 @@ jQuery(function ($) {
         // $(document).on("click","#proceed-anyway",function(e){
 
         form = closestForm.closest('form');
-		var id_global=closestForm.attr("id");
+		id_global=closestForm.attr("id");
         var id = id_global;
         var box;
         step = $(".health_top .health_box.active").attr("data-step");
