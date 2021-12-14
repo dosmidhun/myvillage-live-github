@@ -635,6 +635,15 @@ jQuery(function ($) {
     $(document).on("click", "#goback-finish", function (e) {
 
         makeitred();
+      if (parseInt(step.substring(4)) == 6) {
+        
+        
+        box = "box" + 1;
+        $(".health_top #" + box).click();
+         
+        
+        
+      }
         // var notetodisplay='<div id="note-to-display"><p><strong>NOTE:</strong> <em>Unanswered questions are shown below in <strong style="color:red;">red</strong></em></p></div>';
 
 
@@ -652,15 +661,7 @@ jQuery(function ($) {
         // if(closestForm.closest('form').find('#note-to-display').length===0){
         //     closestForm.closest('form').prepend(notetodisplay);
         // }
-      if (parseInt(step.substring(4)) == 6) {
-        
-        
-        box = "box" + 1;
-        $(".health_top #" + box).click();
-         
-        
-        
-      }
+      
         $('#qstn_family_modal').modal('hide');
     });
 
