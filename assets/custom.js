@@ -381,6 +381,14 @@ jQuery(function ($) {
 
 
         if (diff == form.find('.questioncontainer .questionrow').length) {
+          if (parseInt(step.substring(4)) == 3) {
+            if (id == 'edit-previous') {
+               $('#qstn_family_modal').modal('show');
+            }
+               		
+//                
+
+           			 } 
             if (id == 'edit-save') {
 
                 box = "box" + parseInt(parseInt(step.substring(4)) + 1);
@@ -528,14 +536,7 @@ jQuery(function ($) {
                 $('#qstn_confirm_modal').modal('show');
                 return false;
             } else {
-              if (parseInt(step.substring(4)) == 3) {
-            if (id == 'edit-previous') {
-               $('#qstn_family_modal').modal('show');
-            }
-               		
-//                
-
-           			 } 
+              
               
                 if (id == 'edit-save') {
 
