@@ -3102,7 +3102,7 @@ if(localStorage.getItem('rows')==="set"){
       $('.health_qstns_modal .close').click(function(){
         window.reload();
       
-    }
+    });
 
 
     // $(".top_reommend_sec").on("click","a.reclink",function(e){
