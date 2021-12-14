@@ -638,10 +638,15 @@ jQuery(function ($) {
 
         makeitred();
       if (parseInt(step.substring(4)) == 6) {
-        
-        
-        box = "box" + 1;
+         if (id_global == 'edit-save') {
+             box = "box" + 1;
         $(".health_top #" + box).click();
+
+
+        }
+        
+        
+       
          
         
         
