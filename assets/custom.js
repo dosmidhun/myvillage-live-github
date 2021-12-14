@@ -391,13 +391,13 @@ observer.observe(targetNode, observerConfig);
       
 //              if($form.find('.questioncontainer .questionrow').length==$form.find('.questioncontainer .questionrow.modified').length){
       
-      			var diff=$form.find('.questioncontainer .questionrow').length - $form.find('.questioncontainer .questionrow.modified').length;
-       console.log("Total",$form.find('.questioncontainer .questionrow').length);
-      console.log("Total",$form.find('.questioncontainer .questionrow.modified').length);
+      			var diff=form.find('.questioncontainer .questionrow').length - form.find('.questioncontainer .questionrow.modified').length;
+       console.log("Total",form.find('.questioncontainer .questionrow').length);
+      console.log("Total",form.find('.questioncontainer .questionrow.modified').length);
       
       
       
-                    if(diff==$form.find('.questioncontainer .questionrow').length){
+                    if(diff==form.find('.questioncontainer .questionrow').length){
                if(id =='edit-save')
             {
                 
@@ -416,9 +416,9 @@ observer.observe(targetNode, observerConfig);
             step = "step"+parseInt(step.substring(4));
     
             $.ajax({
-                url: 'https://app.iqyouhealth.com' + $form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
+                url: 'https://app.iqyouhealth.com' + form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
                 type: 'POST',
-                data: $form.serialize(),
+                data: form.serialize(),
                 success: function(response) {
                     $(".questn_list form").find(".msg").remove();
                     $(".health_top #"+box).click();
@@ -464,9 +464,9 @@ observer.observe(targetNode, observerConfig);
             step = "step"+parseInt(step.substring(4));
     
             $.ajax({
-                url: 'https://app.iqyouhealth.com' + $form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
+                url: 'https://app.iqyouhealth.com' + form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
                 type: 'POST',
-                data: $form.serialize(),
+                data: form.serialize(),
                 success: function(response) {
                     $(".questn_list form").find(".msg").remove();
                     $(".health_top #"+box).click();
@@ -515,9 +515,9 @@ observer.observe(targetNode, observerConfig);
             step = "step"+parseInt(step.substring(4));
     
             $.ajax({
-                url: 'https://app.iqyouhealth.com' + $form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
+                url: 'https://app.iqyouhealth.com' + form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
                 type: 'POST',
-                data: $form.serialize(),
+                data: form.serialize(),
                 success: function(response) {
                     $(".questn_list form").find(".msg").remove();
                     $(".health_top #"+box).click();
@@ -566,9 +566,9 @@ observer.observe(targetNode, observerConfig);
             step = "step"+parseInt(step.substring(4));
     
             $.ajax({
-                url: 'https://app.iqyouhealth.com' + $form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
+                url: 'https://app.iqyouhealth.com' + form.prop('action').replace(/^.*\/\/[^\/]+/, ''),
                 type: 'POST',
-                data: $form.serialize(),
+                data: form.serialize(),
                 success: function(response) {
                     $(".questn_list form").find(".msg").remove();
                     $(".health_top #"+box).click();
