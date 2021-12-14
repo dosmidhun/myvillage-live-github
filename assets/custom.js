@@ -440,10 +440,7 @@ jQuery(function ($) {
                 //                
 
             }
-            if (parseInt(step.substring(4)) == 3) {
-                if (id == 'edit-previous') {
-                    $('#qstn_family_modal').modal('show');
-                }
+            
 
                 //                
 
