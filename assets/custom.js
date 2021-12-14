@@ -139,12 +139,32 @@ jQuery(function ($) {
     var healthscore;
 //     window.localStorage.setItem('cus_id', "not-set");
   
+  function setRow(){
+    
+   var storage_local_string=window.localStorage.getItem('cus_row');
+   var storage_local_json = JSON.parse(storage_local_string);
+    if(storage_local_json.rows=="not-set"){
+    	 storage_local_json.rows="set";
+  		 localStorage.setItem('cus_row', JSON.stringify(storage_local_json));
+    }
+  
+  }
+  function checkRow(){
+    
+   var storage_local_string=window.localStorage.getItem('cus_row');
+   var storage_local_json = JSON.parse(storage_local_string);
+    if(storage_local_json.rows=="set"){
+    	return true;
+    }
+    else{
+      return false;
+    }
+  
+  }
 
     if (window.cus_id) {
       
-        if (window.localStorage.getItem('cus_id') === "not-set") {
-            window.localStorage.setItem('rows', "not-set");
-        }
+       
 
         $.ajax({
 
