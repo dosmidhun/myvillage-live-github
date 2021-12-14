@@ -391,14 +391,14 @@ jQuery(function ($) {
 
 
         if (diff == form.find('.questioncontainer .questionrow').length) {
-            if (parseInt(step.substring(4)) == 3) {
-                if (id == 'edit-previous') {
-                    $('#qstn_family_modal').modal('show');
-                }
+//             if (parseInt(step.substring(4)) == 3) {
+//                 if (id == 'edit-previous') {
+//                     $('#qstn_family_modal').modal('show');
+//                 }
 
-                //                
+//                 //                
 
-            }
+//             }
             if (id == 'edit-save') {
 
                 box = "box" + parseInt(parseInt(step.substring(4)) + 1);
@@ -441,19 +441,19 @@ jQuery(function ($) {
             completedrow = true;
         } else if (proceed) {
             console.log(parseInt(step.substring(4), 'Hiii'));
-            if (parseInt(step.substring(4)) == 1) {
-                $('#qstn_family_modal').modal('show');
-                //                
+//             if (parseInt(step.substring(4)) == 1) {
+//                 $('#qstn_family_modal').modal('show');
+//                 //                
 
-            }
-            if (parseInt(step.substring(4)) == 3) {
-                if (id == 'edit-previous') {
-                    $('#qstn_family_modal').modal('show');
-                }
+//             }
+//             if (parseInt(step.substring(4)) == 3) {
+//                 if (id == 'edit-previous') {
+//                     $('#qstn_family_modal').modal('show');
+//                 }
 
-                //                
+//                 //                
 
-            }
+//             }
 
             if (id == 'edit-save') {
 
