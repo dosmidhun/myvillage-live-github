@@ -692,7 +692,7 @@ jQuery(function ($) {
     if (window.cus_id) {
 
         // $(".dashboard_templt").addClass('loading');
-        $('.health_qstns_modal .close').click(function () {
+        $('#health_qstns_modal .close').click(function () {
             window.reload();
         });
 
