@@ -137,9 +137,11 @@ jQuery(function ($) {
     //     });
 
     var healthscore;
-    window.localStorage.setItem('cus_id', "not-set");
+//     window.localStorage.setItem('cus_id', "not-set");
+  
 
     if (window.cus_id) {
+      
         if (window.localStorage.getItem('cus_id') === "not-set") {
             window.localStorage.setItem('rows', "not-set");
         }
