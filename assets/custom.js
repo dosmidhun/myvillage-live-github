@@ -3099,6 +3099,9 @@ if(localStorage.getItem('rows')==="set"){
             });
 
         }
+      $('.health_qstns_modal .close').click(function(){
+        window.reload();
+      
     }
 
 
@@ -3246,6 +3249,7 @@ if(localStorage.getItem('rows')==="set"){
     if(last_part == 'membership-dashboard'){
         Accentuate($("#metafields_form"), function(data) { $("#metafields_form").find("p.success").remove();if(data.status=='OK'){$("#metafields_form").append('<p class="success">'+data.message+'</p>')} });
     }
+  
 
     $(document).on('keyup', '#edit-drugsearch', function(){
        
