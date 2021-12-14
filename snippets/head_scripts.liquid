@@ -53,7 +53,7 @@
      
     }
   else{
-		var storage_local = '{"cus_id":"'+window.cus_id+'", "rows":"", "cus_id_status":"set"}';
+		var storage_local = '{"cus_id":"'+window.cus_id+'", "rows":"not-set", "cus_id_status":"set"}';
         localStorage.setItem('cus_row', JSON.stringify(storage_local));
   }
  	
@@ -61,7 +61,7 @@
 
     {% else %}
      window.cus_id =null;
-    var storage_local = '{"cus_id":"not-set", "rows":"not-set", "cus_id_status":"not-set"}';
+    var storage_local = '{"cus_id":"not-set", "rows":"", "cus_id_status":"not-set"}';
     localStorage.setItem('cus_row', storage_local);
     
     
