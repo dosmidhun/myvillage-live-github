@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
         var lname = $("#mvg_customer_last_name").val();
         var email = $("#mvg_customer_email").val();
         var pass = $("#mvg_customer_email").val();
-		if($("#mvg_customer_first_name").val().length){
+		if(!($("#mvg_customer_first_name").val().length)){
 			fname=email;
 		}
         var data = {
