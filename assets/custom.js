@@ -2725,33 +2725,7 @@ jQuery(function ($) {
         //$('.modal').not(this).modal('hide');
     });
 
-    $(document).on("click", "#create_customer input[type=submit]", function (e) {
-        e.preventDefault();
-        $("#create_customer").find('.error').remove()
-        var fname = $("#create_customer").find("input[name='customer[first_name]']").val();
-        var lname = $("#create_customer").find("input[name='customer[last_name]']").val();
-        var email = $("#create_customer").find("input[name='customer[email]']").val();
-        var pass = $("#create_customer").find("input[name='customer[password]']").val();
-        var data = {
-            "fname": fname,
-            "lname": lname,
-            "email": email,
-            "password": pass,
-            "iqyou_welcome_email": false
-        };
-        // console.log(data);
-        $.post("https://app.iqyouhealth.com/api/sign-up?api_key=c6701296-5027-4076-b80c-d64a77c2ddc7", JSON.stringify(data), function (res) {
-            console.log("Response From IQYou");
-            console.log(res);
-            if (res.success) {
-                $("#create_customer").submit();
-            } else if (res.message === 'An account already exists with this email address. Please re-enter your email address and password. If you already have an account please login using the above link!') {
-                $("#create_customer").submit();
-            } else {
-                $("#create_customer").append('<p class="error">' + res.message + '</p>');
-            }
-        });
-    });
+    
 
 
     //     $("#create_customer").submit(function(){
