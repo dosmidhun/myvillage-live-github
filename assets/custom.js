@@ -2690,35 +2690,35 @@ jQuery(function ($) {
 
     // });
 
-    $(".top_reommend_sec").on("click", "ul#reccats li", function () {
+//     $(".top_reommend_sec").on("click", "ul#reccats li", function () {
 
-        var c = $(this).attr("rel");
-        $('.top_reommend_sec #recfilter #selectedcat').text($(this).text());
-        $(".top_reommend_sec .recseeall,.top_reommend_sec .recrow").hide();
+//         var c = $(this).attr("rel");
+//         $('.top_reommend_sec #recfilter #selectedcat').text($(this).text());
+//         $(".top_reommend_sec .recseeall,.top_reommend_sec .recrow").hide();
 
-        if (c != 'all' && $(".top_reommend_sec .recrow." + c).length > 5) {
-            $(".top_reommend_sec .recseeall").show();
-        }
-        if (c == 'all') {
-            if ($(".top_reommend_sec .recrow").length > 5) {
-                $(".top_reommend_sec .recseeall").show();
-            }
-            $(".top_reommend_sec .recrow:lt(5)").show();
-        }
-        $(".top_reommend_sec .recrow." + c + ":lt(5)").show();
+//         if (c != 'all' && $(".top_reommend_sec .recrow." + c).length > 5) {
+//             $(".top_reommend_sec .recseeall").show();
+//         }
+//         if (c == 'all') {
+//             if ($(".top_reommend_sec .recrow").length > 5) {
+//                 $(".top_reommend_sec .recseeall").show();
+//             }
+//             $(".top_reommend_sec .recrow:lt(5)").show();
+//         }
+//         $(".top_reommend_sec .recrow." + c + ":lt(5)").show();
 
-    });
+//     });
 
-    $(".top_reommend_sec").on("click", ".recseeall", function () {
-        $(this).hide();
-        var s = $(".top_reommend_sec #selectedcat").text().trim();
-        s = s.split(' ').join('').toLowerCase();
-        if (s == 'all') {
-            $(".top_reommend_sec .recrow").show();
-        } else {
-            $(".top_reommend_sec .recrow." + s).show();
-        }
-    });
+//     $(".top_reommend_sec").on("click", ".recseeall", function () {
+//         $(this).hide();
+//         var s = $(".top_reommend_sec #selectedcat").text().trim();
+//         s = s.split(' ').join('').toLowerCase();
+//         if (s == 'all') {
+//             $(".top_reommend_sec .recrow").show();
+//         } else {
+//             $(".top_reommend_sec .recrow." + s).show();
+//         }
+//     });
 
 
     $(".modal").on('show.bs.modal', function () {
