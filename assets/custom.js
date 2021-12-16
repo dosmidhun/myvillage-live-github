@@ -2481,6 +2481,7 @@ jQuery(function ($) {
             type: 'GET',
             crossDomain: true,
             success: function (res) {
+               $(".food_diet").removeClass('loading-blue');
                 $('.food_diet_step').text(res.completions_rate + '%');
                 $(".health_qstns_body .food_diet").html(res.intakeform);
                 $(".health_qstns_body .food_diet form .questioncontainer a").each(function () {
@@ -2548,6 +2549,7 @@ jQuery(function ($) {
             type: 'GET',
             crossDomain: true,
             success: function (res) {
+                $(".lifestyle").removeClass('loading-blue');
                 $('.lifestyle_step').text(res.completions_rate + '%');
                 $(".health_qstns_body .lifestyle").html(res.intakeform);
                 $(".health_qstns_body .lifestyle form .questioncontainer a").each(function () {
