@@ -2337,7 +2337,7 @@ jQuery(function ($) {
                         var st = "";
                     }
 
-                    var see_all = '<a class="recseeall" style="' + st + '">▸ See all</a>';
+                    var see_all = '<a class="recseeall" style=" + st + ">▸ See all</a>';
                     $(".top_reommend_sec #rectable").append(see_all);
 
 
