@@ -25,10 +25,10 @@ h1 { font-size: 35px; line-height: 40px; font-family: Montserrat; font-weight: 6
 h2 { font-size: 30px; line-height: 35px; font-family: Montserrat; font-weight: 600; margin-bottom: 12px;}
 
 /********************* Header *********************/
-.loading{
+.loading-blue{
   position:relative;
 }
-.loading:after {
+.loading-blue:after {
     content: '';
     width: 100%;
     height: 100%;
@@ -41,7 +41,7 @@ h2 { font-size: 30px; line-height: 35px; font-family: Montserrat; font-weight: 6
 
 
 
-.loading:before
+.loading-blue:before
 {
     content: '';
     display: block;
