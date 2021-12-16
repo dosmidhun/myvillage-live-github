@@ -172,7 +172,7 @@ jQuery(function ($) {
             type: 'GET',
             crossDomain: true,
             success: function (res) {
-                $(".questn_list").removeClass('loading');
+                $(".my_health_step").removeClass('loading-blue');
 
                 
 
@@ -2425,6 +2425,7 @@ jQuery(function ($) {
             type: 'GET',
             crossDomain: true,
             success: function (res) {
+               $(".family_history").removeClass('loading-blue');
                 $('.family_history_step').text(res.completions_rate + '%');
                 $(".health_qstns_body .family_history").html(res.intakeform);
 
