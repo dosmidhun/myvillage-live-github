@@ -2326,16 +2326,16 @@ jQuery(function ($) {
                         html: true
                     });
 
-                    $(".top_reommend_sec ul#reccats li[rel='nutritionalsupplementation']").click();
-                    $(".top_reommend_sec #rectable .recrow.nutritionalsupplementation:gt(4)").hide();
+                    $(".top_reommend_sec ul#reccats li[rel='all']").click();
+//                     $(".top_reommend_sec #rectable .recrow.all:gt(4)").hide();
                     wrapper.removeClass('loading');
                     $(".top_reommend_sec .recsTitle.subTitle").hide();
 
-                    if ($(".top_reommend_sec #rectable .recrow.nutritionalsupplementation").length > 5) {
+//                     if ($(".top_reommend_sec #rectable .recrow.nutritionalsupplementation").length > 5) {
                         var st = "display:none;";
-                    } else {
-                        var st = "";
-                    }
+//                     } else {
+//                         var st = "";
+//                     }
 
                     var see_all = '<a class="recseeall" style=' + st + '>▸ See all</a>';
                     $(".top_reommend_sec #rectable").append(see_all);
