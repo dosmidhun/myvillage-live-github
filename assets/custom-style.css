@@ -2908,6 +2908,22 @@ form#intake-wizard-smartquestions-form--2 .form-item.form-type-radios.form-item-
 #recommended_labs { margin-bottom: 30px; }
 /* #submitstate #edit-save { display: inline-block; padding: 7px 15px; background: #00577f; color: #fff; border-radius: 8px; }
 #submitstate #edit-save:hover { text-decoration: none;background: #92ad05; } */
+div#submitstate {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input#edit-save {
+    order: 3;
+}
+
+input#edit-submit {
+    order: 1;
+}
+
+input#edit-previous {
+    order: 2;
+}
 #recommended_labs .labpanelrow:hover { background-color: #00577f;}
 #recommended_labs .labpanelrow:hover .title, #recommended_labs .labpanelrow:hover .shortsummary, #recommended_labs .labpanelrow:hover .moredown { color: #fff; }
 .expanded.more, .labrow.expanded, .labpanelrow.expanded, .inputrow.expanded, .labrow.active, .labpanelrow.active, .inputrow.active {
