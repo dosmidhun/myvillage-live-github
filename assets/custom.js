@@ -2602,6 +2602,7 @@ jQuery(function ($) {
             type: 'GET',
             crossDomain: true,
             success: function (res) {
+               $(".my_medication").removeClass('loading-blue');
                 $(".health_qstns_body .my_medication").html(res.intakeform);
             },
             error: function (xhr, status, err) {
@@ -2615,6 +2616,7 @@ jQuery(function ($) {
             type: 'GET',
             crossDomain: true,
             success: function (res) {
+               $(".smart_questions").removeClass('loading-blue');
                 $(".health_qstns_body .smart_questions").html(res.intakeform1);
                 $(res.intakeform).insertAfter('#intake-wizard-smartquestions-form');
 
