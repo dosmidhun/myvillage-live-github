@@ -172,7 +172,7 @@ jQuery(function ($) {
             type: 'GET',
             crossDomain: true,
             success: function (res) {
-                $(".my_health_step").removeClass('loading-blue');
+                $(".my_health").removeClass('loading-blue');
 
                 
 
