@@ -927,7 +927,7 @@ jQuery(function ($) {
                     wrapper.html(res.recommendations);
                     $.each(wrapper.find('.reclink.colorbox-load'), function (index, el) {
 
-
+						$(el).text('?');
                         var label = $(el).closest('.recrow').find('.label');
                         label.find('a').remove();
                         label.find('div').remove();
