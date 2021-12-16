@@ -929,7 +929,7 @@ jQuery(function ($) {
 
 
                         var label = $(el).closest('.recrow').find('.label');
-//                         label.find('a').remove();
+                        label.find('a').remove();
                         label.find('div').remove();
                         $(el).prop('href', '#').data('content', label.text().trim());
                         var nextStep = $(el).closest('.recrow').find('.steps');
