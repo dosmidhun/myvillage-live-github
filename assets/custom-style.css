@@ -1978,7 +1978,7 @@ margin-bottom: 25px;
 #rectable #recfilter { position: relative; width: 30%; float: right; padding-top: 0px; text-align: right; cursor: pointer; color: #00577F; font-weight: 500; font-size: 13px; display: block;
  transition-duration: 0.5s; letter-spacing: -.55px;}
 #recseeall { display: none; }
-.recrow .reclink { font-style: italic; color: #00577F; }
+.recrow .reclink { font-style: italic; color: #00577F; display:block!important;}
 #selectedcat { padding-right: 16px; position: relative;}
 #selectedcat:after { content: ""; position: absolute; right: 0; background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/down.png?v=1619502378) no-repeat 0px 0px; width: 11px; height: 7px; display: inline-block; top: 5px;}
 #recfiltermenu { display: none; visibility: hidden; opacity: 0; position: absolute; transition: all 0.5s ease; left: 0; top: 20px; }
