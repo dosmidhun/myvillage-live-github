@@ -3857,14 +3857,14 @@ img#head-image {
 }
 
  .modal-body .questn_list.loading:after {
-   content: '';
+/*    content: '';
     width: 104%;
     height: 21%;
     position: absolute;
     bottom: -38px;
     left: -18px;
     background: rgb(0 0 0 / 20%);
-    opacity: .9;
+    opacity: .9; */
 }
 
  .modal-body .questn_list.loading:before
