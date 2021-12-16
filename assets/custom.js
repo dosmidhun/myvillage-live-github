@@ -2332,7 +2332,7 @@ jQuery(function ($) {
                     $(".top_reommend_sec .recsTitle.subTitle").hide();
 
                     if ($(".top_reommend_sec #rectable .recrow.nutritionalsupplementation").length > 5) {
-                        var st = "display:'none';";
+                        var st = "display:none;";
                     } else {
                         var st = "";
                     }
