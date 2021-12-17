@@ -1,4 +1,13 @@
 (function(jQuery) {
+  var body = $('body'),
+        doc = $(document),
+        html = $('html'),
+        win = $(window);
+  	var wishListsArr = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+    localStorage.setItem('items', JSON.stringify(wishListsArr));
+    if (wishListsArr.length) {
+        wishListsArr = JSON.parse(localStorage.getItem('items'));
+    };
     if (jQuery(".collection-sidebar")) {
         //work only in collection page
         History.Adapter.bind(window, 'statechange', function() {
