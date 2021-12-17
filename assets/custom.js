@@ -478,10 +478,15 @@ jQuery(function ($) {
 //                 //                
 
 //             }
+          
+          
 
             if (id == 'edit-save') {
 
                 box = "box" + parseInt(parseInt(step.substring(4)) + 1);
+               if (parseInt(step.substring(4)) == 6) {
+                  window.savedlast = true;
+               }
 
             } else if (id == 'edit-previous') {
                 box = "box" + parseInt(parseInt(step.substring(4)) - 1);
