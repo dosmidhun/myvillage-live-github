@@ -59,8 +59,13 @@ jQuery(function ($) {
 
     });
 
-    $("#popup_sec .member_btn").click(function () {
-      jQuery('#membership_popup .modal-dialog').off('mousedown');
+    $("#popup_sec .member_btn").click(function () 
+      setTimeout(function(){
+    
+    jQuery('#membership_popup .modal-dialog').off('mousedown');
+    }, 1000);                       
+                                      
+      
 
         $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_register_fields .bold-form-group").addClass("step1");
         $("#mvg-membership_membership_container").find("#form_mvg-membership #customFields_mvg-membership .bold-form-group").slice(0, 2).addClass("step1");
