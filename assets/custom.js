@@ -58,13 +58,15 @@ jQuery(function ($) {
 
 
     });
-
-    $("#popup_sec .member_btn").click(function () {
-      
-     setTimeout(function(){
+$("#popup_sec").click(function () {
+   setTimeout(function(){
     console.log(jQuery('#membership_popup .modal-dialog'),"ENTERRRRRRRRR");
     jQuery('#membership_popup .modal-dialog').off('mousedown');
     }, 1000); 
+    });
+    $("#popup_sec .member_btn").click(function () {
+      
+    
 
         $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_register_fields .bold-form-group").addClass("step1");
         $("#mvg-membership_membership_container").find("#form_mvg-membership #customFields_mvg-membership .bold-form-group").slice(0, 2).addClass("step1");
