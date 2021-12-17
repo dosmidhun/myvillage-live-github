@@ -2637,11 +2637,7 @@ jQuery(function ($) {
 
 
 
-                $("#intake-wizard-smartquestions-form #edit-save").click(function () {
-
-                    window.savedlast = true;
-
-                });
+               
 
 
 
