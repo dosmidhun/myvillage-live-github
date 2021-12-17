@@ -60,10 +60,7 @@ jQuery(function ($) {
     });
 
     $("#popup_sec .member_btn").click(function () 
-      setTimeout(function(){
-    console.log(jQuery('#membership_popup .modal-dialog'),"ENTERRRRRRRRR");
-    jQuery('#membership_popup .modal-dialog').off('mousedown');
-    }, 1000);                       
+                            
                                       
       
 
