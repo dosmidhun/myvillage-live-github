@@ -25,24 +25,24 @@
   jQuery(document).ready(function($) {
     jQuery('#mvg-membership_membership_container #mvg-membership_membership_button_free').remove();
     
-    $repeater = jQuery('.repeater');
-    $repeater.repeater({
-      show: function () {
+//     $repeater = jQuery('.repeater');
+//     $repeater.repeater({
+//       show: function () {
 
-        $(this).slideDown();
-        $('.datepicker').datepicker({
-          format: 'mm/dd/yyyy',
-          autoclose: !0
-        });
-      },
-      hide: function (remove) {
-        if(confirm('Are you sure you want to remove this item?')) {
-          jQuery(this).slideUp(remove);
-          check_filled();
-        }
-      },
-      isFirstItemUndeletable: true
-    });
+//         $(this).slideDown();
+//         $('.datepicker').datepicker({
+//           format: 'mm/dd/yyyy',
+//           autoclose: !0
+//         });
+//       },
+//       hide: function (remove) {
+//         if(confirm('Are you sure you want to remove this item?')) {
+//           jQuery(this).slideUp(remove);
+//           check_filled();
+//         }
+//       },
+//       isFirstItemUndeletable: true
+//     });
     
    var body = jQuery('body');
     var doc = jQuery(document);
