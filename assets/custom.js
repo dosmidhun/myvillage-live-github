@@ -486,6 +486,7 @@ jQuery(function ($) {
                 box = "box" + parseInt(parseInt(step.substring(4)) + 1);
                if (parseInt(step.substring(4)) == 6) {
                   window.savedlast = true;
+                 console.log('In if made true');
                }
 
             } else if (id == 'edit-previous') {
@@ -513,11 +514,11 @@ jQuery(function ($) {
                 },
                 complete: function (response) {
                     $('#qstn_confirm_modal').modal('hide');
-
+					 console.log('Before complete if');
                     if (window.savedlast === true) {
-
+						console.log('Inside complete if');
                         window.savedlast = false;
-                        //                     window.location.reload();
+                        window.location.reload();
 
                     }
                 }
