@@ -2287,7 +2287,10 @@ div#membership_popup #create_customer .action-btn {
 div#membership_popup #create_customer .action-btn p {
     grid-area: but;
 }
-
+div#rectable {
+    display: flex;
+    flex-direction: column;
+}
 #faq_inner .guidance_cont { text-align: left;}
 #faq_inner.score_sec p { font-size: 15px; margin-bottom: 20px; }
 .sidebar_cont #faq_inner ul li { margin-bottom: 10px; list-style: disc;}
