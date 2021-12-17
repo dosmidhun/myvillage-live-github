@@ -59,8 +59,8 @@ jQuery(function ($) {
 
     });
 
-    $("#popup_sec .member_btn").click(function () {
-      
+    $("#popup_sec .member_btn").on("click", function () {
+       $('#membership_popup').modal('show');
     
 
         $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_register_fields .bold-form-group").addClass("step1");
