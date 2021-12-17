@@ -2319,7 +2319,7 @@ div#membership_popup #create_customer .action-btn p {
 .personalized_cont_inner ul { margin: 0; padding: 0; list-style: none; }
 .personalized_cont_inner ul li { display: inline-block; margin-bottom: 12px;}
 .personalized_cont_inner ul li .pack_img { display: inline-block; vertical-align: middle; margin-right: 10px;}
-.personalized_cont_inner ul li h4 { display: inline-block;  font-size: 16px; line-height: 21px; font-weight: 500; color: #00577F; text-transform: capitalize; margin: 0; }
+.personalized_cont_inner ul li h4 { display: inline-block;  font-size: 16px; line-height: 21px; font-weight: 500; color: #434343; text-transform: capitalize; margin: 0; }
 .personalized_cont_inner ul li.seprt_plus { margin: 0 24px; }
 .dashboard_left_top { margin-bottom: 15px; }
 #shopify-section-page-membership-dashboard .membership_right .top_subtitle { letter-spacing: -1px; }
