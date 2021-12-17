@@ -2716,7 +2716,12 @@ jQuery(function ($) {
 //             if ($(".top_reommend_sec .recrow").length > 5) {
 //                 $(".top_reommend_sec .recseeall").show();
 //             }
+          
+          
+          
+          
             $(".top_reommend_sec .recrow").show();
+          $(".top_reommend_sec .recrow.lifestyleinterventions").css("order","1");
         }
         $(".top_reommend_sec .recrow." + c ).show();
 
