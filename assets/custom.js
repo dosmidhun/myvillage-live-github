@@ -2725,8 +2725,9 @@ jQuery(function ($) {
            $(".top_reommend_sec .recrow.dietaryplans").css("order","2");
            $(".top_reommend_sec .recrow.environmentaltoxinreduction").css("order","3");
            $(".top_reommend_sec .recrow.foodchanges").css("order","4");
-           $(".top_reommend_sec .recrow.nutrientchangesinthediet").css("order","5");
-          $(".top_reommend_sec .recrow.nutritionalsupplementation").css("order","6");
+          $(".top_reommend_sec .recrow.lifestyleinterventions").css("order","5");
+           $(".top_reommend_sec .recrow.nutrientchangesinthediet").css("order","6");
+          $(".top_reommend_sec .recrow.nutritionalsupplementation").css("order","7");
         }
         $(".top_reommend_sec .recrow." + c ).show();
 
