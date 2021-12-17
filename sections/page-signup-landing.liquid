@@ -395,7 +395,13 @@
 
 {% endif %}
 
-
+{% stylesheet %}
+.slideshow-wrapper {
+  .modal-backdrop.fade.in {
+    display: none;
+}
+}
+{% endstylesheet %}
 {% schema %}
   {
     "name": " Signup V2 Landing",
