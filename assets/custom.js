@@ -1474,8 +1474,7 @@ jQuery(function ($) {
                             l = "https://myvillagegreen.com/search?type=product&q=garlic*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Garlic').toLowerCase()) {
-                            console.log("Inside garlic");
-                          	action="Test"
+                            action="Garlic is one of the most widely used and most well researched herbs in the world. Studies show that garlic is beneficial for heart health, promoting healthy blood lipids, and for supporting immune health."
                             l = "https://myvillagegreen.com/search?type=product&q=garlic*";
                             btn_text = "Shop Now";
                         } else if (t===('Ginkgo').toLowerCase()) {
