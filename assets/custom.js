@@ -1291,12 +1291,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Taurine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=taurine*&type=product";
+                          	action="Taurine is a sulfur-containing, antioxidant amino acid that supports osmoregulation (maintenance of concentrations of ions) inside the cell, membrane stabilization, bile acid conjugation, and brain function.";
                             btn_text = "Shop Now";
                         } else if (t===('Proanthocyanidins').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Proanthocyanidins*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Proanthocyanidins').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Proanthocyanidins*&type=product";
+                          	action="Proanthocyanidins, a group of flavonoids found in pine bark, grape seed, and other plant sources";
                             btn_text = "Shop Now";
                         } else if (t===('Carnosine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=carnosine*&type=product";
