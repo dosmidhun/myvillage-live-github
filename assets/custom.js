@@ -1249,6 +1249,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Lycopene').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lycopene*&type=product";
+                          	action="Lycopene is a carotene found in tomatoes. It has both antioxidant and anticancer properties.";
                             btn_text = "Shop Now";
                         } else if (t===('N-acetylcysteine (NAC)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=n-acetyl*+cysteine*&type=product";
