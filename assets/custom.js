@@ -943,7 +943,7 @@ jQuery(function ($) {
                         var nextStep = $(el).closest('.recrow').find('.steps');
                         nextStep.find('.nextmenu').remove();
 
-                        var l = "/search?type=product&q=magnesium";
+                        var l = "";
 //                      var t = $(el).closest('.recrow').find('.rec').text().trim();
                         var t=$(el).closest('.recrow').find('.rec').text().replace('?', '').trim();
                         t = t.toLowerCase();
@@ -2333,7 +2333,7 @@ jQuery(function ($) {
                         }  else {}
 
                         //nextStep.find('a').text(btn_text).prop('href', (action != '' ? 'javascript:void(0)' : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').attr("data-toggle", (action != '' ? 'popover' : ''));
-						nextStep.find('a').text(btn_text).prop('href', (action != '' ? l : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').css("display", (l != '' ? 'block' : 'none'));
+						nextStep.find('a').text(btn_text).prop('href', (action != '' ? l : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').css("display", (l != '' ? 'inline-block' : 'none'));
 
                         $(this).hide();
                        $(el).prop('href', '#').data('content', '<p>' + action + '</p>');
