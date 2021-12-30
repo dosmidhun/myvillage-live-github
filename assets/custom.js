@@ -1123,6 +1123,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take S-Adenosylmethionine (SAM-e)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=SAMe*";
+                          	action:"SAMe (S-adenosylmethionine) is a metabolite that functions as  a donor of methyl groups in over 100 different reactions and contributes to the synthesis, activation and/or metabolism of hormones, neurotransmitters, nucleic acids, phospholipids and proteins. SAMe also helps maintain cognitive health, liver function  joint comfort.and promotes a happy mood.";
                             btn_text = "Shop Now";
                         } else if (t===('Betaine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=betaine*&type=product";
