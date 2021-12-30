@@ -1019,19 +1019,22 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Vitamin C').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+c*";
+                          	action="Vitamin C is a  water-soluble vitamin that  supports healthy collagen synthesis, cartilage and bone development, central nervous system, immune system, antioxidant activity, and blood vessel support.";
                             btn_text = "Shop Now";
                         } else if (t===('Vitamin A').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+a*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Vitamin A').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+a*";
+                          	action="Vitamin A is a fat-soluble vitamin that promotes healthy vision and helps our eyes adapt to light changes, supports immune system health and promotes healthy skin";
                             btn_text = "Shop Now";
                         } else if (t===('Vitamin D').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+d*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Vitamin D').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+d*";
-                            btn_text = "Shop Now";
+                            action="Vitamin D is a fat-soluble vitamin that plays a key role in helping to maintain bone density and bone strength. It also supports cardiovascular health, mental health, skin health, as well as immune system health.";
+                          	btn_text = "Shop Now";
                         } else if (t===('Vitamin E').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+e*";
                             btn_text = "Shop Now";
