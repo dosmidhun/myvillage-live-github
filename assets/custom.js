@@ -950,7 +950,7 @@ jQuery(function ($) {
                         var btn_text = "Shop Now";
                         var action = "";
                         console.log(t);
-                        console.log(t.indexOf(('Vitamin B1').toLowerCase()));
+                        console.log(t.indexOf(('Take Garlic').toLowerCase()));
                         if (t.indexOf(('Vitamin B1').toLowerCase()) != -1) {
                             l = "https://myvillagegreen.com/search?type=product&q=thiamin*";
                             btn_text = "Shop Now";
