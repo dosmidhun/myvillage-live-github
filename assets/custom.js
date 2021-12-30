@@ -1305,12 +1305,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Carnosine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=carnosine*&type=product";
+                          	action="l-Carnosine occurs naturally in the body’s muscle and nervous tissues and is formed by the amino acids alanine and histidine. L-carnosine an antioxidant formula to help the body maintain healthy protein and cellular function in various tissue.";
                             btn_text = "Shop Now";
                         } else if (t===('Resveratrol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Resveratrol*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Resveratrol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Resveratrol*&type=product";
+                          	action="Resveratrol is a compound often associated with the health benefits of red wine, because of its antioxidant and cardioprotectant properties. It promotes cardiovascular health through its antioxidant action and its ability to promote healthy platelet function and maintain healthy arachidonic acid metabolism.";
                             btn_text = "Shop Now";
                         } else if (t===('Zinc Gluconate Lozenges').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Zinc*+Lozenges*&type=product";
@@ -1323,6 +1325,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Betaine HCl').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=betaine*+hcl*&type=product";
+                          	action="Betaine hydrochloride (HCL) is a chemical compound that helps support digestion in the stomach by acting as a supplemental source of hydrochloric acid, also known as stomach acid.";
                             btn_text = "Shop Now";
                         } else if (t===('Strontium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Strontium*&type=product";
