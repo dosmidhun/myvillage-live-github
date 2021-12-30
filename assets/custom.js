@@ -955,7 +955,7 @@ jQuery(function ($) {
                             l = "https://myvillagegreen.com/search?type=product&q=thiamin*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Vitamin B1 (thiamine)').toLowerCase()) {
-                            action="Vitamin B1 is an essential water-soluble vitamin required for carbohydrate metabolism, glucose regulation, antioxidant functions and regulating heart and nerve function . ";
+                            action="Vitamin B1 is an essential water-soluble vitamin required for carbohydrate metabolism, glucose regulation, antioxidant functions and regulating heart and nerve function.";
                             l = "https://myvillagegreen.com/search?type=product&q=thiamin*";
                             btn_text = "Shop Now";
                         } else if (t===('Vitamin B2').toLowerCase()) {
