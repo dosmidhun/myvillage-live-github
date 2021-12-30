@@ -1088,6 +1088,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Magnesium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=magnesium*&type=product";
+                          	action="Magnesium is the most abundant mineral in the body and is required for more than 300 biochemical reactions including bone formation, maintaining a regular heartbeat and balancing blood sugar. Magnesium is also essential for relaxing muscles and plays a role in the formation of ATP, which the body uses as fuel.";
                             btn_text = "Shop Now";
                         } else if (t===('Potassium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=potassium*&type=product";
