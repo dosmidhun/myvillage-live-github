@@ -1235,6 +1235,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Arginine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=arginine*";
+                          	action="Arginine is an amino acid that helps with wound healing, stimulates the immune system, and assists with the formation of several important hormones, including insulin and growth hormone. It also helps relax the blood vessels, improving blood flow.";
                             btn_text = "Shop Now";
                         } else if (t===('Gamma-Linolenic Acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=gamma*+linolenic*+acid*&type=product";
