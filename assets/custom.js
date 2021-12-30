@@ -1158,12 +1158,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Quercetin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=quercetin*&type=product";
+                          	action="Quercetin is one of the most bioactive flavonoids, which are water-soluble plant pigments. It is a powerful antioxidant, antihistamine and anti-inflammatory agent and used to support llergies, asthma, arterisclerosis and eczema.";
                             btn_text = "Shop Now";
                         } else if (t===('Glutamine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=glutamine*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Glutamine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=glutamine*&type=product";
+                          	action="l-Glutamine is the most abundant amino acid in the body and used by the body for tissue repair and gastrointestinal tract support.";
                             btn_text = "Shop Now";
                         } else if (t===('Glycine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=glycine*&type=product";
