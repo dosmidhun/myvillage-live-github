@@ -1005,12 +1005,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Biotin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=biotin*";
+                          	action="Biotin is a member of the B vitamin family, biotin is involved in the biosynthesis of fatty acids, energy production and metabolism and is often used to support healthy skin, nails and hair.";
                             btn_text = "Shop Now";
                         } else if (t===('Choline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=choline*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Choline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=choline*";
+                          	action="Choline is an essential water-soluble nutrient involved in synthesis of phospholipids for the structure of cell membranes, cell messaging, fat transport and DNA synthesis.";
                             btn_text = "Shop Now";
                         } else if (t===('Vitamin C').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+c*";
