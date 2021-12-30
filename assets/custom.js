@@ -1270,6 +1270,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Ipriflavone').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Ipriflavone*&type=product";
+                          	action="Ipriflavone is a synthetic derivative of naturally occurring isoflavones. It supports healthy bone maintenance by promoting secretion of the hormone calcitonin, and maintaining healthy osteoclast activity. Ipriflavone also supports type I collagen and the formation of mineralized bone matrix.";
                             btn_text = "Shop Now";
                         } else if (t===('Vanadyl sulfate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Vanadium*&type=product";
