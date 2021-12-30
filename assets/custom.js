@@ -984,12 +984,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Vitamin B6').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b6*";
+                            action="Vitamin B6 is an essential water-soluble vitamin that helps the body convert protein to energy and works with folic acid and B12 to reduce homocysteine levels.";
                             btn_text = "Shop Now";
                         } else if (t===('Vitamin B12').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b12*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Vitamin B12').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b12*";
+                            action="Vitamin B12 is an essential water-soluble vitamin that is used to form red blood cell, maintain the nervous system and help with energy production.";
                             btn_text = "Shop Now";
                         } else if (t===('Folic Acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=folic*+acid*";
