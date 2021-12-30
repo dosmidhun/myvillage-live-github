@@ -1095,6 +1095,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Potassium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=potassium*&type=product";
+                          	action="Potassium is an essential mineral and electrolyte necessary for the maintenance of regular heart rhythm, blood pressure, neuromuscular functioning, acid levels and water balance.";
                             btn_text = "Shop Now";
                         } else if (t===('Phosphorus').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphorus*";
