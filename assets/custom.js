@@ -1116,6 +1116,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Zinc').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=zinc*&type=product";
+                          	action="Zinc is a mineral that is essential to the work of over 300 enzymes in the body. These enzymes assist in cell reproduction, maintain vision, support the immune system and repair wounds. Zinc is also essential for the healthy storage and metabolism of carbohydrates, as well as the absorption and function of B vitamins.";
                             btn_text = "Shop Now";
                         } else if (t===('S-Adenosylmethionine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=SAMe*";
