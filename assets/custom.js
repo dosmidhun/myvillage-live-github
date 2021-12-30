@@ -2333,7 +2333,7 @@ jQuery(function ($) {
                         }  else {}
 
                         //nextStep.find('a').text(btn_text).prop('href', (action != '' ? 'javascript:void(0)' : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').attr("data-toggle", (action != '' ? 'popover' : ''));
-						nextStep.find('a').text(btn_text).prop('href', (action != '' ? l : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').attr("data-toggle", (action != '' ? '' : ''));
+						nextStep.find('a').text(btn_text).prop('href', (action != '' ? l : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').css("display", (l != '' ? 'block' : 'none'));
 
                         $(this).hide();
                        $(el).prop('href', '#').data('content', '<p>' + action + '</p>');
