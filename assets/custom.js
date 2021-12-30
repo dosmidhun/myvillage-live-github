@@ -1332,24 +1332,28 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Strontium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Strontium*&type=product";
+                          	action="Strontium is a mineral that is similar physical and chemical properties to calcium. Strontium provides all-natural bone support through its ability to naturally increase the formation of osteoblasts (cells that build up bone) and slow down the formation of osteoclasts (cells that break down bone tissue), helping to maintain healthy bone density.";
                             btn_text = "Shop Now";
                         } else if (t===('Medium chain triglycerides').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=mct*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Medium Chain Triglycerides (MCTs)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=mct*&type=product";
+                          	action="MCTs (medium-chain triglycerides) are a unique form of dietary fat that have many health benefits. Due to their shorter length, they are easier and more quickly absorbed, digested, and utilized by the body. Incorporating MCTs into the diet helps to provide preferred and sustainable energy source that the body can use for fat metabolism, cognitive health, and cardiovascular health. MCTs also support the microbiome, gut health, and immune health.";
                             btn_text = "Shop Now";
                         } else if (t===('Bile acids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=bile*+acids*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Bile salts').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=bile*+acids*&type=product";
+                          	action="Bile is a digestive liquid  produced in the liver and contains bile salts, which help digest and absorb fats, allow the body to excrete cholesterol as well as promote overall gallbladder and liver function.";
                             btn_text = "Shop Now";
                         } else if (t===('N-acetylglucosamine (NAG)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=NAG*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take N-acetylglucosamine (NAG)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=NAG*&type=product";
+                          	action="N-acetylglucosamine (NAG) promotes the gut's normal mucus layer and the growth of desirable Bifidobacterium bifidum";
                             btn_text = "Shop Now";
                         } else if (t===('Phosphatidylcholine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Phosphatidylcholine*&type=product";
