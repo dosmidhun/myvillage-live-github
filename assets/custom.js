@@ -1474,7 +1474,7 @@ jQuery(function ($) {
                         } else if (t.indexOf(('Take Garlic').toLowerCase()) != -1) {
                             action = "Test";
                             
-                            btn_text = "Shop Now";
+                            btn_text = "Learn More";
                         } else if (t.indexOf(('Ginkgo').toLowerCase()) != -1) {
                             l = "https://myvillagegreen.com/search?type=product&q=ginkgo*";
                             btn_text = "Shop Now";
