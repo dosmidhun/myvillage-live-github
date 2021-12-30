@@ -944,7 +944,8 @@ jQuery(function ($) {
                         nextStep.find('.nextmenu').remove();
 
                         var l = "/search?type=product&q=magnesium";
-                        var t = $(el).closest('.recrow').find('.rec').text().trim();
+//                      var t = $(el).closest('.recrow').find('.rec').text().trim();
+                        var t=$(el).closest('.recrow').find('.rec').text().replace('?', '').trim();
                         t = t.toLowerCase();
                         var btn_text = "Shop Now";
                         var action = "";
