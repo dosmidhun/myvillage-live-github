@@ -1102,12 +1102,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Increase your Phosphorus intake').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphorus*";
+                          	action="Phosphorus is the second most abundant mineral in the body and works with calcium to build and maintain bones and teeth.  Both calcium and phosphorus depend on each other and must maintain a stable ratio of 1:2.";
                             btn_text = "Shop Now";
                         } else if (t===('Selenium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=selenium*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Selenium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=selenium*&type=product";
+                          	action="Selenium is a trace mineral and natural antioxidant that supports a healthy immune system, prevents buildup of fats in the blood vessels and stimulates the thyroid hormones.";
                             btn_text = "Shop Now";
                         } else if (t===('Zinc').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=zinc*&type=product";
