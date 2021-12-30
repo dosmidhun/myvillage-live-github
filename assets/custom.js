@@ -1360,12 +1360,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Phosphatidylcholine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Phosphatidylcholine*&type=product";
+                          	action="Phosphatidylcholine is a major component of the membranes of the liver cells (hepatocytes). As such, it provides significant protection for the liver, probably because good liver health requires the ongoing replacement of old cell membranes with healthy new ones. Phosphatidylcholine also has the potential to decrease the absorption of dietary cholesterol, which helps maintain a normal cholesterol level.";
                             btn_text = "Shop Now";
                         } else if (t===('Chondroitin Sulfate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Chondroitin*+Sulfate*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Chondroitin Sulfate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Chondroitin*+Sulfate*&type=product";
+                          	action="Chondroitin Sulfate is a glycosaminoglycan (GAG) naturally present in many body tissues, and is an especially important component of joint cartilage and synovial tissue. This nutrient thus helps to support the maintenance of healthy, flexible joint tissue and promotes proper joint mobility and comfort.";
                             btn_text = "Shop Now";
                         } else if (t===('Green-lipped mussel').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Green-lipped*+mussel*&type=product";
