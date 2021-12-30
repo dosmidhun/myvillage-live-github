@@ -1186,12 +1186,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take the probiotic Lactobacillus').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=lactobacillus*";
+                          	action='Lactobacillus is a species of "friendly" bacteria that live in our digestive, urinal and genital systems. These "friendly" bacteria help reduce blood cholesterol levels, aid in digestion and enhance nutrient absorption.';
                             btn_text = "Shop Now";
                         } else if (t===('Flavonoids, increase intake').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=flavonoids*";
                             btn_text = "Shop Now";
                         } else if (t===('Increase your Flavonoid intake').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=flavonoids*";
+                          	action="Flavonoids or bioflavonoids  are potent antioxidant compounds found naturally in many fruits and vegetables. Flavonoids help regulate cellular activity and fight off free radicals that cause oxidative stress on your body.  There are many different bioflavonoids, including citrin, eriodictyol, flavones, hesperetin, hesperidin, quercetin, quercetrin, and rutin. The human body cannot produce bioflavonoids, so they must be supplied in the diet";
                             btn_text = "Shop Now";
                         } else if (t===('Melatonin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=melatonin*";
