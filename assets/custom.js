@@ -998,6 +998,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take folic acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=folic*+acid*";
+                          	action="Folic acid is a water-soluble vitamin required for the synthesis of DNA  and RNA, producing red blood cells and helping cell division and growth.";
                             btn_text = "Shop Now";
                         } else if (t===('Biotin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=biotin*";
