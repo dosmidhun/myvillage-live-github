@@ -1081,6 +1081,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Manganese').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=manganese*";
+                          	action="Manganese is a mineral essential for bone, joint and cartilage health  and for the activation of the important antioxidant enzyme superoxide dismutase (SOD).";
                             btn_text = "Shop Now";
                         } else if (t===('Magnesium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=magnesium*&type=product";
