@@ -1277,6 +1277,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Vanadium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Vanadium*&type=product";
+                          	action="Vanadium is a trace mineral from vanadyl sulfate. Vanadium is needed for cellular metabolism and for the formation of bones and teeth. It plays a role in growth and reproduction, and inhibits cholesterol synthesis.";
                             btn_text = "Shop Now";
                         } else if (t===('Chromium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Chromium*&type=product";
