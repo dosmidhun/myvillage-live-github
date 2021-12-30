@@ -948,7 +948,7 @@ jQuery(function ($) {
                         var t=$(el).closest('.recrow').find('.rec').text().replace('?', '').trim();
                         t = t.toLowerCase();
                         var btn_text = "Shop Now";
-                        var action = "";
+                        var action = label.text().trim();
                         console.log(t);
                         console.log(t.indexOf(('Take Garlic').toLowerCase()));
                         if (t===('Vitamin B1').toLowerCase()) {
