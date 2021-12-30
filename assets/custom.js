@@ -1200,30 +1200,35 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Melatonin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=melatonin*";
+                          	action="Melatonin is a natural hormone that controls the body’s internal clock. It is produced at night and secreted by the pineal gland, which is located deep within the brain. Melatonin is used to help modulate the immune system, sleep and protect against degenerative diseases.";
                             btn_text = "Shop Now";
                         } else if (t===('Vitamin K').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=vitamin*+k*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Vitamin K').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=vitamin*+k*&type=product";
+                          	action="Vitamin K is essential for the production of prothrombin, which is necessary for blood clotting. It is also essential for bone formation and repair.";
                             btn_text = "Shop Now";
                         } else if (t===('Dehydroepiandrosterone (DHEA)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=dhea*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take DHEA').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=dhea*&type=product";
+                          	action="DHEA (Dehydroephiandrosterone) is a most abundant adrenal steroid hormone in the body produced  by the adrenal glands, which is eventually converted into other hormones, such as progesterone, testosterone, and estrogen. These hormones regulate fat and mineral metabolism, endocrine and reproductive function, and energy levels.";
                             btn_text = "Shop Now";
                         } else if (t===('L-Carnitine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=dhea*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take L-carnitine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=dhea*&type=product";
+                          	action="L-carnitine is an amino acid found abundantly in skeletal and heart muscle. L-carnitine stimulates the breakdown of fat to produce energy and prevents the buildup of fat in the heart, skeletal muscles, and liver.";
                             btn_text = "Shop Now";
                         } else if (t===('Branched-Chain Amino Acids (BCAA)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bcaa*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Branched-Chain Amino Acids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bcaa*";
+                          	action="The branched-chain amino acids: valine, isoleucine and leucine cannot be produced by the body and must be consumed through the diet or supplements. They are essential to building and maintaining muscle tissue and have long been used by athletes and other active individuals to activate protein synthesis and reduce muscle breakdown caused by intense training or physical activity.";
                             btn_text = "Shop Now";
                         } else if (t===('Arginine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=arginine*";
