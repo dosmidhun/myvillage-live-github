@@ -1172,12 +1172,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Glycine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=glycine*&type=product";
+                          	action="Glycine is an inhibitory neurotransmitter that supports relaxation and healthy stress management. It also enhances detoxification by increasing glutathione production. The amino acid glycine plays a key role in maintaining a healthy central nervous system (CNS). It is considered one of the most important inhibitory neurotransmitters in the CNS, particularly in the brainstem and spinal cord.";
                             btn_text = "Shop Now";
                         } else if (t===('5-HTP').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=5-htp*";
                             btn_text = "Shop Now";
                         } else if (t===('Take 5-HTP').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=5-htp*";
+                          	action="5-HTP (5-Hydroxy L-Tryptophan)  is the intermediate metabolite produced when the body initiates the process of converting the essential amino acid L-tryptophan to serotonin. Serotonin levels in the body are associated with the regulation of sleep, mood, aggression, appetite, temperature, sexual behavior, and pain sensation.Supplementing with 5-HTP to facilitate serotonin production is preferable to supplementing with L-tryptophan because, unlike L-tryptophan, 5-HTP cannot be shunted into niacin or protein production.";
                             btn_text = "Shop Now";
                         } else if (t===('Lactobacillus species').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=lactobacillus*";
