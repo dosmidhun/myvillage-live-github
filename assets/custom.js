@@ -1040,6 +1040,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Vitamin E').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+e*";
+                          	action="Vitamin E is important fat soluble antioxidant that helps to protect cell membranes against free radical damage. It also plays a role in wound healing, improving insulin function, and protecting the body from degenerative diseases, such as cancer, cardiovascular disease, and Alzheimer's disease";
                             btn_text = "Shop Now";
                         } else if (t===('Mixed Carotenoids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=carotenoids*";
@@ -1052,18 +1053,21 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Calcium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=calcium*";
+                          	action="Calcium is the most abundant mineral in the body and necessary for building and maintaining strong bones and teeth. 99% of calcoium is stored in the bones and the remaining 1% is necessary for proper muscle growth, blood clotting and regular heartbeat.";
                             btn_text = "Shop Now";
                         } else if (t===('Copper').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=copper*";
                             btn_text = "Shop Now";
                         } else if (t===('Increase your Copper intake').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=copper*";
+                          	action="Copper is an essential trace mineral that plays a key role in the formation of bone, red blood cells and collagen and is necessary for the proper absorption and utilization of iron.";
                             btn_text = "Shop Now";
                         } else if (t===('Iron').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=iron*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Iron').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=iron*";
+                          	action="Iron is a trace mineral found in the hemoglocbin molecule of red blood cells, which carries oxygen from the lungs to the rest of the body.  Iron promotes normal red blood cell production and supports energy utilization.";
                             btn_text = "Shop Now";
                         } else if (t===('Iodine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=iodine*";
