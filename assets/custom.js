@@ -1242,6 +1242,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Gamma-Linolenic Acid (GLA)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=gamma*+linolenic*+acid*&type=product";
+                          	action="Gamma-linolenic acid (GLA) is an omega-6 fatty acid found in evening primrose oil (EPO), borage oil, and black currant seed oil and is known for its anti-inflammatory properties and  helping prevent hardening of the arteries.";
                             btn_text = "Shop Now";
                         } else if (t===('Lycopene').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lycopene*&type=product";
