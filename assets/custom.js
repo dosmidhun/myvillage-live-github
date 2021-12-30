@@ -1284,6 +1284,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Chromium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Chromium*&type=product";
+                          	action="Chromium is an essential trace mineral that helps the body maintain healthy levels of cholesterol and blood sugar, in addition to assisting with the synthesis of cholesterol, fats, and proteins.";
                             btn_text = "Shop Now";
                         } else if (t===('Taurine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=taurine*&type=product";
