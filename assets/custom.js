@@ -1137,6 +1137,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take CoQ10').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=coq10*";
+                          	action="CoQ10, also known as ubiquinone, a name that signifies its ubiquitous (widespread) distribution in the human body, particularly the heart. This  fat-soluble, antioxidant is essential for healthy heart function and is  used by the body to transform food into fuel for the body, ATP.";
                             btn_text = "Shop Now";
                         } else if (t===('Lipoic Acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lipoic*+acid*&type=product";
