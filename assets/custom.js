@@ -962,6 +962,7 @@ jQuery(function ($) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b2*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Vitamin B2 (riboflavin)').toLowerCase()) {
+                            action="Vitamin B2 is an essential water-soluble vitamin needed for energy metabolism, adrenal function and maintaining heathy skin.";
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b2*";
                             btn_text = "Shop Now";
                         } else if (t===('Niacinamide').toLowerCase()) {
@@ -970,12 +971,14 @@ jQuery(function ($) {
                         } else if (t===('Supplement with niacinamide (Vitamin B3)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=Niacinamide";
                             btn_text = "Shop Now";
+                            action="Niacinamide is a form of vitamin B3, this essential water-soluble vitamin is required for the proper function of fats and sugars in the body and to maintain healthy cells.";
                         } else if (t===('Pantothenic Acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=Pantothenic*+Acid*";
                             btn_text = "Shop Now";
                         } else if (t===('Take pantothenic acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=Pantothenic*+Acid*";
                             btn_text = "Shop Now";
+                            action="Vitamin B5 or pantothenic acid is an essential water-soluble vitamin required to form coenzyme-A, which helps to synthesize and metabolize proteins, carbohydrates, and fats, and turn them into usable energy.";
                         } else if (t===('Vitamin B6').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b6*";
                             btn_text = "Shop Now";
