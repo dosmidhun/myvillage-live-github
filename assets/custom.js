@@ -2329,7 +2329,7 @@ jQuery(function ($) {
                         }else if (t.indexOf(('Apply Capsaicin cream').toLowerCase()) != -1) {
                             action = "Apply Capsaicin cream to affected areas to reduce pain and itching, 2-3 times per day.";
                             btn_text = "Learn More";
-                        }  else {}
+                        }  else {console.log(t,"Inside last else");}
 
                         nextStep.find('a').text(btn_text).prop('href', (action != '' ? 'javascript:void(0)' : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').attr("data-toggle", (action != '' ? 'popover' : ''));
 
