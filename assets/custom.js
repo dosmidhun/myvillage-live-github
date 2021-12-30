@@ -1374,6 +1374,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Green-lipped Mussel').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Green-lipped*+mussel*&type=product";
+                          	action="Green-lipped mussel or perna provides key building blocks to support the structural integrity and maintenance of joints, ligaments, and tendons.";
                             btn_text = "Shop Now";
                         } else if (t===('Glucosamine sulfate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Glucosamine*+sulfate*&type=product";
