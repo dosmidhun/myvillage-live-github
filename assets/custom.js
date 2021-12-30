@@ -1074,6 +1074,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Iodine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=iodine*";
+                          	action="Iodine is a trace element naturally found in table salt that is necessary  for the normal function of the thyroid gland";
                             btn_text = "Shop Now";
                         } else if (t===('Manganese').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=manganese*";
