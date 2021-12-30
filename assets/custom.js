@@ -1130,6 +1130,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Betaine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=betaine*&type=product";
+                          	action="Betaine is a modified amino acid used to decrease high levels of homocysteine in the blood.";
                             btn_text = "Shop Now";
                         } else if (t===('Coenzyme Q10 (Ubiquinone)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=coq10*";
