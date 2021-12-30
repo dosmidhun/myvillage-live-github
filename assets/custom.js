@@ -1256,12 +1256,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take N-acetylcysteine (NAC)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=n-acetyl*+cysteine*&type=product";
+                          	action="N-Acetyl-l-Cysteine (NAC), derivative of the dietary amino acid l-cysteine, is a cellular antioxidant support that specifically promotes healthy lung tissue. N-Acetyl-l-Cysteine (NAC) is a free radical scavenger that supports glutathione levels in tissues.";
                             btn_text = "Shop Now";
                         } else if (t===('Soy Isoflavones').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Soy*+isoflavones*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Soy Isoflavones').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Soy*+isoflavones*&type=product";
+                          	action="Soy isoflavones and their byproducts have demonstrated a wide array of benefits, including supporting cardiovascular, cerebrovascular, metabolic and bone health, as well as healthy hormonal activity and healthy cell division.";
                             btn_text = "Shop Now";
                         } else if (t===('Ipriflavone').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Ipriflavone*&type=product";
