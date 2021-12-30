@@ -951,1385 +951,1385 @@ jQuery(function ($) {
                         var action = "";
                         console.log(t);
                         console.log(t.indexOf(('Take Garlic').toLowerCase()));
-                        if (t.indexOf(('Vitamin B1').toLowerCase()) != -1) {
+                        if (t===('Vitamin B1').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=thiamin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Vitamin B1 (thiamine)').toLowerCase()) != -1) {
+                        } else if (t===('Take Vitamin B1 (thiamine)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=thiamin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Vitamin B2').toLowerCase()) != -1) {
+                        } else if (t===('Vitamin B2').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b2*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Vitamin B2 (riboflavin)').toLowerCase()) != -1) {
+                        } else if (t===('Take Vitamin B2 (riboflavin)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b2*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Niacinamide').toLowerCase()) != -1) {
+                        } else if (t===('Niacinamide').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=Niacinamide";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Supplement with niacinamide (Vitamin B3)').toLowerCase()) != -1) {
+                        } else if (t===('Supplement with niacinamide (Vitamin B3)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=Niacinamide";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Pantothenic Acid').toLowerCase()) != -1) {
+                        } else if (t===('Pantothenic Acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=Pantothenic*+Acid*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take pantothenic acid').toLowerCase()) != -1) {
+                        } else if (t===('Take pantothenic acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=Pantothenic*+Acid*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Vitamin B6').toLowerCase()) != -1) {
+                        } else if (t===('Vitamin B6').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b6*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Vitamin B6').toLowerCase()) != -1) {
+                        } else if (t===('Take Vitamin B6').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b6*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Vitamin B12').toLowerCase()) != -1) {
+                        } else if (t===('Vitamin B12').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b12*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Vitamin B12').toLowerCase()) != -1) {
+                        } else if (t===('Take Vitamin B12').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b12*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Folic Acid').toLowerCase()) != -1) {
+                        } else if (t===('Folic Acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=folic*+acid*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take folic acid').toLowerCase()) != -1) {
+                        } else if (t===('Take folic acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=folic*+acid*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Biotin').toLowerCase()) != -1) {
+                        } else if (t===('Biotin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=biotin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Biotin').toLowerCase()) != -1) {
+                        } else if (t===('Take Biotin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=biotin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Choline').toLowerCase()) != -1) {
+                        } else if (t===('Choline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=choline*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Choline').toLowerCase()) != -1) {
+                        } else if (t===('Take Choline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=choline*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Vitamin C').toLowerCase()) != -1) {
+                        } else if (t===('Vitamin C').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+c*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Vitamin C').toLowerCase()) != -1) {
+                        } else if (t===('Take Vitamin C').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+c*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Vitamin A').toLowerCase()) != -1) {
+                        } else if (t===('Vitamin A').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+a*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Vitamin A').toLowerCase()) != -1) {
+                        } else if (t===('Take Vitamin A').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+a*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Vitamin D').toLowerCase()) != -1) {
+                        } else if (t===('Vitamin D').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+d*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Vitamin D').toLowerCase()) != -1) {
+                        } else if (t===('Take Vitamin D').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+d*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Vitamin E').toLowerCase()) != -1) {
+                        } else if (t===('Vitamin E').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+e*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Vitamin E').toLowerCase()) != -1) {
+                        } else if (t===('Take Vitamin E').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=vitamin*+e*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Mixed Carotenoids').toLowerCase()) != -1) {
+                        } else if (t===('Mixed Carotenoids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=carotenoids*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Mixed Carotenoids').toLowerCase()) != -1) {
+                        } else if (t===('Take Mixed Carotenoids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=carotenoids*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Calcium').toLowerCase()) != -1) {
+                        } else if (t===('Calcium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=calcium*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Calcium').toLowerCase()) != -1) {
+                        } else if (t===('Take Calcium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=calcium*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Copper').toLowerCase()) != -1) {
+                        } else if (t===('Copper').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=copper*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Increase your Copper intake').toLowerCase()) != -1) {
+                        } else if (t===('Increase your Copper intake').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=copper*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Iron').toLowerCase()) != -1) {
+                        } else if (t===('Iron').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=iron*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Iron').toLowerCase()) != -1) {
+                        } else if (t===('Take Iron').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=iron*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Iodine').toLowerCase()) != -1) {
+                        } else if (t===('Iodine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=iodine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Iodine').toLowerCase()) != -1) {
+                        } else if (t===('Take Iodine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=iodine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Manganese').toLowerCase()) != -1) {
+                        } else if (t===('Manganese').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=manganese*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Manganese').toLowerCase()) != -1) {
+                        } else if (t===('Take Manganese').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=manganese*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Magnesium').toLowerCase()) != -1) {
+                        } else if (t===('Magnesium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=magnesium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Magnesium').toLowerCase()) != -1) {
+                        } else if (t===('Take Magnesium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=magnesium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Potassium').toLowerCase()) != -1) {
+                        } else if (t===('Potassium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=potassium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Potassium').toLowerCase()) != -1) {
+                        } else if (t===('Take Potassium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=potassium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Phosphorus').toLowerCase()) != -1) {
+                        } else if (t===('Phosphorus').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphorus*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Increase your Phosphorus intake').toLowerCase()) != -1) {
+                        } else if (t===('Increase your Phosphorus intake').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphorus*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Selenium').toLowerCase()) != -1) {
+                        } else if (t===('Selenium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=selenium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Selenium').toLowerCase()) != -1) {
+                        } else if (t===('Take Selenium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=selenium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Zinc').toLowerCase()) != -1) {
+                        } else if (t===('Zinc').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=zinc*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Zinc').toLowerCase()) != -1) {
+                        } else if (t===('Take Zinc').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=zinc*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('S-Adenosylmethionine').toLowerCase()) != -1) {
+                        } else if (t===('S-Adenosylmethionine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=SAMe*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take S-Adenosylmethionine (SAM-e)').toLowerCase()) != -1) {
+                        } else if (t===('Take S-Adenosylmethionine (SAM-e)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=SAMe*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Betaine').toLowerCase()) != -1) {
+                        } else if (t===('Betaine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=betaine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Betaine').toLowerCase()) != -1) {
+                        } else if (t===('Take Betaine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=betaine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Coenzyme Q10 (Ubiquinone)').toLowerCase()) != -1) {
+                        } else if (t===('Coenzyme Q10 (Ubiquinone)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=coq10*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take CoQ10').toLowerCase()) != -1) {
+                        } else if (t===('Take CoQ10').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=coq10*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Lipoic Acid').toLowerCase()) != -1) {
+                        } else if (t===('Lipoic Acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lipoic*+acid*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Lipoic acid').toLowerCase()) != -1) {
+                        } else if (t===('Take Lipoic acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lipoic*+acid*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Omega-3 fatty acids').toLowerCase()) != -1) {
+                        } else if (t===('Omega-3 fatty acids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=omega*+3*+fatty*+acids*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Omega-3 Fatty Acids').toLowerCase()) != -1) {
+                        } else if (t===('Take Omega-3 Fatty Acids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=omega*+3*+fatty*+acids*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Quercetin').toLowerCase()) != -1) {
+                        } else if (t===('Quercetin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=quercetin*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Quercetin').toLowerCase()) != -1) {
+                        } else if (t===('Take Quercetin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=quercetin*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Glutamine').toLowerCase()) != -1) {
+                        } else if (t===('Glutamine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=glutamine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Glutamine').toLowerCase()) != -1) {
+                        } else if (t===('Take Glutamine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=glutamine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Glycine').toLowerCase()) != -1) {
+                        } else if (t===('Glycine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=glycine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Glycine').toLowerCase()) != -1) {
+                        } else if (t===('Take Glycine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=glycine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('5-HTP').toLowerCase()) != -1) {
+                        } else if (t===('5-HTP').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=5-htp*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take 5-HTP').toLowerCase()) != -1) {
+                        } else if (t===('Take 5-HTP').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=5-htp*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Lactobacillus species').toLowerCase()) != -1) {
+                        } else if (t===('Lactobacillus species').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=lactobacillus*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take the probiotic Lactobacillus').toLowerCase()) != -1) {
+                        } else if (t===('Take the probiotic Lactobacillus').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=lactobacillus*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Flavonoids, increase intake').toLowerCase()) != -1) {
+                        } else if (t===('Flavonoids, increase intake').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=flavonoids*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Increase your Flavonoid intake').toLowerCase()) != -1) {
+                        } else if (t===('Increase your Flavonoid intake').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=flavonoids*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Melatonin').toLowerCase()) != -1) {
+                        } else if (t===('Melatonin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=melatonin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Melatonin').toLowerCase()) != -1) {
+                        } else if (t===('Take Melatonin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=melatonin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Vitamin K').toLowerCase()) != -1) {
+                        } else if (t===('Vitamin K').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=vitamin*+k*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Vitamin K').toLowerCase()) != -1) {
+                        } else if (t===('Take Vitamin K').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=vitamin*+k*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Dehydroepiandrosterone (DHEA)').toLowerCase()) != -1) {
+                        } else if (t===('Dehydroepiandrosterone (DHEA)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=dhea*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take DHEA').toLowerCase()) != -1) {
+                        } else if (t===('Take DHEA').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=dhea*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('L-Carnitine').toLowerCase()) != -1) {
+                        } else if (t===('L-Carnitine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=dhea*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take L-carnitine').toLowerCase()) != -1) {
+                        } else if (t===('Take L-carnitine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=dhea*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Branched-Chain Amino Acids (BCAA)').toLowerCase()) != -1) {
+                        } else if (t===('Branched-Chain Amino Acids (BCAA)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bcaa*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Branched-Chain Amino Acids').toLowerCase()) != -1) {
+                        } else if (t===('Take Branched-Chain Amino Acids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bcaa*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Arginine').toLowerCase()) != -1) {
+                        } else if (t===('Arginine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=arginine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Arginine').toLowerCase()) != -1) {
+                        } else if (t===('Take Arginine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=arginine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Gamma-Linolenic Acid').toLowerCase()) != -1) {
+                        } else if (t===('Gamma-Linolenic Acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=gamma*+linolenic*+acid*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Gamma-Linolenic Acid (GLA)').toLowerCase()) != -1) {
+                        } else if (t===('Take Gamma-Linolenic Acid (GLA)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=gamma*+linolenic*+acid*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Lycopene').toLowerCase()) != -1) {
+                        } else if (t===('Lycopene').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lycopene*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Lycopene').toLowerCase()) != -1) {
+                        } else if (t===('Take Lycopene').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lycopene*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('N-acetylcysteine (NAC)').toLowerCase()) != -1) {
+                        } else if (t===('N-acetylcysteine (NAC)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=n-acetyl*+cysteine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take N-acetylcysteine (NAC)').toLowerCase()) != -1) {
+                        } else if (t===('Take N-acetylcysteine (NAC)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=n-acetyl*+cysteine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Soy Isoflavones').toLowerCase()) != -1) {
+                        } else if (t===('Soy Isoflavones').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Soy*+isoflavones*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Soy Isoflavones').toLowerCase()) != -1) {
+                        } else if (t===('Take Soy Isoflavones').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Soy*+isoflavones*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Ipriflavone').toLowerCase()) != -1) {
+                        } else if (t===('Ipriflavone').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Ipriflavone*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Ipriflavone').toLowerCase()) != -1) {
+                        } else if (t===('Take Ipriflavone').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Ipriflavone*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Vanadyl sulfate').toLowerCase()) != -1) {
+                        } else if (t===('Vanadyl sulfate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Vanadium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Vanadium').toLowerCase()) != -1) {
+                        } else if (t===('Take Vanadium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Vanadium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Chromium').toLowerCase()) != -1) {
+                        } else if (t===('Chromium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Chromium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Chromium').toLowerCase()) != -1) {
+                        } else if (t===('Take Chromium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Chromium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Taurine').toLowerCase()) != -1) {
+                        } else if (t===('Taurine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=taurine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Taurine').toLowerCase()) != -1) {
+                        } else if (t===('Take Taurine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=taurine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Proanthocyanidins').toLowerCase()) != -1) {
+                        } else if (t===('Proanthocyanidins').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Proanthocyanidins*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Proanthocyanidins').toLowerCase()) != -1) {
+                        } else if (t===('Take Proanthocyanidins').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Proanthocyanidins*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Carnosine').toLowerCase()) != -1) {
+                        } else if (t===('Carnosine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=carnosine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Carnosine').toLowerCase()) != -1) {
+                        } else if (t===('Take Carnosine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=carnosine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Resveratrol').toLowerCase()) != -1) {
+                        } else if (t===('Resveratrol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Resveratrol*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Resveratrol').toLowerCase()) != -1) {
+                        } else if (t===('Take Resveratrol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Resveratrol*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Zinc Gluconate Lozenges').toLowerCase()) != -1) {
+                        } else if (t===('Zinc Gluconate Lozenges').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Zinc*+Lozenges*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Zinc Gluconate lozenges').toLowerCase()) != -1) {
+                        } else if (t===('Take Zinc Gluconate lozenges').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Zinc*+Lozenges*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Betaine HCl').toLowerCase()) != -1) {
+                        } else if (t===('Betaine HCl').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=betaine*+hcl*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Betaine HCl').toLowerCase()) != -1) {
+                        } else if (t===('Take Betaine HCl').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=betaine*+hcl*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Strontium').toLowerCase()) != -1) {
+                        } else if (t===('Strontium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Strontium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Strontium').toLowerCase()) != -1) {
+                        } else if (t===('Take Strontium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Strontium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Medium chain triglycerides').toLowerCase()) != -1) {
+                        } else if (t===('Medium chain triglycerides').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=mct*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Medium Chain Triglycerides (MCTs)').toLowerCase()) != -1) {
+                        } else if (t===('Take Medium Chain Triglycerides (MCTs)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=mct*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Bile acids').toLowerCase()) != -1) {
+                        } else if (t===('Bile acids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=bile*+acids*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Bile salts').toLowerCase()) != -1) {
+                        } else if (t===('Take Bile salts').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=bile*+acids*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('N-acetylglucosamine (NAG)').toLowerCase()) != -1) {
+                        } else if (t===('N-acetylglucosamine (NAG)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=NAG*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take N-acetylglucosamine (NAG)').toLowerCase()) != -1) {
+                        } else if (t===('Take N-acetylglucosamine (NAG)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=NAG*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Phosphatidylcholine').toLowerCase()) != -1) {
+                        } else if (t===('Phosphatidylcholine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Phosphatidylcholine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Phosphatidylcholine').toLowerCase()) != -1) {
+                        } else if (t===('Take Phosphatidylcholine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Phosphatidylcholine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Chondroitin Sulfate').toLowerCase()) != -1) {
+                        } else if (t===('Chondroitin Sulfate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Chondroitin*+Sulfate*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Chondroitin Sulfate').toLowerCase()) != -1) {
+                        } else if (t===('Take Chondroitin Sulfate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Chondroitin*+Sulfate*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Green-lipped mussel').toLowerCase()) != -1) {
+                        } else if (t===('Green-lipped mussel').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Green-lipped*+mussel*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Green-lipped Mussel').toLowerCase()) != -1) {
+                        } else if (t===('Take Green-lipped Mussel').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Green-lipped*+mussel*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Glucosamine sulfate').toLowerCase()) != -1) {
+                        } else if (t===('Glucosamine sulfate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Glucosamine*+sulfate*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Glucosamine Sulfate').toLowerCase()) != -1) {
+                        } else if (t===('Take Glucosamine Sulfate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Glucosamine*+sulfate*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Saccharomyces boulardii').toLowerCase()) != -1) {
+                        } else if (t===('Saccharomyces boulardii').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Saccharomyces*+boulardii*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Saccharomyces boulardii').toLowerCase()) != -1) {
+                        } else if (t===('Take Saccharomyces boulardii').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Saccharomyces*+boulardii*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Niacin').toLowerCase()) != -1) {
+                        } else if (t===('Niacin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=niacin*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Niacin').toLowerCase()) != -1) {
+                        } else if (t===('Take Niacin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=niacin*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Lipase').toLowerCase()) != -1) {
+                        } else if (t===('Lipase').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Lipase*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Lipase').toLowerCase()) != -1) {
+                        } else if (t===('Take Lipase').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Lipase*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Lutein').toLowerCase()) != -1) {
+                        } else if (t===('Lutein').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Lutein*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Lutein').toLowerCase()) != -1) {
+                        } else if (t===('Take Lutein').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Lutein*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Calcium D-glucarate').toLowerCase()) != -1) {
+                        } else if (t===('Calcium D-glucarate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Calcium*+D-glucarate*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Calcium D-glucarate').toLowerCase()) != -1) {
+                        } else if (t===('Take Calcium D-glucarate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Calcium*+D-glucarate*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Diindolylmethane (DIM)').toLowerCase()) != -1) {
+                        } else if (t===('Diindolylmethane (DIM)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=%28DIM%29*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Diindolylmethane (DIM)').toLowerCase()) != -1) {
+                        } else if (t===('Take Diindolylmethane (DIM)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=%28DIM%29*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('IP-6 (Phytate)').toLowerCase()) != -1) {
+                        } else if (t===('IP-6 (Phytate)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=IP-6*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take IP-6 (Phytate)').toLowerCase()) != -1) {
+                        } else if (t===('Take IP-6 (Phytate)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=IP-6*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Psyllium').toLowerCase()) != -1) {
+                        } else if (t===('Psyllium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Psyllium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Psyllium').toLowerCase()) != -1) {
+                        } else if (t===('Take Psyllium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Psyllium*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Nicotinamidadenindinucleotide (NADH)').toLowerCase()) != -1) {
+                        } else if (t===('Nicotinamidadenindinucleotide (NADH)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=NADH*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take NADH').toLowerCase()) != -1) {
+                        } else if (t===('Take NADH').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=NADH*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Acetylcarnitine').toLowerCase()) != -1) {
+                        } else if (t===('Acetylcarnitine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Acetylcarnitine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Acetylcarnitine').toLowerCase()) != -1) {
+                        } else if (t===('Take Acetylcarnitine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Acetylcarnitine*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Methylsulfonylmethane (MSM)').toLowerCase()) != -1) {
+                        } else if (t===('Methylsulfonylmethane (MSM)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=msm*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Methylsulfonylmethane (MSM)').toLowerCase()) != -1) {
+                        } else if (t===('Take Methylsulfonylmethane (MSM)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=msm*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Thymus extract').toLowerCase()) != -1) {
+                        } else if (t===('Thymus extract').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=thymus*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Thymus Extract').toLowerCase()) != -1) {
+                        } else if (t===('Take Thymus Extract').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=thymus*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Molybdenum').toLowerCase()) != -1) {
+                        } else if (t===('Molybdenum').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Molybdenum*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Molybdenum').toLowerCase()) != -1) {
+                        } else if (t===('Take Molybdenum').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Molybdenum*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Lactase, Oral').toLowerCase()) != -1) {
+                        } else if (t===('Lactase, Oral').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lactase*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Lactase Orally').toLowerCase()) != -1) {
+                        } else if (t===('Take Lactase Orally').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lactase*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Inositol').toLowerCase()) != -1) {
+                        } else if (t===('Inositol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Inositol*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Inositol').toLowerCase()) != -1) {
+                        } else if (t===('Take Inositol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Inositol*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('L-ornithine-L-aspartate').toLowerCase()) != -1) {
+                        } else if (t===('L-ornithine-L-aspartate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=L-ornithine-L-aspartate*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take L-ornithine-L-aspartate').toLowerCase()) != -1) {
+                        } else if (t===('Take L-ornithine-L-aspartate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=L-ornithine-L-aspartate*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Multivitamin/mineral Supplement').toLowerCase()) != -1) {
+                        } else if (t===('Multivitamin/mineral Supplement').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=multivitamin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take a Multivitamin/mineral').toLowerCase()) != -1) {
+                        } else if (t===('Take a Multivitamin/mineral').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=multivitamin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Alkali minerals').toLowerCase()) != -1) {
+                        } else if (t===('Alkali minerals').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphatidylserine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Potassium Citrate').toLowerCase()) != -1) {
+                        } else if (t===('Take Potassium Citrate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphatidylserine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Citicoline').toLowerCase()) != -1) {
+                        } else if (t===('Citicoline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=citicoline*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Citicoline').toLowerCase()) != -1) {
+                        } else if (t===('Take Citicoline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=citicoline*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Phosphatidylserine').toLowerCase()) != -1) {
+                        } else if (t===('Phosphatidylserine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphatidylserine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Phosphatidylserine').toLowerCase()) != -1) {
+                        } else if (t===('Take Phosphatidylserine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphatidylserine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('L-citrulline').toLowerCase()) != -1) {
+                        } else if (t===('L-citrulline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=l-citruline*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take L-citrulline').toLowerCase()) != -1) {
+                        } else if (t===('Take L-citrulline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=l-citruline*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Dehydroepiandrosterone (DHEA) cream').toLowerCase()) != -1) {
+                        } else if (t===('Dehydroepiandrosterone (DHEA) cream').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=dhea*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take DHEA (Dehydroepiandrosterone)').toLowerCase()) != -1) {
+                        } else if (t===('Take DHEA (Dehydroepiandrosterone)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=dhea*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('5-methyltetrahydrofolate (5-MTHF)').toLowerCase()) != -1) {
+                        } else if (t===('5-methyltetrahydrofolate (5-MTHF)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=mthf*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('N-acetylcarnosine, topical').toLowerCase()) != -1) {
+                        } else if (t===('N-acetylcarnosine, topical').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=n-acetyl*+carnosine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Apply N-acetylcarnosine topically').toLowerCase()) != -1) {
+                        } else if (t===('Apply N-acetylcarnosine topically').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=n-acetyl*+carnosine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Ear drops, herbal combination').toLowerCase()) != -1) {
+                        } else if (t===('Ear drops, herbal combination').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ear*+drops*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Apply herbal ear drops').toLowerCase()) != -1) {
+                        } else if (t===('Apply herbal ear drops').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ear*+drops*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Garlic').toLowerCase()) != -1) {
+                        } else if (t===('Garlic').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=garlic*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Garlic').toLowerCase()) != -1) {
-                            action = "Test";
-                            console.log('Insideeeeeeeeeeeeeeeeeeeee',t.indexOf(('Take Garlic').toLowerCase()));
-                            btn_text = "Learn More";
-                        } else if (t.indexOf(('Ginkgo').toLowerCase()) != -1) {
+                        } else if (t===('Take Garlic').toLowerCase()) {
+                            
+                            l = "https://myvillagegreen.com/search?type=product&q=garlic*";
+                            btn_text = "Shop Now";
+                        } else if (t===('Ginkgo').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ginkgo*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Gingko').toLowerCase()) != -1) {
+                        } else if (t===('Take Gingko').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ginkgo*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Indian frankincense').toLowerCase()) != -1) {
+                        } else if (t===('Indian frankincense').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=boswellia*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Indian Frankincense (Boswellia)').toLowerCase()) != -1) {
+                        } else if (t===('Take Indian Frankincense (Boswellia)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=boswellia*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Feverfew').toLowerCase()) != -1) {
+                        } else if (t===('Feverfew').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=feverfew*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Feverfew').toLowerCase()) != -1) {
+                        } else if (t===('Take Feverfew').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=feverfew*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Peppermint oil, enteric coated').toLowerCase()) != -1) {
+                        } else if (t===('Peppermint oil, enteric coated').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=enteric*+coated*+peppermint*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Enteric Coated Peppermint Oil').toLowerCase()) != -1) {
+                        } else if (t===('Take Enteric Coated Peppermint Oil').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=enteric*+coated*+peppermint*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Saint John\'s wort').toLowerCase()) != -1) {
+                        } else if (t===('Saint John\'s wort').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=st*+john%27s*+wort*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Saint John\'s Wort').toLowerCase()) != -1) {
+                        } else if (t===('Take Saint John\'s Wort').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=st*+john%27s*+wort*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Kava').toLowerCase()) != -1) {
+                        } else if (t===('Kava').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=kava*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Kava (Piper methysticum)').toLowerCase()) != -1) {
+                        } else if (t===('Take Kava (Piper methysticum)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=kava*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Ginger').toLowerCase()) != -1) {
+                        } else if (t===('Ginger').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ginger*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Ginger').toLowerCase()) != -1) {
+                        } else if (t===('Take Ginger').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ginger*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Deglycyrrhizinated Licorice (DGL)').toLowerCase()) != -1) {
+                        } else if (t===('Deglycyrrhizinated Licorice (DGL)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=dgl*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Deglycyrrhizinated Licorice (DGL)').toLowerCase()) != -1) {
+                        } else if (t===('Take Deglycyrrhizinated Licorice (DGL)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=dgl*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Indole-3-Carbinol').toLowerCase()) != -1) {
+                        } else if (t===('Indole-3-Carbinol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=indole*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Indole-3-Carbinol').toLowerCase()) != -1) {
+                        } else if (t===('Take Indole-3-Carbinol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=indole*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Chamomile').toLowerCase()) != -1) {
+                        } else if (t===('Chamomile').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=chamomile*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Chamomile').toLowerCase()) != -1) {
+                        } else if (t===('Take Chamomile').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=chamomile*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Pectin, Modified Citrus (MCP)').toLowerCase()) != -1) {
+                        } else if (t===('Pectin, Modified Citrus (MCP)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=modified*+citrus*+pectin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Modified Citrus Pectin (MCP)').toLowerCase()) != -1) {
+                        } else if (t===('Take Modified Citrus Pectin (MCP)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=modified*+citrus*+pectin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Green tea').toLowerCase()) != -1) {
+                        } else if (t===('Green tea').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=green*+tea*+extract*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Green Tea Extract').toLowerCase()) != -1) {
+                        } else if (t===('Take Green Tea Extract').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=green*+tea*+extract*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Curcumin').toLowerCase()) != -1) {
+                        } else if (t===('Curcumin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=curcumin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Curcumin').toLowerCase()) != -1) {
+                        } else if (t===('Take Curcumin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=curcumin*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Bromelain').toLowerCase()) != -1) {
+                        } else if (t===('Bromelain').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bromelain*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Bromelain').toLowerCase()) != -1) {
+                        } else if (t===('Take Bromelain').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bromelain*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Eleuthero').toLowerCase()) != -1) {
+                        } else if (t===('Eleuthero').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=eleuthero*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Eleutherococcus (Siberian Ginseng)').toLowerCase()) != -1) {
+                        } else if (t===('Take Eleutherococcus (Siberian Ginseng)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=eleuthero*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('PSK').toLowerCase()) != -1) {
+                        } else if (t===('PSK').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=turkey*+tail*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take PSK').toLowerCase()) != -1) {
+                        } else if (t===('Take PSK').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=turkey*+tail*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Silymarin').toLowerCase()) != -1) {
+                        } else if (t===('Silymarin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=eleuthero*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Silymarin').toLowerCase()) != -1) {
+                        } else if (t===('Take Silymarin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=eleuthero*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Ashwagandha').toLowerCase()) != -1) {
+                        } else if (t===('Ashwagandha').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ashwagandha*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Ashwagandha').toLowerCase()) != -1) {
+                        } else if (t===('Take Ashwagandha').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ashwagandha*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Korean Ginseng').toLowerCase()) != -1) {
+                        } else if (t===('Korean Ginseng').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=korean*+ginseng*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Korean Ginseng').toLowerCase()) != -1) {
+                        } else if (t===('Take Korean Ginseng').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=korean*+ginseng*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Bitter Melon').toLowerCase()) != -1) {
+                        } else if (t===('Bitter Melon').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bitter*+melon*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Bitter Melon').toLowerCase()) != -1) {
+                        } else if (t===('Take Bitter Melon').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bitter*+melon*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Gymnema').toLowerCase()) != -1) {
+                        } else if (t===('Gymnema').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=gymnema*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Gynmema').toLowerCase()) != -1) {
+                        } else if (t===('Take Gynmema').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=gymnema*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Butterbur').toLowerCase()) != -1) {
+                        } else if (t===('Butterbur').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=butterbur*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Butterbur').toLowerCase()) != -1) {
+                        } else if (t===('Take Butterbur').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=butterbur*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Rhodiola').toLowerCase()) != -1) {
+                        } else if (t===('Rhodiola').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=rhodiola*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Fenugreek').toLowerCase()) != -1) {
+                        } else if (t===('Fenugreek').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=fenugreek*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Fenugreek').toLowerCase()) != -1) {
+                        } else if (t===('Take Fenugreek').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=fenugreek*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Cordyceps').toLowerCase()) != -1) {
+                        } else if (t===('Cordyceps').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cordyceps*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Cordyceps').toLowerCase()) != -1) {
+                        } else if (t===('Take Cordyceps').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cordyceps*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Chasteberry').toLowerCase()) != -1) {
+                        } else if (t===('Chasteberry').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=chaste*+tree*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Chasteberry').toLowerCase()) != -1) {
+                        } else if (t===('Take Chasteberry').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=chaste*+tree*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Cinnamon').toLowerCase()) != -1) {
+                        } else if (t===('Cinnamon').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cinnamon*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Cinnamon').toLowerCase()) != -1) {
+                        } else if (t===('Take Cinnamon').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cinnamon*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Bilberry').toLowerCase()) != -1) {
+                        } else if (t===('Bilberry').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bilberry*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Bilberry').toLowerCase()) != -1) {
+                        } else if (t===('Take Bilberry').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bilberry*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Black cohosh').toLowerCase()) != -1) {
+                        } else if (t===('Black cohosh').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=black*+cohosh*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Black Cohosh').toLowerCase()) != -1) {
+                        } else if (t===('Take Black Cohosh').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=black*+cohosh*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Cats Claw').toLowerCase()) != -1) {
+                        } else if (t===('Cats Claw').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cats*+claw*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Cat\'s Claw').toLowerCase()) != -1) {
+                        } else if (t===('Take Cat\'s Claw').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cats*+claw*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Saw palmetto').toLowerCase()) != -1) {
+                        } else if (t===('Saw palmetto').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=saw*+palmetto*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Saw Palmetto').toLowerCase()) != -1) {
+                        } else if (t===('Take Saw Palmetto').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=saw*+palmetto*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Forskolin').toLowerCase()) != -1) {
+                        } else if (t===('Forskolin').toLowerCase()) {
                             l = "https://myvillagegreen.com/products/coleus-forskohlii-extract?_pos=5&_sid=d7f04984e&_ss=r";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Forskolin').toLowerCase()) != -1) {
+                        } else if (t===('Take Forskolin').toLowerCase()) {
                             l = "https://myvillagegreen.com/products/coleus-forskohlii-extract?_pos=5&_sid=d7f04984e&_ss=r";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Goldenseal').toLowerCase()) != -1) {
+                        } else if (t===('Goldenseal').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=goldenseal*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Goldenseal').toLowerCase()) != -1) {
+                        } else if (t===('Take Goldenseal').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=goldenseal*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Mastic gum').toLowerCase()) != -1) {
+                        } else if (t===('Mastic gum').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=mastic*+gum*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Mastic Gum').toLowerCase()) != -1) {
+                        } else if (t===('Take Mastic Gum').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=mastic*+gum*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('White Willow Bark').toLowerCase()) != -1) {
+                        } else if (t===('White Willow Bark').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=willow*+bark*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take White Willow Bark').toLowerCase()) != -1) {
+                        } else if (t===('Take White Willow Bark').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=willow*+bark*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Echinacea').toLowerCase()) != -1) {
+                        } else if (t===('Echinacea').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=echinacea*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Echinacea').toLowerCase()) != -1) {
+                        } else if (t===('Take Echinacea').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=echinacea*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Hawthorn').toLowerCase()) != -1) {
+                        } else if (t===('Hawthorn').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=hawthorn*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Hawthorn').toLowerCase()) != -1) {
+                        } else if (t===('Take Hawthorn').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=hawthorn*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Berberine').toLowerCase()) != -1) {
+                        } else if (t===('Berberine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=berberine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Berberine').toLowerCase()) != -1) {
+                        } else if (t===('Take Berberine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=berberine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Huperzine-A').toLowerCase()) != -1) {
+                        } else if (t===('Huperzine-A').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=huperzine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Huperzine-A').toLowerCase()) != -1) {
+                        } else if (t===('Take Huperzine-A').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=huperzine*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Yohimbe').toLowerCase()) != -1) {
+                        } else if (t===('Yohimbe').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=yohimbe*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Yohimbe').toLowerCase()) != -1) {
+                        } else if (t===('Take Yohimbe').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=yohimbe*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Dong quai').toLowerCase()) != -1) {
+                        } else if (t===('Dong quai').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=dong*+quai*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Dong quai').toLowerCase()) != -1) {
+                        } else if (t===('Take Dong quai').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=dong*+quai*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Devil\'s Claw').toLowerCase()) != -1) {
+                        } else if (t===('Devil\'s Claw').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=devil%27s*+claw*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Devil\'s Claw').toLowerCase()) != -1) {
+                        } else if (t===('Take Devil\'s Claw').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=devil%27s*+claw*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Valerian').toLowerCase()) != -1) {
+                        } else if (t===('Valerian').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=valerian*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Valerian').toLowerCase()) != -1) {
+                        } else if (t===('Take Valerian').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=valerian*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Licorice').toLowerCase()) != -1) {
+                        } else if (t===('Licorice').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=licorice*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Licorice').toLowerCase()) != -1) {
+                        } else if (t===('Take Licorice').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=licorice*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Oregano').toLowerCase()) != -1) {
+                        } else if (t===('Oregano').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=oregano*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Oregano').toLowerCase()) != -1) {
+                        } else if (t===('Take Oregano').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=oregano*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Cascara').toLowerCase()) != -1) {
+                        } else if (t===('Cascara').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cascara*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Cascara').toLowerCase()) != -1) {
+                        } else if (t===('Take Cascara').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cascara*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Senna').toLowerCase()) != -1) {
+                        } else if (t===('Senna').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=senna*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Senna').toLowerCase()) != -1) {
+                        } else if (t===('Take Senna').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=senna*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Andrographis').toLowerCase()) != -1) {
+                        } else if (t===('Andrographis').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=andrographis*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Andrographis').toLowerCase()) != -1) {
+                        } else if (t===('Take Andrographis').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=andrographis*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Phytosterols').toLowerCase()) != -1) {
+                        } else if (t===('Phytosterols').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phytosterols*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Phytosterols').toLowerCase()) != -1) {
+                        } else if (t===('Take Phytosterols').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phytosterols*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Red clover').toLowerCase()) != -1) {
+                        } else if (t===('Red clover').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=red*+clover*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Red Clover').toLowerCase()) != -1) {
+                        } else if (t===('Take Red Clover').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=red*+clover*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Pygeum').toLowerCase()) != -1) {
+                        } else if (t===('Pygeum').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=pygeum*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Pygeum').toLowerCase()) != -1) {
+                        } else if (t===('Take Pygeum').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=pygeum*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Stinging nettle').toLowerCase()) != -1) {
+                        } else if (t===('Stinging nettle').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=stinging*+nettle*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Stinging Nettle').toLowerCase()) != -1) {
+                        } else if (t===('Take Stinging Nettle').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=stinging*+nettle*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('American Ginseng').toLowerCase()) != -1) {
+                        } else if (t===('American Ginseng').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=american*+ginseng*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take American Ginseng').toLowerCase()) != -1) {
+                        } else if (t===('Take American Ginseng').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=american*+ginseng*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Passionflower').toLowerCase()) != -1) {
+                        } else if (t===('Passionflower').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=passionflower*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Passionflower').toLowerCase()) != -1) {
+                        } else if (t===('Take Passionflower').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=passionflower*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('California poppy (Eschscholzia californica)').toLowerCase()) != -1) {
+                        } else if (t===('California poppy (Eschscholzia californica)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=california*+poppy*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take California Poppy').toLowerCase()) != -1) {
+                        } else if (t===('Take California Poppy').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=california*+poppy*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Lemon balm (Melissa officinalis)').toLowerCase()) != -1) {
+                        } else if (t===('Lemon balm (Melissa officinalis)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=lemon*+balm*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Lemon Balm').toLowerCase()) != -1) {
+                        } else if (t===('Take Lemon Balm').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=lemon*+balm*";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Elderberry').toLowerCase()) != -1) {
+                        } else if (t===('Elderberry').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=elderberry*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Take Elderberry ').toLowerCase()) != -1) {
+                        } else if (t===('Take Elderberry ').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=elderberry*&type=product";
                             btn_text = "Shop Now";
-                        } else if (t.indexOf(('Decrease your intake of foods containing Histamine').toLowerCase()) != -1) {
+                        } else if (t===('Decrease your intake of foods containing Histamine').toLowerCase()) {
                             action = "Identify histamine-rich foods, e.g. red wine, chocolate, aged cheese, etc., and avoid these common food triggers.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Decrease your intake of Histamines').toLowerCase()) != -1) {
+                        } else if (t===('Decrease your intake of Histamines').toLowerCase()) {
                             action = "Identify histamine-rich foods, e.g. red wine, chocolate, aged cheese, etc., and avoid these common food triggers.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Remove Gluten-containing foods from your diet').toLowerCase()) != -1) {
+                        } else if (t===('Remove Gluten-containing foods from your diet').toLowerCase()) {
                             action = "Identify all sources of gluten (wheat, barley, etc.) and remove them from your diet. This requires some close detective work.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid gluten').toLowerCase()) != -1) {
+                        } else if (t===('Avoid gluten').toLowerCase()) {
                             action = "Identify all sources of gluten (wheat, barley, etc.) and remove them from your diet. This requires some close detective work.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid consuming foods containing Tyramine').toLowerCase()) != -1) {
+                        } else if (t===('Avoid consuming foods containing Tyramine').toLowerCase()) {
                             action = "Identify dietary tyramines, e.g. aged cheese, soy sauce, fermented sausage, etc., and remove these triggers from your diet.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid dietary Tyramines').toLowerCase()) != -1) {
+                        } else if (t===('Avoid dietary Tyramines').toLowerCase()) {
                             action = "Identify dietary tyramines, e.g. aged cheese, soy sauce, fermented sausage, etc., and remove these triggers from your diet.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce the amount of Iron you consume').toLowerCase()) != -1) {
+                        } else if (t===('Reduce the amount of Iron you consume').toLowerCase()) {
                             action = "Avoiding animal foods and using an iron skillet are steps to avoid ingesting dietary forms of iron.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut down on dietary Iron').toLowerCase()) != -1) {
+                        } else if (t===('Cut down on dietary Iron').toLowerCase()) {
                             action = "Avoiding animal foods and using an iron skillet are steps to avoid ingesting dietary forms of iron.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase the amount of protein in your diet').toLowerCase()) != -1) {
+                        } else if (t===('Increase the amount of protein in your diet').toLowerCase()) {
                             action = "Identify healthy protein sources, e.g. nuts, seeds, beans, lentils, healthy meats, and start to increase your total intake.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase your protein intake').toLowerCase()) != -1) {
+                        } else if (t===('Increase your protein intake').toLowerCase()) {
                             action = "Identify healthy protein sources, e.g. nuts, seeds, beans, lentils, healthy meats, and start to increase your total intake.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase your dietary fiber').toLowerCase()) != -1) {
+                        } else if (t===('Increase your dietary fiber').toLowerCase()) {
                             action = "Identify good dietary sources of fiber, e.g. fruits/veggies, oats, whole grains, beans, etc., and eat these foods regularly.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase your fiber intake').toLowerCase()) != -1) {
+                        } else if (t===('Increase your fiber intake').toLowerCase()) {
                             action = "Identify good dietary sources of fiber, e.g. fruits/veggies, oats, whole grains, beans, etc., and eat these foods regularly.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Decrease your total dietary fat').toLowerCase()) != -1) {
+                        } else if (t===('Decrease your total dietary fat').toLowerCase()) {
                             action = "Reduce your intake of dietary fats (see the HOW guide) - typically around 20% is considered a reasonable goal.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut down on dietary fat').toLowerCase()) != -1) {
+                        } else if (t===('Cut down on dietary fat').toLowerCase()) {
                             action = "Reduce your intake of dietary fats - typically around 20% is considered a reasonable goal.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Decrease your intake of sugar').toLowerCase()) != -1) {
+                        } else if (t===('Decrease your intake of sugar').toLowerCase()) {
                             action = "There are many sources of dietary sugar - try to eliminate most/all of them, particularly 'added' sugars.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut down on Dietary Sugar').toLowerCase()) != -1) {
+                        } else if (t===('Cut down on Dietary Sugar').toLowerCase()) {
                             action = "There are many sources of dietary sugar - try to eliminate most/all of them, particularly 'added' sugars.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce the amount of saturated fats in your diet').toLowerCase()) != -1) {
+                        } else if (t===('Reduce the amount of saturated fats in your diet').toLowerCase()) {
                             action = "Try to cut down on your intake of saturated fats, e.g. meats, dairy, butter, to no more than 10% of your calories.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut down on saturated fats').toLowerCase()) != -1) {
+                        } else if (t===('Cut down on saturated fats').toLowerCase()) {
                             action = "Try to cut down on your intake of saturated fats, e.g. meats, dairy, butter, to no more than 10% of your calories.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Follow a Calorie-Restricted Diet').toLowerCase()) != -1) {
+                        } else if (t===('Follow a Calorie-Restricted Diet').toLowerCase()) {
                             action = "A calorie restricted diet can have benefits in addition to weight loss - see the HOW section for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce your Calorie intake').toLowerCase()) != -1) {
+                        } else if (t===('Reduce your Calorie intake').toLowerCase()) {
                             action = "A calorie restricted diet can have benefits in addition to weight loss.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Salicylates, Dietary, Decrease Intake').toLowerCase()) != -1) {
+                        } else if (t===('Salicylates, Dietary, Decrease Intake').toLowerCase()) {
                             action = "Identify and avoid foods rich in salicylates, e.g. tea, curry, berries, licorice, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce dietary Salicylate intake').toLowerCase()) != -1) {
+                        } else if (t===('Reduce dietary Salicylate intake').toLowerCase()) {
                             action = "Identify and avoid foods rich in salicylates, e.g. tea, curry, berries, licorice, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce the amount of protein in your diet').toLowerCase()) != -1) {
+                        } else if (t===('Reduce the amount of protein in your diet').toLowerCase()) {
                             action = "Consult with a nutritionist to help reduce your protein intake - this may be necessary for your kidney function.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce your Protein intake').toLowerCase()) != -1) {
+                        } else if (t===('Reduce your Protein intake').toLowerCase()) {
                             action = "Consult with a nutritionist to help reduce your protein intake - this may be necessary for your kidney function.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Decrease your fiber intake').toLowerCase()) != -1) {
+                        } else if (t===('Decrease your fiber intake').toLowerCase()) {
                             action = "Though generally helpful, you may need to cut your dietary fiber intake to 10 grams per day or less.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce your Fiber intake').toLowerCase()) != -1) {
+                        } else if (t===('Reduce your Fiber intake').toLowerCase()) {
                             action = "Though generally helpful, you may need to cut your dietary fiber intake to 10 grams per day or less.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Minimize your intake of Cholesterol-containing foods').toLowerCase()) != -1) {
+                        } else if (t===('Minimize your intake of Cholesterol-containing foods').toLowerCase()) {
                             action = "Reduce your intake of cholesterol, i.e. animal foods. Elimination is more effective than small reductions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut down on dietary Cholesterol').toLowerCase()) != -1) {
+                        } else if (t===('Cut down on dietary Cholesterol').toLowerCase()) {
                             action = "Reduce your intake of cholesterol, i.e. animal foods. Elimination is more effective than small reductions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Limit foods containing trans fatty acids').toLowerCase()) != -1) {
+                        } else if (t===('Limit foods containing trans fatty acids').toLowerCase()) {
                             action = "Aim for a goal of zero dietary trans fats, found in processed foods with \"hydrogenated\" in the ingredient list.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid Trans Fatty Acids').toLowerCase()) != -1) {
+                        } else if (t===('Avoid Trans Fatty Acids').toLowerCase()) {
                             action = "Aim for a goal of zero dietary trans fats, found in processed foods with \"hydrogenated\" in the ingredient list.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid Phenylethylamine containing foods').toLowerCase()) != -1) {
+                        } else if (t===('Avoid Phenylethylamine containing foods').toLowerCase()) {
                             action = "Identify sources of phenylethylamines (e.g. chocolate, aged cheese, etc.), and eliminate them from your diet.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid dietary Phenylethylamines').toLowerCase()) != -1) {
+                        } else if (t===('Avoid dietary Phenylethylamines').toLowerCase()) {
                             action = "Identify sources of phenylethylamines (e.g. chocolate, aged cheese, etc.), and eliminate them from your diet.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Decrease your sodium intake').toLowerCase()) != -1) {
+                        } else if (t===('Decrease your sodium intake').toLowerCase()) {
                             action = "Cut back on your salt intake; aim for no more than 2300mg, and as low as 1500mg per day.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut back on Dietary sodium (salt)').toLowerCase()) != -1) {
+                        } else if (t===('Cut back on Dietary sodium (salt)').toLowerCase()) {
                             action = "Cut back on your salt intake; aim for no more than 2300mg, and as low as 1500mg per day.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase your daily intake of Calories').toLowerCase()) != -1) {
+                        } else if (t===('Increase your daily intake of Calories').toLowerCase()) {
                             action = "Increase your total caloric intake, emphasizing foods that are also nutrient-rich, e.g. fruits/veggies, whole grains, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase your dietary Calorie intake').toLowerCase()) != -1) {
+                        } else if (t===('Increase your dietary Calorie intake').toLowerCase()) {
                             action = "Increase your total caloric intake, emphasizing foods that are also nutrient-rich, e.g. fruits/veggies, whole grains, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Vitamin K, reduce intake').toLowerCase()) != -1) {
+                        } else if (t===('Vitamin K, reduce intake').toLowerCase()) {
                             action = "Monitor your vitamin K intake; you may be consuming too much or too inconsistent amounts given your medications.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce your Vitamin K intake').toLowerCase()) != -1) {
+                        } else if (t===('Reduce your Vitamin K intake').toLowerCase()) {
                             action = "Monitor your vitamin K intake; you may be consuming too much or too inconsistent amounts given your medications.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase your potassium intake').toLowerCase()) != -1) {
+                        } else if (t===('Increase your potassium intake').toLowerCase()) {
                             action = "Emphasize potassium rich foods, e.g. sweet potato, Swiss chard, etc.; this has both cardiovascular and urinary benefits.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase your dietary Potassium intake').toLowerCase()) != -1) {
+                        } else if (t===('Increase your dietary Potassium intake').toLowerCase()) {
                             action = "Emphasize potassium rich foods, e.g. sweet potato, Swiss chard, etc.; this has both cardiovascular and urinary benefits.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Low Iodine Diet').toLowerCase()) != -1) {
+                        } else if (t===('Low Iodine Diet').toLowerCase()) {
                             action = "Begin eating a diet with a low amount of iodine (See HOW section) - this may improve autoimmune thyroid conditions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce your intake of Iodine').toLowerCase()) != -1) {
+                        } else if (t===('Reduce your intake of Iodine').toLowerCase()) {
                             action = "Begin eating a diet with a low amount of iodine - this may improve autoimmune thyroid conditions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Decrease your alcohol consumption').toLowerCase()) != -1) {
+                        } else if (t===('Decrease your alcohol consumption').toLowerCase()) {
                             action = "Reduce your alcohol intake; a high intake is linked to cardiovascular and overall mortality.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut back on Alcohol consumption').toLowerCase()) != -1) {
+                        } else if (t===('Cut back on Alcohol consumption').toLowerCase()) {
                             action = "Reduce your alcohol intake; a high intake is linked to cardiovascular and overall mortality.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Try doing Biofeedback or Meditation or Relaxation Exercise').toLowerCase()) != -1) {
+                        } else if (t===('Try doing Biofeedback or Meditation or Relaxation Exercise').toLowerCase()) {
                             action = "Find a technique, e.g. biofeedback, meditation, etc., which helps you to reduce the effects of stress - See the HOW section.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Try Biofeedback/Meditation/Relaxation').toLowerCase()) != -1) {
+                        } else if (t===('Try Biofeedback/Meditation/Relaxation').toLowerCase()) {
                             action = "Find a technique, e.g. biofeedback, meditation, etc., which helps you to reduce the effects of stress - See the HOW section.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Quit smoking').toLowerCase()) != -1) {
+                        } else if (t===('Quit smoking').toLowerCase()) {
                             action = "Few interventions have as powerful an effect as smoking cessation - see our HOW section, and find help to quit.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Quit smoking').toLowerCase()) != -1) {
+                        } else if (t===('Quit smoking').toLowerCase()) {
                             action = "Few interventions have as powerful an effect as smoking cessation - see our HOW section, and find help to quit.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Consider switching to an Non-Hormonal Contraceptive method').toLowerCase()) != -1) {
+                        } else if (t===('Consider switching to an Non-Hormonal Contraceptive method').toLowerCase()) {
                             action = "Oral contraceptives, while effective, may have adverse effects. Consider switching to a non-hormonal method, e.g. IUD, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Consider a Non-hormonal Contraceptive').toLowerCase()) != -1) {
+                        } else if (t===('Consider a Non-hormonal Contraceptive').toLowerCase()) {
                             action = "Oral contraceptives, while effective, may have adverse effects. Consider switching to a non-hormonal method, e.g. IUD, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Exercise for 150 minutes/week at a moderate aerobic rate').toLowerCase()) != -1) {
+                        } else if (t===('Exercise for 150 minutes/week at a moderate aerobic rate').toLowerCase()) {
                             action = "Exercise on average 30 minutes per day, most days - this may include walking, jogging, dancing, stair climbing, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Aim for 150 minutes aerobic exercise/week').toLowerCase()) != -1) {
+                        } else if (t===('Aim for 150 minutes aerobic exercise/week').toLowerCase()) {
                             action = "Exercise on average 30 minutes per day, most days - this may include walking, jogging, dancing, stair climbing, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Exercise 300 minutes/week at a moderate aerobic rate').toLowerCase()) != -1) {
+                        } else if (t===('Exercise 300 minutes/week at a moderate aerobic rate').toLowerCase()) {
                             action = "Exercise on average 60 minutes per day, most days - this may include walking, jogging, dancing, stair climbing, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Aim for 300 minutes aerobic exercise/week').toLowerCase()) != -1) {
+                        } else if (t===('Aim for 300 minutes aerobic exercise/week').toLowerCase()) {
                             action = "Exercise on average 60 minutes per day, most days - this may include walking, jogging, dancing, stair climbing, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add Resistance Training to your exercise plan: moderate intensity').toLowerCase()) != -1) {
+                        } else if (t===('Add Resistance Training to your exercise plan: moderate intensity').toLowerCase()) {
                             action = "Begin resistance training - this means adding exercise designed to increase muscle mass/strength. See HOW for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add in Resistance Training').toLowerCase()) != -1) {
+                        } else if (t===('Add in Resistance Training').toLowerCase()) {
                             action = "Begin resistance training - this means adding exercise designed to increase muscle mass/strength.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add Resistance Training to your exercise plan: light intensity').toLowerCase()) != -1) {
+                        } else if (t===('Add Resistance Training to your exercise plan: light intensity').toLowerCase()) {
                             action = "Start adding in light strength training to increase your muscle strength and mass. See HOW for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add light Resistance Training').toLowerCase()) != -1) {
+                        } else if (t===('Add light Resistance Training').toLowerCase()) {
                             action = "Start adding in light strength training to increase your muscle strength and mass.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Kegel exercises').toLowerCase()) != -1) {
+                        } else if (t===('Kegel exercises').toLowerCase()) {
                             action = "Identify the right muscles by stopping urination midstream. Practice contracting these for longer duration, throughout the day.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Do daily Kegel Exercises').toLowerCase()) != -1) {
+                        } else if (t===('Do daily Kegel Exercises').toLowerCase()) {
                             action = "Identify the right muscles by stopping urination midstream. Practice contracting these for longer duration, throughout the day.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Improve your Sleep Habits').toLowerCase()) != -1) {
+                        } else if (t===('Improve your Sleep Habits').toLowerCase()) {
                             action = "Review our HOW section to identify harmful sleep behaviors, e.g. caffeine, screens, etc., and start developing good habits.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Improve your Sleep Habits').toLowerCase()) != -1) {
+                        } else if (t===('Improve your Sleep Habits').toLowerCase()) {
                             action = "Review our HOW section to identify harmful sleep behaviors, e.g. caffeine, screens, etc., and start developing good habits.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Include Hamstring stretches in your exercise plan').toLowerCase()) != -1) {
+                        } else if (t===('Include Hamstring stretches in your exercise plan').toLowerCase()) {
                             action = "Stretch your hamstrings regularly (See HOW section) - this includes holding a stretch for at least 30-45 seconds.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add Hamstring Stretches').toLowerCase()) != -1) {
+                        } else if (t===('Add Hamstring Stretches').toLowerCase()) {
                             action = "Stretch your hamstrings regularly - this includes holding a stretch for at least 30-45 seconds.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add lumbar support in the car').toLowerCase()) != -1) {
+                        } else if (t===('Add lumbar support in the car').toLowerCase()) {
                             action = "Begin using a lumbar support pad, especially while driving. These are widely available and provide relief.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Use a Lumbar Support Pad').toLowerCase()) != -1) {
+                        } else if (t===('Use a Lumbar Support Pad').toLowerCase()) {
                             action = "Begin using a lumbar support pad, especially while driving. These are widely available and provide relief.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Use proper lifting techniques').toLowerCase()) != -1) {
+                        } else if (t===('Use proper lifting techniques').toLowerCase()) {
                             action = "Make sure when you lift anything heavy, while exercising or not, use correct techniques to avoid injury.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Begin doing Core Body strengthening exercises').toLowerCase()) != -1) {
+                        } else if (t===('Begin doing Core Body strengthening exercises').toLowerCase()) {
                             action = "Begin adding core strengthening exercises to protect against injury - See our HOW section for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add Core Body Strengthening Exercise').toLowerCase()) != -1) {
+                        } else if (t===('Add Core Body Strengthening Exercise').toLowerCase()) {
                             action = "Begin adding core strengthening exercises to protect against injury - See our HOW section for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Resume normal physical activity levels').toLowerCase()) != -1) {
+                        } else if (t===('Resume normal physical activity levels').toLowerCase()) {
                             action = "Rather than bed rest, getting back to normal activity as soon as possible is more effective following an injury.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Get back to normal physical activity').toLowerCase()) != -1) {
+                        } else if (t===('Get back to normal physical activity').toLowerCase()) {
                             action = "Rather than bed rest, getting back to normal activity as soon as possible is more effective following an injury.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Hepatitis B Vaccine').toLowerCase()) != -1) {
+                        } else if (t===('Hepatitis B Vaccine').toLowerCase()) {
                             action = "The hepatitis B vaccine is strongly recommended for some populations, including health care workers, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Get vaccinated for Hepatitis B').toLowerCase()) != -1) {
+                        } else if (t===('Get vaccinated for Hepatitis B').toLowerCase()) {
                             action = "The hepatitis B vaccine is strongly recommended for some populations, including health care workers, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Hepatitis A Vaccine').toLowerCase()) != -1) {
+                        } else if (t===('Hepatitis A Vaccine').toLowerCase()) {
                             action = "The hepatitis A vaccine is recommended for those with high risk, e.g. those in areas of high exposure.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Get vaccinated for Hepatitis A').toLowerCase()) != -1) {
+                        } else if (t===('Get vaccinated for Hepatitis A').toLowerCase()) {
                             action = "The hepatitis A vaccine is recommended for those with high risk, e.g. those in areas of high exposure.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce your exposure to second hand smoke').toLowerCase()) != -1) {
+                        } else if (t===('Reduce your exposure to second hand smoke').toLowerCase()) {
                             action = "More data is emerging on the dangers of second-hand smoke - it may be more hazardous than smoking, as it bypasses any filters.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid Second Hand Smoke').toLowerCase()) != -1) {
+                        } else if (t===('Avoid Second Hand Smoke').toLowerCase()) {
                             action = "More data is emerging on the dangers of second-hand smoke - it may be more hazardous than smoking, as it bypasses any filters.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('UVB light exposure').toLowerCase()) != -1) {
+                        } else if (t===('UVB light exposure').toLowerCase()) {
                             action = "A short series (20-40 total) of UVB treatments is effective for some skin conditions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Get exposure to UVB Light').toLowerCase()) != -1) {
+                        } else if (t===('Get exposure to UVB Light').toLowerCase()) {
                             action = "A short series (20-40 total) of UVB treatments is effective for some skin conditions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Bright light therapy').toLowerCase()) != -1) {
+                        } else if (t===('Bright light therapy').toLowerCase()) {
                             action = "Start using bright light therapy - full spectrum lights appropriately timed can improve sleep & mood.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Start using Bright Light Therapy').toLowerCase()) != -1) {
+                        } else if (t===('Start using Bright Light Therapy').toLowerCase()) {
                             action = "Start using bright light therapy - full spectrum lights appropriately timed can improve sleep & mood.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cognitive Behavioral Therapy').toLowerCase()) != -1) {
+                        } else if (t===('Cognitive Behavioral Therapy').toLowerCase()) {
                             action = "Find a therapist trained in cognitive behavioral therapy (CBT), a proven method for a number of mental health conditions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Find a Cognitive Behavioral Therapist').toLowerCase()) != -1) {
+                        } else if (t===('Find a Cognitive Behavioral Therapist').toLowerCase()) {
                             action = "Find a therapist trained in cognitive behavioral therapy (CBT), a proven method for a number of mental health conditions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Pacifier restriction').toLowerCase()) != -1) {
+                        } else if (t===('Pacifier restriction').toLowerCase()) {
                             action = "Avoiding or restricting pacifier use may help to reduce the risk for ear infections.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Restrict Pacifier Use').toLowerCase()) != -1) {
+                        } else if (t===('Restrict Pacifier Use').toLowerCase()) {
                             action = "Avoiding or restricting pacifier use may help to reduce the risk for ear infections.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Yoga').toLowerCase()) != -1) {
+                        } else if (t===('Yoga').toLowerCase()) {
                             action = "Joining a regular yoga practice, including exercise for stretching, strengthening, relaxation, etc. has potent health benefits.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add Yoga to your life').toLowerCase()) != -1) {
+                        } else if (t===('Add Yoga to your life').toLowerCase()) {
                             action = "Joining a regular yoga practice, including exercise for stretching, strengthening, relaxation, etc. has potent health benefits.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Chewing tobacco cessation').toLowerCase()) != -1) {
+                        } else if (t===('Chewing tobacco cessation').toLowerCase()) {
                             action = "Take advantage of the many resources for chewing tobacco cessation; this reduces risk for oral cancer and heart disease.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Stop using Chewing Tobacco').toLowerCase()) != -1) {
+                        } else if (t===('Stop using Chewing Tobacco').toLowerCase()) {
                             action = "Take advantage of the many resources for chewing tobacco cessation; this reduces risk for oral cancer and heart disease.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Examine your feet regularly').toLowerCase()) != -1) {
+                        } else if (t===('Examine your feet regularly').toLowerCase()) {
                             action = "You may be at high risk for foot infections; monitoring your feet closely can help to spot these early and receive treatment.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Examine your feet regularly').toLowerCase()) != -1) {
+                        } else if (t===('Examine your feet regularly').toLowerCase()) {
                             action = "You may be at high risk for foot infections; monitoring your feet closely can help to spot these early and receive treatment.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Consider a Protein Redistribution diet').toLowerCase()) != -1) {
+                        } else if (t===('Consider a Protein Redistribution diet').toLowerCase()) {
                             action = "Identify histamine-rich foods, e.g. red wine, chocolate, aged cheese, etc., and avoid these common food triggers.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Consider a Protein Redistribution Diet').toLowerCase()) != -1) {
+                        } else if (t===('Consider a Protein Redistribution Diet').toLowerCase()) {
                             action = "Identify histamine-rich foods, e.g. red wine, chocolate, aged cheese, etc., and avoid these common food triggers.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Follow a Low Glycemic Load/Index Diet').toLowerCase()) != -1) {
+                        } else if (t===('Follow a Low Glycemic Load/Index Diet').toLowerCase()) {
                             action = "Identify all sources of gluten (wheat, barley, etc.) and remove them from your diet. This requires some close detective work.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Follow a Low Glycemic Load/Index Diet').toLowerCase()) != -1) {
+                        } else if (t===('Follow a Low Glycemic Load/Index Diet').toLowerCase()) {
                             action = "Identify all sources of gluten (wheat, barley, etc.) and remove them from your diet. This requires some close detective work.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Try an Elimination and Rechallenge Diet').toLowerCase()) != -1) {
+                        } else if (t===('Try an Elimination and Rechallenge Diet').toLowerCase()) {
                             action = "Identify dietary tyramines, e.g. aged cheese, soy sauce, fermented sausage, etc., and remove these triggers from your diet.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Try an Elimination/Rechallenge Diet').toLowerCase()) != -1) {
+                        } else if (t===('Try an Elimination/Rechallenge Diet').toLowerCase()) {
                             action = "Identify dietary tyramines, e.g. aged cheese, soy sauce, fermented sausage, etc., and remove these triggers from your diet.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce the overall size of your meals').toLowerCase()) != -1) {
+                        } else if (t===('Reduce the overall size of your meals').toLowerCase()) {
                             action = "Avoiding animal foods and using an iron skillet are steps to avoid ingesting dietary forms of iron.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Lower the size of your meals').toLowerCase()) != -1) {
+                        } else if (t===('Lower the size of your meals').toLowerCase()) {
                             action = "Avoiding animal foods and using an iron skillet are steps to avoid ingesting dietary forms of iron.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Adopt a Low Potassium Diet').toLowerCase()) != -1) {
+                        } else if (t===('Adopt a Low Potassium Diet').toLowerCase()) {
                             action = "Identify healthy protein sources, e.g. nuts, seeds, beans, lentils, healthy meats, and start to increase your total intake.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Consume a Low Potassium Diet').toLowerCase()) != -1) {
+                        } else if (t===('Consume a Low Potassium Diet').toLowerCase()) {
                             action = "Identify healthy protein sources, e.g. nuts, seeds, beans, lentils, healthy meats, and start to increase your total intake.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Dietary Recommendations for Preconception').toLowerCase()) != -1) {
+                        } else if (t===('Dietary Recommendations for Preconception').toLowerCase()) {
                             action = "Identify good dietary sources of fiber, e.g. fruits/veggies, oats, whole grains, beans, etc., and eat these foods regularly.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Follow Preconception dietary recommendations').toLowerCase()) != -1) {
+                        } else if (t===('Follow Preconception dietary recommendations').toLowerCase()) {
                             action = "Identify good dietary sources of fiber, e.g. fruits/veggies, oats, whole grains, beans, etc., and eat these foods regularly.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Prenatal diet').toLowerCase()) != -1) {
+                        } else if (t===('Prenatal diet').toLowerCase()) {
                             action = "Reduce your intake of dietary fats (see the HOW guide) - typically around 20% is considered a reasonable goal.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Follow Prenatal dietary recommendations').toLowerCase()) != -1) {
+                        } else if (t===('Follow Prenatal dietary recommendations').toLowerCase()) {
                             action = "Reduce your intake of dietary fats - typically around 20% is considered a reasonable goal.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Morning sickness dietary recommendations').toLowerCase()) != -1) {
+                        } else if (t===('Morning sickness dietary recommendations').toLowerCase()) {
                             action = "There are many sources of dietary sugar - try to eliminate most/all of them, particularly 'added' sugars.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Follow Morning sickness dietary recommendations').toLowerCase()) != -1) {
+                        } else if (t===('Follow Morning sickness dietary recommendations').toLowerCase()) {
                             action = "There are many sources of dietary sugar - try to eliminate most/all of them, particularly 'added' sugars.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat breakfast every day').toLowerCase()) != -1) {
+                        } else if (t===('Eat breakfast every day').toLowerCase()) {
                             action = "Try to cut down on your intake of saturated fats, e.g. meats, dairy, butter, to no more than 10% of your calories.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat breakfast every day').toLowerCase()) != -1) {
+                        } else if (t===('Eat breakfast every day').toLowerCase()) {
                             action = "Try to cut down on your intake of saturated fats, e.g. meats, dairy, butter, to no more than 10% of your calories.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Low carbohydrate diet').toLowerCase()) != -1) {
+                        } else if (t===('Low carbohydrate diet').toLowerCase()) {
                             action = "A calorie restricted diet can have benefits in addition to weight loss - see the HOW section for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Adopt a Low Carbohydrate Diet').toLowerCase()) != -1) {
+                        } else if (t===('Adopt a Low Carbohydrate Diet').toLowerCase()) {
                             action = "A calorie restricted diet can have benefits in addition to weight loss.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Mediterranean diet').toLowerCase()) != -1) {
+                        } else if (t===('Mediterranean diet').toLowerCase()) {
                             action = "Identify and avoid foods rich in salicylates, e.g. tea, curry, berries, licorice, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Adopt a Mediterranean Diet').toLowerCase()) != -1) {
+                        } else if (t===('Adopt a Mediterranean Diet').toLowerCase()) {
                             action = "Identify and avoid foods rich in salicylates, e.g. tea, curry, berries, licorice, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Carbohydrate counting diet').toLowerCase()) != -1) {
+                        } else if (t===('Carbohydrate counting diet').toLowerCase()) {
                             action = "Consult with a nutritionist to help reduce your protein intake - this may be necessary for your kidney function.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Start a Carbohydrate Counting Diet').toLowerCase()) != -1) {
+                        } else if (t===('Start a Carbohydrate Counting Diet').toLowerCase()) {
                             action = "Consult with a nutritionist to help reduce your protein intake - this may be necessary for your kidney function.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce your coffee consumption').toLowerCase()) != -1) {
+                        } else if (t===('Reduce your coffee consumption').toLowerCase()) {
                             action = "While it is now generally thought to have positive effects on blood sugar, coffee, especially caffeine is not for everyone.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut back on Coffee').toLowerCase()) != -1) {
+                        } else if (t===('Cut back on Coffee').toLowerCase()) {
                             action = "While it is now generally thought to have positive effects on blood sugar, coffee, especially caffeine is not for everyone.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid cured meat products').toLowerCase()) != -1) {
+                        } else if (t===('Avoid cured meat products').toLowerCase()) {
                             action = "Avoid nitrates and nitrites commonly used to cure meat; these compounds have been linked to allergies as well as cancer.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid Cured Meats').toLowerCase()) != -1) {
+                        } else if (t===('Avoid Cured Meats').toLowerCase()) {
                             action = "Avoid nitrates and nitrites commonly used to cure meat; these compounds have been linked to allergies as well as cancer.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat more vegetables').toLowerCase()) != -1) {
+                        } else if (t===('Eat more vegetables').toLowerCase()) {
                             action = "Increase your daily consumption of veggies - ideally consume at least 5 servings of a variety (rainbow) of colors.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat more Vegetables').toLowerCase()) != -1) {
+                        } else if (t===('Eat more Vegetables').toLowerCase()) {
                             action = "Increase your daily consumption of veggies - ideally consume at least 5 servings of a variety (rainbow) of colors.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add flaxseed to your diet').toLowerCase()) != -1) {
+                        } else if (t===('Add flaxseed to your diet').toLowerCase()) {
                             action = "Work up to 6T per day of flaxseed added to your meals, either whole or ground.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add Flaxseed to your diet').toLowerCase()) != -1) {
+                        } else if (t===('Add Flaxseed to your diet').toLowerCase()) {
                             action = "Work up to 6T per day of flaxseed added to your meals, either whole or ground.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Substitute Olive oil (monounsaturated fats) for other fats in your diet').toLowerCase()) != -1) {
+                        } else if (t===('Substitute Olive oil (monounsaturated fats) for other fats in your diet').toLowerCase()) {
                             action = "Substitute olive oil for other fats - rich in monounsaturated fats, it is a key component of the Mediterranean diet.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Use Primarily Olive Oil').toLowerCase()) != -1) {
+                        } else if (t===('Use Primarily Olive Oil').toLowerCase()) {
                             action = "Substitute olive oil for other fats - rich in monounsaturated fats, it is a key component of the Mediterranean diet.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Drink more water').toLowerCase()) != -1) {
+                        } else if (t===('Drink more water').toLowerCase()) {
                             action = "Replace other beverages with clean water. Even mild dehydration has immediate effects.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Drink more Clean Water').toLowerCase()) != -1) {
+                        } else if (t===('Drink more Clean Water').toLowerCase()) {
                             action = "Replace other beverages with clean water. Even mild dehydration has immediate effects.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat less improperly cooked or high-fat meat').toLowerCase()) != -1) {
+                        } else if (t===('Eat less improperly cooked or high-fat meat').toLowerCase()) {
                             action = "Meat that has been cooked excessively (often true for high fat portions) is rich in carcinogenic HCA's. Avoid if possible.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut back on improperly cooked and high fat meat').toLowerCase()) != -1) {
+                        } else if (t===('Cut back on improperly cooked and high fat meat').toLowerCase()) {
                             action = "Meat that has been cooked excessively (often true for high fat portions) is rich in carcinogenic HCA's. Avoid if possible.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce the amount of Chocolate you consume').toLowerCase()) != -1) {
+                        } else if (t===('Reduce the amount of Chocolate you consume').toLowerCase()) {
                             action = "Try cutting back on chocolate consumption; it contains compounds which trigger migraines, PMS symptoms, etc., in some people.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut back on Chocolate').toLowerCase()) != -1) {
+                        } else if (t===('Cut back on Chocolate').toLowerCase()) {
                             action = "Try cutting back on chocolate consumption; it contains compounds which trigger migraines, PMS symptoms, etc., in some people.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Decrease your consumption of Red Wine').toLowerCase()) != -1) {
+                        } else if (t===('Decrease your consumption of Red Wine').toLowerCase()) {
                             action = "Although small amounts have benefit for some, red wine contains possible triggers: sulfites, histamines, tyramines, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut back on Red Wine').toLowerCase()) != -1) {
+                        } else if (t===('Cut back on Red Wine').toLowerCase()) {
                             action = "Although small amounts have benefit for some, red wine contains possible triggers: sulfites, histamines, tyramines, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid eating foods containing Aged Cheese').toLowerCase()) != -1) {
+                        } else if (t===('Avoid eating foods containing Aged Cheese').toLowerCase()) {
                             action = "Many aged cheeses are rich in tyramines, known to be allergy symptom triggers for some individuals.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid Aged Cheese').toLowerCase()) != -1) {
+                        } else if (t===('Avoid Aged Cheese').toLowerCase()) {
                             action = "Many aged cheeses are rich in tyramines, known to be allergy symptom triggers for some individuals.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Drink Pomegranate juice').toLowerCase()) != -1) {
+                        } else if (t===('Drink Pomegranate juice').toLowerCase()) {
                             action = "Add at least 1.5 oz Pomegranate juice per day; clinical trials have shown cardiovascular benefit.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Drink Pomegranate Juice').toLowerCase()) != -1) {
+                        } else if (t===('Drink Pomegranate Juice').toLowerCase()) {
                             action = "Add at least 1.5 oz Pomegranate juice per day; clinical trials have shown cardiovascular benefit.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Onions').toLowerCase()) != -1) {
+                        } else if (t===('Onions').toLowerCase()) {
                             action = "Rich in quercetin, eating more onions may help to reduce the inflammation which drives many chronic conditions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat More Onions').toLowerCase()) != -1) {
+                        } else if (t===('Eat More Onions').toLowerCase()) {
                             action = "Rich in quercetin, eating more onions may help to reduce the inflammation which drives many chronic conditions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Limit the animal products in your diet').toLowerCase()) != -1) {
+                        } else if (t===('Limit the animal products in your diet').toLowerCase()) {
                             action = "Limit or avoid your dietary intake of animals products, e.g. meats, dairy, etc., linked to many chronic conditions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut back on Animal Products').toLowerCase()) != -1) {
+                        } else if (t===('Cut back on Animal Products').toLowerCase()) {
                             action = "Limit or avoid your dietary intake of animals products, e.g. meats, dairy, etc., linked to many chronic conditions.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase the amount of fish in your diet or substitute fish for other animal proteins').toLowerCase()) != -1) {
+                        } else if (t===('Increase the amount of fish in your diet or substitute fish for other animal proteins').toLowerCase()) {
                             action = "Either replace other meats with fish, or add in wild fish to your diet; rich in cardioprotective omega-3 fats.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase your Fish consumption').toLowerCase()) != -1) {
+                        } else if (t===('Increase your Fish consumption').toLowerCase()) {
                             action = "Either replace other meats with fish, or add in wild fish to your diet; rich in cardioprotective omega-3 fats.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add more Soy Protein to your diet').toLowerCase()) != -1) {
+                        } else if (t===('Add more Soy Protein to your diet').toLowerCase()) {
                             action = "Increase your intake of soy protein (e.g. tofu, tempeh, protein shakes) - a complete protein with cardioprotective properties.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add Soy Protein to your diet').toLowerCase()) != -1) {
+                        } else if (t===('Add Soy Protein to your diet').toLowerCase()) {
                             action = "Increase your intake of soy protein (e.g. tofu, tempeh, protein shakes) - a complete protein with cardioprotective properties.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add more oats to your diet').toLowerCase()) != -1) {
+                        } else if (t===('Add more oats to your diet').toLowerCase()) {
                             action = "Oats are rich in fiber, zinc, and magnesium. Add oatmeal to your breakfast, or see our HOW section for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Increase your Oat consumption').toLowerCase()) != -1) {
+                        } else if (t===('Increase your Oat consumption').toLowerCase()) {
                             action = "Oats are rich in fiber, zinc, and magnesium. Add oatmeal to your breakfast, or see our HOW section for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat more nuts').toLowerCase()) != -1) {
+                        } else if (t===('Eat more nuts').toLowerCase()) {
                             action = "Eat more nuts, including cashews, almonds, and pecans, all linked to improved cardiometabolic health.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Add more Nuts to your diet').toLowerCase()) != -1) {
+                        } else if (t===('Add more Nuts to your diet').toLowerCase()) {
                             action = "Eat more nuts, including cashews, almonds, and pecans, all linked to improved cardiometabolic health.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat more cruciferous vegetables').toLowerCase()) != -1) {
+                        } else if (t===('Eat more cruciferous vegetables').toLowerCase()) {
                             action = "Key to good detoxification, add more cruciferous veggies to your diet, including kale, broccoli, watercress, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat more Cruciferous Veggies').toLowerCase()) != -1) {
+                        } else if (t===('Eat more Cruciferous Veggies').toLowerCase()) {
                             action = "Key to good detoxification, add more cruciferous veggies to your diet, including kale, broccoli, watercress, etc.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Black Tea').toLowerCase()) != -1) {
+                        } else if (t===('Black Tea').toLowerCase()) {
                             action = "Drink black tea regularly for its cardiovascular benefit - avoid with meals if you are low in iron though.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Drink more Black Tea').toLowerCase()) != -1) {
+                        } else if (t===('Drink more Black Tea').toLowerCase()) {
                             action = "Drink black tea regularly for its cardiovascular benefit - avoid with meals if you are low in iron though.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat more Fruits').toLowerCase()) != -1) {
+                        } else if (t===('Eat more Fruits').toLowerCase()) {
                             action = "FDA recommends 4 servings of fruit per day, choose berries high in antioxidants. See more info at http://www.fda.gov";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Eat more Fruit').toLowerCase()) != -1) {
+                        } else if (t===('Eat more Fruit').toLowerCase()) {
                             action = "FDA recommends 4 servings of fruit per day, choose berries high in antioxidants. See more info at http://www.fda.gov";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Decrease the amount of sucrose, and products containing sucrose, that you eat.').toLowerCase()) != -1) {
+                        } else if (t===('Decrease the amount of sucrose, and products containing sucrose, that you eat.').toLowerCase()) {
                             action = "Just like lactose, not everyone can digest the sugar sucrose. See our HOW section for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut back on Sucrose').toLowerCase()) != -1) {
+                        } else if (t===('Cut back on Sucrose').toLowerCase()) {
                             action = "Just like lactose, not everyone can digest the sugar sucrose. See our HOW section for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce your dietary exposure to Tartrazine').toLowerCase()) != -1) {
+                        } else if (t===('Reduce your dietary exposure to Tartrazine').toLowerCase()) {
                             action = "Avoid foods and other products with tartrazine, aka FD&C yellow #5. Some people have severe reactions to it.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid Tartrazine in your diet').toLowerCase()) != -1) {
+                        } else if (t===('Avoid Tartrazine in your diet').toLowerCase()) {
                             action = "Avoid foods and other products with tartrazine, aka FD&C yellow #5. Some people have severe reactions to it.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Heterocyclic Amines, decrease dietary intake').toLowerCase()) != -1) {
+                        } else if (t===('Heterocyclic Amines, decrease dietary intake').toLowerCase()) {
                             action = "Reduce your intake of heavily cooked meats - these are known to contain heterocyclic amines, known carcinogens.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut back on dietary Heterocyclic Amines').toLowerCase()) != -1) {
+                        } else if (t===('Cut back on dietary Heterocyclic Amines').toLowerCase()) {
                             action = "Reduce your intake of heavily cooked meats - these are known to contain heterocyclic amines, known carcinogens.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid foods containing sodium glutamates or MSG').toLowerCase()) != -1) {
+                        } else if (t===('Avoid foods containing sodium glutamates or MSG').toLowerCase()) {
                             action = "Avoid foods with MSG, monosodium glutamate. Some people have adverse reactions, and it is often disguised in ingredients.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Avoid MSG').toLowerCase()) != -1) {
+                        } else if (t===('Avoid MSG').toLowerCase()) {
                             action = "Avoid foods with MSG, monosodium glutamate. Some people have adverse reactions, and it is often disguised in ingredients.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce dietary exposure to Nitrate/Nitrites').toLowerCase()) != -1) {
+                        } else if (t===('Reduce dietary exposure to Nitrate/Nitrites').toLowerCase()) {
                             action = "Avoid foods with nitrates/nitrites, often used to cure meats. See our HOW section for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Cut down on Nitrates/Nitrites').toLowerCase()) != -1) {
+                        } else if (t===('Cut down on Nitrates/Nitrites').toLowerCase()) {
                             action = "Avoid foods with nitrates/nitrites, often used to cure meats. See our HOW section for details.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Quick acting carbohydrates').toLowerCase()) != -1) {
+                        } else if (t===('Quick acting carbohydrates').toLowerCase()) {
                             action = "For short term emergencies, make sure to have quick acting carbs ready if your blood sugar falls too low.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Have Quick acting Carbs ready').toLowerCase()) != -1) {
+                        } else if (t===('Have Quick acting Carbs ready').toLowerCase()) {
                             action = "For short term emergencies, make sure to have quick acting carbs ready if your blood sugar falls too low.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce food packaging').toLowerCase()) != -1) {
+                        } else if (t===('Reduce food packaging').toLowerCase()) {
                             action = "Most food packaging has bisphenol A or phthalates, both known hormone disruptors. Avoid the plastics ubiquitous in packaging.";
                             btn_text = "Learn More";
-                        } else if (t.indexOf(('Reduce or eliminate Food Packaging').toLowerCase()) != -1) {
+                        } else if (t===('Reduce or eliminate Food Packaging').toLowerCase()) {
                             action = "Most food packaging has bisphenol A or phthalates, both known hormone disruptors. Avoid the plastics ubiquitous in packaging.";
                             btn_text = "Learn More";
-                        }else if (t.indexOf(('Apply Coal Tar topically').toLowerCase()) != -1) {
+                        }else if (t===('Apply Coal Tar topically').toLowerCase()) {
                             action = "Begin applying coal tar, topically or as a shampoo (1-2%), twice daily to affected areas";
                             btn_text = "Learn More";
-                        }else if (t.indexOf(('Apply Capsaicin cream').toLowerCase()) != -1) {
+                        }else if (t===('Apply Capsaicin cream').toLowerCase()) {
                             action = "Apply Capsaicin cream to affected areas to reduce pain and itching, 2-3 times per day.";
                             btn_text = "Learn More";
-                        }  else {console.log(t,"Inside last else");}
+                        }  else {}
 
                         nextStep.find('a').text(btn_text).prop('href', (action != '' ? 'javascript:void(0)' : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').attr("data-toggle", (action != '' ? 'popover' : ''));
 
