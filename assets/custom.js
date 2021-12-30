@@ -1144,12 +1144,14 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Lipoic acid').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lipoic*+acid*&type=product";
+                          	action="Lipoic acid, also known as alpha lipoic acid, is a powerful antioxidant soluble in water and fat, which allows it to enter all parts of cells to deactivate free radicals. Lipoic acid helps reduce blood cholesterol levels, protects nerve tissues against oxidative stress and regulating blood sugar levels.";
                             btn_text = "Shop Now";
                         } else if (t===('Omega-3 fatty acids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=omega*+3*+fatty*+acids*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Omega-3 Fatty Acids').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=omega*+3*+fatty*+acids*&type=product";
+                            action="Omega-3 essential fatty acids (EFAs), including alpha-linolenic and eicosapentaenoic acid (EPA), are found in fresh deepwater fish, fish oil, walnuts and flaxseed oil. Omega-3 EFAs anti-inflammatory  properties help prevent heart disease by lowering the blood level of LDL cholesterol .";
                             btn_text = "Shop Now";
                         } else if (t===('Quercetin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=quercetin*&type=product";
