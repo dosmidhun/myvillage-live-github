@@ -949,8 +949,8 @@ jQuery(function ($) {
                         t = t.toLowerCase();
                         var btn_text = "Shop Now";
                         var action = label.text().trim();
-                        console.log(t);
-                        console.log(t.indexOf(('Take Garlic').toLowerCase()));
+//                         console.log(t);
+//                         console.log(t.indexOf(('Take Garlic').toLowerCase()));
                         if (t===('Vitamin B1').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=thiamin*";
                             btn_text = "Shop Now";
@@ -1535,7 +1535,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Phosphatidylserine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphatidylserine*";
-                            action="Phosphatidylserine (PS) is a naturally occurring phospholipid. Like other phospholipids, PS is a critical component of cell membranes, and it is found in high concentrations in the brain and nervous tissues, primarily in the cell membranes of neurons. PS  is also known as the 'brain nutrient' and promotes cognitive function, emotional well-being and behavioral performance by supporting cell membrane composition";
+                            action="Phosphatidylserine (PS) is a naturally occurring phospholipid. Like other phospholipids, PS is a critical component of cell membranes, and it is found in high concentrations in the brain and nervous tissues, primarily in the cell membranes of neurons. PS  is also known as the "brain nutrient" and promotes cognitive function, emotional well-being and behavioral performance by supporting cell membrane composition";
                             btn_text = "Shop Now";
                         } else if (t===('L-citrulline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=l-citruline*";
