@@ -1381,138 +1381,175 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Glucosamine Sulfate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Glucosamine*+sulfate*&type=product";
+                            action="Glucosamine is made in the body from glucose and the amino acid glutamine and is found in high concentrations in joint structures.  Its primary function is to provide the joints with the material necessary to produce glycosaminoglycan, a critical ingredient in cartilage. It also helps in the formation of tendons, skin, bones, nails, and ligaments.";
                             btn_text = "Shop Now";
                         } else if (t===('Saccharomyces boulardii').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Saccharomyces*+boulardii*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Saccharomyces boulardii').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Saccharomyces*+boulardii*&type=product";
+                            action="Saccharomyches boulardii is a non-colonizing baker’s yeast species that survives gastric acidity and is not adversely affected or inhibited by antibiotics and does not alter or adversely affect the normal flora in the bowel.  This strain helps protect and maintain a normal intestinal microflora. It also works to restore the normal intestinal microflora when possible disruptions may occur, such as during travel or the intake of certain medications.";
                             btn_text = "Shop Now";
                         } else if (t===('Niacin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=niacin*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Niacin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=niacin*&type=product";
+                            action="Niacin is a form of vitamin B3 and is necessary for releasing energy from carbohydrates, processing alcohol, forming fats, and producing sex hormones. Niacin also helps support healthy cholesterol levels.";
                             btn_text = "Shop Now";
                         } else if (t===('Lipase').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Lipase*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Lipase').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Lipase*&type=product";
+                            action="Lipase is an enzyme found in the stomach and pancreatic juices, and is also present in fats in foods, aids in fat digestion.";
                             btn_text = "Shop Now";
                         } else if (t===('Lutein').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Lutein*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Lutein').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Lutein*&type=product";
+                            action="Lutein is a carotenoid found in fruits and dark green, leafy vegetable. Lutein is  also found in high amounts in the retina's macular region, an area vital to healthy vision  Lutein protects the macula from degradation normally associated with aging and oxidative stress. The macula is responsible for focus and color differentiation.";
                             btn_text = "Shop Now";
                         } else if (t===('Calcium D-glucarate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Calcium*+D-glucarate*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Calcium D-glucarate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Calcium*+D-glucarate*&type=product";
+                            action="Calcium D-Glucarate is a supplement of D-glucaric acid bound to calcium. Calcium D-glucarate supports the body's natural defenses against environmental toxins and excess steroid hormones by way of glucuronidation.";
                             btn_text = "Shop Now";
                         } else if (t===('Diindolylmethane (DIM)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=%28DIM%29*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Diindolylmethane (DIM)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=%28DIM%29*&type=product";
+                            action="DIM is an indole phytochemical that is a natural metabolite of compounds found in cruciferous vegetables such as broccoli, Brussels sprouts and cabbage. n preclinical studies, DIM has been shown to lead to the preferential formation of estrogen metabolites that are correlated with healthy breast, endometrial, and cervical tissues.";
                             btn_text = "Shop Now";
                         } else if (t===('IP-6 (Phytate)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=IP-6*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take IP-6 (Phytate)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=IP-6*&type=product";
+                            action="Inositol hexaphosphate (IP6), also known as phytic acid, is a natural antioxidant component of fiber-rich foods such as whole grains and legumes and is found in almost every cell of the body.  IP6 is designed to promote healthy cell metabolism and maintain proper enzyme activity in cells.";
                             btn_text = "Shop Now";
                         } else if (t===('Psyllium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Psyllium*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Psyllium').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Psyllium*&type=product";
+                            action="Psyllium is a soluble fiber used primarily as a gentle bulk-forming laxative. The soluble fiber found in psyllium husks can help lower cholesterol. Psyllium has also been used to help regulate blood sugar levels in people with diabetes.";
                             btn_text = "Shop Now";
                         } else if (t===('Nicotinamidadenindinucleotide (NADH)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=NADH*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take NADH').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=NADH*&type=product";
+                            action=" NADH is a coenzyme derived from vitamin B-3 (niacin), is essential for basic metabolism, respiration, the breakdown of sugars and fats, and the production of ATP, the primary energy molecule in our cells. NADH is a crucial component of the ATP energy production cycle, which supplies energy to the brain, nerves, muscles, heart and all other organs in order to function.";
                             btn_text = "Shop Now";
                         } else if (t===('Acetylcarnitine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Acetylcarnitine*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Acetylcarnitine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Acetylcarnitine*&type=product";
+                            action="Acetylcarnitine (acetyl-L-carnitine) is the acetyl-derivative of carnitine. It is a nutrient and a naturally occurring metabolite that is involved in lipid, carbohydrate, and protein metabolism. Carnitine’s major role is to link up with fatty acids and transport them into the mitochondria, the cells’ “powerhouses” for energy production.";
                             btn_text = "Shop Now";
-                        } else if (t===('Methylsulfonylmethane (MSM)').toLowerCase()) {
+                        }else if (t===('Take Raw Soy Flour').toLowerCase()) {
+                            l = "https://myvillagegreen.com/search?q=msm*&type=product";
+                            action="Raw soy flour has been linked to enhanced pancreatic enzyme production.";
+                            btn_text = "Shop Now";
+                        }  else if (t===('Take Inhaled Magnesium').toLowerCase()) {
+                            l = "https://myvillagegreen.com/search?q=msm*&type=product";
+                            action="Use a nebulizer to inhale magnesium - this raises the lung's concentration of magnesium, improving respiratory function.";
+                            btn_text = "Shop Now";
+                        }
+                         else if (t===('Methylsulfonylmethane (MSM)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=msm*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Methylsulfonylmethane (MSM)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=msm*&type=product";
+                            action="MSM (methylsulfonylmethane or dimethylsulfone) is a naturally-derived sulfur formula that helps support joint functionality and comfort, specifically connective tissue health. MSM also provides potential support for healthy immune and respiratory function.";
                             btn_text = "Shop Now";
                         } else if (t===('Thymus extract').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=thymus*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Thymus Extract').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=thymus*";
+                            action="Thymus extract is made from the thymus glands of cows, typically calves. The thymus is a gland that is involved in the regulation of the body's immune response.";
                             btn_text = "Shop Now";
                         } else if (t===('Molybdenum').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Molybdenum*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Molybdenum').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Molybdenum*&type=product";
+                            action="Molybdenum is a trace mineral essential for the formation of uric acid, a form of waste that is excreted as urine. If the body has too much molybdenum, it produces too much uric acid; if the body has too little molybdenum, it produces too little uric acid.";
                             btn_text = "Shop Now";
                         } else if (t===('Lactase, Oral').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lactase*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Lactase Orally').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=lactase*&type=product";
+                            action="A form of the enzyme amylase, lactase  helps break down the milk sugar lactose.";
                             btn_text = "Shop Now";
                         } else if (t===('Inositol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Inositol*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take Inositol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=Inositol*&type=product";
+                            action="Inositol is involved in neuronal signaling and osmotic regulation in the brain";
                             btn_text = "Shop Now";
-                        } else if (t===('L-ornithine-L-aspartate').toLowerCase()) {
+                        }else if (t===('Take Xylitol').toLowerCase()) {
+                            l = "https://myvillagegreen.com/search?q=L-ornithine-L-aspartate*&type=product";
+                            action="Xylitol is a sugar alcohol that's structure allows them to stimulate the taste receptors for sweetness on the tongue.";
+                            btn_text = "Shop Now";
+                        } 
+                        else if (t===('L-ornithine-L-aspartate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=L-ornithine-L-aspartate*&type=product";
                             btn_text = "Shop Now";
                         } else if (t===('Take L-ornithine-L-aspartate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=L-ornithine-L-aspartate*&type=product";
+                            action="L-ornithine-L-aspartate is a chemical made up of the two amino acids ornithine and aspartic acid.  L-ornithine-L-aspartate increases the levels of ornithine and aspartic acid in the body. These amino acids help to reduce levels of a toxic chemical called ammonia in the blood. L-ornithine-L-aspartate supports liver function, and can help convert ammonia to urea and glutamine.";
                             btn_text = "Shop Now";
                         } else if (t===('Multivitamin/mineral Supplement').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=multivitamin*";
                             btn_text = "Shop Now";
                         } else if (t===('Take a Multivitamin/mineral').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=multivitamin*";
+                            action="A multivitamin or multimineral provides  vitamins and/or minerals and other essential nutrients.";
                             btn_text = "Shop Now";
                         } else if (t===('Alkali minerals').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphatidylserine*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Potassium Citrate').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphatidylserine*";
+                            action="Potassium Citrate is a well-absorbed form of potassium. In addition to its role in heart and skeletal muscle function, it also alkalinizes urine to support kidney and lower urinary tract health. It is essential for nerve impulse transmission, muscle contractility, and maintaining normal blood pressure, energy production, and nucleic acid synthesis.";
                             btn_text = "Shop Now";
                         } else if (t===('Citicoline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=citicoline*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Citicoline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=citicoline*";
+                            action="Citicoline is a naturally-occurring intermediate involved in the synthesis of phosphatidylcholine, a major constituent of the grey matter of brain tissue. Citicoline supplementation supports brain energy metabolism and the production of neurotransmitters involved in cognition, and has been shown in clinical research to support attention performance in healthy adults and adolesents.";
                             btn_text = "Shop Now";
                         } else if (t===('Phosphatidylserine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphatidylserine*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Phosphatidylserine').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=phosphatidylserine*";
+                            action="Phosphatidylserine (PS) is a naturally occurring phospholipid. Like other phospholipids, PS is a critical component of cell membranes, and it is found in high concentrations in the brain and nervous tissues, primarily in the cell membranes of neurons. PS  is also known as the "brain nutrient" and promotes cognitive function, emotional well-being and behavioral performance by supporting cell membrane composition";
                             btn_text = "Shop Now";
                         } else if (t===('L-citrulline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=l-citruline*";
                             btn_text = "Shop Now";
                         } else if (t===('Take L-citrulline').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=l-citruline*";
+                            action="Citrulline is a non-essential amino acid that is an important intermediate in the urea cycle, functioning along with other amino acids to rid the body of ammonia, a byproduct of protein metabolism.* Citrulline also plays an important role in the healing process and in the maintenance of a healthy immune system.";
                             btn_text = "Shop Now";
                         } else if (t===('Dehydroepiandrosterone (DHEA) cream').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=dhea*";
                             btn_text = "Shop Now";
                         } else if (t===('Take DHEA (Dehydroepiandrosterone)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=dhea*";
+                            action="DHEA (Dehydroephiandrosterone) is a most abundant adrenal steroid hormone in the body produced  by the adrenal glands, which is eventually converted into other hormones, such as progesterone, testosterone, and estrogen. These hormones regulate fat and mineral metabolism, endocrine and reproductive function, and energy levels.";
                             btn_text = "Shop Now";
                         } else if (t===('5-methyltetrahydrofolate (5-MTHF)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=mthf*&type=product";
@@ -1541,48 +1578,65 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Gingko').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ginkgo*";
+                            action="Ginkgo leaf supports healthy circulation, cognitive health and brain function.";
                             btn_text = "Shop Now";
                         } else if (t===('Indian frankincense').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=boswellia*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Indian Frankincense (Boswellia)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=boswellia*";
+                            action="Boswellia  is an herbal extract taken from the bark of the boswellia tree. It is also known as frankincense.  Boswelli has anti-inflammatory and anti-tumor properties and is used to support joint and gastrointestinal health.";
                             btn_text = "Shop Now";
                         } else if (t===('Feverfew').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=feverfew*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Feverfew').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=feverfew*";
+                            action="Feverfew has been traditionally used against inflammation with migraines and fevers and  to support healthy blood vessel tone.";
                             btn_text = "Shop Now";
                         } else if (t===('Peppermint oil, enteric coated').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=enteric*+coated*+peppermint*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Enteric Coated Peppermint Oil').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=enteric*+coated*+peppermint*";
+                            action="Pepperming is a hybrid of water mint and spearmint and is classified as a carminitave, which prevents and relieves intestinal gas.";
                             btn_text = "Shop Now";
                         } else if (t===('Saint John\'s wort').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=st*+john%27s*+wort*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Saint John\'s Wort').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=st*+john%27s*+wort*";
+                            action="St. John's Wort has traditionally been used for supporting emotional health. ";
                             btn_text = "Shop Now";
                         } else if (t===('Kava').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=kava*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Kava (Piper methysticum)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=kava*";
+                            action="Kava helps to promote a sense of calm and relaxation and is beneficial for those experiencing ongoing stress. ";
+                            btn_text = "Shop Now";
+                        }  else if (t===('Take Aloe Vera Gel').toLowerCase()) {
+                            l = "https://myvillagegreen.com/search?type=product&q=kava*";
+                            action="The fleshy leaves of aloe vera contain polysaccharides, which are effective for burns of all types and is also good for cuts, insect stings, bruises, acne and blemishes, poison ivy, welts, skin ulcers, and eczema.";
+                            btn_text = "Shop Now";
+                        }
+                        else if (t===('Take Aloe Vera Latex').toLowerCase()) {
+                            l = "https://myvillagegreen.com/search?type=product&q=kava*";
+                            action="When taken internally, aloe vera juice is known to aid in the healing of stomach disorders, ulcers, constipation, hemorrhoids, rectal itching, colitis, and all colon problems.";
                             btn_text = "Shop Now";
                         } else if (t===('Ginger').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ginger*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Ginger').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ginger*";
+                            action="Ginger root has warming properties, benfits circulation, helps to relieve nausea and upset stomach, has anti-inflammatory properties, and supports a healthy immune system.";
                             btn_text = "Shop Now";
                         } else if (t===('Deglycyrrhizinated Licorice (DGL)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=dgl*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Deglycyrrhizinated Licorice (DGL)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=dgl*";
+                            action="Deglycyrrhizinated licorice supports and promotes a healthy stomach lining and intestinal flora. The glycyrrhizinic and glycyrrhetinic acids, associated with high blood pressure, have been removed.";
                             btn_text = "Shop Now";
                         } else if (t===('Indole-3-Carbinol').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=indole*";
@@ -1595,78 +1649,91 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Chamomile').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=chamomile*";
+                            action="Chamomile is well-known for its gentle actions as it promotes relaxation and supports digestive health.";
                             btn_text = "Shop Now";
                         } else if (t===('Pectin, Modified Citrus (MCP)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=modified*+citrus*+pectin*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Modified Citrus Pectin (MCP)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=modified*+citrus*+pectin*";
+                            action="Pectin is a gelatinous substance known as a polysaccharide. Modified citrus pectin is made by exposing pectin to sodium hydroxide and hydrochloric acid so the polysachharide molecules break down and are more readily absorbed i nthe gut.";
                             btn_text = "Shop Now";
                         } else if (t===('Green tea').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=green*+tea*+extract*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Green Tea Extract').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=green*+tea*+extract*";
+                            action="Green tea has been shown to have powerful antioxidant properties. In addition, it has thermogenic and immune supportive benefits.";
                             btn_text = "Shop Now";
                         } else if (t===('Curcumin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=curcumin*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Curcumin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=curcumin*";
+                            action="Curcumin is a phytochemical in the rhizome turmeric  known for its anti-inflammatory and antioxidant properties and helps to support and promote skin and digestive health.";
                             btn_text = "Shop Now";
                         } else if (t===('Bromelain').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bromelain*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Bromelain').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bromelain*";
+                            action="Bromelain is an anti-inflammatory enzyme found in pineapples that supports protein digestion and joint health.";
                             btn_text = "Shop Now";
                         } else if (t===('Eleuthero').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=eleuthero*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Eleutherococcus (Siberian Ginseng)').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=eleuthero*";
+                            action="Eleutherococcus supports immune health, general health and is used to improve endurance and stamina.";
                             btn_text = "Shop Now";
                         } else if (t===('PSK').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=turkey*+tail*";
                             btn_text = "Shop Now";
                         } else if (t===('Take PSK').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=turkey*+tail*";
+                            action="PSK, polysaccharide-k is a protein-bound compound found in turkey tail mushrooms and known for its immune stimulating properties.";
                             btn_text = "Shop Now";
                         } else if (t===('Silymarin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=eleuthero*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Silymarin').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=eleuthero*";
+                            action="Silymarin is the active ingredient in the herb, milk thistle, which supports liver function.";
                             btn_text = "Shop Now";
                         } else if (t===('Ashwagandha').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ashwagandha*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Ashwagandha').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=ashwagandha*";
+                            action="Ashwagandha is a grounding, calming and restoring herb that promotes balance in the body by supporting healthy cortisol levels.";
                             btn_text = "Shop Now";
                         } else if (t===('Korean Ginseng').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=korean*+ginseng*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Korean Ginseng').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=korean*+ginseng*";
+                            action="Korean gingeng promotes energy, memory and libido.";
                             btn_text = "Shop Now";
                         } else if (t===('Bitter Melon').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bitter*+melon*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Bitter Melon').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bitter*+melon*";
+                            action="Bittermelon is used to support digestion, cardiovascular function and skin health";
                             btn_text = "Shop Now";
                         } else if (t===('Gymnema').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=gymnema*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Gynmema').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=gymnema*";
+                            action="Gymnema helps to support healthy blood sugar levels by promoting anti-sweetness activity by suppressing the ability to detect sweet tastes.";
                             btn_text = "Shop Now";
                         } else if (t===('Butterbur').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=butterbur*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Butterbur').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=butterbur*";
+                            action="Butterbur supports healthy blood flow to the brain and promotes relief from headaches.";
                             btn_text = "Shop Now";
                         } else if (t===('Rhodiola').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=rhodiola*&type=product";
@@ -1676,6 +1743,11 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Fenugreek').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=fenugreek*";
+                            action="Fenugreek has been known to support healthy blood sugar levels as well as promoting healthy lactation women who are breastfeeding.";
+                            btn_text = "Shop Now";
+                        }  else if (t===('Take Prickly Pear').toLowerCase()) {
+                            l = "https://myvillagegreen.com/search?type=product&q=cordyceps*";
+                            action="Prickly pear supports healthy gut function by promoting bowel movements to remove toxic substances from the gut.";
                             btn_text = "Shop Now";
                         } else if (t===('Cordyceps').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cordyceps*";
@@ -1688,36 +1760,42 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Chasteberry').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=chaste*+tree*";
+                            action="Chaste tree berry or vitex is used to support  support gynecological health by helping to maintain hormone balance.";
                             btn_text = "Shop Now";
                         } else if (t===('Cinnamon').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cinnamon*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Cinnamon').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cinnamon*";
+                            action="Cinnamon is used to support digestion, blood function, glycemic response and immune function";
                             btn_text = "Shop Now";
                         } else if (t===('Bilberry').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bilberry*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Bilberry').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=bilberry*";
+                            action="Bilberry promotes eye health and vision  and supports a healthy inflammatory response";
                             btn_text = "Shop Now";
                         } else if (t===('Black cohosh').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=black*+cohosh*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Black Cohosh').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=black*+cohosh*";
+                            action="Black cohosh is used to to support normal levels of energy and to support the female reproductive system during the menopausal and perimenopausal years.";
                             btn_text = "Shop Now";
                         } else if (t===('Cats Claw').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cats*+claw*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Cat\'s Claw').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=cats*+claw*";
+                            action="Cat's claw supports the inflammatory pathways in the human body by supporting joint health as well as the healthy functioning of the immune system.";
                             btn_text = "Shop Now";
                         } else if (t===('Saw palmetto').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=saw*+palmetto*";
                             btn_text = "Shop Now";
                         } else if (t===('Take Saw Palmetto').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=saw*+palmetto*";
+                            action="Saw palmetto is traditionally used to maintain healthy prostate function";
                             btn_text = "Shop Now";
                         } else if (t===('Forskolin').toLowerCase()) {
                             l = "https://myvillagegreen.com/products/coleus-forskohlii-extract?_pos=5&_sid=d7f04984e&_ss=r";
@@ -1730,6 +1808,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Goldenseal').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=goldenseal*";
+                            action="Goldenseal is traditionally used to support the body's immune defenses as well as suopporting digestive and urinary tract health.";
                             btn_text = "Shop Now";
                         } else if (t===('Mastic gum').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=mastic*+gum*";
@@ -1868,6 +1947,7 @@ jQuery(function ($) {
                             btn_text = "Shop Now";
                         } else if (t===('Take Lemon Balm').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?type=product&q=lemon*+balm*";
+                            action="Lemon balm is a member of the minf family and has traditionally been used to support digestion and to calm nerves. ";
                             btn_text = "Shop Now";
                         } else if (t===('Elderberry').toLowerCase()) {
                             l = "https://myvillagegreen.com/search?q=elderberry*&type=product";
