@@ -429,12 +429,19 @@ jQuery(function ($) {
 
 //             }
             if (id == 'edit-save') {
-              if(value_name==='Save and close questionnaire'){
-                 box = "box" + parseInt(step.substring(4));
-              }
-              else{
-                box = "box" + parseInt(parseInt(step.substring(4)) + 1);
-              }
+//               if(value_name==='Save and close questionnaire'){
+//                 console.log('IF IF');
+//                  box = "box" + parseInt(step.substring(4));
+//               }
+//               else{
+//                 console.log('IF ELSE');
+//                 box = "box" + parseInt(parseInt(step.substring(4)) + 1);
+//               }
+              box = "box" + parseInt(parseInt(step.substring(4)) + 1);
+              if (parseInt(step.substring(4)) == 6) {
+                  window.savedlast = true;
+                 console.log('In if made true');
+               }
 
                
               
