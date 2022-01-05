@@ -391,6 +391,7 @@ jQuery(function ($) {
 
         form = closestForm.closest('form');
 		id_global=closestForm.attr("id");
+        var value_name=closestForm.attr("value");
         var id = id_global;
         var box;
         step = $(".health_top .health_box.active").attr("data-step");
@@ -428,8 +429,15 @@ jQuery(function ($) {
 
 //             }
             if (id == 'edit-save') {
-
+              if(value_name==='Save and close questionnaire'){
+                 box = "box" + parseInt(step.substring(4));
+              }
+              else{
                 box = "box" + parseInt(parseInt(step.substring(4)) + 1);
+              }
+
+               
+              
 
             } else if (id == 'edit-previous') {
                 box = "box" + parseInt(parseInt(step.substring(4)) - 1);
