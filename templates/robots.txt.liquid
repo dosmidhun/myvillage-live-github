@@ -6,7 +6,7 @@
   {{- group.user_agent -}}
 
   {% for rule in group.rules %}
-	{%- unless rule.directive == 'Disallow' and rule.value == '/collections/*+*' -%}
+	{%- unless rule.directive == 'Disallow' and rule.value == '/collections/*+*' and rule.value == '/*/collections/*+*' -%}
     	{{- rule -}}
 	{%- endunless -%}
   {% endfor %}
