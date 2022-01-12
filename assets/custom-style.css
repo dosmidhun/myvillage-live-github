@@ -4089,6 +4089,6 @@ div#qstn_family_modal {
 .my_health #edit-previous{
   display:none!important;  
 }
-.mvg_verification{
+.mvg_verification, body#labs-amp-dna .add-to-cart-btn, body#lab-tests .add-to-cart-btn{
 display:none;
 }
