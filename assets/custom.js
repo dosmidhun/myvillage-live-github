@@ -1633,7 +1633,7 @@ jQuery(function ($) {
                             action="Kava helps to promote a sense of calm and relaxation and is beneficial for those experiencing ongoing stress. ";
                             btn_text = "Shop Now";
                         }  else if (t===('Take Aloe Vera Gel').toLowerCase()) {
-                            l = "https://myvillagegreen.com/search?type=product&q=kava*";
+                            l = "https://myvillagegreen.com/products/99-aloe-vera-gelly";
                             action="The fleshy leaves of aloe vera contain polysaccharides, which are effective for burns of all types and is also good for cuts, insect stings, bruises, acne and blemishes, poison ivy, welts, skin ulcers, and eczema.";
                             btn_text = "Shop Now";
                         }
