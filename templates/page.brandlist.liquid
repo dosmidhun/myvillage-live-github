@@ -3,11 +3,11 @@
                
         		{% for tag in customer.tags %}
                 
-<a href="/collections/designs-for-health" class="{{tag }}">Test</a> 
+
            		 {% if tag=='mvg-membership' %}
+					<a href="/collections/designs-for-health" class="{{tag }}">Test</a> 
                		 {% assign bold_member = true %}
-       
-               		 {% break %}
+      				 {% break %}
             	 {% endif %}
         	{% endfor %}
            
