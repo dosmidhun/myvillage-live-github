@@ -50,10 +50,18 @@
           
          		 {% if child_l.title=='Designs for Health*' %}
 
-      				<span class="inside">Inside</span>
+      				 <li>
+       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current hide-menu"{% endif %}>
+          					{% include 'multilang' with child_l.title %}
+        				 </a>
+      				 </li>
       
          		 {% else %}
-          			<span class="outside">Outside</span>
+          			 <li>
+       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
+          					{% include 'multilang' with child_l.title %}
+        				 </a>
+      				 </li>
             	 {% endif %}
                     
           
