@@ -50,8 +50,8 @@
           
          		 {% if child_l.title=='Designs for Health*' %}
 
-      				 <li>
-       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current hide-menu"{% endif %}>
+      				 <li class="hide-menu">
+       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
           					{% include 'multilang' with child_l.title %}
         				 </a>
       				 </li>
