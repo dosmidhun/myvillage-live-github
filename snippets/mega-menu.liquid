@@ -50,10 +50,10 @@
           
          		 {% if child_l.title=='Designs for Health*' %}
 
-      				<span class="inside">child_l.title</span>
+      				<span class="inside">{%  include  child_l.title %}</span>
       
          		 {% else %}
-          			 <span class="outside">child_l.title</span>
+          			 <span class="outside">{%  include  child_l.title %}</span>
             	 {% endif %}
                     
           
