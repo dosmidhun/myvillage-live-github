@@ -1,10 +1,11 @@
- {% assign bold_member = false %}
+{% assign bold_member = false %}
+{% assign bold_member_test = "test" %}
  			{% if customer %}
                
         		{% for tag in customer.tags %}
                 
 
-           		 {% if tag=='mvg-membership' %}
+           		 {% if bold_member_test=='test' %}
 					<a href="/collections/designs-for-health" class="{{tag }}">Test</a> 
                		 {% assign bold_member = true %}
       				 {% break %}
