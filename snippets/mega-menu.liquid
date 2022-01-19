@@ -35,10 +35,9 @@
     <ul class="dropdown">
       {% for child_l in linklists[l.handle].links %}
       <!-- Menu level 3 -->
-      <li>
-        <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
-          
-           {% assign bold_member = false %}
+      
+      
+      {% assign bold_member = false %}
  			{% if customer %}
                
         		{% for tag in customer.tags %}
@@ -52,26 +51,38 @@
          		 {% if child_l.title=='Designs for Health*' %}
                		 
          		 {% else %}
-          			{% include 'multilang' with child_l.title %}
+          			 <li>
+       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
+          					{% include 'multilang' with child_l.title %}
+        				 </a>
+      				 </li>
             	 {% endif %}
                     
           
           
             {% else %}
-					{% include 'multilang' with child_l.title %}
+					 <li>
+       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
+          					{% include 'multilang' with child_l.title %}
+        				 </a>
+      				 </li>
             {% endif %}
                
     	   {% else %}
-				{% include 'multilang' with child_l.title %}
+				 <li>
+       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
+          					{% include 'multilang' with child_l.title %}
+        				 </a>
+      				 </li>
           {% endif %}
-          
-          
-          
-          
-          
-          
-        </a>
-      </li>
+      
+      
+      
+      
+      
+      
+      
+     
       {% endfor %}
     </ul>
     {% endif %}
