@@ -41,7 +41,7 @@
  			{% if customer %}
                
         		{% for tag in customer.tags %}
-           		 {% if tag=='mvg-membership' %}
+           		 {% if tag=='mvg-membership' or tag=='Restricted Users'%}
                		 {% assign bold_member = true %}
                		 {% break %}
             	 {% endif %}
