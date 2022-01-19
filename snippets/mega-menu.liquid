@@ -37,7 +37,39 @@
       <!-- Menu level 3 -->
       <li>
         <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
-          {% include 'multilang' with child_l.title %}
+          
+           {% assign bold_member = false %}
+ 			{% if customer %}
+               
+        		{% for tag in customer.tags %}
+           		 {% if tag=='mvg-membership' %}
+               		 {% assign bold_member = true %}
+               		 {% break %}
+            	 {% endif %}
+        	{% endfor %}
+            {% if bold_member %}
+          
+         		 {% if child_l.title=='Designs for Health*' %}
+               		 
+         		 {% else %}
+          			{% include 'multilang' with child_l.title %}
+            	 {% endif %}
+                    
+          
+          
+            {% else %}
+					{% include 'multilang' with child_l.title %}
+            {% endif %}
+               
+    	   {% else %}
+				{% include 'multilang' with child_l.title %}
+          {% endif %}
+          
+          
+          
+          
+          
+          
         </a>
       </li>
       {% endfor %}
