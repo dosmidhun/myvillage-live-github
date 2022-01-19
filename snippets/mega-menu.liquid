@@ -49,13 +49,13 @@
             {% if bold_member %}
           
          		 {% if child_l.title=='Designs for Health*' %}
-               		 
-         		 {% else %}
-          			 <li>
+               		 <li>
        					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
           					{% include 'multilang' with child_l.title %}
         				 </a>
       				 </li>
+         		 {% else %}
+          			 
             	 {% endif %}
                     
           
