@@ -1,11 +1,3 @@
-{% assign bold_member_test = false %}
-{% if customer %}
-{% if bold_member_test == false %}
-	<a href="/collections/designs-for-health" class="{{bold_member_test }}">Test</a> 
-{% endif %}
-
-{% endif %}
-
 {% assign counter = 0 %}
 {% for vendor in shop.vendors %}
 {% assign counter = counter | plus: 1 %}
@@ -213,7 +205,28 @@
           </div>   
        
        
-      
+       {% assign bold_member = false %}
+ 			{% if customer %}
+               
+        		{% for tag in customer.tags %}
+           		 {% if tag == 'mvg-membership' or tag == 'Restricted Users'%}
+               		 {% assign bold_member = true %}
+               		 {% break %}
+            	 {% endif %}
+        	{% endfor %}
+            {% if bold_member %}
+          			<div class="instant-brand-listing"> 
+               			<a href="/collections/designs-for-health" class="instant-brand-item brand_access">DESIGNS FOR HEALTH</a> 
+          			</div> 
+         		 
+          
+            {% else %}
+					
+            {% endif %}
+               
+    	   {% else %}
+				 
+          {% endif %}
        
        
        
