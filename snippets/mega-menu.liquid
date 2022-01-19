@@ -50,7 +50,7 @@
           
          		 {% if child_l.title=='Designs for Health*' %}
 
-      				 <li class="hide-menu">
+      				 <li class="show-menu">
        					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
           					{% include 'multilang' with child_l.title %}
         				 </a>
@@ -67,19 +67,39 @@
           
           
             {% else %}
-					 <li>
+					{% if child_l.title=='Designs for Health*' %}
+
+      				 <li class="hide-menu">
        					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
           					{% include 'multilang' with child_l.title %}
         				 </a>
       				 </li>
+      
+         		 {% else %}
+          			 <li>
+       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
+          					{% include 'multilang' with child_l.title %}
+        				 </a>
+      				 </li>
+            	 {% endif %}
             {% endif %}
                
     	   {% else %}
-				 <li>
+				 {% if child_l.title=='Designs for Health*' %}
+
+      				 <li class="hide-menu">
        					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
           					{% include 'multilang' with child_l.title %}
         				 </a>
       				 </li>
+      
+         		 {% else %}
+          			 <li>
+       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
+          					{% include 'multilang' with child_l.title %}
+        				 </a>
+      				 </li>
+            	 {% endif %}
           {% endif %}
       
       
