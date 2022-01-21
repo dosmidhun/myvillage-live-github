@@ -64,7 +64,37 @@
             <a href="https://myvillagegreen.myshopify.com/pages/restricted-practitioner-brands#Atrium%20Nutritional"></a>
             <a href="https://myvillagegreen.myshopify.com/pages/restricted-practitioner-brands#Bezwecken"></a>
             <br /><a href="https://myvillagegreen.myshopify.com/collections/vendors?q=BIOTICS%20RESEARCH"> Biotics Research</a>
-            <br /> <a href="https://myvillagegreen.myshopify.com/collections/vendors?q=DESIGNS%20FOR%20HEALTH">Designs for Health</a>
+          
+          {% assign bold_member = false %}
+ 			{% if customer %}
+               
+        		{% for tag in customer.tags %}
+           		 {% if tag == 'mvg-membership' or tag == 'Restricted Users'%}
+               		 {% assign bold_member = true %}
+               		 {% break %}
+            	 {% endif %}
+        	{% endfor %}
+            {% if bold_member %}
+          			<br /> <a href="https://myvillagegreen.myshopify.com/collections/vendors?q=DESIGNS%20FOR%20HEALTH">Designs for Health</a>
+         		 
+          
+            {% else %}
+					
+            {% endif %}
+               
+    	   {% else %}
+				 
+          {% endif %}
+          
+          
+          
+          
+            
+          
+          
+          
+          
+          
             <br /><a href="https://myvillagegreen.myshopify.com/collections/douglas-labs"> Douglas Labs</a>
             <a href="https://myvillagegreen.myshopify.com/collections/vendors?q=MILLER%20PHARMACEUTICA">
                 <br />
