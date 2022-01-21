@@ -973,7 +973,7 @@ jQuery(function ($) {
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Vitamin B1 (thiamine)').toLowerCase()) {
-                action = "Vitamin B1 is an essential water-soluble vitamin required for carbohydrate metabolism, glucose regulation, antioxidant functions and regulating heart and nerve function. Taking a multivitamin or B vitamin supplement is likely to cover your need for vitamin B1 (thiamine).";
+                action = "Vitamin B1 is an essential water-soluble vitamin that is required for carbohydrate metabolism, glucose regulation, antioxidant functions and regulating heart and nerve function. Taking a multivitamin or B vitamin supplement will likely cover your need for vitamin B1 (thiamine).";
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=thiamin*&view=ls";
                 btn_text = "Shop Now";
             }
@@ -982,7 +982,7 @@ jQuery(function ($) {
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Vitamin B2 (riboflavin)').toLowerCase()) {
-                action = "Vitamin B2 is an essential water-soluble vitamin needed for energy metabolism, adrenal function and maintaining heathy skin. You may need to supplement with vitamin B2 (riboflavin) to meet your body’s needs.";
+                action = "Vitamin B2 is an essential water-soluble vitamin needed for energy metabolism, adrenal function and maintaining heathy skin. Supplementing with vitamin B2 (riboflavin) may be recommended to help meet your body’s needs.";
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=vitamin*+b2*&view=ls";
                 btn_text = "Shop Now";
             }
@@ -993,7 +993,7 @@ jQuery(function ($) {
             else if (t === ('Supplement with niacinamide (Vitamin B3)').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=Niacinamide&view=ls";
                 btn_text = "Shop Now";
-                action = "Niacinamide is a form of vitamin B3, this essential water-soluble vitamin is required for the proper function of fats and sugars in the body and to maintain healthy cells. You may need to supplement with niacinamide to meet your body’s needs.";
+                action = "Niacinamide is a form of vitamin B3. This essential water-soluble vitamin is required for helping your body turn food into energy. It is also important for your nervous system, digestive system, and skin health. Supplementing with niacinamide may be necessary to help meet your body’s needs.";
             }
             else if (t === ('Pantothenic Acid').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product&q=Pantothenic*+Acid*";
@@ -1002,7 +1002,7 @@ jQuery(function ($) {
             else if (t === ('Take pantothenic acid').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=Pantothenic*+Acid*&view=ls";
                 btn_text = "Shop Now";
-                action = "Vitamin B5 or pantothenic acid is an essential water-soluble vitamin required to form coenzyme-A, which helps to synthesize and metabolize proteins, carbohydrates, and fats, and turn them into usable energy. A B vitamin combination or multivitamin is likely to cover your need for pantothenic acid.";
+                action = "Vitamin B5 or pantothenic acid is an essential water-soluble vitamin required to form coenzyme-A, which helps to synthesize and metabolize proteins, carbohydrates, and fats, and turn them into usable energy. Pantothenic acid also supports healthy adrenal function and may be helpful during times of stress. Taking a B-complex supplement or multivitamin formula can cover your need for pantothenic acid. However, it is also available as a stand-alone supplement when more is needed.";
             }
             else if (t === ('Vitamin B6').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product&q=vitamin*+b6*";
@@ -1010,7 +1010,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Vitamin B6').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=vitamin*+b6*&view=ls";
-                action = "Vitamin B6 is an essential water-soluble vitamin that helps the body convert protein to energy and works with folic acid and B12 to reduce homocysteine levels. You may need to supplement with vitamin B6 (pyridoxine) to meet your body’s needs.";
+                action = "Vitamin B6 is an essential water-soluble vitamin that helps the body convert protein to energy and works with folic acid and B12 to reduce homocysteine levels. Supplementing with vitamin B6 (pyridoxine) can be necessary to help meet your body’s needs.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Vitamin B12').toLowerCase()) {
@@ -1019,7 +1019,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Vitamin B12').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=vitamin*+b12*&view=ls";
-                action = "Vitamin B12 is an essential water-soluble vitamin that is used to form red blood cell, maintain the nervous system and help with energy production. Most multivitamin or B vitamin supplements should meet your needs for vitamin B12.";
+                action = "Vitamin B12 is an essential water-soluble vitamin that is needed to form red blood cells. B12 also plays an important role in nervous system health and homocysteine regulation. Most multivitamin or B vitamin supplements should meet your needs for vitamin B12. However, sometimes taking a stand-alone vitamin B12 supplement is necessary to meet your body's needs.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Folic Acid').toLowerCase()) {
@@ -1028,7 +1028,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take folic acid').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=folic*+acid*&view=ls";
-                action = "Folic acid is a water-soluble vitamin required for the synthesis of DNA  and RNA, producing red blood cells and helping cell division and growth. While green leafy vegetables are rich in folic acid, you may need to supplement with this B vitamin.";
+                action = "Folic acid is a water-soluble vitamin required for the synthesis of DNA  and RNA, producing red blood cells and helping cell division and growth. While green leafy vegetables are rich in folic acid, you may need to supplement with this B vitamin for optimal levels.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Biotin').toLowerCase()) {
@@ -1037,7 +1037,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Biotin').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=biotin*&view=ls";
-                action = "Biotin is a member of the B vitamin family, biotin is involved in the biosynthesis of fatty acids, energy production and metabolism and is often used to support healthy skin, nails and hair. Most multivitamin or B vitamin supplements should meet your needs for biotin.";
+                action = "Biotin is a member of the B vitamin family. IIt is an important coenzyme involved in the biosynthesis of fatty acids, energy production, and metabolism. Supplemental biotin is often recommended to help support healthy skin, nails and hair. Most multivitamin or B vitamin supplements should meet your needs for biotin, but it is also available as an individual supplement when a higher dosage is needed.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Choline').toLowerCase()) {
@@ -1046,7 +1046,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Choline').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=choline*&view=ls";
-                action = "Choline is an essential water-soluble nutrient involved in synthesis of phospholipids for the structure of cell membranes, cell messaging, fat transport and DNA synthesis. Most multivitamin or B vitamin supplements should meet your needs for choline.";
+                action = "Choline is an essential water-soluble nutrient involved in synthesis of phospholipids for the structure of cell membranes. Choline also plays a role in cell messaging, fat transport and DNA synthesis. Most multivitamin or B vitamin supplements should meet your needs for choline. If a higher dosage of choline is recommeded, it is available as a stand-alone supplement.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Vitamin C').toLowerCase()) {
@@ -1055,7 +1055,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Vitamin C').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=vitamin*+c*&view=ls";
-                action = "Vitamin C is a  water-soluble vitamin that  supports healthy collagen synthesis, cartilage and bone development, central nervous system, immune system, antioxidant activity, and blood vessel support.";
+                action = "Vitamin C is a  water-soluble vitamin that  supports healthy collagen synthesis, cartilage and bone development, central nervous system, immune system, antioxidant activity, and blood vessel support. While foods such as guava, red pepper, and cantaloupe are rich in vitamin C, you may need to also supplement.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Vitamin A').toLowerCase()) {
@@ -1064,7 +1064,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Vitamin A').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=vitamin*+a*&view=ls";
-                action = "Vitamin A is a fat-soluble vitamin that promotes healthy vision and helps our eyes adapt to light changes, supports immune system health and promotes healthy skin. While fish, eggs, and dairy fats contain vitamin A, you may need to supplement.";
+                action = "Vitamin A is a fat-soluble vitamin that promotes healthy vision and helps your eyes adapt to light changes, supports immune system health and promotes healthy skin. While fish, eggs, and dairy fats contain vitamin A, you may need to supplement.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Vitamin D').toLowerCase()) {
@@ -1073,7 +1073,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Vitamin D').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=vitamin*+d*&view=ls";
-                action = "Vitamin D is a fat-soluble vitamin that plays a key role in helping to maintain bone density and bone strength. It also supports cardiovascular health, mental health, skin health, as well as immune system health.   Supplemental vitamin D is often needed to reach optimal blood levels of this fat-soluble vitamin.";
+                action = "Vitamin D is a fat-soluble vitamin that plays a key role in helping to maintain bone density and bone strength. It also supports cardiovascular health, mental health, skin health, as well as immune system health.   Supplemental vitamin D is often needed to reach optimal blood levels of this important vitamin.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Vitamin E').toLowerCase()) {
@@ -1091,7 +1091,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Mixed Carotenoids').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=carotenoids*&view=ls";
-                action = "Mixed carotenoids are antioxidants that support a healthy immune system. Carotenoids have been shown to help lower inflammation, benefit eye health, and protect skin health.  Supplement with mixed carotenoids for more diverse antioxidant benefit.";
+                action = "Carotenoids are antioxidants that support a healthy immune system and help lower inflammation, benefit eye health, and protect skin health.  Supplementing with mixed carotenoids provides diverse antioxidant benefits.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Calcium').toLowerCase()) {
@@ -1100,7 +1100,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Calcium').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=calcium*&view=ls";
-                action = "Calcium is the most abundant mineral in the body and necessary for building and maintaining strong bones and teeth. 99% of calcoium is stored in the bones and the remaining 1% is necessary for proper muscle growth, blood clotting and regular heartbeat.  While dairy, soy, and green veggies are good dietary sources of calcium, you may need to supplement your intake.";
+                action = "Calcium is the most abundant mineral in the body and is necessary for building and maintaining strong bones and teeth. Approximately 99% of calcoium is stored in the bones and the remaining 1% is necessary for proper muscle growth, blood clotting and regular heartbeat.  While dairy, soy, green vegetables, and nuts & seeds are good dietary sources of calcium, many individuals can benefit from taking a high-quality calcium supplement.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Copper').toLowerCase()) {
@@ -1109,7 +1109,7 @@ jQuery(function ($) {
             }
             else if (t === ('Increase your Copper intake').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=copper*&view=ls";
-                action = "Copper is an essential trace mineral that plays a key role in the formation of bone, red blood cells and collagen and is necessary for the proper absorption and utilization of iron.   Most multivitamins contain adequate copper, and sesame seeds, cashews, and soybeans are good dietary sources.";
+                action = "Copper is an essential trace mineral that plays a key role in the formation of bone, red blood cells, and collagen. Copper is also necessary for the proper absorption and utilization of iron. Most multivitamins contain adequate copper, and sesame seeds, cashews, and soybeans are good dietary sources.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Iron').toLowerCase()) {
@@ -1118,7 +1118,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Iron').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=iron*&view=ls";
-                action = "Iron is a trace mineral found in the hemoglocbin molecule of red blood cells, which carries oxygen from the lungs to the rest of the body.  Iron promotes normal red blood cell production and supports energy utilization.  You may need a supplement containing iron - also taking vitamin C may help improve its absorption.";
+                action = "Iron is a trace mineral found in the hemoglocbin molecule of red blood cells, which carries oxygen from the lungs to the rest of the body. Iron promotes normal red blood cell production and supports energy utilization. When supplemental iron is needed, taking a highly-absorbable form is best and is gentle on your stomach. In addition, taking vitamin C can help to enhance iron's absorption.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Iodine').toLowerCase()) {
@@ -1127,7 +1127,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Iodine').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=iodine*&view=ls";
-                action = "Iodine is a trace element naturally found in table salt that is necessary  for the normal function of the thyroid gland.  Iodine can be found in high amounts in sea veggies such as kelp and scallops, though you may need to supplement with this mineral. Iodine can be found in high amounts in sea veggies such as kelp and scallops, though you may need to supplement with this mineral.";
+                action = "Iodine is a trace element that plays an important role in regulating thyroid function. Dietary sources of iodine can come from iodized salt, seawead, cod, tuna, dairy, dried fruits, and eggs. Some individuals need to supplement with this mineral to meet their needs.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Manganese').toLowerCase()) {
@@ -1136,7 +1136,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Manganese').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=manganese*&view=ls";
-                action = "Manganese is a mineral essential for bone, joint and cartilage health  and for the activation of the important antioxidant enzyme superoxide dismutase (SOD). The mineral manganese can be found in many multivitamins, and rich foods include brown rice, oats, and garbanzo beans.";
+                action = "Manganese is a mineral essential for bone, joint and cartilage health, as well as for the activation of the important antioxidant enzyme, superoxide dismutase (SOD).  Rich foods of manganese include brown rice, oats, and garbanzo beans. Manganese can be found in many multivitamins as well as individual supplements.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Magnesium').toLowerCase()) {
@@ -1145,7 +1145,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Magnesium').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?q=magnesium*&type=product%2Cpage&view=ls";
-                action = "Magnesium is the most abundant mineral in the body and is required for more than 300 biochemical reactions including bone formation, maintaining a regular heartbeat and balancing blood sugar. Magnesium is also essential for relaxing muscles and plays a role in the formation of ATP, which the body uses as fuel.";
+                action = "Magnesium is the most abundant mineral in the body and is required for more than 300 biochemical reactions. Magnesium plays an important role in bone formation, maintaining a regular heartbeat and balancing blood sugar. Magnesium is also essential for relaxing muscles and plays a role in the formation of ATP, which the body uses as fuel. Nuts, seeds, whole grains, beans, green leafy vegetables, and soy are good sources of magnesium. However, most individuals require supplemental magnesium in order to meet their nutrient needs.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Potassium').toLowerCase()) {
@@ -1154,7 +1154,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Potassium').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?q=potassium*&type=product%2Cpage&view=ls";
-                action = "Potassium is an essential mineral and electrolyte necessary for the maintenance of regular heart rhythm, blood pressure, neuromuscular functioning, acid levels and water balance.  Potassium rich foods include sweet potato and green leafy veggies, though you may need to supplement with this mineral.";
+                action = "Potassium is a mineral and electrolyte that is necessary for the normal functioning of all cells. It regulates the heartbeat, ensures proper function of the muscles and nerves, and is vital for synthesizing protein and metabolizing carbohydrates. Potassium rich foods include sweet potato and green leafy vegetables, however you may need to supplement with this mineral to help meet your nutrient needs.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Phosphorus').toLowerCase()) {
@@ -1163,7 +1163,7 @@ jQuery(function ($) {
             }
             else if (t === ('Increase your Phosphorus intake').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=phosphorus*&view=ls";
-                action = "Phosphorus is the second most abundant mineral in the body and works with calcium to build and maintain bones and teeth.  Both calcium and phosphorus depend on each other and must maintain a stable ratio of 1:2.  Included in most multivitamins, phosphorus is also found scallops, sardines, and soybeans. Included in most multivitamins, phosphorus is also found scallops, sardines, and soybeans.";
+                action = "Phosphorus is the second most abundant mineral in the body and works with calcium to build and maintain bones and teeth. Both calcium and phosphorus depend on each other and must maintain a stable ratio of 1:2. Food sources of phosphorus include scallops, sardines, and soybeans. Most multivitamins include this important mineral.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Selenium').toLowerCase()) {
@@ -1172,7 +1172,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Selenium').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?q=selenium*&type=product%2Cpage&view=ls";
-                action = "Selenium is a trace mineral and natural antioxidant that supports a healthy immune system, prevents buildup of fats in the blood vessels and stimulates the thyroid hormones.  The mineral selenium is found in most multivitamins; Brazil nuts are extremely rich, with lesser amounts in seafood. The mineral selenium is found in most multivitamins; Brazil nuts are extremely rich, with lesser amounts in seafood.";
+                action = "Selenium is an important trace mineral and antioxidant that supports a healthy immune system, prevents buildup of fats in the blood vessels and stimulates thyroid hormones. Food sources of selenium include Brazil nuts, seafood, and beef.  Selenium is found in most multivitamins.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Zinc').toLowerCase()) {
@@ -1181,7 +1181,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Zinc').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?q=zinc*&type=product%2Cpage&view=ls";
-                action = "Zinc is a mineral that is essential to the work of over 300 enzymes in the body. These enzymes assist in cell reproduction, maintain vision, support the immune system and repair wounds. Zinc is also essential for the healthy storage and metabolism of carbohydrates, as well as the absorption and function of B vitamins. Foods rich in zinc include sesame and pumpkin seeds, though you may need to supplement for optimal intake.";
+                action = "Zinc is a very important mineral that is essential for optimal health. It is necessary for cellular growth and division, immune system function, taste and smell, and wound repair. Zinc also plays a role in the storage and metabolism of carbohydrates, as well as the absorption and function of B vitamins. Examples of foods rich in zinc, include sesame and pumpkin seeds. Often, many individuals require additional zinc supplementation to meet their nutrient needs.";
                 btn_text = "Shop Now";
             }
             else if (t === ('S-Adenosylmethionine').toLowerCase()) {
@@ -1190,7 +1190,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take S-Adenosylmethionine (SAM-e)').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=SAMe*&view=ls";
-                action: "SAMe (S-adenosylmethionine) is a metabolite that functions as  a donor of methyl groups in over 100 different reactions and contributes to the synthesis, activation and/or metabolism of hormones, neurotransmitters, nucleic acids, phospholipids and proteins. SAMe also helps maintain cognitive health, liver function  joint comfort.and promotes a happy mood.  Begin supplementing with S-Adenosylmethionine (SAM-e), a key compound required for a process called methylation.";
+                action: "SAMe (S-adenosylmethionine) is a metabolite that functions as  a donor of methyl groups in over 100 different reactions and contributes to the synthesis, activation and/or metabolism of hormones, neurotransmitters, nucleic acids, phospholipids and proteins. SAMe also helps to maintain cognitive health, liver function, healthy joint mobility, and a positive mental outlook and balanced mood.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Betaine').toLowerCase()) {
@@ -1199,7 +1199,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Betaine').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?q=betaine*&type=product%2Cpage&view=ls";
-                action = "Betaine is a modified amino acid used to decrease high levels of homocysteine in the blood. Betaine can be found in beets, beans, and whole grains, but you likely need to supplement for your optimal intake.  Betaine can be found in beets, beans, and whole grains, but you likely need to supplement for your optimal intake.";
+                action = "Betaine is a derivative of the nutrient choline and is a methyl donor in the body. It aids in liver function, detoxification, and healthy cellular functioning. Studies show that betaine can help to decrease high levels of homocysteine in the blood. Food sources of betain include beets, beans, and whole grains. However, supplementation can be helpful when extra support is needed.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Coenzyme Q10 (Ubiquinone)').toLowerCase()) {
@@ -1208,7 +1208,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take CoQ10').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=coq10*&view=ls";
-                action = "CoQ10 , also known as ubiquinone, a name that signifies its ubiquitous (widespread) distribution in the human body, particularly the heart. This  fat-soluble, antioxidant is essential for healthy heart function and is  used by the body to transform food into fuel for the body, ATP.  Begin supplementing with CoQ10 to attain optimal levels of this powerful antioxidant, key to cellular energy production.";
+                action = "CoQ10 is also known as ubiquinone, a name that signifies its ubiquitous (widespread) distribution in the human body, particularly the heart. This fat-soluble antioxidant is essential for healthy cardiovascular function and is used by the body to transform food into fuel for the body. Begin supplementing with CoQ10 to achieve optimal levels of this powerful antioxidant.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Lipoic Acid').toLowerCase()) {
@@ -1217,7 +1217,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Lipoic acid').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?q=lipoic*+acid*&type=product%2Cpage&view=ls";
-                action = "Lipoic acid, also known as alpha lipoic acid, is a powerful antioxidant soluble in water and fat, which allows it to enter all parts of cells to deactivate free radicals. Lipoic acid helps reduce blood cholesterol levels, protects nerve tissues against oxidative stress and regulating blood sugar levels.  Begin supplementing with lipoic acid, an important cellular antioxidant.";
+                action = "Lipoic acid, also known as alpha lipoic acid, is a powerful antioxidant that is soluble in water and fat. This allows it to enter all parts of cells and fight free radicals. Lipoic acid helps reduce blood cholesterol levels, protects nerve tissues against oxidative stress, and helps to regulate blood sugar levels. Begin supplementing with lipoic acid, an important cellular antioxidant.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Omega-3 fatty acids').toLowerCase()) {
@@ -1226,7 +1226,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Omega-3 Fatty Acids').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?q=omega*+3*+fatty*+acids*&type=product%2Cpage&view=ls";
-                action = "Omega-3 essential fatty acids (EFAs), including alpha-linolenic and eicosapentaenoic acid (EPA), are found in fresh deepwater fish, fish oil, walnuts and flaxseed oil. Omega-3 EFAs anti-inflammatory  properties help prevent heart disease by lowering the blood level of LDL cholesterol.";
+                action = "Omega-3 essential fatty acids (EFAs) are healthy fats that have potent anti-inflammatory properties. EFAs are critical components of cellular membranes, are necessary for healthy joints, and promote cardiovascular health, cognitive function, immune health, positive mental outlook, and healthy skin and hair. Omega-3 essential fatty acids are found in coldwater fish, walnuts and flaxseed oil. Supplementing with EFAs are recommended for helping to maintain optimal levels of these essential fats.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Quercetin').toLowerCase()) {
@@ -1333,8 +1333,8 @@ jQuery(function ($) {
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Arginine').toLowerCase()) {
-                l = "https://myvillagegreen.com/search?q=lycopene*&type=product%2Cpage&view=ls";
-                action = "Lycopene is a carotene found in tomatoes. It has both antioxidant and anticancer properties. Found in tomatoes and tomato paste, you may need to supplement with lycopene for your optimal intake.";
+                l = "https://myvillagegreen.com/search?type=product%2Cpage&q=arginine*&view=ls";
+                action = "Arginine is an amino acid that helps with wound healing, stimulates the immune system, and assists with the formation of several important hormones, including insulin and growth hormone. It also helps relax the blood vessels, improving blood flow. Supplement with arginine to support healthy blood vessel function.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Gamma-Linolenic Acid').toLowerCase()) {
@@ -1351,8 +1351,8 @@ jQuery(function ($) {
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Lycopene').toLowerCase()) {
-                l = "https://myvillagegreen.com/search?q=lycopene*&type=product";
-                action = "Lycopene is a carotene found in tomatoes. It has both antioxidant and anticancer properties.";
+                l = "https://myvillagegreen.com/search?q=lycopene*&type=product%2Cpage&view=ls";
+                action = "Lycopene is a carotene found in tomatoes. It has both antioxidant and anticancer properties. Found in tomatoes and tomato paste, you may need to supplement with lycopene for your optimal intake.";
                 btn_text = "Shop Now";
             }
             else if (t === ('N-acetylcysteine (NAC)').toLowerCase()) {
@@ -1441,7 +1441,8 @@ jQuery(function ($) {
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Zinc Gluconate lozenges').toLowerCase()) {
-                l = "https://myvillagegreen.com/search?q=Zinc*+Lozenges*&type=product";
+                l = "https://myvillagegreen.com/search?q=Zinc*+Lozenges*&type=product%2Cpage&view=ls";
+                action = "Zinc gluconate lozenges may be effective at reducing the duration and severity of cold symptoms.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Betaine HCl').toLowerCase()) {
@@ -1604,7 +1605,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take NADH').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?q=NADH*&type=product%2Cpage&view=ls";
-                action = " NADH is a coenzyme derived from vitamin B-3 (niacin), is essential for basic metabolism, respiration, the breakdown of sugars and fats, and the production of ATP, the primary energy molecule in our cells.  Begin supplementing with NADH, a crucial component of the ATP energy production cycle, which supplies energy to the brain, nerves, muscles, heart and all other organs in order to function.";
+                action = "NADH is a coenzyme derived from vitamin B-3 (niacin), is essential for basic metabolism, respiration, the breakdown of sugars and fats, and the production of ATP, the primary energy molecule in our cells.  Begin supplementing with NADH, a crucial component of the ATP energy production cycle, which supplies energy to the brain, nerves, muscles, heart and all other organs in order to function.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Acetylcarnitine').toLowerCase()) {
@@ -1731,7 +1732,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Phosphatidylserine').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=phosphatidylserine*&view=ls";
-                action = "Phosphatidylserine (PS) is a naturally occurring phospholipid. Like other phospholipids, PS is a critical component of cell membranes, and it is found in high concentrations in the brain and nervous tissues, primarily in the cell membranes of neurons. PS  is also known as the 'brain nutrient' and promotes cognitive function, emotional well-being and behavioral performance by supporting cell membrane composition";
+                action = "Phosphatidylserine (PS) is a naturally occurring phospholipid. Like other phospholipids, PS is a critical component of cell membranes, and it is found in high concentrations in the brain and nervous tissues, primarily in the cell membranes of neurons. PS  is also known as the \"brain nutrient\" and promotes cognitive function, emotional well-being and behavioral performance by supporting cell membrane composition";
                 btn_text = "Shop Now";
             }
             else if (t === ('L-citrulline').toLowerCase()) {
@@ -1753,7 +1754,7 @@ jQuery(function ($) {
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Sacrosidase').toLowerCase()) {
-                action = "Sacrosidase is  an enzyme which helps to digest sucrose (table sugar).";
+                action = "Sacrosidase is  an enzyme, which helps to digest sucrose (table sugar).";
                 btn_text = "Learn More";
             }
             else if (t === ('Apply Peppermint Oil topically').toLowerCase()) {
@@ -1856,7 +1857,8 @@ jQuery(function ($) {
             }
             else if (t === ('Take Aloe Vera Gel').toLowerCase()) {
                 action = "The fleshy leaves of aloe vera contain polysaccharides, which are effective for burns of all types and is also good for cuts, insect stings, bruises, acne and blemishes, poison ivy, welts, skin ulcers, and eczema. The gel form of aloe vera can be applied topically for burns/inflammation, or taken internally for digestive health.";
-                btn_text = "Learn More";
+                l = "https://myvillagegreen.com/products/99-aloe-vera-gelly";
+                btn_text = "Shop Now";
             }
             else if (t === ('Take Aloe Vera Latex').toLowerCase()) {
                 action = "When taken internally, aloe vera juice is known to aid in the healing of stomach disorders, ulcers, constipation, hemorrhoids, rectal itching, colitis, and all colon problems.  Begin supplementing with the latex form of Aloe vera to improve your digestion.";
@@ -1904,7 +1906,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Modified Citrus Pectin (MCP)').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=modified*+citrus*+pectin*&view=ls";
-                action = "Pectin is a gelatinous substance known as a polysaccharide. Modified citrus pectin is made by exposing pectin to sodium hydroxide and hydrochloric acid so the polysachharide molecules break down and are more readily absorbed i nthe gut. ";
+                action = "Pectin is a gelatinous substance known as a polysaccharide. Modified citrus pectin is made by exposing pectin to sodium hydroxide and hydrochloric acid so the polysachharide molecules break down and are more readily absorbed i nthe gut.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Green tea').toLowerCase()) {
@@ -1931,7 +1933,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Bromelain').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=bromelain*&view=ls";
-                action = "Bromelain is an anti-inflammatory enzyme found in pineapples that supports protein digestion and joint health ";
+                action = "Bromelain is an anti-inflammatory enzyme found in pineapples that supports protein digestion and joint health";
                 btn_text = "Shop Now";
             }
             else if (t === ('Eleuthero').toLowerCase()) {
@@ -1971,7 +1973,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Ashwagandha').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=ashwagandha*&view=ls";
-                action = "Ashwagandha is a grounding, calming and restoring herb that promotes balance in the body by supporting healthy cortisol levels";
+                action = "Ashwagandha (Withania somnifera) is a grounding, calming and restoring herb that promotes balance in the body by supporting healthy cortisol levels";
                 btn_text = "Shop Now";
             }
             else if (t === ('Korean Ginseng').toLowerCase()) {
@@ -1980,7 +1982,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Korean Ginseng').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=korean*+ginseng*&view=ls";
-                action = "Korean gingeng promotes energy, memory and libido. ";
+                action = "Korean gingeng promotes energy, memory and libido.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Bitter Melon').toLowerCase()) {
@@ -1989,7 +1991,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Bitter Melon').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=bitter*+melon*&view=ls";
-                action = "Bittermelon is used to support digestion, cardiovascular function and skin health";
+                action = "Bittermelon (Momordica charantia) is used to support digestion, cardiovascular function and skin health";
                 btn_text = "Shop Now";
             }
             else if (t === ('Gymnema').toLowerCase()) {
@@ -1998,7 +2000,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Gynmema').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=gymnema*&view=ls";
-                action = "Gymnema helps to support healthy blood sugar levels by promoting anti-sweetness activity by suppressing the ability to detect sweet tastes.";
+                action = "Gymnema  (Gymnema sylvestre) helps to support healthy blood sugar levels by promoting anti-sweetness activity by suppressing the ability to detect sweet tastes.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Butterbur').toLowerCase()) {
@@ -2007,7 +2009,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Butterbur').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=butterbur*&view=ls";
-                action = "Butterbur supports healthy blood flow to the brain and promotes relief from headaches";
+                action = "Butterbur has anti-inflammatory properties and supports healthy blood flow to the brain and promotes relief from headaches";
                 btn_text = "Shop Now";
             }
             else if (t === ('Rhodiola').toLowerCase()) {
@@ -2024,7 +2026,7 @@ jQuery(function ($) {
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Prickly Pear').toLowerCase()) {
-                action = "Prickly pear supports healthy gut function by promoting bowel movements to remove toxic substances from the gut.";
+                action = "Prickly pear (Opuntia ficus-indica) supports healthy gut function by promoting bowel movements to remove toxic substances from the gut. Start taking prickly pear, for anti-inflammatory and blood sugar benefits.";
                 btn_text = "Learn More";
             }
             else if (t === ('Cordyceps').toLowerCase()) {
@@ -2033,7 +2035,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Cordyceps').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=cordyceps*&view=ls";
-                action = "Cordyceps is a mushroom used to improve immune function, athletic performance and sexual function.";
+                action = "Cordyceps (Coryceps sinensis) is a mushroom used to improve immune function, athletic performance and sexual function.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Chasteberry').toLowerCase()) {
@@ -2042,7 +2044,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Chasteberry').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=chaste*+tree*&view=ls";
-                action = "Chaste tree berry or vitex is used to support  support gynecological health by helping to maintain hormone balance.";
+                action = "Chaste tree berry (Vitex agnus castus)  is used to support  support gynecological health by helping to maintain hormone balance.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Cinnamon').toLowerCase()) {
@@ -2060,12 +2062,12 @@ jQuery(function ($) {
             }
             else if (t === ("Take Cat's Claw").toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=cats*+claw*&view=ls";
-                action = "Cat's claw supports the inflammatory pathways in the human body by supporting joint health as well as the healthy functioning of the immune system.";
+                action = "Cat's claw,  a South American plant, supports the inflammatory pathways in the human body by supporting joint health as well as the healthy functioning of the immune system.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Bilberry').toLowerCase()) {
-                l = "https://myvillagegreen.com/search?type=product%2Cpage&q=black*+cohosh*&view=ls";
-                action = "Black cohosh is used to to support normal levels of energy and to support the female reproductive system during the menopausal and perimenopausal years. Start supplementing with a black cohosh extract for relief of menopausal symptoms.";
+                l = "https://myvillagegreen.com/search?type=product%2Cpage&q=bilberry*&view=ls";
+                action = "Bilberry promotes eye health and vision  and supports a healthy inflammatory response. Start taking Bilberry, known to contain an impressive variety of antioxidants and proanthocyanins.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Black cohosh').toLowerCase()) {
@@ -2073,8 +2075,8 @@ jQuery(function ($) {
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Black Cohosh').toLowerCase()) {
-                l = "https://myvillagegreen.com/search?type=product&q=black*+cohosh*";
-                action = "Black cohosh is used to to support normal levels of energy and to support the female reproductive system during the menopausal and perimenopausal years.";
+                l = "https://myvillagegreen.com/search?type=product%2Cpage&q=black*+cohosh*&view=ls";
+                action = "Black cohosh is used to to support normal levels of energy and to support the female reproductive system during the menopausal and perimenopausal years. Start supplementing with a black cohosh extract for relief of menopausal symptoms.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Cats Claw').toLowerCase()) {
@@ -2190,7 +2192,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Dong quai').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=dong*+quai*&view=ls";
-                action = "Considered the 'female ginseng,' dong quai supports women's health by reducing painful menstruation, promoting menstrual regularity, and reducing menopausal symptoms, such as hot flashes.";
+                action = "Considered the \"female ginseng,\" dong quai supports women's health by reducing painful menstruation, promoting menstrual regularity, and reducing menopausal symptoms, such as hot flashes.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Devil\'s Claw').toLowerCase()) {
@@ -2199,7 +2201,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Devil\'s Claw').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=devil%27s*+claw*&view=ls";
-                action = "Devil's Claw is known for it's anti-inflammatory and blood sugar balancing properties.";
+                action = "Devil's Claw, an African herb, is known for it's anti-inflammatory and blood sugar balancing properties.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Devil\'s Claw').toLowerCase()) {
@@ -2229,7 +2231,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Licorice').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=licorice*&view=ls";
-                action = "Licorice has anti-inflammatory, mucoprotective, demulcent, anti-ulcer, anti-viral, and adrenal supportive properties.";
+                action = "Licorice root (Glycyrrhiza glabra root) has anti-inflammatory, mucoprotective, demulcent, anti-ulcer, anti-viral, and adrenal supportive properties.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Oregano').toLowerCase()) {
@@ -2265,7 +2267,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Andrographis').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=andrographis*&view=ls";
-                action = "Andrographis is an Ayurvedic herb that has been shown to support immune, liver, and cardiovascular health.";
+                action = "Andrographis  (Andrographis paniculata) is an Ayurvedic herb that has been shown to support immune, liver, and cardiovascular health.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Phytosterols').toLowerCase()) {
@@ -2292,7 +2294,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Pygeum').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=pygeum*&view=ls";
-                action = "Pygeum is an evergreen tree native to Africa and it's bark is used to support urinary / prostate health. Studies show that pygeum has anti-inflammatory properties.";
+                action = "Pygeum (Pygeum africanum)  is an evergreen tree native to Africa and it's bark is used to support urinary / prostate health. Studies show that pygeum has anti-inflammatory properties.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Stinging nettle').toLowerCase()) {
@@ -2305,7 +2307,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Stinging Nettle').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=stinging*+nettle*&view=ls";
-                action = "Stinging nettle has both anti-inflammatory and anti-allergy effects.";
+                action = "Stinging nettle (Urtica dioica) has both anti-inflammatory and anti-allergy effects.";
                 btn_text = "Shop Now";
             }
             else if (t === ('American Ginseng').toLowerCase()) {
@@ -2314,7 +2316,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take American Ginseng').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=american*+ginseng*&view=ls";
-                action = "American ginseng is an herbal adaptogen that supports stamina, vitality, and helps to strengthen the immune health.";
+                action = "American ginseng (Panax quinquefolius)  is an herbal adaptogen that supports stamina, vitality, and helps to strengthen the immune health.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Passionflower').toLowerCase()) {
@@ -2331,7 +2333,7 @@ jQuery(function ($) {
                 btn_text = "Shop Now";
             }
             else if (t === ('Take Pelargonium Sidoides').toLowerCase()) {
-                action = "Pelgaronium supports upper respiratory health and can be beneficial when taken at the first sign of a cold, or when experiencing a cough or sinus symptoms.";
+                action = "Pelgaronium (Pelargonium sidoides) supports upper respiratory health and can be beneficial when taken at the first sign of a cold, or when experiencing a cough or sinus symptoms.";
                 btn_text = "Learn More";
             }
             else if (t === ('Take California Poppy').toLowerCase()) {
@@ -2345,7 +2347,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Lemon Balm').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?type=product%2Cpage&q=lemon*+balm*&view=ls";
-                action = "Lemon balm is a member of the minf family and has traditionally been used to support digestion and to calm nerves.";
+                action = "Lemon balm (Melissa officinalis) is a member of the minf family and has traditionally been used to support digestion and to calm nerves.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Elderberry').toLowerCase()) {
@@ -2354,7 +2356,7 @@ jQuery(function ($) {
             }
             else if (t === ('Take Elderberry ').toLowerCase()) {
                 l = "https://myvillagegreen.com/search?q=elderberry*&type=product%2Cpage&view=ls";
-                action = "Elderberry is rich in antioxidants and supports immune health. Start supplementation with elderberry to reduce swelling, fight inflammation, and boost the immune system.";
+                action = "Elderberry (Sambucus nigra) is rich in antioxidants and supports immune health. Start supplementation with elderberry to reduce swelling, fight inflammation, and boost the immune system.";
                 btn_text = "Shop Now";
             }
             else if (t === ('Decrease your intake of foods containing Histamine').toLowerCase()) {
@@ -2434,7 +2436,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Reduce your Calorie intake').toLowerCase()) {
-                action = "A calorie restricted diet can aid in weight loss and may also have benefits for increasing lifespan.";
+                action = "A calorie restricted diet can aid in weight loss and may also have benefits for increasing lifespan. ";
                 btn_text = "Learn More";
             }
             else if (t === ('Salicylates, Dietary, Decrease Intake').toLowerCase()) {
@@ -2678,7 +2680,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Find a Cognitive Behavioral Therapist').toLowerCase()) {
-                action = "Find a therapist trained in cognitive behavioral therapy (CBT), a proven method for supporting mental health. Working with a therapist can help one manage stressful life situations in a healthy manner.  ";
+                action = "Find a therapist trained in cognitive behavioral therapy (CBT), a proven method for supporting mental health. Working with a therapist can help one manage stressful life situations in a healthy manner.";
                 btn_text = "Learn More";
             }
             else if (t === ('Pacifier restriction').toLowerCase()) {
@@ -2694,7 +2696,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Add Yoga to your life').toLowerCase()) {
-                action = "Joining a regular yoga practice, including exercise for stretching, strengthening, relaxation, etc. has potent health benefits.";
+                action = "Joining a regular yoga practice, including exercise for stretching, strengthening, relaxation, etc. has many health benefits.";
                 btn_text = "Learn More";
             }
             else if (t === ('Chewing tobacco cessation').toLowerCase()) {
@@ -2710,11 +2712,11 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Consider a Protein Redistribution diet').toLowerCase()) {
-                action = "Identify histamine-rich foods, e.g. red wine, chocolate, aged cheese, etc., and avoid these common food triggers.";
+                action = "A protein redistribution diet involves concentrating your protein intake to a certain time of the day. This type of dietary approach has been shown to help make the medication levadopa more effective and to help reduce the feelings of sickness in people with Parkinson's disease.";
                 btn_text = "Learn More";
             }
             else if (t === ('Follow a Low Glycemic Load/Index Diet').toLowerCase()) {
-                action = "Identify all sources of gluten (wheat, barley, etc.) and remove them from your diet. This requires some close detective work.";
+                action = "Eating a low glycemic load/index diet can help to improve blood sugar regulation and may be benecial for weight loss.";
                 btn_text = "Learn More";
             }
             else if (t === ('Try an Elimination and Rechallenge Diet').toLowerCase()) {
@@ -2722,7 +2724,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Try an Elimination/Rechallenge Diet').toLowerCase()) {
-                action = "Identify dietary tyramines, e.g. aged cheese, soy sauce, fermented sausage, etc., and remove these triggers from your diet.";
+                action = "An elimination/rechallenge diet is considered the gold standard for identifying food sensitivities and food intolerances. It is a helpful tool for discovering foods that may be triggering symptoms such as allergies, eczema, skin issues, joint pain, migraine, brain fog, and fatigue.";
                 btn_text = "Learn More";
             }
             else if (t === ('Reduce the overall size of your meals').toLowerCase()) {
@@ -2730,7 +2732,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Lower the size of your meals').toLowerCase()) {
-                action = "Avoiding animal foods and using an iron skillet are steps to avoid ingesting dietary forms of iron.";
+                action = "Reducing the size of your meals can help to promote blood sugar balance, enhance digestion, and aid in weight management.";
                 btn_text = "Learn More";
             }
             else if (t === ('Adopt a Low Potassium Diet').toLowerCase()) {
@@ -2738,7 +2740,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Consume a Low Potassium Diet').toLowerCase()) {
-                action = "Identify healthy protein sources, e.g. nuts, seeds, beans, lentils, healthy meats, and start to increase your total intake.";
+                action = "Potassium plays a role in keeping your heartrate regular, maintaining fluid balance, and allows your nerves and muscles to work properly. The kidneys help to control the correct level of potassium in your blood. People who take certain medications or who have kidney disease  are sometimes unable to regulate potassium efficiently. Eating a low potassium diet can be benficial for those with diminished renal function.";
                 btn_text = "Learn More";
             }
             else if (t === ('Dietary Recommendations for Preconception').toLowerCase()) {
@@ -2746,7 +2748,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Follow Preconception dietary recommendations').toLowerCase()) {
-                action = "Identify good dietary sources of fiber, e.g. fruits/veggies, oats, whole grains, beans, etc., and eat these foods regularly.";
+                action = "Eating a diet rich in whole, fresh foods has been shown to help optimize fertility. This includes eating plenty of vegetables and fruits, good quality protein sources, healthy fats, legume, and whole grains. Other recommendations include, minimizing your intake of fast food, highly processed foods and sugar sweetened beverages, as well as reducing your exposure to chemicals and toxins.";
                 btn_text = "Learn More";
             }
             else if (t === ('Prenatal diet').toLowerCase()) {
@@ -2754,7 +2756,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Follow Prenatal dietary recommendations').toLowerCase()) {
-                action = "Reduce your intake of dietary fats - typically around 20% is considered a reasonable goal.";
+                action = "Eating a healthy and balanced diet during pregnancy is important for your health as well as the growth and development of your baby. Nutrient dense foods, especially protein, complex carbohydrates, and quality fats, provide key nutrients such as iron, folate, and choline.";
                 btn_text = "Learn More";
             }
             else if (t === ('Morning sickness dietary recommendations').toLowerCase()) {
@@ -2762,11 +2764,11 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Follow Morning sickness dietary recommendations').toLowerCase()) {
-                action = "There are many sources of dietary sugar - try to eliminate most/all of them, particularly 'added' sugars.";
+                action = "Morning sickness is caused by the rapid change in hormonal levels that occurs during the first weeks of pregnancy. Eating small frequent meals that contain complex carbohydrates and avoiding high fat foods can be helpful. In addition, because low blood sugar can cause nausea, try eating a protein rich snack before you go to bed. Drink plenty of liquids, including nutritious broths. Takeing a B complex supplement, especially vitamin B6, can also help.";
                 btn_text = "Learn More";
             }
             else if (t === ('Eat breakfast every day').toLowerCase()) {
-                action = "Try to cut down on your intake of saturated fats, e.g. meats, dairy, butter, to no more than 10% of your calories.";
+                action = "Studies have linked eating breakfast to good health, including better memory and concentration, lower levels of “bad” LDL cholesterol, and lower chances of getting diabetes, heart disease, and being overweight.";
                 btn_text = "Learn More";
             }
             else if (t === ('Low carbohydrate diet').toLowerCase()) {
@@ -2774,7 +2776,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Adopt a Low Carbohydrate Diet').toLowerCase()) {
-                action = "A calorie restricted diet can have benefits in addition to weight loss.";
+                action = "Eating a low carbohydrate diet is an approach that reduces the overal intake of carbohydrates. Common sources include grains, legumes, starchy vegetables, fruits, as well as refined carbohdyrates such as bread, pasta, cookies, etc. This approach can reduce the risk of metabolic syndrom,e type 2 diabetes, and aid in weight loss.";
                 btn_text = "Learn More";
             }
             else if (t === ('Mediterranean diet').toLowerCase()) {
@@ -2782,7 +2784,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Adopt a Mediterranean Diet').toLowerCase()) {
-                action = "Identify and avoid foods rich in salicylates, e.g. tea, curry, berries, licorice, etc.";
+                action = "A  Mediterranean diet is a way of eating that's based on the traditional cuisines of Greece, Italy and other countries that border the Mediterranean Sea. It is a heart-healthy dietary approach that involves eating a lot of plant-based foods, such as whole grains, vegetables, legumes, fruits, nuts, seeds, herbs and spices.  Olive oil is the main source of added fat. Fish, seafood, dairy and poultry are included in moderation. And, red meat and sweets are eaten only occasionally.";
                 btn_text = "Learn More";
             }
             else if (t === ('Carbohydrate counting diet').toLowerCase()) {
@@ -2790,7 +2792,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Start a Carbohydrate Counting Diet').toLowerCase()) {
-                action = "Consult with a nutritionist to help reduce your protein intake - this may be necessary for your kidney function.";
+                action = "A carbohydrate counting diet is an eating plan designed to keep blood sugar levels even throughout the day. The diet involves counting the grams of carbohydrates in all the foods you eat. By keeping the amount of carbohydrates consumed at each meal consistent, it can help prevent fluctuations in blood sugar.";
                 btn_text = "Learn More";
             }
             else if (t === ('Reduce your coffee consumption').toLowerCase()) {
@@ -2813,12 +2815,8 @@ jQuery(function ($) {
                 action = "Increase your daily consumption of veggies - ideally consume at least 5 servings of a variety (rainbow) of colors.";
                 btn_text = "Learn More";
             }
-            else if (t === ('Eat more Vegetables').toLowerCase()) {
-                action = "Increase your daily consumption of veggies - ideally consume at least 5 servings of a variety (rainbow) of colors.";
-                btn_text = "Learn More";
-            }
             else if (t === ('Add flaxseed to your diet').toLowerCase()) {
-                action = "Work up to 6T per day of flaxseed added to your meals, either whole or ground.";
+                action = "Flaxseeds provide a rich source of plant-based omega-3 essential fatty acids, fiber, and important minerals. They have been shown to support digestion, balance blood sugar levels, and promote cardiovascular health. Add flaxseeds to your meals, either whole or ground to reap their many healthy benefits.";
                 btn_text = "Learn More";
             }
             else if (t === ('Substitute Olive oil (monounsaturated fats) for other fats in your diet').toLowerCase()) {
@@ -2826,7 +2824,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Use Primarily Olive Oil').toLowerCase()) {
-                action = "Substitute olive oil for other fats - rich in monounsaturated fats, it is a key component of the Mediterranean diet.";
+                action = "Substitute olive oil for other fats. Olive oil is rich in monounsaturated fats and is a key component of the Mediterranean diet. Olive oil has anti-inflammatory and antioxidant properties.";
                 btn_text = "Learn More";
             }
             else if (t === ('Drink more water').toLowerCase()) {
@@ -2918,7 +2916,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Add more Nuts to your diet').toLowerCase()) {
-                action = "Eat more nuts, including cashews, almonds, and pecans, all linked to improved cardiometabolic health.";
+                action = "Key to good detoxification, add more cruciferous veggies to your diet, including kale, broccoli, watercress, etc.";
                 btn_text = "Learn More";
             }
             else if (t === ('Eat more cruciferous vegetables').toLowerCase()) {
@@ -2942,7 +2940,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Eat more Fruit').toLowerCase()) {
-                action = "FDA recommends 4 servings of fruit per day, choose berries high in antioxidants. See more info at http://www.fda.gov";
+                action = "FDA recommends 4 servings of fruit per day, choose berries high in antioxidants.";
                 btn_text = "Learn More";
             }
             else if (t === ('Decrease the amount of sucrose, and products containing sucrose, that you eat.').toLowerCase()) {
@@ -3034,7 +3032,7 @@ jQuery(function ($) {
                 btn_text = "Learn More";
             }
             else if (t === ('Reduce your exposure to Carmoisine').toLowerCase()) {
-                action = "Avoid carmoisine, a commonly used red synthetic food/beverage dye.";
+                action = "Avoid / decrease intake of carmoisine, a commonly used red synthetic food/beverage dye.";
                 btn_text = "Learn More";
             }
             else if (t === ('Avoid Arsenic exposure').toLowerCase()) {
