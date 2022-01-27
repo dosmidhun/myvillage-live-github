@@ -1582,7 +1582,7 @@
       "1490603706188": {
         "type": "featured-collection",
         "settings": {
-          "show_product_list_home_page": true,
+          "show_product_list_home_page": false,
           "product_list_collection": "home-page",
           "product_list_title": "Featured Products",
           "des_featured": "",
