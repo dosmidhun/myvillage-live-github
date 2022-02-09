@@ -402,28 +402,7 @@
                                         <h1>{{ section.settings.dashboard_title }}</h1>
                                         <p>{{ section.settings.dashboard_cont }}</p>
                                     </div> 
-                                    <h2 class="top_subtitle">{{ customer.first_name }}, Your Custom Recommendations</h2>
-                                    <div class="top_reommend_sec">
-                                        <div class="personalizd_sec">
-                                            {% if section.settings.unlock_personalized != blank %}
-                                                <a href="javascript:void(0)" class="unlock_click" data-toggle="modal" data-target="#unlock_personalized"> 
-                                                {{ section.settings.unlock_personalized }}</a>
-                                                <!-- Modal -->
-                                                <div class="modal fade score_sec" id="unlock_personalized" role="dialog">
-                                                    <div class="modal-dialog modal-lg">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <button type="button" class="close" data-dismiss="modal">&times;</button> 
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                {{ section.settings.unlock_personalized_popup }}  
-                                                            </div> 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                           {% endif %}
-                                        </div>
-                                    </div>
+                                    
                                     <div class="box_layout clearfix">
                                         <ul>
                                             
@@ -487,6 +466,28 @@
                                                 </div>
                                             </li>
                                         </ul>
+                                    </div>
+                                  <h2 class="top_subtitle">{{ customer.first_name }}, Your Custom Recommendations</h2>
+                                    <div class="top_reommend_sec">
+                                        <div class="personalizd_sec">
+                                            {% if section.settings.unlock_personalized != blank %}
+                                                <a href="javascript:void(0)" class="unlock_click" data-toggle="modal" data-target="#unlock_personalized"> 
+                                                {{ section.settings.unlock_personalized }}</a>
+                                                <!-- Modal -->
+                                                <div class="modal fade score_sec" id="unlock_personalized" role="dialog">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                {{ section.settings.unlock_personalized_popup }}  
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           {% endif %}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
