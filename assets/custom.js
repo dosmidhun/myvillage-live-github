@@ -129,6 +129,16 @@ jQuery(function ($) {
         
         
       }
+      if (parseInt(step.substring(4)) == 6) {
+          
+          if( $('#qstn_smart_modal').hasClass('in')){
+            
+          }else{
+             $('#qstn_smart_modal').modal('show');
+          }
+        
+        
+      }
 
     });
 
@@ -720,6 +730,7 @@ jQuery(function ($) {
         // }
       
         $('#qstn_family_modal').modal('hide');
+		$('#qstn_smart_modal').modal('hide');
     });
 
     function makeitred() {
