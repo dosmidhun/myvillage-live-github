@@ -85,8 +85,17 @@
         {% endfor %}
   
   	{% endif %}  
-  	
-    <li class="item{% if is_megamenu %} dropdown mega-menu{% else %}{% if linklists[link.handle] != empty %} dropdown{% endif %}{% endif %}">
+  	 {% assign bold_member = false %}
+ 			{% if customer %}
+               
+        		{% for tag in customer.tags %}
+           		 {% if tag == 'mvg-membership' or tag == 'Restricted Users'%}
+               		 {% assign bold_member = true %}
+               		 {% break %}
+            	 {% endif %}
+     {% endfor %}
+  {% endif %}
+    <li class="item{% if is_megamenu %} dropdown mega-menu{% else %}{% if linklists[link.handle] != empty %} dropdown{% endif %}{% endif %}{% if bold_member %}{% if link.title =='Consultations' %}hide-menu{% endif %}{% endif %}">
       <a {%if linklists[link.handle] != empty %}class="menu__moblie" {% endif %} href="{{ link.url }}" class=" {% if link.active %}current{% endif %}">
         <span>
           {% if settings.enable_multilang %}
