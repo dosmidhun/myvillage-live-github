@@ -95,7 +95,7 @@
             	 {% endif %}
      {% endfor %}
   {% endif %}
-    <li class="item{% if is_megamenu %} dropdown mega-menu{% else %}{% if linklists[link.handle] != empty %} dropdown{% endif %}{% endif %}{% if bold_member %}{% if link.title =='Consultations' %}hide-menu{% else %}show-menu{% endif %}{% endif %}">
+    <li class="item{% if is_megamenu %} dropdown mega-menu{% else %}{% if linklists[link.handle] != empty %} dropdown{% endif %}{% endif %}{% if bold_member %}{% if link.title =='Consultations' %} hide-menu{% else %} {% endif %}{% endif %}">
       <a {%if linklists[link.handle] != empty %}class="menu__moblie" {% endif %} href="{{ link.url }}" class=" {% if link.active %}current{% endif %}">
         <span>
           {% if settings.enable_multilang %}
