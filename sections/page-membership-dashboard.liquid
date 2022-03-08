@@ -677,7 +677,9 @@
                                     </div>
                                 </div>
                               <div class="humanized-holder">
-                                
+                                 <div class="icon_img">
+                                   <a href="https://humanizedhealth.com/" target="_BLANK"><img src="{{ section.settings.humanized_icon | img_url: 'master' }}" /> </a>
+                                 </div>
                               </div>
                             </div>
                         </div>
@@ -1001,6 +1003,11 @@
             "type": "image_picker",
             "id": "chat_icon",
             "label": "Chat Icon" 
+        },
+		{
+            "type": "image_picker",
+            "id": "humanized_icon",
+            "label": "Humanized image" 
         },
         {
             "type": "html",
