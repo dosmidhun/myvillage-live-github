@@ -4135,3 +4135,6 @@ display:none;
 li.item.hide-menu {
     display: none;
 }
+.humanized_icon{
+  margin-top:25px;
+}
