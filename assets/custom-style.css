@@ -506,7 +506,7 @@ font-weight: 500;
 .products-grid .home_prdts .btn { background: #fff !important;  border: 1px solid #ededed !important; height: 55px; line-height: 55px; padding: 0 20px; color: #006990; font-size: 19px; font-family: 'Montserrat'; font-weight: 400; text-transform: capitalize; letter-spacing: 0;}
 .products-grid .home_prdts .btn:hover { background: #006990 !important;  color: #fff !important; }
 .featurd_prdt .product-des { position: static; }
-.featurd_prdt .old-price { display: none; }
+#.featurd_prdt .old-price { display: none; }
 .featurd_prdt .price-box .regular-product { color: #434343!important;     font-size: 16px; }
 #shopify-section-navigation .featurd_prdt .price-box .regular-product { color: #fff!important;     font-size: 16px; }
 .products-grid .grid-item .product-top { min-height: 220px; }
