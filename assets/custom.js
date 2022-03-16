@@ -2,7 +2,7 @@ jQuery.noConflict();
 jQuery(function ($) {
     $("#schedule_popup_now").removeClass('loading');
 
-    window.savedlast = false;
+   
 
 
     $("#schedule_btn_in").click(function () {

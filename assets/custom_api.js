@@ -1,5 +1,7 @@
 jQuery.noConflict();
 jQuery( document ).ready(function($) {
+  window.savedlast = false;
+  
   $(".health_top .health_box").click(function () {
 
         $(".health_top .health_box").removeClass('active');
