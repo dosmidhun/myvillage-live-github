@@ -1,5 +1,5 @@
 jQuery.noConflict();
-jQuery(function ($) {
+jQuery( document ).ready(function() {
   
   if (window.cus_id) {
       
