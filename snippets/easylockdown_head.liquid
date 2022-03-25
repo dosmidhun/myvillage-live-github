@@ -9,8 +9,10 @@
 {% assign easylockdownPasswordNote = '' %}
 {% assign easylockdownPasswordPlaceholder = '' %}
 {% assign easylockdownHidePrice = false %}
-{% assign easylockdownSuperPage = false %}
+
+{% assign easylockdownSuperPage = false %}{% assign proxyPageA = shop.url | append: '/a/' %}{% assign proxyPageApps = shop.url | append: '/apps/' %}{% assign proxyPageCommunity = shop.url | append: '/community/' %}{% assign proxyPageTools = shop.url | append: '/tools/' %}
 {% if template == blank or template == 'customers/login' or template == 'customers/activate_account' or template == 'customers/reset_password' %}{% assign easylockdownSuperPage = true %}{% endif %}
+{% if canonical_url contains proxyPageA or canonical_url contains proxyPageApps or canonical_url contains proxyPageCommunity or canonical_url contains proxyPageTools %}{% assign easylockdownSuperPage = false %}{% endif %}
 
 {% assign easylockdownNow = 'now' | date:'%s' %}
 {% assign easylockdownPlacedOrder = customer.orders.first.created_at | date:'%s' %}
@@ -33,9 +35,32 @@
 
 {% for t in customer.tags %}
 {% assign tag = t | downcase %}
-{% if tag == 'blocked' %}{% assign easylockdownTagsNotLocked1 = true %}{% endif %}
-{% if tag == 'restricted users' %}{% assign easylockdownTagsNotLocked2 = true %}{% endif %}
+{% if tag == 'mvg-membership' %}{% assign easylockdownTagsNotLocked1 = true %}{% endif %}
+{% if tag == 'blocked' %}{% assign easylockdownTagsNotLocked2 = true %}{% endif %}
+{% if tag == 'restricted users' %}{% assign easylockdownTagsNotLocked3 = true %}{% endif %}
 {% endfor %}
+
+{% unless easylockdownON or easylockdownSuperPage or template == 'customers/register' %}
+{% assign easylockdownLockedContent = false %}
+{% assign easylockdownHiddenContent = false %}
+{% if template contains "collection" or template contains "product" %}{% if product.collections %}{% for c in product.collections %}{% if c.id == 402226938094 %}{% assign easylockdownLockedContent = true %}{% break %}{% endif %}{% endfor %}{% endif %}{% endif %}
+{% if template contains "collection" or template contains "product" %}{% if collection %}{% if collection.handle == 'standard-process' %}{% assign easylockdownLockedContent = true %}{% endif %}{% endif %}{% endif %}
+{% if easylockdownLockedContent %}
+{% unless customer %}
+{% assign easylockdownON = true %}
+{% capture easylockdownPage404Title %}Page not found{% endcapture %}
+{% capture easylockdownPage404Message %}<p>Sorry, we couldn't find this page.</p>{% endcapture %}
+{% capture easylockdownRedirectURL %}login{% endcapture %}
+{% else %}
+{% unless easylockdownTagsNotLocked1 %}{% assign easylockdownON = true %}{% endunless %}
+{% if easylockdownON %}
+{% assign easylockdownON = true %}
+{% capture easylockdownPage404Title %}Page not found{% endcapture %}
+{% capture easylockdownPage404Message %}<p>Sorry, we couldn't find this page.</p>{% endcapture %}
+{% endif %}
+{% endunless %}
+{% endif %}
+{% endunless %}
 
 {% unless easylockdownON or easylockdownSuperPage or template == 'customers/register' or template contains 'page' and page.id == 50920226947 %}
 {% assign easylockdownLockedContent = false %}
@@ -43,7 +68,7 @@
 {% assign easylockdownLockedContent = true %}
 {% if easylockdownLockedContent %}
 {% if customer %}
-{% assign easylockdownON = true %}{% unless easylockdownTagsNotLocked1 %}{% assign easylockdownON = false %}{% endunless %}
+{% assign easylockdownON = true %}{% unless easylockdownTagsNotLocked2 %}{% assign easylockdownON = false %}{% endunless %}
 {% if easylockdownON %}
 {% assign easylockdownON = true %}
 {% capture easylockdownPage404Title %}Page not found{% endcapture %}
@@ -66,7 +91,7 @@
 {% capture easylockdownPage404Message %}<p>Sorry, we couldn't find this page.</p>{% endcapture %}
 {% capture easylockdownRedirectURL %}https://myvillagegreen.com/pages/practitioner-brands{% endcapture %}
 {% else %}
-{% unless easylockdownTagsNotLocked2 %}{% assign easylockdownON = true %}{% endunless %}
+{% unless easylockdownTagsNotLocked3 %}{% assign easylockdownON = true %}{% endunless %}
 {% if easylockdownON %}
 {% assign easylockdownON = true %}
 {% capture easylockdownPage404Title %}Page not found{% endcapture %}
