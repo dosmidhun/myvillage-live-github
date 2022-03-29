@@ -67,6 +67,8 @@
   {% endif %}
  {{ 'custom-style.css' | asset_url | stylesheet_tag }}
   
+
+  {% render 'shogun-head' %}
 </head>
 <!-- { % include 'search-autocomplete' %} -->
 {% comment %}
