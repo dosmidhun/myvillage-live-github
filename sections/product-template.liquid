@@ -9,7 +9,8 @@
   {% endif %}
   {% endcomment %}
   <div class="{% if settings.display_sidebar_detail_page %}col-xs-12 {% endif %} prdt_single">
-    <div itemscope itemtype="http://schema.org/Product" class="product"> 
+    <div itemscope itemtype="http://schema.org/Product" class="product">
+  {% capture ssw_rich_snippet %}{% render 'ssw-widget-avg-rate-rich' %}{% endcapture %}{% unless ssw_rich_snippet contains 'Liquid error' %}{{ ssw_rich_snippet }}{% endunless %} 
  <div> {{ product.metafields.alireviews.seo_rating_review_key }} </div>
       <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
       <meta itemprop="image" content="{{ product.featured_image.src | product_img_url: 'grande' }}">
