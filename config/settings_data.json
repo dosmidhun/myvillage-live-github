@@ -1622,7 +1622,7 @@
           "1501570258326-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/SpringSale2022banner.jpg",
+              "image": "shopify:\/\/shop_images\/SpringSale2022banner_1ee9d9df-de95-4eb2-a6c2-03d9b60b0e16.jpg",
               "alignment": "right",
               "title": "",
               "heading_color": "#000000",
@@ -1633,10 +1633,25 @@
               "button": "",
               "link": "shopify:\/\/pages\/shop-by-brands"
             }
+          },
+          "ce456baf-72c4-4301-a67a-a6a160e02117": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "title": "",
+              "heading_color": "#000",
+              "heading_size": "40",
+              "subheading": "",
+              "subheading_color": "#000",
+              "subheading_size": "12",
+              "button": "",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "1501570258326-0"
+          "1501570258326-0",
+          "ce456baf-72c4-4301-a67a-a6a160e02117"
         ],
         "settings": {
           "slideshow_speed": "5000",
@@ -1660,7 +1675,7 @@
           "message_box3": "<br><br><br><br><br>\n<h4>Watch, Listen or Read ►<\/h4>",
           "link3": "https:\/\/humanizedhealth.com\/",
           "box3_image": "shopify:\/\/shop_images\/15.jpg",
-          "mob_banner_image": "shopify:\/\/shop_images\/SpringSale2022banner-mobile.jpg",
+          "mob_banner_image": "shopify:\/\/shop_images\/SpringSale2022banner-mobile_c0023d08-a8a9-4b54-be06-98d458f12400.jpg",
           "mob_link": "shopify:\/\/pages\/shop-by-brands"
         }
       },
