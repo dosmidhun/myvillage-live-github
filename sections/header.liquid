@@ -102,6 +102,11 @@
                 {% endif %} 
                 </li>
                 <li>
+                  
+                  {% capture the_snippet_fave_icon_menu %}{% render 'ssw-widget-faveicon-menu' with product.id %}{% endcapture %}
+                  {% unless the_snippet_fave_icon_menu contains 'Liquid error' %}
+                  {{ the_snippet_fave_icon_menu }}
+                  {% endunless %}    
                 <a class="wish_btn" href="https://myvillagegreen.com/pages/wish-list">Wish List</a>
                 </li>
                 {% if customer %}
