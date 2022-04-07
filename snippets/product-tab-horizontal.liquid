@@ -128,7 +128,9 @@
       https://apps.shopify.com/product-reviews
       {% endcomment %}
 <!--       <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div> -->
-      {% include 'aio_reviewform' %}{% include 'aio_reviewlist' %}{% include 'aio_product_recommendation' %}
+     {% comment %} 
+ {% include 'aio_reviewform' %}{% include 'aio_reviewlist' %}{% include 'aio_product_recommendation' %}
+{% endcomment %}
     </div>
     {% endif %}
   </div>
