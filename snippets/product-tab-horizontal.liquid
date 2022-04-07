@@ -116,6 +116,12 @@
 
      {% if section.settings.display_product_reviews %}       
     <div id="collapse-tab4" class="tab-pane fade">
+      
+      {% capture the_snippet_reviews %}{% render 'socialshopwave-widget-recommends' with 1 %}{% endcapture %}
+      {% unless the_snippet_reviews contains 'Liquid error' %}
+      {{ the_snippet_reviews }}
+      {% endunless %}    
+      
 <!--       <div id="shopify-ali-review" product-id="{{ product.id }}"> {{ shop.metafields.review_collector.review_code }} </div> -->
       {% comment %}
       Add product review widget, must install Product Review App:
