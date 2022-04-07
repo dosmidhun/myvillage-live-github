@@ -1636,13 +1636,14 @@
           },
           "ce456baf-72c4-4301-a67a-a6a160e02117": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "alignment": "center",
               "title": "",
-              "heading_color": "#000",
+              "heading_color": "#000000",
               "heading_size": "40",
               "subheading": "",
-              "subheading_color": "#000",
+              "subheading_color": "#000000",
               "subheading_size": "12",
               "button": "",
               "link": ""
