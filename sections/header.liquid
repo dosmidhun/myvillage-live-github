@@ -102,13 +102,14 @@
                 {% endif %} 
                 </li>
                 <li>
-                  
                   {% capture the_snippet_fave_icon_menu %}{% render 'ssw-widget-faveicon-menu' with product.id %}{% endcapture %}
                   {% unless the_snippet_fave_icon_menu contains 'Liquid error' %}
                   {{ the_snippet_fave_icon_menu }}
                   {% endunless %}   
                   <a class="wish_text" href="https://myvillagegreen.com/pages/wishlist"> Wish List </a>
-                <a class="wish_btn" href="https://myvillagegreen.com/pages/wish-list">Wish List</a>
+                  {% comment %} 
+                  <a class="wish_btn" href="https://myvillagegreen.com/pages/wish-list">Wish List</a>
+                  {% endcomment %}
                 </li>
                 {% if customer %}
                 <li class="mem_dashbd_pag">
