@@ -1,10 +1,4 @@
-{% comment %}
-/**************************************************
-* DO NOT MODIFY THIS FILE!!!                      *
-* IT WILL BE OVERWRITTEN BY UPDATES FROM GROWAVE! *
-**************************************************/
-{% endcomment %}
-{% if shop.customer_accounts_enabled %}
+{% if shop.customer_accounts_enabled or shop.metafields.ssw.settings.wishlist_users_only != 1 %}
   {% assign customer_locale = shop.locale | prepend: 'lang_' %}
   {% unless shop.metafields.ssw[customer_locale] %}
     {% for published_locale in shop.published_locales %}

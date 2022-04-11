@@ -1,9 +1,3 @@
-{% comment %}
-/**************************************************
-* DO NOT MODIFY THIS FILE!!!                      *
-* IT WILL BE OVERWRITTEN BY UPDATES FROM GROWAVE! *
-**************************************************/
-{% endcomment %}
 {% assign customer_locale = shop.locale | prepend: 'lang_' %}
 {% unless shop.metafields.ssw[customer_locale] %}
   {% for published_locale in shop.published_locales %}
@@ -13,7 +7,7 @@
   {% endfor %}
 {% endunless %}
 {% if content_for_header contains 'ssw-empty.js' or shop.metafields.ssw['manual_uninstall'] == 1 or shop.metafields.ssw['script_tags_allowed'] != 1 %}
-{% if shop.customer_accounts_enabled %}
+{% if shop.customer_accounts_enabled or shop.metafields.ssw.settings.wishlist_users_only != 1 %}
   {% assign ssw_fave_enabled = 1 %}
   {% if shop.metafields.ssw['fave_enabled'] %}
     {% assign ssw_fave_enabled = shop.metafields.ssw['fave_enabled'] | plus: 0 %}

@@ -1,9 +1,3 @@
-{% comment %}
-/**************************************************
-* DO NOT MODIFY THIS FILE!!!                      *
-* IT WILL BE OVERWRITTEN BY UPDATES FROM GROWAVE! *
-**************************************************/
-{% endcomment %}
 {% if page.handle == 'collections' %}
   <div id="ssw-page" class="ssw-page ssw-clearfix gw-container">
     {% render 'ssw-widget-listing' %}
@@ -17,7 +11,7 @@
     </script>
   </div>
 {% else %}
-  {% if page.handle == 'share-review' %}
+  {% if page.handle == 'share-review' and shop.customer_accounts_enabled %}
     <div id="ssw-page" class="ssw-page ssw-clearfix gw-container">
       {% render 'ssw-widget-share-review' %}
     </div>
@@ -91,6 +85,10 @@
                     cancelable: false
                   });
                 });
+              }).fail(function(jqXHR) {
+                 if (jqXHR?.responseJSON?.message === 'Storefront account is disabled') {
+                    ssw('#ssw-page').slideUp( "slow");
+                 }
               });
             });
           }
