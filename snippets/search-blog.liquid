@@ -1,6 +1,13 @@
 <div class="list-blog blog-list">
- 
+ <div class="item">
 <a href="{{ item.url}}">{{ item.title | split: '|' | first }}</a>
+   
+    <h4> <a href="{{ item.url }}">
+              {{ item.title | split: '|' | first }}
+            </a>
+          </h4>
+   
+   
   <p class="blog_author">
     <span class="article__date">Post on
       {{ item.published_at | time_tag: format: 'month_day_year' }}
@@ -11,7 +18,7 @@
     <p>{{ item.content | strip_html | slice: 0,450 }} ...</p>
   </div>
   
-  
+  </div>
   
   
 </div>
