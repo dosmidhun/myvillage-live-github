@@ -35,7 +35,9 @@
         <div class="collection-title-wrapper">
           <div class="collection-title">
             <h5 class="h5">
-              
+              <a href="{{ collection.url }}" title="{{ 'collections.general.link_title' | t: title: collection_title }}" {% if settings.enable_multilang %}data-translate="collections.general.link_title|title:{{collection_title}}" translate-item="title"{% endif %}>
+                  {% include 'multilang' with collection.title %}
+              </a>
             </h5>
             {% comment %}
             <p class="count-products" {% if settings.enable_multilang %}data-translate="collections.general.items_with_count|count:{{collection.all_products_count}}"{% endif %}>{{ 'collections.general.items_with_count' | t: count: collection.all_products_count }}</p>
