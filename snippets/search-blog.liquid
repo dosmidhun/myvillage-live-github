@@ -1,5 +1,5 @@
-<div class="list-blog blog-list">
- <div class="item">
+<li class="list-blog blog-list">
+
 <a href="{{ item.url}}">{{ item.title | split: '|' | first }}</a>
    
     <h4> <a href="{{ item.url }}">
@@ -18,10 +18,10 @@
     <p>{{ item.content | strip_html | slice: 0,450 }} ...</p>
   </div>
   
-  </div>
+ 
   
   
-</div>
+</li>
 
 
       
