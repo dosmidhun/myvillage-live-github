@@ -1,6 +1,6 @@
 <div class="blog_search_items">
   <a href="{{ item.url}}">{{ item.title | split: '|' | first }}</a>
-  <p class="blog_author">
+  <p class="blog_author a">
     <span class="article__date">Post on
       {{ item.published_at | time_tag: format: 'month_day_year' }}
     </span>
