@@ -30,14 +30,17 @@
   <h1>{{ 'general.search.results_for_html' | t: terms: search.terms }}</h1>
 </header>
 
-<div class="block-row" id="shopify-section-blog-template">     
+<div class="block-row" id="shopify-section-blog-template">  
+  
    {% if pageQuerystring contains "type=article" %}
        {% for item in search.results %}
   <!-- Bold: Memberships (search) -->
 {% include 'bold_mem_helper' with 'search' %}
 <!-- end Bold code -->
 {%- include 'bold-product' with item, hide_action: 'skip' -%}
+  			<ul class="list-blog blog-list">
         {% include 'search-blog' %}
+  			</ul>	
        {% endfor %}
   {% else %}
       {% if section.settings.layout == 'list' %}
