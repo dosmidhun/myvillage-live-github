@@ -1,6 +1,5 @@
 <li class="list-blog blog-list">
 
-<a href="{{ item.url}}">{{ item.title | split: '|' | first }}</a>
    
     <h4> <a href="{{ item.url }}">
               {{ item.title | split: '|' | first }}
@@ -8,17 +7,34 @@
           </h4>
    
    
-  <p class="blog_author">
-    <span class="article__date">Post on
-      {{ item.published_at | time_tag: format: 'month_day_year' }}
-    </span>
-    <span class="article__author">by {{item.author}}</span>
-  </p> 
-  <div class="desc">
-    <p>{{ item.content | strip_html | slice: 0,450 }} ...</p>
-  </div>
+
   
- 
+  
+ <p class="blog_author">
+
+            <span class="separator">/</span>
+            <span class="article__date">Post on
+              {{ item.published_at | time_tag: format: 'month_day_year' }}
+            </span>
+            <span class="article__author">by {{item.author}}</span>
+ </p> 
+          {% if item.image %}
+          {% assign image_alt = item.title | escape %}
+          <div class="blog_img zi-banner">
+            <a href="{{ item.url }}" class="overlay">
+              <div class="zi-banner-image">
+                {{ item | img_url: 'master' | img_tag: image_alt }}
+              </div>
+            </a>
+          </div>
+          {% endif %}
+
+          <div class="des">{{ item.content | truncatewords: 50 }}...</div>
+
+
+          <p class="button">
+            <a href="{{ item.url }}" class="blog_morebtn">Read more</a>
+          </p>
   
   
 </li>
