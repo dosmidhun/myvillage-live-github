@@ -30,7 +30,7 @@
   <h1>{{ 'general.search.results_for_html' | t: terms: search.terms }}</h1>
 </header>
 
-<div class="block-row">     
+<div class="block-row" id="shopify-section-blog-template">     
    {% if pageQuerystring contains "type=article" %}
        {% for item in search.results %}
   <!-- Bold: Memberships (search) -->
