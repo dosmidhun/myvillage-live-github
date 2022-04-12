@@ -1,78 +1,15 @@
 <div class="list-blog blog-list">
  
-  
-  
-  
-  
-    <h4>
-            <a href="{{ item.url }}">
-              {% if settings.enable_multilang %}
-              <span class="lang1">{{ item.title | split: '|' | first }}</span>
-              <span class="lang2">{{ item.title | split: '|' | last }}</span>
-              {% else %}
-              {{ item.title | split: '|' | first }}
-              {% endif %}
-            </a>
-          </h4>
-
-          <p class="blog_author">
-            {% comment %}
-            Don't be fooled, the ? in comments_enabled? is part of the liquid tag.
-            {% endcomment %}
-            {% if blog.comments_enabled? %}
-            <a href="{{ item.url }}#comments" {% if settings.enable_multilang %}data-translate="blogs.comments.comments_with_count|count:{{item.comments_count}}"{%endif%}>
-              {{ 'blogs.comments.comments_with_count' | t: count: item.comments_count }}
-            </a>
-            <span class="separator">/</span>
-            {% endif %}
-
-            {% if section.settings.blog_show_date %}
-            <span class="article__date">Post on
-              {{ item.published_at | time_tag: format: 'month_day_year' }}
-            </span>
-            {% endif %}
-            
-            {% if section.settings.blog_show_author %}
-            <span class="article__author">by {{item.author}}</span>
-            {% endif %}
-          </p> 
-          {% if article.image %}
-          {% assign image_alt = article.title | escape %}
-          <div class="blog_img zi-banner">
-            <a href="{{ item.url }}" class="overlay">
-              <div class="zi-banner-image">
-                {{ item | img_url: 'master' | img_tag: image_alt }}
-              </div>
-            </a>
-          </div>
-          {% endif %}
-          {% comment %}
-          Add a surrounding div with class 'rte' to anything that will come from the rich text editor.
-          Since this is just a listing page, you can either use the excerpt or truncate the full article.
-          {% endcomment %}
-          {% if settings.enable_multilang %}
-          <div class="des lang1">{{ item.excerpt |  split:"[lang2]" | first | split:"|" |first }}</div>
-          <div class="des lang2">{{ item.excerpt | split:"[lang2]" | last | split:"|" |last }}</div>
-          {% else %}
-          <!--<div class="des">{{ item.excerpt | split:"[lang2]" | first | split:"|" |first}}</div>-->
-          <div class="des">{{ item.content | truncatewords: 50 }}...</div>
-          {% endif %}
-          
-          {% comment %}
-          Show off meta information like number of comments and tags.
-          {% endcomment %}
-
-          <p class="button">
-            <a href="{{ item.url }}" {% if settings.enable_multilang %}data-translate="blogs.article.read_more"{%endif%} class="blog_morebtn">{{ 'blogs.article.read_more' | t }}</a>
-          </p>
-  
-  
-  
-  
-  
-  
-  
-  
+<a href="{{ item.url}}">{{ item.title | split: '|' | first }}</a>
+  <p class="blog_author">
+    <span class="article__date">Post on
+      {{ item.published_at | time_tag: format: 'month_day_year' }}
+    </span>
+    <span class="article__author">by {{item.author}}</span>
+  </p> 
+  <div class="desc">
+    <p>{{ item.content | strip_html | slice: 0,450 }} ...</p>
+  </div>
   
   
   
