@@ -33,7 +33,7 @@
 <div class="block-row content-blog test" id="shopify-section-blog-template">  
   
    {% if pageQuerystring contains "type=article" %}
-       {% for item in search.results %}
+       {% for item in search.results reversed  %}
   <!-- Bold: Memberships (search) -->
 {% include 'bold_mem_helper' with 'search' %}
 <!-- end Bold code -->
