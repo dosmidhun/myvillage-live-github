@@ -326,7 +326,7 @@ pintrk('page');
      if(typeof sswRun == 'function') {
           sswRun(function(){
             var rewardBox = setInterval(function(){
-              if(ssw('.ssw-reward-page-header').length) {
+              if(ssw('.ssw-reward-page-menu').length) {
                 ssw('.ssw-reward-page-menu[data-target="#ssw-reward-page-earning-rule-wrapper"]').insertAfter(ssw('.ssw-reward-page-menu[data-target="#ssw-reward-page-rewards-wrapper"]'));
               }
               clearInterval(rewardBox)
