@@ -320,5 +320,20 @@ pintrk('page');
   </script>
 {% render 'aio_loyalty_snippet' %}
   {{ 'custom.js' | asset_url | script_tag }}
+  
+ {% if page.handle == 'reward' %} 
+   <script> 
+     if(typeof sswRun == 'function') {
+          sswRun(function(){
+            var rewardBox = setInterval(function(){
+              if(ssw('.ssw-reward-page-header').length) {
+                ssw('.ssw-reward-page-menu[data-target="#ssw-reward-page-earning-rule-wrapper"]').append(ssw('.ssw-reward-page-menu[data-target="#ssw-reward-page-rewards-wrapper"]'));
+              }
+              clearInterval(rewardBox)
+            }, 1000);
+          });
+        } 
+  </script>
+  {% endif %}
 </body>
 </html>
