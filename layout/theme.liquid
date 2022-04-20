@@ -327,7 +327,7 @@ pintrk('page');
           sswRun(function(){
             var rewardBox = setInterval(function(){
               if(ssw('.ssw-reward-page-header').length) {
-                ssw('.ssw-reward-page-menu[data-target="#ssw-reward-page-earning-rule-wrapper"]').append(ssw('.ssw-reward-page-menu[data-target="#ssw-reward-page-rewards-wrapper"]'));
+                ssw('.ssw-reward-page-menu[data-target="#ssw-reward-page-earning-rule-wrapper"]').insertAfter(ssw('.ssw-reward-page-menu[data-target="#ssw-reward-page-rewards-wrapper"]'));
               }
               clearInterval(rewardBox)
             }, 1000);
