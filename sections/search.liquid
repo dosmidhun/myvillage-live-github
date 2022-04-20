@@ -33,7 +33,7 @@
 <div class="block-row content-blog test" id="shopify-section-blog-template">  
   
    {% if pageQuerystring contains "type=article" %}
-   {% assign collections = search.results | sort: 'published_at'%}
+   {% assign collections = search.results | sort: 'published_at' | reverse %}
        {% for item in collections %}
   <!-- Bold: Memberships (search) -->
 {% include 'bold_mem_helper' with 'search' %}
