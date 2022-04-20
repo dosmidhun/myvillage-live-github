@@ -1,7 +1,7 @@
 <div class="col-sm-4" id="sidebar">
   {% include 'widget_article' %}
   	<form method="get" action="/search" class="search-f blog_search">
-      <input class="searchBox field" type="text" placeholder="Search..." name="q"{% if search.performed %} value="{{ search.terms | escape | downcase }}"{% endif %} required/> 
+      <input class="searchBox field" type="text" placeholder="Search..." name="q"{% if search.performed %} value="{{ search.terms | escape | upcase }}"{% endif %} required/> 
       <input type="hidden" name="type" value="article" />
       <button class="searchSubmit" type="submit" class="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
     </form>
