@@ -34,7 +34,7 @@
   
    {% if pageQuerystring contains "type=article" %} 
   
-       {% for item in search.results reversed %}
+       {% for item in search.results %}
   
   <!-- Bold: Memberships (search) -->
 {% include 'bold_mem_helper' with 'search' %}
