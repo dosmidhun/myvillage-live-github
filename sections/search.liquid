@@ -19,7 +19,7 @@
   {% endif %}
 {% endif %}
 
-{% paginate search.results by 99 %}
+{% paginate search.results by limit %}
 
 {% if search.results_count == 0 %}
 <header class="page-header">
