@@ -1,103 +1,178 @@
-{% paginate search.results by 10 %}
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
 
-<div class="page-width">
-  <div class="container">
-    {% if search.results_count == 0 or search.performed == false %}
-      <div class="empty-page-content text-center">
-        <h1 class="h2">{{ 'general.search.title' | t }}</h1>
-    {% else %}
-      <div class="section-header text-center">
-        <h1 class="h2">{{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}</h1>
-    {% endif %}
-      <div class="grid">
-        <div class="grid__item medium-up--two-fifths medium-up--push-three-tenths">
-          <form action="/search" method="get" role="search" class="search">
-            <div class="input-group">
-              <input type="search"
-                id="SearchInput"
-                class="form-control input-group__field search__input"
-                name="q"
-                value="{{ search.terms | escape }}"
-                placeholder="{{ 'general.search.placeholder' | t }}"
-                aria-label="{{ 'general.search.placeholder' | t }}"
-                autofocus>
-              <span class="input-group__btn">
-                <button class="btn search__submit" type="submit">{{ 'general.search.submit' | t }}</button>
-              </span>
-            </div>
-          </form>
-        </div>
+{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
+
+{%- assign pageQuerystring = pageUrl | split:'?' | last -%}
+{% if search.performed %}
+
+{% if section.settings.layout == 'grid' %}
+  {%- assign limit = section.settings.grid | times: section.settings.rows -%}
+{% else %}
+  {% if section.settings.collection_results_per_page != blank %}
+	{%- assign limit = section.settings.collection_results_per_page -%}
+  {% else %}
+  	{%- assign limit = 12 -%}
+  {% endif %}
+{% endif %}
+
+{% paginate search.results by limit %}
+
+{% if search.results_count == 0 %}
+<header class="page-header">
+  <h1>{{ 'general.search.no_results_html' | t: terms: search.terms }}</h1>
+</header>
+{% else %}
+<header class="page-header">
+  <h1>{{ 'general.search.results_for_html' | t: terms: search.terms }}</h1>
+</header>
+
+<div class="block-row content-blog test" id="shopify-section-blog-template">  
+  
+   {% if pageQuerystring contains "type=article" %} 
+  
+       {% for item in search.results %}
+  		 {% if item.object_type == 'article' %}
+  <!-- Bold: Memberships (search) -->
+
+  				<ul class="list-blog blog-list tyest">
+        			{% include 'search-blog' %}
+  				</ul>	
+  		{% endif %}
+       {% endfor %}
+  {% else %}
+      {% if section.settings.layout == 'list' %}
+      <div class="product-list">
+        {% for item in search.results %}
+        <!-- Bold: Memberships (search) -->
+{% include 'bold_mem_helper' with 'search' %}
+<!-- end Bold code -->
+{%- include 'bold-product' with item, hide_action: 'skip' -%}
+        {% include 'search-result' %}
+        {% endfor %}
       </div>
-      {% if search.performed and search.results_count == 0 %}
-        <hr class="hr--small hr--invisible">
-        <p>{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
-      {% endif %}
-    </div>
-    {% if search.performed %}
-      {% if search.results_count > 0 %}
-        <hr>
-      {% endif %}
-      
-        <div class="list-view-items">
-          {% for item in search.results %}
-            <a href="{{ item.url }}" class="list-view-item">
-              {% if item.object_type == 'product' %}
-                {% include 'product-card-list', product: item %}
-                {% elsif item.object_type == 'article' %}
-                  <div class="item-blog d-flex d-xs-block blog--list-view">
-                    <div class="article--listing media">
-                      <div class="article__thumnail">
-                        <img class="img-fluid article__list-image" src="{{ item.image.src | img_url: 'original' }}" alt="{{ item.title }}"/>
-                      </div>
-                      <div class="article__info ml-30 ml-xs-0 mb-30">
-                        <div class="article__title"><a href="{{ item.url }}">{{ item.title }}</a></div>
-                        <span class="article__date">
-                          {{ item.published_at | time_tag: format: 'month_day_year' }}
-                        </span>
-                        <span class="article__countcomment">
-                          {{ 'blogs.comments.comments_with_count' | t: count: item.comments_count }}
-                        </span>
-                        <span class="article__author">{{ item.author }}</span>
-                        <div class="article__excerpt mt-30">
-                          {% if item.excerpt.size > 0 %}
-                            {{ item.excerpt }}
-                          {% else %}
-                            {{ item.content | strip_html | truncate: 235 }}
-                          {% endif %}
-                        </div>
-                        {% comment %}<a href="{{ item.url }}" class="article__readmore">{{ 'blogs.article.view_more' | t }}</a>{% endcomment %}
-                      </div>
-                    </div>
-                  </div>
-              {% else %}
-                {% if item.image %}
-                  <div class="list-view-item__image-column w-50 w-xs-100 pr-15 pl-0 pr-xs-0 pl-xs-0">
-                    <div class="list-view-item__image-wrapper mb-xs-25">
-                      <img class="list-view-item__image" src="{{ item.image.src | img_url: '600x600' }}" alt="{{ item.image.alt | escape }}">
-                    </div>
-                  </div>
-                {% endif %}
-
-                <div class="list-view-item__title-column">
-                  <h2 class="list-view-item__title">{{ item.title }}</h2>
-                  <div class="">
-                    {% if item.published_at %}{{ item.published_at | date: "%b %d, %Y" }} &#8212; {% endif %}
-                    {{ item.content | strip_html | truncate: 200 }}
-                  </div>
-                </div>
-              {% endif %}
-            </a>
-          {% endfor %}
-        </div>
-
-        {% if paginate.pages > 1 %}
-          {% include 'pagination' %}
-        {% endif %}
-      
-    {% endif %}
-  </div>
+      {% else %}
+      <div class="products-grid row">
+        {% for item in search.results %}
+        <!-- Bold: Memberships (search) -->
+{% include 'bold_mem_helper' with 'search' %}
+<!-- end Bold code -->
+{%- include 'bold-product' with item, hide_action: 'skip' -%}
+        {% include 'search-result-grid' %}
+        {% endfor %}
+      </div>
+      {% endif %}        
+  {% endif %}
 </div>
 
+ {% if paginate.pages > 1 %}
+      <div class="text-center">
+        {% include 'pagination' %}
+      </div>
+      {% endif %}
 
-
+{% endif %}
 {% endpaginate %}
+
+{% else %}
+
+<header class="page-header">
+  <h4 {% if settings.enable_multilang %}data-translate="general.search.title"{%endif%}>{{ 'general.search.title' | t }}</h4>
+  {% include 'search-bar' %}
+</header>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Search Page",
+    "settings": [
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "grid",
+        "options": [
+          {
+            "value": "grid",
+            "label": "Grid"
+          },
+          {
+            "value": "list",
+            "label": "List"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "grid",
+        "label": "Products per row (grid only)",
+        "default": "4",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "rows",
+        "label": "Rows per page (grid only)",
+        "default": "6",
+        "options": [
+          {
+            "value": "3",
+            "label": "3"
+          },
+          {
+            "value": "4",
+            "label": "4"
+          },
+          {
+            "value": "5",
+            "label": "5"
+          },
+          {
+            "value": "6",
+            "label": "6"
+          },
+          {
+            "value": "7",
+            "label": "7"
+          },
+          {
+            "value": "8",
+            "label": "8"
+          }
+        ]
+      },
+	  {
+        "type": "text",
+        "id": "collection_results_per_page",
+        "label": "Products per page (list only)",
+        "default": "10"
+      },
+      {
+        "type": "checkbox",
+        "id": "collection_infinite_scrolling",
+        "label": "Enable Infinite Scrolling (Show More Button)",
+        "default": false
+      }
+	]
+  }
+{% endschema %}
