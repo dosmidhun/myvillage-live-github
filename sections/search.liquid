@@ -68,9 +68,11 @@
   {% endif %}
 </div>
 
-{% if paginate.pages > 1 %}
-<div class="text-center">{% include 'pagination-page' %}</div>
-{% endif %}
+ {% if paginate.pages > 1 %}
+      <div class="text-center">
+        {% include 'pagination' %}
+      </div>
+      {% endif %}
 
 {% endif %}
 {% endpaginate %}
