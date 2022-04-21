@@ -31,7 +31,7 @@
 </header>
 
 <div class="block-row content-blog test" id="shopify-section-blog-template">  
-  {{search.results.sort_by}}
+  {{search.results_count}}
    {% if pageQuerystring contains "type=article" %} 
   
        {% for item in search.results %}
