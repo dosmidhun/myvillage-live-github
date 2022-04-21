@@ -34,7 +34,8 @@
   
    {% if pageQuerystring contains "type=article" %} 
   
-       {% for item in search.results %}
+       
+  {% for item in blog.articles  %}
   		 {% if item.object_type == 'article' %}
   <!-- Bold: Memberships (search) -->
 
