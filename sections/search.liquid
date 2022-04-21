@@ -31,11 +31,11 @@
 </header>
 
 <div class="block-row content-blog test" id="shopify-section-blog-template">  
-  
+  {{search.results.sort_by}}
    {% if pageQuerystring contains "type=article" %} 
   
-       
-  {% for item in blog.articles  %}
+       {% for item in search.results %}
+  
   		 {% if item.object_type == 'article' %}
   <!-- Bold: Memberships (search) -->
 
