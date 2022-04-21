@@ -31,18 +31,18 @@
 </header>
 
 <div class="block-row content-blog test" id="shopify-section-blog-template">  
-  {{search.sort_by}}
+  
    {% if pageQuerystring contains "type=article" %} 
   
        {% for item in search.results %}
   
-  		 {% if item.object_type == 'article' %}
   <!-- Bold: Memberships (search) -->
-
-  				<ul class="list-blog blog-list tyest">
-        			{% include 'search-blog' %}
-  				</ul>	
-  		{% endif %}
+{% include 'bold_mem_helper' with 'search' %}
+<!-- end Bold code -->
+{%- include 'bold-product' with item, hide_action: 'skip' -%}
+  			<ul class="list-blog blog-list tyest">
+        {% include 'search-blog' %}
+  			</ul>	
        {% endfor %}
   {% else %}
       {% if section.settings.layout == 'list' %}
@@ -69,11 +69,9 @@
   {% endif %}
 </div>
 
- {% if paginate.pages > 1 %}
-      <div class="text-center">
-        {% include 'pagination' %}
-      </div>
-      {% endif %}
+{% if paginate.pages > 1 %}
+<div class="text-center">{% include 'pagination-page' %}</div>
+{% endif %}
 
 {% endif %}
 {% endpaginate %}
