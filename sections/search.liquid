@@ -28,7 +28,6 @@
           </form>
         </div>
       </div>
-
       {% if search.performed and search.results_count == 0 %}
         <hr class="hr--small hr--invisible">
         <p>{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
