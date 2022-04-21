@@ -35,13 +35,13 @@
    {% if pageQuerystring contains "type=article" %} 
   
        {% for item in search.results %}
-  
+  		 {% if item.object_type == 'article' %}
   <!-- Bold: Memberships (search) -->
-{% include 'bold_mem_helper' with 'search' %}
-<!-- end Bold code -->
-  			<ul class="list-blog blog-list tyest">
-        {% include 'search-blog' %}
-  			</ul>	
+
+  				<ul class="list-blog blog-list tyest">
+        			{% include 'search-blog' %}
+  				</ul>	
+  		{% endif %}
        {% endfor %}
   {% else %}
       {% if section.settings.layout == 'list' %}
