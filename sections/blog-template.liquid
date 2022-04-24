@@ -98,7 +98,7 @@ Don't forget to close the tag after your loop.
               			{% assign con= article[5] | strip_html | downcase  | truncatewords: 500 %}
           
 						{% if tit contains searchstring or con contains searchstring %}
-              					{{tit}} {{"--"}}
+              					{{tit}} {{"--"}} {{article[3]}} {{"/n"}}
               					
               			{%else%}
               				
