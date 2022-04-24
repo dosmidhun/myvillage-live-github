@@ -69,14 +69,7 @@ Don't forget to close the tag after your loop.
               
              
               
-              
-              
-              
-                {% for article_vals in blog_array %}
-               {% assign article = article_vals | split: '|' %}
-                    {% if pageQuerystring contains "type=article" %}
-
-                        {% assign urlparam = pageQuerystring | split: "&" %}
+               {% assign urlparam = pageQuerystring | split: "&" %}
 
                         {% for urlparamqo in urlparam %}
 
@@ -92,9 +85,17 @@ Don't forget to close the tag after your loop.
                                 {% assign searchstring = qsingle | url_decode | downcase%}
                             {% endfor %}
                         {% endfor %}
+              
+              
+              
+                {% for article_vals in blog_array %}
+               {% assign article = article_vals | split: '|' %}
+                    {% if pageQuerystring contains "type=article" %}
+
+                       
  						{% assign tit= article[0]| split: '|' | first | downcase %}
               			{% assign con= article[5] | strip_html | downcase  | truncatewords: 500 %}
-           
+           {{tit}}
 						{% if tit contains searchstring or con contains searchstring %}
               					{{tit}}
               					
