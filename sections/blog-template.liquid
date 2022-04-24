@@ -53,7 +53,8 @@ Don't forget to close the tag after your loop.
               
               
               {% capture blog_list %}
-  				{% for art in blog.articles%}
+              {% assign articles = blog.articles | sort: 'published_at'%}
+  				{% for art in articles%}
     				{{art.title}}|
               		{{art.url}}|
               		{{art.comments_count}}|
