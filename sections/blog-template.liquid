@@ -44,15 +44,15 @@ Don't forget to close the tag after your loop.
         <div class="content-blog">
             <ul class="list-blog{% if section.settings.layout == "grid" %} blog-grid{% elsif section.settings.layout == "list" %} blog-list{% endif %}">
               
-              {% assign blogs_linklist_handle = "post" %}
+              {% assign blogs_linklist_handle = "blogs/post" %}
 
 
-  {%assign blogs_linklist = linklists[blogs_linklist_handle]%}
+  {%assign blogs_linklist = linklists[blogs_linklist_handle] %}
   {%assign articles = "" | split: ","%}
-  {%for blog_link in blogs_linklist.links%}
-    {%assign articles = articles | concat: blog_link.object.articles%}
+  {%for blog_link in blogs_linklist.links %}
+    {%assign articles = articles | concat: blog_link.object.articles %}
  {% endfor%}
-  {%assign articles = articles  | sort: "published_at" | reverse%}
+  {%assign articles = articles  | sort: "published_at" | reverse %}
  
    {% for article in articles %}
   <p>{{ article.title }}</p>
