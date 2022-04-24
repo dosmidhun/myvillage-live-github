@@ -68,7 +68,7 @@ You can change layouts or styles by checking if current_tags is true.
 			{% endfor %}
         	
         	{{searchstring}}
-        	{% if article.title contains searchstring %}
+        	{% if article.title contains 'diet' %}
         	 <li class="{% if section.settings.layout == "grid" %}col-sm-6{% else %}item{% endif %}">
           <h4>
             <a href="{{ article.url }}">
