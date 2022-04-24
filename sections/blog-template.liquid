@@ -39,7 +39,7 @@ You can change layouts or styles by checking if current_tags is true.
     For more info on article liquid tags:
     - http://docs.shopify.com/themes/liquid-variables/article
 {% endcomment %}
-
+{% assign searchstring =''%}
 
   {% if settings.display_sidebar_blog_page %}<div class="col-sm-8">{% endif %}
     <div class="content-blog">    
@@ -53,13 +53,11 @@ You can change layouts or styles by checking if current_tags is true.
   				{% assign qonly = urlparamqsingle | split: "=" %}
         		{% assign  urlparamqonly =qonly | slice: 1 %}
         		{% for qsingle in urlparamqonly %}
-        			{{qsingle | url_decode}}
+        			{% assign searchstring= qsingle | url_decode %}
         		{% endfor %}
 			{% endfor %}
-        	{% assign qonly = urlparamq | split: "=" %}
-			{% assign qdata = qonly  | slice: 1 %}
-        	{% assign qsearch = qdata | url_decode %}
         	
+        	{{assignsearchstring}}
         	
         {% endif %}
        
