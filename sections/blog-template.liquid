@@ -72,6 +72,8 @@ Don't forget to close the tag after your loop.
  						{% assign tit= article.title | split: '|' | first %}
 						{% if tit contains "diet"%}
               					{{tit}}
+              			{%else%}
+              				{{article.url }}
               			{%endif%}
 
                         <li class="{% if section.settings.layout == "grid" %}col-sm-6{% else %}item{% endif %}">
