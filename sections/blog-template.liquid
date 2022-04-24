@@ -46,14 +46,14 @@ Don't forget to close the tag after your loop.
               
               {% assign blogs_linklist_handle = "post" %}
 
-{% liquid 
-  assign blogs_linklist = linklists[blogs_linklist_handle]
-  assign articles = "" | split: ","
-  for blog_link in blogs_linklist.links
-    assign articles = articles | concat: blog_link.object.articles
-  endfor
-  assign articles = articles  | sort: "published_at" | reverse
-%} 
+
+  {%assign blogs_linklist = linklists[blogs_linklist_handle]%}
+  {%assign articles = "" | split: ","%}
+  {%for blog_link in blogs_linklist.links%}
+    {%assign articles = articles | concat: blog_link.object.articles%}
+ {% endfor%}
+  {%assign articles = articles  | sort: "published_at" | reverse%}
+ 
    {% for article in articles %}
   <p>{{ article.title }}</p>
 {% endfor %}   
