@@ -4,7 +4,7 @@ Don't forget to close the tag after your loop.
 {% endcomment %}
 {% capture type  %}{%- render 'querystring', param: "type" -%}{% endcapture %}
 {% capture q  %}{%- render 'querystring', param: "q" -%}{% endcapture %}
-
+{%assign q = q| url_decode%}
 {% if type contains "article" %}
 
     {% paginate blog.articles by 9999 %}
