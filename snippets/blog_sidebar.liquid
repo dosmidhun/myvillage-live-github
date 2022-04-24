@@ -1,7 +1,33 @@
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+
+{%- assign pageUrl = contentForQuerystring | split: '"pageurl":"' | last | split: '"' | first | split: '.myshopify.com' | last |
+        replace: '\/', '/' |
+        replace: '%20', ' ' |
+        replace: '\u0026', '&'
+-%}
+{% assign urlparam = pageQuerystring | split: "&" %}
+
+                        {% for urlparamqo in urlparam %}
+
+                            {% if urlparamqo contains "q=" %}
+                                {% assign urlparamqpass = urlparamqo %}
+                            {% endif %}
+                        {% endfor %}
+
+                        {% for urlparamqsingle in urlparamqpass %}
+                            {% assign qonly = urlparamqsingle | split: "=" %}
+                            {% assign urlparamqonly = qonly | slice: 1 %}
+                            {% for qsingle in urlparamqonly %}
+                                {% assign searchstring = qsingle | url_decode | downcase%}
+                            {% endfor %}
+                        {% endfor %}
+              
+              {{searchstring}}
+{%- assign pageQuerystring = pageUrl | split: '?' | last -%}
 <div class="col-sm-4" id="sidebar">
   {% include 'widget_article' %}
   	<form method="get" action="/blogs/post" class="search-f blog_search">
-      <input class="searchBox field" type="text" placeholder="Search..." name="q"{% if search.performed %} value="{{ search.terms | escape | downcase }}"{% endif %} required/> 
+      <input class="searchBox field" type="text" placeholder="Search..." name="q" value="{{searchstring}}" required/> 
       <input type="hidden" name="type" value="article" />
       <button class="searchSubmit" type="submit" class="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
     </form>
