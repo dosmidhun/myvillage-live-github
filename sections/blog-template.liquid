@@ -70,7 +70,7 @@ Don't forget to close the tag after your loop.
                             {% endfor %}
                         {% endfor %}
  						{% assign tit= article.title | split: '|' | first | downcase %}
-              			{% assign con= article.content | strip_html | downcase  | truncatewords: 50 %}
+              			{% assign con= article.content | strip_html | downcase  | truncatewords: 500 %}
 						{% if tit contains searchstring or con contains searchstring %}
               					{{tit}}
               			{%else%}
