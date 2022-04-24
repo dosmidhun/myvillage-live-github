@@ -1,9 +1,9 @@
 <div class="col-sm-4" id="sidebar">
   {% include 'widget_article' %}
-  	<form  class="search-f blog_search">
-      <input class="searchBox field" type="text" placeholder="Search..." name="q" value="{{q}}" required/> 
+  	<form method="get" action="/search" class="search-f blog_search">
+      <input class="searchBox field" type="text" placeholder="Search..." name="q"{% if search.performed %} value="{{ search.terms | escape | downcase }}"{% endif %} required/> 
       <input type="hidden" name="type" value="article" />
-      <a class="searchSubmit" href="https://myvillagegreen.com/blogs/post?q=blog+body&type=article" class="submit"><i class="fa fa-search" aria-hidden="true"></i></a>
+      <button class="searchSubmit" type="submit" class="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
     </form>
   	<div class="block-category">
       <h2 class="widget-title">Categories</h2>
