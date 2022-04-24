@@ -14,7 +14,7 @@ Don't forget to close the tag after your loop.
 
 {% if pageQuerystring contains "type=article" %}
 
-    {% paginate blog.articles by blog.articles_count %}
+    {% paginate blog.articles by 99999 %}
 
         {% comment %}
         This template is also used for listing out articles of a specific tag.
