@@ -1,5 +1,7 @@
 <ul>
 {% for collection in collections %}
-  <li>{{ collection.title | link_to: collection.url }}</li>
+  <ul class="list-blog blog-list tyest">
+        {% include 'search-blog' %}
+  			</ul>	
 {% endfor %}
 </ul>
