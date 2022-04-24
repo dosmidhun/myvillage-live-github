@@ -59,7 +59,8 @@ Don't forget to close the tag after your loop.
               		{{art.url}}|
               		{{art.comments_count}}|
               		{{art.published_at}}|
-              		{{art.author}}|{{art.excerpt}}|
+              		{{art.author}}|
+              		{{art.excerpt}}|
               		{{art.content}}|
               		{{art.image | img_url: 'master' | img_tag: image_alt }}
     				{% if forloop.last == false %}::{% endif%}
@@ -95,10 +96,75 @@ Don't forget to close the tag after your loop.
 
                        
  						{% assign tit= article[0]| split: '|' | first | downcase %}
-              			{% assign con= article[5] | strip_html | downcase  | truncatewords: 500 %}
-          {{tit}} {{"--"}} {{article[3]}} <br>
-						{% if tit contains searchstring or con contains searchstring %}
-              					
+              			{% assign con= article[6] | strip_html | downcase  | truncatewords: 500 %}
+          
+						{% if tit contains searchstring %}
+              					<li class="{% if section.settings.layout == "grid" %}col-sm-6{% else %}item{% endif %}">
+    <h4>
+        <a href="{{ article[1] }}">
+            {% if settings.enable_multilang %}
+                <span class="lang1">{{ article[0] | split: '|' | first }}</span>
+                <span class="lang2">{{ article[0] | split: '|' | last }}</span>
+            {% else %}
+                {{ article[0] | split: '|' | first }}
+            {% endif %}
+        </a>
+    </h4>
+
+    <p class="blog_author">
+        {% comment %}
+        Don't be fooled, the ? in comments_enabled? is part of the liquid tag.
+        {% endcomment %}
+        {% if blog.comments_enabled? %}
+            <a href="{{ article[1] }}#comments"
+               {% if settings.enable_multilang %}data-translate="blogs.comments.comments_with_count|count:{{ article[2] }}"{% endif %}>
+                {{ 'blogs.comments.comments_with_count' | t: count: article[2] }}
+            </a>
+            <span class="separator">/</span>
+        {% endif %}
+
+        {% if section.settings.blog_show_date %}
+            <span class="article__date testt">Post on
+{{ article[3] | time_tag: format: 'month_day_year' }}
+</span>
+        {% endif %}
+
+        {% if section.settings.blog_show_author %}
+            <span class="article__author">by {{ article[4] }}</span>
+        {% endif %}
+    </p>
+    {% if article[7] %}
+        {% assign image_alt = article[0] | escape %}
+        <div class="blog_img zi-banner">
+            <a href="{{ article[1] }}" class="overlay">
+                <div class="zi-banner-image">
+                    {{ article | img_url: 'master' | img_tag: image_alt }}
+                </div>
+            </a>
+        </div>
+    {% endif %}
+    {% comment %}
+    Add a surrounding div with class 'rte' to anything that will come from the rich text editor.
+    Since this is just a listing page, you can either use the excerpt or truncate the full article.
+    {% endcomment %}
+    {% if settings.enable_multilang %}
+        <div class="des lang1">{{ article[5] | split: "[lang2]" | first | split: "|" | first }}</div>
+        <div class="des lang2">{{ article[5] | split: "[lang2]" | last | split: "|" | last }}</div>
+    {% else %}
+        <!--<div class="des">{{ article[5] | split: "[lang2]" | first | split: "|" | first }}</div>-->
+        <div class="des">{{ article[6] | truncatewords: 50 }}...</div>
+    {% endif %}
+
+    {% comment %}
+    Show off meta information like number of comments and tags.
+    {% endcomment %}
+
+    <p class="button">
+        <a href="{{ article[1] }}"
+           {% if settings.enable_multilang %}data-translate="blogs.article.read_more"{% endif %}
+           class="blog_morebtn">{{ 'blogs.article.read_more' | t }}</a>
+    </p>
+</li>
               					
               			{%else%}
               				
