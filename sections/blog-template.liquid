@@ -3,8 +3,8 @@ Loop through a defined number of articles with the 'paginate' tag.
 Don't forget to close the tag after your loop.
 {% endcomment %}
 {% capture type  %}{%- render 'querystring', param: "page-type-blog" -%}{% endcapture %}
-{% capture search-value  %}{%- render 'querystring', param: "search-value" -%}{% endcapture %}
-{%assign q = search-value| url_decode%}
+{% capture searchvalue  %}{%- render 'querystring', param: "search-value" -%}{% endcapture %}
+{%assign q = searchvalue| url_decode%}
 {% if type contains "article" %}
 
     {% paginate blog.articles by 9999 %}
