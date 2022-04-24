@@ -94,12 +94,12 @@ Don't forget to close the tag after your loop.
                         {% endfor %}
  						{% assign tit= article[0]| split: '|' | first | downcase %}
               			{% assign con= article[5] | strip_html | downcase  | truncatewords: 500 %}
-              {{article[1]}}
+           
 						{% if tit contains searchstring or con contains searchstring %}
               					{{tit}}
               					
               			{%else%}
-              				{{article[1]}}
+              				
               			{%endif%}
 						
                         
