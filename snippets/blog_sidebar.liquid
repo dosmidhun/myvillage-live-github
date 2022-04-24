@@ -3,6 +3,7 @@
   	<form method="get" action="/blogs/post" class="search-f blog_search">
       <input class="searchBox field" type="text" placeholder="Search..." name="search-value" value="{{ q }}"required/> 
       <input type="hidden" name="type" value="{{ 'now' | date: "%s"}}" />
+      <input type="hidden" name="page-type-blog" value="article" />
       <button class="searchSubmit" type="submit" class="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
     </form>
   	<div class="block-category">
