@@ -14,7 +14,7 @@ Don't forget to close the tag after your loop.
 
 {% if pageQuerystring contains "type=article" %}
 
-    {% paginate blog.articles by 10 %}
+    {% paginate blog.articles by 50 %}
 
         {% comment %}
         This template is also used for listing out articles of a specific tag.
@@ -96,9 +96,9 @@ Don't forget to close the tag after your loop.
                        
  						{% assign tit= article[0]| split: '|' | first | downcase %}
               			{% assign con= article[5] | strip_html | downcase  | truncatewords: 500 %}
-          
+          {{tit}} {{"--"}} {{article[3]}} <br>
 						{% if tit contains searchstring or con contains searchstring %}
-              					{{tit}} {{"--"}} {{article[3]}} <br>
+              					
               					
               			{%else%}
               				
