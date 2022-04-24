@@ -50,6 +50,26 @@ Don't forget to close the tag after your loop.
         <div class="col-sm-8">{% endif %}
         <div class="content-blog">
             <ul class="list-blog{% if section.settings.layout == "grid" %} blog-grid{% elsif section.settings.layout == "list" %} blog-list{% endif %}">
+              
+              
+              {% capture blog_list %}
+  				{% for art in blog.articles%}
+    				{{art.title}}|{{art.url}}|{{art.description}}|{{art.featured_image.src | product_img_url: 'medium' }}|{{article.published_at}}|{{article.content}}
+    				{% if forloop.last == false %}::{% endif%}
+ 				{% endfor %}
+			{% endcapture %}
+			{% assign blog_array = blog_list | split: '::'%}
+              
+              
+              {% for art in blog_array %}
+  				{% assign art_vals = art | split: '|' %}
+  				{{art_vals[0]}}
+  				{{art_vals[2]}}
+			  {% endfor %}
+              
+              
+              
+              
                 {% for article in blog.articles %}
                     {% if pageQuerystring contains "type=article" %}
 
