@@ -1,12 +1,5 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+<ul>
+{% for collection in collections %}
+  <li>{{ collection.title | link_to: collection.url }}</li>
+{% endfor %}
+</ul>
