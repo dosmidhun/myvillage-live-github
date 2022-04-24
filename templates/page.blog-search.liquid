@@ -1,9 +1,31 @@
-<!-- Bold: Memberships (blog) -->
-{% include 'bold_mem_helper' with 'blog' %}
-<!-- end Bold code -->
-{% comment %}
-  The contents of the blog.liquid template can be found in /sections/blog-template.liquid
-{% endcomment %}
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
 
-{% section 'blog-template' %}
-{% render 'aio_product_recommendation' %}
+{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
+
+{%- assign pageQuerystring = pageUrl | split:'?' | last -%}
+
+<div class="search-page">
+  <div class="container" style="padding:0px;">
+    <div class="row">   
+      {% if pageQuerystring contains "type=article" %}
+      		<div class="{% if settings.display_sidebar_search_page %}{% if pageQuerystring contains "type=article" %} col-sm-8 {% else %}col-sm-12{% endif %}{% endif %}">
+            	{% section 'search-blog' %}
+            </div>
+      		{% if pageQuerystring contains "type=article" %}
+              {% include 'blog_sidebar' %}
+            {% endif %}
+      {% else %}
+          {% if settings.display_sidebar_search_page %}
+          {% include 'product-sidebar' %}
+          {% endif %}
+         <div class="{% if settings.display_sidebar_search_page %}col-xs-12 {% endif %}col-main">
+          {% section 'search' %}
+          </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
