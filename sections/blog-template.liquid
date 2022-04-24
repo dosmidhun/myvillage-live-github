@@ -49,7 +49,13 @@ You can change layouts or styles by checking if current_tags is true.
         	
         	{% assign urlparam = pageQuerystring | split: "&" %}
         	{% assign urlparamq = urlparam | slice: 0 %}
-        	{% for urlparamqsingle in urlparamq %}
+        	{% for urlparamqo in urlparamq %}
+        			{% if urlparamqo contains "q=" %}
+        			{% assign urlparamqpass= urlparamqo %}
+        			{% endif %}
+        		{% endfor %}
+        
+        	{% for urlparamqsingle in urlparamqpass %}
   				{% assign qonly = urlparamqsingle | split: "=" %}
         		{% assign  urlparamqonly =qonly | slice: 1 %}
         		{% for qsingle in urlparamqonly %}
