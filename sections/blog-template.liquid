@@ -66,11 +66,11 @@ Don't forget to close the tag after your loop.
                             {% assign qonly = urlparamqsingle | split: "=" %}
                             {% assign urlparamqonly = qonly | slice: 1 %}
                             {% for qsingle in urlparamqonly %}
-                                {% assign searchstring = qsingle | url_decode %}
+                                {% assign searchstring = qsingle | url_decode | downcase%}
                             {% endfor %}
                         {% endfor %}
- 						{% assign tit= article.title | split: '|' | first %}
-						{% if tit contains "Diet" %}
+ 						{% assign tit= article.title | split: '|' | first | downcase %}
+						{% if tit contains searchstring %}
               					{{tit}}
               			{%else%}
               				{{article.url }}
