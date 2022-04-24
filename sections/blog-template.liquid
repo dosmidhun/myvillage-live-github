@@ -48,8 +48,8 @@ You can change layouts or styles by checking if current_tags is true.
         {% if pageQuerystring contains "type=article" %}
         	
         	{% assign urlparam = pageQuerystring | split: "&" %}
-        	{% assign urlparamq = urlparam | slice: 0 %}
-        	{% for urlparamqo in urlparamq %}
+        	
+        	{% for urlparamqo in urlparam %}
         			{{urlparamqo}}
         			{% if urlparamqo contains "q=" %}
         			{% assign urlparamqpass= urlparamqo %}
