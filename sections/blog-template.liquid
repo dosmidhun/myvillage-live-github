@@ -52,7 +52,7 @@ Don't forget to close the tag after your loop.
   for blog_link in blogs_linklist.links
     assign articles = articles | concat: blog_link.object.articles
   endfor
-  assign articles = articles | uniq | sort: "published_at" | reverse
+  assign articles = articles  | sort: "published_at" | reverse
 %} 
    {% for article in articles %}
   <p>{{ article.title }}</p>
