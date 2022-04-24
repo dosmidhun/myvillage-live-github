@@ -1,9 +1,9 @@
 <ul>
-{% for collection in collections %}
+{% for article in blog.articles %}
   <ul class="list-blog blog-list tyest">
-    {% if collection.object_type == 'article' %}
+   
         {% include 'search-blog' %}
   			</ul>	
-  {% endif %}
+  
 {% endfor %}
 </ul>
