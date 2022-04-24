@@ -72,7 +72,8 @@ Don't forget to close the tag after your loop.
               
               
               
-                {% for article in blog_array %}
+                {% for article_vals in blog_array %}
+               {% assign article = article_vals | split: '|' %}
                     {% if pageQuerystring contains "type=article" %}
 
                         {% assign urlparam = pageQuerystring | split: "&" %}
