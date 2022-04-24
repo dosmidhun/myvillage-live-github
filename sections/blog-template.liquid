@@ -50,6 +50,7 @@ You can change layouts or styles by checking if current_tags is true.
         	{% assign urlparam = pageQuerystring | split: "&" %}
         	{% assign urlparamq = urlparam | slice: 0 %}
         	{% for urlparamqo in urlparamq %}
+        			{{urlparamqo}}
         			{% if urlparamqo contains "q=" %}
         			{% assign urlparamqpass= urlparamqo %}
         			{% endif %}
