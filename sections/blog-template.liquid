@@ -54,23 +54,25 @@ Don't forget to close the tag after your loop.
               
               {% capture blog_list %}
   				{% for art in blog.articles%}
-    				{{art.title}}|{{art.url}}|{{art.description}}|{{art.featured_image.src | product_img_url: 'medium' }}|{{article.published_at}}|{{article.content}}
+    				{{art.title}}|
+              		{{art.url}}|
+              		{{art.comments_count}}|
+              		{{art.published_at}}|
+              		{{art.author}}|{{art.excerpt}}|
+              		{{art.content}}|
+              		{{art.image | img_url: 'master' | img_tag: image_alt }}
     				{% if forloop.last == false %}::{% endif%}
  				{% endfor %}
 			{% endcapture %}
 			{% assign blog_array = blog_list | split: '::'%}
               
               
-              {% for art in blog_array %}
-  				{% assign art_vals = art | split: '|' %}
-  				{{art_vals[0]}}
-  				{{art_vals[1]}}
-			  {% endfor %}
+             
               
               
               
               
-                {% for article in blog.articles %}
+                {% for article in blog_array %}
                     {% if pageQuerystring contains "type=article" %}
 
                         {% assign urlparam = pageQuerystring | split: "&" %}
@@ -89,18 +91,15 @@ Don't forget to close the tag after your loop.
                                 {% assign searchstring = qsingle | url_decode | downcase%}
                             {% endfor %}
                         {% endfor %}
- 						{% assign tit= article.title | split: '|' | first | downcase %}
-              			{% assign con= article.content | strip_html | downcase  | truncatewords: 500 %}
+ 						{% assign tit= article[0]| split: '|' | first | downcase %}
+              			{% assign con= article[5] | strip_html | downcase  | truncatewords: 500 %}
 						{% if tit contains searchstring or con contains searchstring %}
               					{{tit}}
-              					{% assign search_article = article.handle %}
+              					
               			{%else%}
               				
               			{%endif%}
-						{% for art in search_article %}
-              					
-              					{{art.title}}
-                        {% endfor %}
+						
                         
                     {% endif %}
                 {% endfor %}
