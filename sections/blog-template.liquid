@@ -2,13 +2,6 @@
 Loop through a defined number of articles with the 'paginate' tag.
 Don't forget to close the tag after your loop.
 {% endcomment %}
-
-{% paginate blog.articles by 10 %}
-
-{% comment %}
-This template is also used for listing out articles of a specific tag.
-You can change layouts or styles by checking if current_tags is true.
-{% endcomment %}
 {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
 
 {%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
@@ -18,6 +11,21 @@ You can change layouts or styles by checking if current_tags is true.
 -%}
 
 {%- assign pageQuerystring = pageUrl | split:'?' | last -%}
+
+{% if pageQuerystring contains "type=article" %}
+
+{% else %}
+
+
+
+
+{% paginate blog.articles by 10 %}
+
+{% comment %}
+This template is also used for listing out articles of a specific tag.
+You can change layouts or styles by checking if current_tags is true.
+{% endcomment %}
+
 <div class="row">
 {% if current_tags %}
   {% if settings.enable_multilang %}
@@ -215,6 +223,14 @@ You can change layouts or styles by checking if current_tags is true.
 </div>
 {% endif %}
 {% endpaginate %}
+
+
+
+
+
+
+{% endif %}
+
 
 {% schema %}
   {
