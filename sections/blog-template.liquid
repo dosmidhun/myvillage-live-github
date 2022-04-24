@@ -47,6 +47,8 @@ You can change layouts or styles by checking if current_tags is true.
         {% for article in blog.articles %}
         {% if pageQuerystring contains "type=article" %}
         	{{pageQuerystring}}
+        	{% assign qy = pageQuerystring | split: "&" %}
+			{{ qy | slice: 1 }}
         {% endif %}
        
         <li class="{% if section.settings.layout == "grid" %}col-sm-6{% else %}item{% endif %}">
