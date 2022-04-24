@@ -70,7 +70,7 @@ Don't forget to close the tag after your loop.
                             {% endfor %}
                         {% endfor %}
  						{% assign tit= article.title | split: '|' | first %}
-						{% if tit contains 'diet'%}
+						{% if tit contains "diet"%}
               					{{tit}}
               			{%endif%}
 
