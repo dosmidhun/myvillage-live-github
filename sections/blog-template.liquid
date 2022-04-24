@@ -53,7 +53,7 @@ Don't forget to close the tag after your loop.
               
               
               {% capture blog_list %}
-              {% assign articles = blog.articles | sort: 'published_at'%}
+              {% assign articles = blog.articles | sort: 'published_at' | reverse%}
   				{% for art in articles%}
     				{{art.title}}|
               		{{art.url}}|
