@@ -44,7 +44,7 @@ Don't forget to close the tag after your loop.
         <div class="content-blog">
             <ul class="list-blog{% if section.settings.layout == "grid" %} blog-grid{% elsif section.settings.layout == "list" %} blog-list{% endif %}">
               
-              {% assign blogs_linklist_handle = "blogs/post" %}
+              {% assign blogs_linklist_handle = "/blogs/post" %}
 
 
   {%assign blogs_linklist = linklists[blogs_linklist_handle] %}
