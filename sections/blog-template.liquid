@@ -54,7 +54,9 @@ Don't forget to close the tag after your loop.
   endfor
   assign articles = articles | uniq | sort: "published_at" | reverse
 %} 
-              
+   {% for article in articles %}
+  <p>{{ article.title }}</p>
+{% endfor %}           
               
               {% capture blog_list %}
               
