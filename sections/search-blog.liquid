@@ -1,5 +1,7 @@
 <ul>
-{% for article in blog.articles %}
-    <li>{{ article.title }}</li>
+{% for product_type in collection.all_types %}
+  {{ product_type | link_to_type }}
+
+    
 {% endfor %}
 </ul>
