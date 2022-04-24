@@ -14,7 +14,7 @@ Don't forget to close the tag after your loop.
 
 {% if pageQuerystring contains "type=article" %}
 
-    {% paginate blog.articles by 999999 %}
+    
 
         {% comment %}
         This template is also used for listing out articles of a specific tag.
@@ -108,11 +108,7 @@ Don't forget to close the tag after your loop.
                 {% endfor %}
             </ul>
 
-            {% if paginate.pages > 1 %}
-                <div class="text-center">
-                    {% include 'pagination' %}
-                </div>
-            {% endif %}
+            
         </div>
         {% if settings.display_sidebar_blog_page %}
             </div>
@@ -122,7 +118,7 @@ Don't forget to close the tag after your loop.
             {% endif %}
             </div>
         {% endif %}
-    {% endpaginate %}
+    
 {% else %}
 
 
