@@ -51,7 +51,7 @@ You can change layouts or styles by checking if current_tags is true.
         	{% assign urlparamq = urlparam | slice: 0 %}
         	{% assign qonly = urlparamq | split: "=" %}
 			{% assign qdata = qonly  | slice: 1 %}
-        	{{qdata}}
+        	{{qdata  | replace:'"]',''}}
         {% endif %}
        
         <li class="{% if section.settings.layout == "grid" %}col-sm-6{% else %}item{% endif %}">
