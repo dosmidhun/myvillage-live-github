@@ -73,7 +73,7 @@ Don't forget to close the tag after your loop.
               			{% assign con= article.content | strip_html | downcase  | truncatewords: 500 %}
 						{% if tit contains searchstring or con contains searchstring %}
               					{{tit}}
-              					{% assign search_article = article.hadle %}
+              					{% assign search_article = article.handle %}
               			{%else%}
               				
               			{%endif%}
