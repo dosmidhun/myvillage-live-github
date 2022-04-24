@@ -48,7 +48,7 @@ Don't forget to close the tag after your loop.
               
               
               {% capture blog_list %}
-             {%  assign articles = articles | uniq | sort: "published_at" | reverse
+             {%  assign articles = blog.articles | uniq | sort: "published_at" | reverse
 %} 
   				{% for art in articles%}
     				{{art.title}}|
