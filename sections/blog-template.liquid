@@ -51,7 +51,7 @@ You can change layouts or styles by checking if current_tags is true.
         	{% assign urlparamq = urlparam | slice: 0 %}
         	{% for urlparamqsingle in urlparamq %}
   				{% assign qonly = urlparamqsingle | split: "=" %}
-        		{{qonly | slice: 1}}
+        		{{qonly | slice: 1 | url_decode}}
 			{% endfor %}
         	{% assign qonly = urlparamq | split: "=" %}
 			{% assign qdata = qonly  | slice: 1 %}
