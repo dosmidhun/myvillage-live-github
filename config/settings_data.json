@@ -1622,16 +1622,16 @@
           "1501570258326-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner2_2100x_cd3c3867-7757-4506-a7b8-ee0fa59fcd3b.jpg",
+              "image": "shopify:\/\/shop_images\/SinusSurvival2022banner2.jpg",
               "alignment": "right",
-              "title": "Helping you live your<br> healthiest life",
+              "title": "",
               "heading_color": "#000000",
               "heading_size": "40",
               "subheading": "",
               "subheading_color": "#ffffff",
               "subheading_size": "14",
               "button": "",
-              "link": "shopify:\/\/pages\/shop-by-brands"
+              "link": "https:\/\/myvillagegreen.com\/collections\/sinus-survival"
             }
           },
           "ce456baf-72c4-4301-a67a-a6a160e02117": {
