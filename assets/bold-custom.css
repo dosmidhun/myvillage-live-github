@@ -2,3 +2,12 @@
   display: inline !important;
   
 }
+
+[href="/checkout"] > * {
+pointer-events:none !important;
+}
+
+
+[name="checkout"] * {
+ pointer-events: none !important; 
+}
