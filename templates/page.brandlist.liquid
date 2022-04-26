@@ -246,9 +246,28 @@
           <div class="instant-brand-listing"> 
                <a href="/collections/dr-dunner" class="instant-brand-item">DR DUNNER</a> 
           </div>    
+         {% assign bold_member = false %}
+ 			{% if customer %}
+               
+        		{% for tag in customer.tags %}
+           		 {% if tag == 'mvg-membership' or tag == 'Restricted Users'%}
+               		 {% assign bold_member = true %}
+               		 {% break %}
+            	 {% endif %}
+        	{% endfor %}
+            {% if bold_member %}
           <div class="instant-brand-listing"> 
                <a href="/collections/dr-hauschka-skin-care" class="instant-brand-item">DR HAUSCHKA SKIN CARE</a> 
           </div>
+               		 
+          
+            {% else %}
+					
+            {% endif %}
+               
+    	   {% else %}
+				 
+          {% endif %}
         <div class="instant-brand-listing"> 
                <a href="/collections/dr-mercola" class="instant-brand-item">DR MERCOLA</a> 
           </div> 
