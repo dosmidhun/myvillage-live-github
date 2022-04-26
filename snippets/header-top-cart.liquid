@@ -49,7 +49,7 @@
         </p>
       </div>
       <div class="actions">
-         <form method="post" action="/checkout" enctype="multipart/form-data">
+  <form method="post" action="/checkout" enctype="multipart/form-data">
 
        		 <button class="btn" onclick="window.location='/checkout'" {% if settings.enable_multilang %}data-translate="cart.general.checkout"{% endif %}>{{ 'cart.general.checkout' | t }}</button>
         </form>
