@@ -1160,8 +1160,16 @@
                 event.preventDefault();
                 var productId = jQuery(this).parents('.item').attr('id');
                 productId = productId.match(/\d+/g);
-                Shopify.removeItem(productId, function(cart) {
+               Shopify.removeItem(productId, function(cart) {
+                  if(typeof window.BOLD !== 'undefined'
+                          && typeof window.BOLD.common !== 'undefined'
+                          && typeof window.BOLD.common.cartDoctor !== 'undefined') {
+                        cart = window.BOLD.common.cartDoctor.fix(cart);
+                      }
                     furnitica.doUpdateDropdownCart(cart);
+                  if(typeof BOLD === 'object' && BOLD.common && BOLD.common.eventEmitter && typeof BOLD.common.eventEmitter.emit === 'function') {
+                          BOLD.common.eventEmitter.emit("BOLD_COMMON_cart_loaded");
+                        }
                 });
             });
         },
