@@ -45,7 +45,7 @@
       <div class="summary">                
         <p class="total">
           <span class="label"><span {% if settings.enable_multilang %}data-translate="cart.label.total"{% endif %}>{{ 'cart.label.total' | t }}</span>:</span>
-          <span class="price">{{cart.total_price | money}}</span> 
+          <span class="price"><span class="money" data-cart-total>{{cart.total_price | money}}</span></span> 
         </p>
       </div>
       <div class="actions">
