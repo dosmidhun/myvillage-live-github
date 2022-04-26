@@ -71,7 +71,7 @@ gtag('config', 'G-XW9YMN90D8');
 
   <!-- Header hook for plugins ================================================== -->
   {{ content_for_header }}
-  {%- render 'bold-pr' -%}
+  
    {{ 'bold-custom.css' | asset_url | stylesheet_tag }}
 {{ 'ndnapps-contactform-script.js' | asset_url | script_tag }}
 
@@ -321,6 +321,6 @@ pintrk('page');
   </script>
 {% render 'aio_loyalty_snippet' %}
   {{ 'custom.js' | asset_url | script_tag }}
-  
+  {%- render 'bold-pr' -%}
 </body>
 </html>
