@@ -1558,7 +1558,7 @@
 
             jQuery('#cartCount').text(cart.item_count);
             /*Total price*/
-            jQuery('#dropdown-cart .summary .price').html(Shopify.formatMoney(cart.total_price, window.money_format));
+            //jQuery('#dropdown-cart .summary .price').html(Shopify.formatMoney(cart.total_price, window.money_format));
             /*Clear cart*/
             jQuery('#dropdown-cart .mini-products-list').html('');
             /*Add product to cart*/
