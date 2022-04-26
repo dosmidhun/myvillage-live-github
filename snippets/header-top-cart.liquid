@@ -54,7 +54,18 @@
        		 <button class="btn" onclick="window.location='/checkout'" {% if settings.enable_multilang %}data-translate="cart.general.checkout"{% endif %}>{{ 'cart.general.checkout' | t }}</button>
         </form>
       </div>
-              <p class="text-cart"><a href="/cart" {% if settings.enable_multilang %}data-translate="cart.general.view_cart"{% endif %}>{{ 'cart.general.view_cart' | t }}</a></p>
+      <p class="text-cart"><a href="/cart" {% if settings.enable_multilang %}data-translate="cart.general.view_cart"{% endif %}>{{ 'cart.general.view_cart' | t }}</a></p>
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  window.addEventListener('load',function(){
+     
+     	var csp_pre_span = document.querySelector('.money-details');
+     	csp_pre_span.style.display = 'inline';
+     	
+    		
+   });
+
+     
+</script>
