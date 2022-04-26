@@ -412,10 +412,27 @@
              <div class="instant-brand-listing">
                <a href="/collections/klaire-labs" class="instant-brand-item diamond_icon">KLAIRE LABS</a>
           </div> 
+             {% assign bold_member = false %}
+ 			{% if customer %}
+               
+        		{% for tag in customer.tags %}
+           		 {% if tag == 'mvg-membership' or tag == 'Restricted Users'%}
+               		 {% assign bold_member = true %}
+               		 {% break %}
+            	 {% endif %}
+        	{% endfor %}
+            {% if bold_member %}
           <div class="instant-brand-listing">
                <a href="/collections/kyolic" class="instant-brand-item">KYOLIC</a>         
           </div>
-     </div>
+              {% else %}
+					
+            {% endif %}
+               
+    	   {% else %}
+				 
+          {% endif %}
+     
          <div class="instant-brand-grid-block">
                <span class="anchor"><a name="zzL">L</a></span> <span>
                     <h4 class="instant-brand-header" style="text-decoration: underline;"> 
