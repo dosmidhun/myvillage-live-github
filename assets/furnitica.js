@@ -1570,7 +1570,7 @@
                     item = item.replace(/\{TITLE\}/g, furnitica.translateText(cart.items[i].title));
                     item = item.replace(/\{QUANTITY\}/g, cart.items[i].quantity);
                     item = item.replace(/\{IMAGE\}/g, Shopify.resizeImage(cart.items[i].image, 'small'));
-                    item = item.replace(/\{PRICE\}/g, Shopify.formatMoney(cart.items[i].price, window.money_format));
+                    //item = item.replace(/\{PRICE\}/g, Shopify.formatMoney(cart.items[i].price, window.money_format));
                     jQuery('#dropdown-cart .mini-products-list').append(item);
                 }
                 jQuery('#dropdown-cart .btn-remove').click(function(event) {
