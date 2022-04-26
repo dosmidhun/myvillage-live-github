@@ -1590,9 +1590,13 @@
                     });
                 });
                 if (furnitica.checkNeedToConvertCurrency()) {
-                    Currency.convertAll(window.shop_currency, jQuery('#currencies').val(), '#dropdown-cart span.money', 'money_format');
+                   // Currency.convertAll(window.shop_currency, jQuery('#currencies').val(), '#dropdown-cart span.money', 'money_format');
                 }
+              
             }
+          if(typeof BOLD === 'object' && BOLD.common && BOLD.common.eventEmitter && typeof BOLD.common.eventEmitter.emit === 'function') {
+            BOLD.common.eventEmitter.emit("BOLD_COMMON_cart_loaded");
+          }
             furnitica.checkItemsInDropdownCart();
         },
         checkNeedToConvertCurrency: function() {
