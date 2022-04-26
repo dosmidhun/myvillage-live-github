@@ -37,7 +37,7 @@
               {% endunless %}           
             </div>
               {% endif %}
-            <div class="cart-collateral">{{item.quantity}} x <span class="price">{{item.price | money}}</span></div>
+            <div class="cart-collateral">{{item.quantity}} x <span class="price"><span class="money" data-line-index="{{ forloop.index0 }}">{{item.price | money}}</span></span></div>
           </div>
         </li>
         {% endfor %}
