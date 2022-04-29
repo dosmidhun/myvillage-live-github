@@ -1426,7 +1426,7 @@ h1#mvg-membership_name { display: none; }
 .sidebar_cont ul li { margin-bottom: 22px; }
 .sidebar_cont p span { color: #00577F; }
 
-.box_layout ul { padding: 0; margin: 0; list-style: none;    grid-template-columns: 1fr 1fr 1fr 1fr;
+.box_layout ul { padding: 0; margin: 0; list-style: none; display:grid;   grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px; }
 .box_layout ul li { width: 100%; float: left; text-align: center; margin: 0 2px; min-height: 235px; cursor: pointer;}
 .box_layout ul li#box1_out { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/lab_bkgrd.png?v=1626953689) no-repeat 0px 0px; padding: 14px 7px; border: 2px solid #73adc2; border-radius: 7px; background-size: cover;}
