@@ -3658,7 +3658,7 @@ img#head-image {
     .member_clickhere_sec { margin: 10px 0; }
     .membership_left h1 { font-size: 30px; line-height: 45px; }
     .box_layout { text-align: center; }
-    .box_layout ul li { width: 70%; float: none; display: inline-block; margin: 15px 0;}
+    .box_layout ul li { width: 100%; float: none; display: inline-block; margin: 15px 0;}
     .icon_img { margin-right: 10px; }
     .adrs_sec { width: auto; margin-top: 20px; text-align: left; }
     #myaccount .modal-dialog { width: auto; }
