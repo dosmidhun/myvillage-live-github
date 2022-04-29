@@ -4161,6 +4161,10 @@ body.page-membership-dashboard .nav-search  a.phone-number,
 body.page-membership-consultation .nav-search a.phone-number{
     display: none;
 }
-.bold-blue{
-  
-}
+span.call-phone {font-size: 19px;}
+
+a.bold-blue {color: #006690;font-weight: 600;}
+
+#compound_popup .discount_btm h5 {font-size: 20px;}
+
+#compound_popup .discount_btm a.browse {padding: 0;border: none;font-weight: 600;}
