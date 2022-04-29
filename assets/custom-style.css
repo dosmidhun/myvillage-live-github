@@ -3520,6 +3520,11 @@ img#head-image {
 }
 
 @media (max-width: 767px) {
+  .box_layout ul {
+    
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
     .form-type-radios { float: none; width: auto; text-align: left; }
 .questionrow > span{float: none; width: auto;}
     .top-cart .icon .fa-shopping-cart { font-size: 0; }
@@ -3737,7 +3742,11 @@ img#head-image {
 }
 
 @media (max-width: 480px) {
-
+.box_layout ul {
+    
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
     .header-bottom .top-header { top: calc(-35px + 50%); }
     .home-slideshow .top_message { line-height: 18px; display: inline-block; height: inherit; padding: 5px; position: static;}
     .home-slideshow .slide-heading { line-height: 36px;  font-size: 24px !important; margin: 0; font-weight: 400;}
