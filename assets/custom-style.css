@@ -4138,3 +4138,8 @@ li.item.hide-menu {
 .human_img{
   margin-top:25px;
 }
+body.page-signup-landing .nav-search a.phone-number,
+body.page-membership-dashboard .nav-search  a.phone-number,
+body.page-membership-consultation .nav-search a.phone-number{
+    display: none;
+}
