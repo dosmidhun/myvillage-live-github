@@ -444,6 +444,27 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                              <div class="modal fade score_sec" id="compound_popup" role="dialog" style="display: none;">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header"> 
+                                                                <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                                                            </div>
+                                                            <div class="modal-body guidance_cont"> 
+                                                                {{ section.settings.box3_layout_compound_popup }}  
+                                                                <h4>Browse all our products or search for something specific:</h4>
+                                                                <div class="discount_btm">
+                                                                    <a href="https://myvillagegreen.com/pages/category-landing" class="browse">Browse all products!</a>
+                                                                    <h5>- OR -</h5>
+                                                                    <div class="search_form">
+                                                                        {% include 'search-bar' %} 
+                                                                    </div> 
+                                                                </div>
+                                                                
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="box_outer">
                                                     {{ section.settings.box3_layout }}  
                                                 </div>
@@ -1088,6 +1109,12 @@
             "type": "html",
             "id": "box3_layout_popup",
             "label": "Text",
+            "default": "Text"
+        },
+		{
+            "type": "html",
+            "id": "box3_layout_compound_popup",
+            "label": "Text Box 3 Compound",
             "default": "Text"
         },
         {
