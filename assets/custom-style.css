@@ -1426,8 +1426,9 @@ h1#mvg-membership_name { display: none; }
 .sidebar_cont ul li { margin-bottom: 22px; }
 .sidebar_cont p span { color: #00577F; }
 
-.box_layout ul { padding: 0; margin: 0; list-style: none; }
-.box_layout ul li { width: 24.333%; float: left; text-align: center; margin: 0 2px; min-height: 235px; cursor: pointer;}
+.box_layout ul { padding: 0; margin: 0; list-style: none;    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px; }
+.box_layout ul li { width: 100%; float: left; text-align: center; margin: 0 2px; min-height: 235px; cursor: pointer;}
 .box_layout ul li#box1_out { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/lab_bkgrd.png?v=1626953689) no-repeat 0px 0px; padding: 14px 7px; border: 2px solid #73adc2; border-radius: 7px; background-size: cover;}
 .box_layout ul li#box2_out { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/health_bkgrd.png?v=1626953689) no-repeat 0px 0px; padding: 14px 7px; border: 2px solid #14506b; border-radius: 7px; background-size: cover;}
 .box_layout ul li#box3_out { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/spcl_bkgrd.png?v=1626953689) no-repeat 0px 0px; padding: 14px 5px; border: 2px solid #646315; border-radius: 7px; background-size: cover;}
@@ -3259,7 +3260,11 @@ img#head-image {
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-
+.box_layout ul {
+    
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
     .no-access { width: 90%; }
     h1#inner-content, h1.inner-caption { font-size: 60px; line-height: 70px; }
     .menu-block div { color: #00577f !important; }
@@ -3320,7 +3325,7 @@ img#head-image {
     .member_clickhere_sec a.unlock_click { margin-bottom: 10px; }
     .member_lap_report_sec a.unlock_click { padding: 12px 74px 12px 22px; font-size: 17px; }
     .membership_left h1 { font-size: 30px; }
-    .box_layout ul li { width: 35.333%; margin-bottom: 5px; }
+    .box_layout ul li { width: 100%; margin-bottom: 5px; }
     .icon_content { width: auto; float: none; text-align: center; margin-top: 15px; }
     .icon_img { float: none;  width: 60px; margin-right: 0; margin: 0 auto; }
     .dashboard_inner .col-sm-3 { width: 100%; }
@@ -3363,7 +3368,11 @@ img#head-image {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
+.box_layout ul {
+    
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
     .no-access { width: 90%; }
     .menu-block div { color: #00577f !important; }
     .header-panel-top, .header-mobile { background: #73adc2 !important; }
@@ -3463,7 +3472,7 @@ img#head-image {
     .membership_left h1 { font-size:33px; }
     .member_main .col-sm-8 { width: 100%; }
     .member_main .col-sm-4 { width: 100%; }
-    .box_layout ul li { width: 49.333%; }
+    .box_layout ul li { width: 100%; }
     .member_name_left { text-align: center; }
     .adrs_sec { width: auto; margin-top: 20px; text-align: left; }
     #health_qstns_modal .modal-dialog, #guidance_popup .modal-dialog { width: auto; }
@@ -4142,4 +4151,7 @@ body.page-signup-landing .nav-search a.phone-number,
 body.page-membership-dashboard .nav-search  a.phone-number,
 body.page-membership-consultation .nav-search a.phone-number{
     display: none;
+}
+.bold-blue{
+  
 }
