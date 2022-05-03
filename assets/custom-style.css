@@ -4156,9 +4156,9 @@ li.item.hide-menu {
 .human_img{
   margin-top:25px;
 }
-body.page-signup-landing .nav-search a.phone-number,
-body.page-membership-dashboard .nav-search  a.phone-number,
-body.page-membership-consultation .nav-search a.phone-number{
+body.page-signup-landing.mvg-member .nav-search a.phone-number,
+body.page-membership-dashboard.mvg-member .nav-search  a.phone-number,
+body.page-membership-consultation.mvg-member .nav-search a.phone-number{
     display: none;
 }
 span.call-phone {font-size: 19px;}
