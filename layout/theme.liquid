@@ -135,7 +135,17 @@ pintrk('page');
 {% comment %}
   Add the page template as a class for easy page or template specific styling.
 {% endcomment %}
-<body id="{{ page_title | handle }}" class="{{template| handleize }} template-{{ template | split: '.' | first }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
+{% assign bold_member = false %}
+ 			{% if customer %}
+               
+        		{% for tag in customer.tags %}
+           		 {% if tag == 'mvg-membership' or tag == 'Restricted Users'%}
+               		 {% assign bold_member = true %}
+               		 {% break %}
+            	 {% endif %}
+     {% endfor %}
+  {% endif %}
+<body id="{{ page_title | handle }}" class="{% if bold_member %} mvg-member {% endif %}{{template| handleize }} template-{{ template | split: '.' | first }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
 {% capture the_snippet_content %}{% render 'socialshopwave-helper' %}{% endcapture %}
             {% unless the_snippet_content contains 'Liquid error' %}
               {{ the_snippet_content }}
