@@ -145,7 +145,7 @@ pintrk('page');
             	 {% endif %}
      {% endfor %}
   {% endif %}
-<body id="" class="{% if bold_member %} mvg-member {% endif %}{{template| handleize }} template-{{ template | split: '.' | first }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
+<body id="{{ page_title | handle }}" class="{% if bold_member %} mvg-member {% endif %} template-{{ template | split: '.' | first }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
 {% capture the_snippet_content %}{% render 'socialshopwave-helper' %}{% endcapture %}
             {% unless the_snippet_content contains 'Liquid error' %}
               {{ the_snippet_content }}
