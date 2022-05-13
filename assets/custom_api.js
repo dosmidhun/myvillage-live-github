@@ -1006,6 +1006,7 @@ jQuery( document ).ready(function($) {
                         var nextStep = $(el).closest('.recrow').find('.steps');
                         nextStep.find('.nextmenu').remove();
 
+                      	var nextStepAncor = $(el).closest('.recrow').find('.nextsteplink').attr('href');
                         var l = "";
 //                      var t = $(el).closest('.recrow').find('.rec').text().trim();
                         var t=$(el).closest('.recrow').find('.rec').text().replace('?', '').trim();
@@ -1014,7 +1015,10 @@ jQuery( document ).ready(function($) {
                         var action = label.text().trim();
 //                         console.log(t);
 //                         console.log(t.indexOf(('Take Garlic').toLowerCase()));
-                        if (t === ('Vitamin B1').toLowerCase()) {
+            if(nextStepAncor){
+                 l = nextStepAncor;
+                 btn_text = "Buy Now";  
+            }else if (t === ('Vitamin B1').toLowerCase()) {                       
                 l = "https://myvillagegreen.com/search?type=product&q=thiamin*";
                 btn_text = "Shop Now";
             }
