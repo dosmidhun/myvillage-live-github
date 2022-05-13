@@ -1007,6 +1007,7 @@ jQuery( document ).ready(function($) {
                         nextStep.find('.nextmenu').remove();
 
                       	var nextStepAncor = $(el).closest('.recrow').find('.nextsteplink').attr('href');
+                      console.log(nextStepAncor);
                         var l = "";
 //                      var t = $(el).closest('.recrow').find('.rec').text().trim();
                         var t=$(el).closest('.recrow').find('.rec').text().replace('?', '').trim();
