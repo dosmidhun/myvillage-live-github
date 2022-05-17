@@ -3717,7 +3717,7 @@ padding:10px !important;
     .no-access {     width: 95%; }
     .member_details { padding-right: 0; text-align: center; float: none; padding-bottom: 10px;}
     .member_lap_report_sec a.unlock_click { padding: 25px 50px 20px 20px; }
-    #rectable #recfilter { width: 100%; }
+    #rectable #recfilter { width: 180px; }
     .recTitles { margin-top: 0; }
     .top_reommend_sec .dosage { width: 60%; }
     #faq_inner .modal-dialog { width: 95%; }
@@ -3895,6 +3895,7 @@ padding:10px !important;
     h2#member-ship-title, h3#member-ship-title-sub { font-size: 20px; line-height: 30px; }
     #schedule_btn_in {  padding: 20px 15px; height: inherit;  font-size: 16px; }
 
+  .my-plan-button-div { position: static; }
 
 
 }
