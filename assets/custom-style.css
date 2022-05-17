@@ -1973,7 +1973,7 @@ margin-bottom: 25px;
 .recTitles { display: table; width: 100%; border-bottom: none; padding-bottom: 0px; margin-bottom: 26px; margin-top: -40px;}
  
 .top_reommend_sec .rec { display: inline-block; float: left; width: 45%; padding: 7px; font-size: 15px; font-weight: 400; letter-spacing: -.55px;}
-.top_reommend_sec .dosage { display: inline-block; float: left; width: 33%; padding: 7px; font-size: 15px; font-weight: 400; letter-spacing: -.55px; }
+.top_reommend_sec .dosage { display: inline-block; float: left; width: 30%; padding: 7px; font-size: 15px; font-weight: 400; letter-spacing: -.55px; }
 .recrow .label { display: inline-block; color: #000; font-weight: normal; font-size: 15px; float: left; width: 45%; padding: 7px; white-space: nowrap;  overflow: hidden; text-overflow: ellipsis; font-weight: 500;}
 .recrow .steps { display: inline-block;float: right;  width: auto; text-align: right; padding: 7px;}
 
