@@ -3504,7 +3504,7 @@ padding:10px !important;
     .recrow .label { width: 40%; }
     .top_reommend_sec .rec, .recrow .label { font-size: 14px; }
     .member_details { padding-right: 0; text-align: center; float: none; padding-bottom: 10px;}
-    #rectable #recfilter { width: 40%; }
+     #rectable #recfilter { width: 200px; }
     .top_reommend_sec .dosage { width: 30%; }
     #faq_inner .modal-dialog { width: 90%; }
     #schedule_inner .modal-dialog { transform: none; }
