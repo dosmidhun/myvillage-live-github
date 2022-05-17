@@ -3166,7 +3166,7 @@ img#head-image {
 #rectable #recfilter { width: 26%; }	
 #my-plan-tab-button { display: inline-block; float: left; display: inline-block; float: left; border: 1px solid #e9e9e9; background: #fff url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/star_check.jpg?v=1650442777) no-repeat 6px 3px; padding: 6px 20px 6px 37px;  font-size: 15px;  line-height: 16px; margin-top: -5px; border-bottom: none; font-weight: 600; border-top-left-radius: 4px; border-top-right-radius: 4px;} 	
 #selectedcat { font-size: 15px;  font-weight: 600;}	
-.recrow .steps .nextsteplink { padding: 3px 17px; width: 102px; text-align: center;}	
+.recrow .steps .nextsteplink {font-size: 13px; padding: 3px 17px; width: 102px; text-align: center;}	
 .my-plan-cb-fade { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/fade_star.jpg?v=1652763927) no-repeat 0px 0px; -webkit-appearance: none; border: none; outline: none !important; cursor: pointer; margin: 0 !important; margin-left: 5px !important;}	
 .my-plan-cb { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/unstar.jpg?v=1652764194) no-repeat 0px 0px; -webkit-appearance: none; border: none; outline: none !important; cursor: pointer; background-size: 19px; margin: 0 !important; margin-left: 5px !important;}	
 .my-plan-cb.selected-checkbox { background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/star_check.jpg?v=1652763927) no-repeat 0px 0px; background-size: 19px;}	
