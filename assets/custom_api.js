@@ -1119,7 +1119,7 @@ jQuery( document ).ready(function($) {
                 success: function (res) {
                   //console.log(res.report);
                   var wrapper = $("#health-report");
-                    console.log("siufiuiuiufiewfiewiweieweiwviewwievhwiuviiviivhvih",res.recommendations);
+                    //console.log("siufiuiuiufiewfiewiweieweiwviewwievhwiuviiviivhvih",res.recommendations);
                    //wrapper.html(res.report);
                   var htm_report = $(res.recommendations);
                   htm_report.find('h2').remove();
@@ -1133,7 +1133,7 @@ jQuery( document ).ready(function($) {
     				
                   $(htm_report).find('li').hide();
                   $(htm_report).find('li:lt(10)').show();
-                  console.log(htm_report);
+                  console.log("iuciiiufivisfvisvfisvisvisvisviusviusviusvsdvsivui",htm_report);
                  	$('#health-report').html(htm_report);
                   $('#health-report').find('h2').remove();
                   $('#health-report').find('#explanation').remove();
