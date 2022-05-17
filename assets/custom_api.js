@@ -1119,7 +1119,7 @@ jQuery( document ).ready(function($) {
                 success: function (res) {
                   //console.log(res.report);
                   var wrapper = $("#health-report");
-                    //console.log(res.recommendations);
+                    console.log("siufiuiuiufiewfiewiweieweiwviewwievhwiuviiviivhvih",res.recommendations);
                    //wrapper.html(res.report);
                   var htm_report = $(res.recommendations);
                   htm_report.find('h2').remove();
