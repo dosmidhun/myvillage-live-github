@@ -1135,6 +1135,19 @@ jQuery( document ).ready(function($) {
                     var wrapper = $(".top_reommend_sec");
                     // console.log(res.recommendations);
                     wrapper.html(res.recommendations);
+                  
+						$("<div class=my-plan-button-div><button id=my-plan-tab-button class=my-plan-tab-button>My Plan</button></div>").insertBefore("#recfilter")
+                      $("<div class=custom-recommendation-description><p>Here are your personalized recommendations. Want further guidance? Schedule a nutrition consultation and let us turn your recommendations into a detailed action plan.</p></div>").insertAfter(".recTitles")
+                        //$("#recfilter").prepend("<button id=my-plan-tab-button class=my-plan-tab-button>My Plan</button>");
+                        $("#rectable").append("<div id=my-plan-tab-section class=my-plan-tab-section style='display:none'><div class='nutritional-supplementation-section'><div class='nutritional-supplementation-header'><h2>Nutritional Supplementation</h2></div><div class='nutritional-supplementation-body'></div></div><div class='dietery-plan-section'><div class='dietery-plan-header'><h2>Dietery Plans</h2></div><div class='dietery-plan-body'></div></div> </div>");
+
+                      $("#my-plan-tab-button").click(function(){
+                        $(".recrow").toggle();
+                        $(".textBtn").toggle();
+                        $(".my-plan-tab-section").toggle();
+                        $("#my-plan-tab-button").toggleClass("my-plan-active");
+
+                      });                  
                     $.each(wrapper.find('.reclink.colorbox-load'), function (index, el) {
 
 						$(el).text('?');
@@ -3330,6 +3343,15 @@ jQuery( document ).ready(function($) {
                 btn_text = "Learn More";
             }
             else {}
+                      
+                      if(btn_text == 'Buy Now'){
+                        $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id') }).appendTo(nextStep);
+                        
+                      }
+                      if(btn_text == 'Shop Now'){
+                        $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb-fade' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id') }).appendTo(nextStep);
+                        
+                      }
 
                         //nextStep.find('a').text(btn_text).prop('href', (action != '' ? 'javascript:void(0)' : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').attr("data-toggle", (action != '' ? 'popover' : ''));
 						nextStep.find('a').text(btn_text).prop('href', (action != '' ? l : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').css("display", (l != '' ? 'inline-block' : 'none'));
@@ -3339,6 +3361,48 @@ jQuery( document ).ready(function($) {
 
 
                     });
+                  
+                  list_my_plan();
+                  
+                  
+                  	$('input[name="my-plan-cb"]').each(function(){
+					$(this).on('change', function() {
+                      $(".top_reommend_sec").addClass('loading');
+                      var recommendation_id = $(this).val()
+                      const rec_split = recommendation_id.split("-");
+                      var rec_id = rec_split[1];
+                      var data = {};
+                      if($(this).prop("checked") == true){
+                            data.is_selected_my_plan = true;
+                        
+                        }
+                      else{
+                      		data.is_selected_my_plan = false;
+                      }
+                      data.recommendation_id = rec_id;
+                      
+                      
+                       $.ajax({
+
+                          url: 'https://dev.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                          type: 'POST',
+                          data:data,
+                          crossDomain: true,
+                          success:function(res){
+                              // $('#' + recommendation_id + ' .nextsteplink').attr('href',custom_url);
+                              // $('#' + recommendation_id + ' .nextsteplink').text("Buy Now");
+                            
+                              //window.location=window.location.href;
+                    		list_my_plan();
+                            $(".top_reommend_sec").removeClass('loading');
+                          },
+                          error:function(xhr,status,err)
+                          {
+                            console.log(err);
+                          }
+                      });
+                        });
+                      });
 
                     $(document).find('[data-toggle="popover"]').popover({
                         placement: "auto",
