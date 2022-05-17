@@ -694,7 +694,7 @@ jQuery( document ).ready(function($) {
   function list_my_plan(){
     $.ajax({
 
-                        url: 'https://dev.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                        url: 'https://app.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
                         type: 'GET',
                         crossDomain: true,
                         success:function(res){
@@ -767,7 +767,7 @@ jQuery( document ).ready(function($) {
 
                                    $.ajax({
 
-                                      url: 'https://dev.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                                      url: 'https://app.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
                                       type: 'POST',
                                       data:data,
                                       crossDomain: true,
@@ -803,7 +803,7 @@ jQuery( document ).ready(function($) {
 
                                    $.ajax({
 
-                                      url: 'https://dev.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                                      url: 'https://app.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
                                       type: 'POST',
                                       data:data,
                                       crossDomain: true,
