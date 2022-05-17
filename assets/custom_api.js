@@ -691,7 +691,146 @@ jQuery( document ).ready(function($) {
             });
         }
     });
+  function list_my_plan(){
+    $.ajax({
 
+                        url: 'https://dev.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                        type: 'GET',
+                        crossDomain: true,
+                        success:function(res){
+                          var list = res.list;
+
+                          var list_html = '';
+                          $.each(list, function (i, recom) {
+                            if(recom.is_selected_my_plan == '1'){
+                              var check_box_id="my-plan-cb-recrow-"+ recom.recommendation_id;
+                              $("#" + check_box_id).prop('checked', true);
+                              $("#" + check_box_id).addClass('selected-checkbox');
+                              var intake_time_radio = '';
+                              if(recom.intake_time == 'AM'){ 
+                                intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="am" name="intake-time-' + recom.recommendation_id + '" value="AM" data-id="' + recom.recommendation_id + '" checked><label for="am">AM</label>';
+                                
+                              }else{
+                              intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="am" name="intake-time-' + recom.recommendation_id + '" value="AM" data-id="' + recom.recommendation_id + '"><label for="am">AM</label>';
+                              }
+                              if(recom.intake_time == 'Midday'){ 
+                                intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="midday" name="intake-time-' + recom.recommendation_id + '" value="Midday" data-id="' + recom.recommendation_id + '" checked><label for="midday">Midday</label>';
+                                
+                              }else{
+                              intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="midday" name="intake-time-' + recom.recommendation_id + '" value="Midday" data-id="' + recom.recommendation_id + '"><label for="midday">Midday</label>';
+                              }
+                              if(recom.intake_time == 'PM'){ 
+                                intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="pm" name="intake-time-' + recom.recommendation_id + '" value="PM" data-id="' + recom.recommendation_id + '" checked><label for="pm">PM</label>';
+                                
+                              }else{
+                              intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="pm" name="intake-time-' + recom.recommendation_id + '" value="PM" data-id="' + recom.recommendation_id + '"><label for="pm">PM</label>';
+                              }
+                              
+                              var intake_type_radio = '';
+                              if(recom.intake_type == 'with_food'){ 
+                                intake_type_radio = intake_type_radio + '<input type="radio" class="intake-type-class" id="with_food" name="intake-type-' + recom.recommendation_id + '" value="with_food" data-id="' + recom.recommendation_id + '" checked><label for="with_food">With Food</label>';
+                                
+                              }else{
+                              intake_type_radio = intake_type_radio + '<input type="radio" class="intake-type-class" id="with_food" name="intake-type-' + recom.recommendation_id + '" value="with_food" data-id="' + recom.recommendation_id + '"><label for="with_food">With Food</label>';
+                              }
+                              if(recom.intake_type == 'without_food'){ 
+                                intake_type_radio = intake_type_radio + '<input type="radio" class="intake-type-class" id="without_food" name="intake-type-' + recom.recommendation_id + '" value="without_food" data-id="' + recom.recommendation_id + '" checked><label for="without_food">Without Food</label>';
+                                
+                              }else{
+                              intake_type_radio = intake_type_radio + '<input type="radio" class="intake-type-class" id="without_food" name="intake-type-' + recom.recommendation_id + '" value="without_food" data-id="' + recom.recommendation_id + '"><label for="without_food">Without Food</label>';
+                              }
+                              
+
+
+                            	list_html = list_html + '<div class="nutritional-supplementation-item"><div class="nutritional-supplementation-item-name">' + recom.recommendation_name + '</div><div class="nutritional-supplementation-item-time">' + intake_time_radio + '</div><div class="nutritional-supplementation-item-type">' + intake_type_radio + '</div></div>';
+                            }else{
+                            var check_box_id="my-plan-cb-recrow-"+ recom.recommendation_id;
+                              $("#" + check_box_id).removeClass('selected-checkbox');
+                            }
+                          });
+                          
+
+                          $('.nutritional-supplementation-body').html(list_html);
+                          
+                          $('.intake-time-class').each(function(){
+                            $(this).click(function() { 
+                              
+                              
+                              	$(".top_reommend_sec").addClass('loading');
+                                  var recommendation_id = $(this).val()
+                                  const rec_split = recommendation_id.split("-");
+                                  var rec_id = rec_split[1];
+                                  var data = {};                                  
+                                  data.intake_time = $(this).val();                                 
+                                  data.recommendation_id = $(this).attr('data-id');
+
+
+                                   $.ajax({
+
+                                      url: 'https://dev.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                                      type: 'POST',
+                                      data:data,
+                                      crossDomain: true,
+                                      success:function(res){
+                                          // $('#' + recommendation_id + ' .nextsteplink').attr('href',custom_url);
+                                          // $('#' + recommendation_id + ' .nextsteplink').text("Buy Now");
+
+                                          //window.location=window.location.href;
+                                        list_my_plan();
+                                        $(".top_reommend_sec").removeClass('loading');
+                                      },
+                                      error:function(xhr,status,err)
+                                      {
+                                        console.log(err);
+                                      }
+                                  });
+                            });
+                            });
+                          
+                          
+                           $('.intake-type-class').each(function(){
+                            $(this).click(function() { 
+                              
+                              
+                              	$(".top_reommend_sec").addClass('loading');
+                                  var recommendation_id = $(this).val()
+                                  const rec_split = recommendation_id.split("-");
+                                  var rec_id = rec_split[1];
+                                  var data = {};                                  
+                                  data.intake_type = $(this).val();                                 
+                                  data.recommendation_id = $(this).attr('data-id');
+
+
+                                   $.ajax({
+
+                                      url: 'https://dev.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                                      type: 'POST',
+                                      data:data,
+                                      crossDomain: true,
+                                      success:function(res){
+                                          // $('#' + recommendation_id + ' .nextsteplink').attr('href',custom_url);
+                                          // $('#' + recommendation_id + ' .nextsteplink').text("Buy Now");
+
+                                          //window.location=window.location.href;
+                                        list_my_plan();
+                                        $(".top_reommend_sec").removeClass('loading');
+                                      },
+                                      error:function(xhr,status,err)
+                                      {
+                                        console.log(err);
+                                      }
+                                  });
+                            });
+                            });
+
+                        },
+                        error:function(xhr,status,err)
+                        {
+                          console.log(err);
+                        }
+                      });
+  
+  }
 
 
   if (window.cus_id) {
