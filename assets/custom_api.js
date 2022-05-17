@@ -1121,7 +1121,7 @@ jQuery( document ).ready(function($) {
                   var wrapper = $("#health-report");
                     //console.log(res.recommendations);
                    //wrapper.html(res.report);
-                  var htm_report = $(res.report);
+                  var htm_report = $(res.recommendations);
                   htm_report.find('h2').remove();
                   htm_report.find('script').remove();
                   htm_report.find('p').remove();
