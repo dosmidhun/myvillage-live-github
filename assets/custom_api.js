@@ -1110,6 +1110,57 @@ jQuery( document ).ready(function($) {
                     console.log(err);
                 }
             });
+          
+          $.ajax({
+
+                url: 'https://dev.iqyouhealth.com/api/physiological_causes?user_key=' + window.cus_id + '&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                type: 'GET',
+                crossDomain: true,
+                success: function (res) {
+                  //console.log(res.report);
+                  var wrapper = $("#health-report");
+                    //console.log(res.recommendations);
+                   //wrapper.html(res.report);
+                  var htm_report = $(res.report);
+                  htm_report.find('h2').remove();
+                  htm_report.find('script').remove();
+                  htm_report.find('p').remove();
+                  
+                  htm_report.find('#healthscore').remove();
+                  
+                  htm_report.find('.dash').remove();
+                  htm_report.find('.pct').remove();
+    				
+                  $(htm_report).find('li').hide();
+                  $(htm_report).find('li:lt(10)').show();
+                  console.log(htm_report);
+                 	$('#health-report').html(htm_report);
+                  $('#health-report').find('h2').remove();
+                  $('#health-report').find('#explanation').remove();
+                  $('#health-report').find('#banner').remove();
+                  $('.your_score_detail').next('p').text("Your health score is a scientific measurement of your overall health and can serve as a directional indicator on how your health is evolving. It takes into account all of the numerous factors in your life, including your demographics, health conditions, family history, diet and lifestyle habits, lab results, and DNA. The more data you provide, the more accurate your health score will be. Based on a scale of 0-100, a higher score is suggestive of better health. As you make positive health changes and improve your lab values, remember to update your health questionnaire so that your health score can reflect your progress. ");
+                  $('<p>Schedule a nutrition consultation for an in-depth look into your health score and the steps you can take to help improve your health</p>').insertAfter('#whycontent').find('ul');
+//                   $(".colorbox-load").each(function(idx) {
+//                          var url = $(this).attr("href");
+//                          url = "https://app.iqyouhealth.com" + url;
+//                          $(this).attr("href", url);
+//                          $(this).attr('target','_blank');
+                        
+                         
+//                      });
+                   $('#health-report').find(".colorbox-load").each(function(idx) {
+                  
+                    	//console.log($(this).attr('href'));
+                        $(this).removeAttr("href");
+                    });
+                 
+                },
+                error: function (xhr, status, err) {
+                        console.log(err);
+                    }
+                });
+          
+          
 
         }
 
