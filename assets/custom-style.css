@@ -3354,7 +3354,7 @@ padding:10px !important;
     #health_qstns_modal .modal-dialog, #guidance_popup .modal-dialog { width: auto; }
     .get_sec h3 { font-size: 35px; line-height: 45px; }
     .recrow .label { width: 40%; }
-    #rectable #recfilter { width: 100%; }
+    #rectable #recfilter { width: 200px; }
     #shopify-section-page-membership-dashboard .top_subtitle { font-size: 16px; }
     .top_reommend_sec .rec { width: 45%; }
     .top_reommend_sec .dosage {width: 27%;  }
