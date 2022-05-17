@@ -3180,7 +3180,9 @@ img#head-image {
 #my-plan-tab-button.my-plan-active { background: #00577f url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/blue_star.jpg?v=1652763927) no-repeat 6px 3px; color: #fff;}	
 .recTitles { position: relative; }	
 .my-plan-button-div { position: absolute; right: 200px; }
-
+.my-plan-cb,.intake-time-class,.intake-type-class,.my-plan-cb-fade {	
+padding:10px !important;	
+}
 /********************** Responsive *************************/
 
 @media (min-width: 1700px) and (max-width: 1799px) {
