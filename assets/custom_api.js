@@ -96,7 +96,7 @@ jQuery( document ).ready(function($) {
     var proceed = false;
     $(document).on("click", "#proceed-anyway", function (e) {
         proceed = true;
-        console.log(form);
+       // console.log(form);
         if (form === undefined) {
             form = $('.my_health  #intake-wizard-intake-form');
         }
@@ -152,14 +152,14 @@ jQuery( document ).ready(function($) {
         //              if($form.find('.questioncontainer .questionrow').length==$form.find('.questioncontainer .questionrow.modified').length){
 
         var diff = form.find('.questioncontainer .questionrow').length - form.find('.questioncontainer .questionrow.modified').length;
-        console.log("Total", form.find('.questioncontainer .questionrow').length);
-        console.log("Total", form.find('.questioncontainer .questionrow.modified').length);
+        //console.log("Total", form.find('.questioncontainer .questionrow').length);
+        //console.log("Total", form.find('.questioncontainer .questionrow.modified').length);
 
 
 
         if (diff == form.find('.questioncontainer .questionrow').length) {
           
-          console.log('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH');
+          //console.log('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH');
 //             if (parseInt(step.substring(4)) == 3) {
 //                 if (id == 'edit-previous') {
 //                     $('#qstn_family_modal').modal('show');
@@ -180,7 +180,7 @@ jQuery( document ).ready(function($) {
               box = "box" + parseInt(parseInt(step.substring(4)) + 1);
               if (parseInt(step.substring(4)) == 6) {
                   window.savedlast = true;
-                 console.log('In if made true');
+                 //console.log('In if made true');
                }
 
                
@@ -223,7 +223,7 @@ jQuery( document ).ready(function($) {
 
             completedrow = true;
         } else if (proceed) {
-            console.log(parseInt(step.substring(4), 'Hiii'));
+   //         console.log(parseInt(step.substring(4), 'Hiii'));
 //             if (parseInt(step.substring(4)) == 1) {
 //                 $('#qstn_family_modal').modal('show');
 //                 //                
@@ -245,7 +245,7 @@ jQuery( document ).ready(function($) {
                 box = "box" + parseInt(parseInt(step.substring(4)) + 1);
                if (parseInt(step.substring(4)) == 6) {
                   window.savedlast = true;
-                 console.log('In if made true');
+                // console.log('In if made true');
                }
 
             } else if (id == 'edit-previous') {
@@ -273,9 +273,9 @@ jQuery( document ).ready(function($) {
                 },
                 complete: function (response) {
                     $('#qstn_confirm_modal').modal('hide');
-					 console.log('Before complete if');
+				//	 console.log('Before complete if');
                     if (window.savedlast === true) {
-						console.log('Inside complete if');
+				//		console.log('Inside complete if');
                         window.savedlast = false;
                         window.location.reload();
 
@@ -288,7 +288,7 @@ jQuery( document ).ready(function($) {
         } else {
 
             if (parseInt(step.substring(4)) == 5) {
-                console.log('hi');
+              //  console.log('hi');
                 if (id == 'edit-save') {
 
                     box = "box" + parseInt(parseInt(step.substring(4)) + 1);
@@ -425,7 +425,7 @@ jQuery( document ).ready(function($) {
         setRow();
        
 
-        makeitred();console.log(id_global,"sdddsdddddddddsssssssss",step.substring(4));
+        makeitred();//console.log(id_global,"sdddsdddddddddsssssssss",step.substring(4));
       if (parseInt(step.substring(4)) == 6) {
         
          if (id_global == 'edit-save') {
