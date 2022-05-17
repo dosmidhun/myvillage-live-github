@@ -1133,7 +1133,7 @@ jQuery( document ).ready(function($) {
     				
                   $(htm_report).find('li').hide();
                   $(htm_report).find('li:lt(10)').show();
-                  console.log("iuciiiufivisfvisvfisvisvisvisviusviusviusvsdvsivui",htm_report);
+                  //console.log("iuciiiufivisfvisvfisvisvisvisviusviusviusvsdvsivui",htm_report);
                  	$('#health-report').html(htm_report);
                   $('#health-report').find('h2').remove();
                   $('#health-report').find('#explanation').remove();
