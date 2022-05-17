@@ -2289,7 +2289,7 @@ div#membership_popup #create_customer .action-btn p {
     grid-area: but;
 }
 div#rectable {
-  font-family:sans-serif;
+  
     display: flex;
     flex-direction: column;
 }
