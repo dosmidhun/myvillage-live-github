@@ -3184,7 +3184,7 @@ img#head-image {
 .my-plan-cb,.intake-time-class,.intake-type-class,.my-plan-cb-fade {	
 padding:10px !important;	
 }
-
+.my-plan-cb-fade{display:none;}
 
 	#health-report ul {padding-left: 16px;}	
 #health-report li {font-size: 18px;	
