@@ -1193,7 +1193,7 @@ jQuery( document ).ready(function($) {
                         $("#rectable").append("<div id=my-plan-tab-section class=my-plan-tab-section style='display:none'><div class='nutritional-supplementation-section'><div class='nutritional-supplementation-header'><h2>Nutritional Supplementation</h2></div><div class='nutritional-supplementation-body'></div></div><div class='dietery-plan-section'><div class='dietery-plan-header'><h2>Dietery Plans</h2></div><div class='dietery-plan-body'></div></div> </div>");
 
                       $("#my-plan-tab-button").click(function(){
-                        $(".recrow").toggle();
+                       $(".recrow")..toggleClass("hide-row");
                         $(".textBtn").toggle();
                         $(".my-plan-tab-section").toggle();
                         $("#my-plan-tab-button").toggleClass("my-plan-active");
