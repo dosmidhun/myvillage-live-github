@@ -3185,6 +3185,7 @@ img#head-image {
 padding:10px !important;	
 }
 .my-plan-cb-fade{opacity:0;visibility:hidden;}
+.hide-row{display:none;}
 
 	#health-report ul {padding-left: 16px;}	
 #health-report li {font-size: 18px;	
