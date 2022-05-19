@@ -1217,6 +1217,7 @@ jQuery( document ).ready(function($) {
                         t = t.toLowerCase();
                         var btn_text = "Shop Now";
                         var action = label.text().trim();
+                      var rec_name = t.replace('why?','');
 //                         console.log(t);
 //                         console.log(t.indexOf(('Take Garlic').toLowerCase()));
             if(nextStepAncor){
@@ -3396,11 +3397,11 @@ jQuery( document ).ready(function($) {
             else {}
                       
                       if(btn_text == 'Buy Now'){
-                        $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id') }).appendTo(nextStep);
+                        $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id'), url:'yes' }).appendTo(nextStep);
                         
                       }
                       if(btn_text == 'Shop Now'){
-                        $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb-fade' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id') }).appendTo(nextStep);
+                        $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id'), rec_name:rec_name, custum_url:'no', url:l}).appendTo(nextStep);
                         
                       }
 
@@ -3431,6 +3432,11 @@ jQuery( document ).ready(function($) {
                       		data.is_selected_my_plan = false;
                       }
                       data.recommendation_id = rec_id;
+                      if($(this).attr('custum_url')==='no'){
+                         	data.recommendation_name = $(this).attr('rec_name');
+                      		data.custom_url = $(this).attr('url');
+                        	$('.nextsteplink[rel="' + rec_id + '"]').text('Buy Now');
+                         }
                       
                       
                        $.ajax({
