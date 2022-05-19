@@ -151,13 +151,36 @@
       <script type="text/javascript" defer>
           if (typeof sswRun === 'function') {
               sswRun(function () {
-                  Ssw.gwAssetsManifestLoader.requireByKey("review.critical.css", "STYLE");
-                      ssw('#ssw-avg-rate-profile-html').removeClass('gw-hide');
+                  Ssw.gwAssetsManifestLoader.requireByKey("review.critical.css", "STYLE")
+                  ssw('#ssw-avg-rate-profile-html').removeClass('gw-hide');
                   ssw('#ssw-avg-rate-profile-html .ssw-stars, #ssw-avg-rate-profile-html .ssw-question-count').click(function () {
                       if (ssw('#ssw-widget-recommends-html').length > 0) {
-                          ssw('html, body').animate({scrollTop : ssw("#ssw-widget-recommends-html").offset().top - 40 }, 500);
+                          const body = ssw('body').get(0)
+                          const reviewWidget = ssw("#ssw-widget-recommends-html");
+                          const initialOffset = reviewWidget.offset().top
+                          const scrollToWidget = (offset) => {
+                              const scrollHeight = offset - document.documentElement.clientHeight / 4
+                              ssw('html, body').animate({scrollTop: scrollHeight}, 800);
+                          }
+                          scrollToWidget(initialOffset)
+
+                          const observer = new ResizeObserver(() => {
+                              const newOffset = reviewWidget.offset().top
+                              if (initialOffset !== newOffset) {
+                                  scrollToWidget(newOffset)
+                                  observer.unobserve(body)
+                              }
+                          })
+                          observer.observe(body)
+
+                          setTimeout(() => {
+                              observer.unobserve(body)
+                          }, 1500)
+
                           var $self = ssw(this);
-                          sswAddEventListener('reviewWidgetLoaded', function() {clickButton($self)});
+                          sswAddEventListener('reviewWidgetLoaded', function () {
+                              clickButton($self)
+                          });
                       }
                   });
               });
