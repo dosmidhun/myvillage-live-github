@@ -1196,6 +1196,7 @@ jQuery( document ).ready(function($) {
                        $(".recrow").toggleClass("hide-row");
                         $(".textBtn").toggle();
                         $(".my-plan-tab-section").toggle();
+                         $(".custom-recommendation-description").toggle();
                         $("#my-plan-tab-button").toggleClass("my-plan-active");
 
                       });                  
