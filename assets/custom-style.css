@@ -3328,6 +3328,10 @@ padding:10px !important;
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .my-plan-button-div {
+    
+    right: unset;
+}
 .box_layout ul {
     
     grid-template-columns: 1fr 1fr;
@@ -3436,6 +3440,10 @@ padding:10px !important;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .my-plan-button-div {
+    
+    right: unset;
+}
 .box_layout ul {
     
     grid-template-columns: 1fr 1fr;
@@ -3588,6 +3596,10 @@ padding:10px !important;
 }
 
 @media (max-width: 767px) {
+  .my-plan-button-div {
+    
+    right: unset;
+}
   .nutritional-supplementation-item {display: block;}
 
 .nutritional-supplementation-item >div {width: 100%;}
