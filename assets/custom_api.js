@@ -691,7 +691,7 @@ jQuery( document ).ready(function($) {
             });
         }
     });
-  function list_my_plan(){
+function list_my_plan(){
     $.ajax({
 
                         url: 'https://app.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
@@ -707,42 +707,51 @@ jQuery( document ).ready(function($) {
                               $("#" + check_box_id).prop('checked', true);
                               $("#" + check_box_id).addClass('selected-checkbox');
                               var intake_time_radio = '';
-                              if(recom.intake_time == 'AM'){ 
-                                intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="am" name="intake-time-' + recom.recommendation_id + '" value="AM" data-id="' + recom.recommendation_id + '" checked><label for="am">AM</label>';
-                                
-                              }else{
-                              intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="am" name="intake-time-' + recom.recommendation_id + '" value="AM" data-id="' + recom.recommendation_id + '"><label for="am">AM</label>';
+                              var intake_time = recom.intake_time;
+                              if(intake_time == null){
+                              intake_time = '';
                               }
-                              if(recom.intake_time == 'Midday'){ 
-                                intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="midday" name="intake-time-' + recom.recommendation_id + '" value="Midday" data-id="' + recom.recommendation_id + '" checked><label for="midday">Midday</label>';
+                              console.log(intake_time);
+                              if(intake_time.indexOf("AM") !== -1){ 
+                                intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.recommendation_id + '[]" value="AM" data-id="' + recom.recommendation_id + '" checked><label for="am">AM</label>';
                                 
                               }else{
-                              intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="midday" name="intake-time-' + recom.recommendation_id + '" value="Midday" data-id="' + recom.recommendation_id + '"><label for="midday">Midday</label>';
+                              intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.recommendation_id + '[]" value="AM" data-id="' + recom.recommendation_id + '"><label for="am">AM</label>';
                               }
-                              if(recom.intake_time == 'PM'){ 
-                                intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="pm" name="intake-time-' + recom.recommendation_id + '" value="PM" data-id="' + recom.recommendation_id + '" checked><label for="pm">PM</label>';
+                              if(intake_time.indexOf("Mid") !== -1){ 
+                                intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.recommendation_id + '[]" value="Mid" data-id="' + recom.recommendation_id + '" checked><label for="midday">Midday</label>';
                                 
                               }else{
-                              intake_time_radio = intake_time_radio + '<input type="radio" class="intake-time-class" id="pm" name="intake-time-' + recom.recommendation_id + '" value="PM" data-id="' + recom.recommendation_id + '"><label for="pm">PM</label>';
+                              intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.recommendation_id + '[]" value="Mid" data-id="' + recom.recommendation_id + '"><label for="midday">Midday</label>';
+                              }
+                              if(intake_time.indexOf("PM") !== -1){ 
+                                intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.recommendation_id + '[]" value="PM" data-id="' + recom.recommendation_id + '" checked><label for="pm">PM</label>';
+                                
+                              }else{
+                              intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.recommendation_id + '[]" value="PM" data-id="' + recom.recommendation_id + '"><label for="pm">PM</label>';
                               }
                               
                               var intake_type_radio = '';
-                              if(recom.intake_type == 'with_food'){ 
-                                intake_type_radio = intake_type_radio + '<input type="radio" class="intake-type-class" id="with_food" name="intake-type-' + recom.recommendation_id + '" value="with_food" data-id="' + recom.recommendation_id + '" checked><label for="with_food">With Food</label>';
-                                
-                              }else{
-                              intake_type_radio = intake_type_radio + '<input type="radio" class="intake-type-class" id="with_food" name="intake-type-' + recom.recommendation_id + '" value="with_food" data-id="' + recom.recommendation_id + '"><label for="with_food">With Food</label>';
+                              var intake_type = recom.intake_type;
+                              if(intake_type == null){
+                              intake_type = '';
                               }
-                              if(recom.intake_type == 'without_food'){ 
-                                intake_type_radio = intake_type_radio + '<input type="radio" class="intake-type-class" id="without_food" name="intake-type-' + recom.recommendation_id + '" value="without_food" data-id="' + recom.recommendation_id + '" checked><label for="without_food">Without Food</label>';
+                              if(intake_type.indexOf("with_food") !== -1){ 
+                                intake_type_radio = intake_type_radio + '<input type="checkbox" class="intake-type-class" id="with_food" name="intake-type-' + recom.recommendation_id + '[]" value="with_food" data-id="' + recom.recommendation_id + '" checked><label for="with_food">With Food</label>';
                                 
                               }else{
-                              intake_type_radio = intake_type_radio + '<input type="radio" class="intake-type-class" id="without_food" name="intake-type-' + recom.recommendation_id + '" value="without_food" data-id="' + recom.recommendation_id + '"><label for="without_food">Without Food</label>';
+                              intake_type_radio = intake_type_radio + '<input type="checkbox" class="intake-type-class" id="with_food" name="intake-type-' + recom.recommendation_id + '[]" value="with_food" data-id="' + recom.recommendation_id + '"><label for="with_food">With Food</label>';
+                              }
+                              if(intake_type.indexOf("without_food") !== -1){ 
+                                intake_type_radio = intake_type_radio + '<input type="checkbox" class="intake-type-class" id="without_food" name="intake-type-' + recom.recommendation_id + '[]" value="without_food" data-id="' + recom.recommendation_id + '" checked><label for="without_food">Without Food</label>';
+                                
+                              }else{
+                              intake_type_radio = intake_type_radio + '<input type="checkbox" class="intake-type-class" id="without_food" name="intake-type-' + recom.recommendation_id + '[]" value="without_food" data-id="' + recom.recommendation_id + '"><label for="without_food">Without Food</label>';
                               }
                               
 
 
-                            	list_html = list_html + '<div class="nutritional-supplementation-item"><div class="nutritional-supplementation-item-name">' + recom.recommendation_name + '</div><div class="nutritional-supplementation-item-time">' + intake_time_radio + '</div><div class="nutritional-supplementation-item-type">' + intake_type_radio + '</div></div>';
+                            	list_html = list_html + '<div class="nutritional-supplementation-item"><div class="nutritional-supplementation-item-name"><a href="' + recom.url + '">' + recom.recommendation_name + '</a></div><div class="nutritional-supplementation-item-time">' + intake_time_radio + '</div><div class="nutritional-supplementation-item-type">' + intake_type_radio + '</div></div>';
                             }else{
                             var check_box_id="my-plan-cb-recrow-"+ recom.recommendation_id;
                               $("#" + check_box_id).removeClass('selected-checkbox');
@@ -757,11 +766,24 @@ jQuery( document ).ready(function($) {
                               
                               
                               	$(".top_reommend_sec").addClass('loading');
-                                  var recommendation_id = $(this).val()
-                                  const rec_split = recommendation_id.split("-");
-                                  var rec_id = rec_split[1];
+                              	
+                              var check_name = $(this).attr('name');
+                              var intake_time = '';
+                              $('[name="' + check_name + '"]').each( function (){
+                                  if($(this).prop('checked') == true){
+                                    if(intake_time === '' ){
+                                    	intake_time = $(this).val();
+                                    }else{
+                                        intake_time = intake_time + ',' +  $(this).val();
+                                    }
+                                      
+                                  }
+                              });
+//                               var recommendation_id = $(this).val()
+//                                   const rec_split = recommendation_id.split("-");
+//                                   var rec_id = rec_split[1];
                                   var data = {};                                  
-                                  data.intake_time = $(this).val();                                 
+                                  data.intake_time = intake_time;                                 
                                   data.recommendation_id = $(this).attr('data-id');
 
 
@@ -793,11 +815,20 @@ jQuery( document ).ready(function($) {
                               
                               
                               	$(".top_reommend_sec").addClass('loading');
-                                  var recommendation_id = $(this).val()
-                                  const rec_split = recommendation_id.split("-");
-                                  var rec_id = rec_split[1];
+                                  var check_name = $(this).attr('name');
+                                  var intake_type = '';
+                                  $('[name="' + check_name + '"]').each( function (){
+                                      if($(this).prop('checked') == true){
+                                        if(intake_type === '' ){
+                                            intake_type = $(this).val();
+                                        }else{
+                                            intake_type = intake_type + ',' +  $(this).val();
+                                        }
+
+                                      }
+                                  });
                                   var data = {};                                  
-                                  data.intake_type = $(this).val();                                 
+                                  data.intake_type = intake_type;                                 
                                   data.recommendation_id = $(this).attr('data-id');
 
 
