@@ -4259,3 +4259,5 @@ a.bold-blue {color: #006690;font-weight: 600;}
     color: #00577F;
     background: transparent;
 }
+
+input.intake-time-class,input.intake-type-class {-webkit-appearance: auto;}
