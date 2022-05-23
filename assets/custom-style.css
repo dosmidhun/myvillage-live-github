@@ -27,8 +27,6 @@ h2 { font-size: 30px; line-height: 35px; font-family: Montserrat; font-weight: 6
 /********************* Header *********************/
 .loading-blue,.loading {
     position: relative;
-}{
-  position:relative;
 }
 .loading-blue:after {
     content: '';
