@@ -3601,7 +3601,7 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px){
   .recommendation-head {
     display: grid;
     grid-template-columns: 1fr 1fr;
