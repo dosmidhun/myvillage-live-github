@@ -1231,7 +1231,9 @@ function list_my_plan(){
                          $(".custom-recommendation-description").toggle();
                         $("#my-plan-tab-button").toggleClass("my-plan-active");
 
-                      });                  
+                      }); 
+                  $("#recfilter").appendTo("#rec-filter");
+
                     $.each(wrapper.find('.reclink.colorbox-load'), function (index, el) {
 
 						$(el).text('?');
