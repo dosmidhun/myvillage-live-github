@@ -3602,10 +3602,14 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
 }
 
 @media (max-width: 767px) {
-  .my-plan-button-div {
-    
-    right: unset;
-}
+  .recommendation-head{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
   .nutritional-supplementation-item {display: block;}
 
 .nutritional-supplementation-item >div {width: 100%;}
