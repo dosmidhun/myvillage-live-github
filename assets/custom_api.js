@@ -3501,7 +3501,7 @@ function list_my_plan(){
                         html: true
                     });
 
-                    $(".top_reommend_sec ul#reccats li[rel='all']").click();
+                    $(".recommendation-head ul#reccats li[rel='all']").click();
 //                     $(".top_reommend_sec #rectable .recrow.all:gt(4)").hide();
                     wrapper.removeClass('loading');
                     $(".top_reommend_sec .recsTitle.subTitle").hide();
