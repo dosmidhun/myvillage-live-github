@@ -1221,7 +1221,7 @@ function list_my_plan(){
                   
 						//$("<div class=my-plan-button-div><button id=my-plan-tab-button class=my-plan-tab-button>My Supplement Plan</button></div>").insertBefore("#recfilter")
                       $("<div class=custom-recommendation-description><p>Here are your personalized recommendations. Want further guidance? Schedule a nutrition consultation and let us turn your recommendations into a detailed action plan.</p></div>").insertAfter(".recTitles")
-                        $("#recfilter").prepend("<button id=my-plan-tab-button class=my-plan-tab-button>My Plan</button>");
+                      //$("#recfilter").prepend("<button id=my-plan-tab-button class=my-plan-tab-button>My Plan</button>");
                         $("#rectable").append("<div id=my-plan-tab-section class=my-plan-tab-section style='display:none'><div class='nutritional-supplementation-section'><div class='nutritional-supplementation-header'><h2>Nutritional Supplementation</h2></div><div class='nutritional-supplementation-body'></div></div><div class='dietery-plan-section'><div class='dietery-plan-header'><h2>Dietery Plans</h2></div><div class='dietery-plan-body'></div></div> </div>");
 
                       $("#my-plan-tab-button").click(function(){
