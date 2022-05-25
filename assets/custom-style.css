@@ -3234,7 +3234,9 @@ padding:10px !important;
    
     margin-top: 25px;
 }
+div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
 
+.my-plan-tab-button {margin-left: 9px;}
 
 /********************** Responsive *************************/
 
