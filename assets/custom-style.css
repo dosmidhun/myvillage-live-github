@@ -1968,7 +1968,7 @@ margin-bottom: 25px;
 #recfilter { float: right;position: relative; }
 .top_reommend_sec .recrow { clear: both; }
 
-.recTitles { display: table; width: 100%; border-bottom: none; padding-bottom: 0px; margin-bottom: 26px; margin-top: -40px;}
+.recTitles { display: table; width: 100%; border-bottom: none; padding-bottom: 0px; margin-bottom: 26px; }
  
 .top_reommend_sec .rec { display: inline-block; float: left; width: 45%; padding: 7px; font-size: 15px; font-weight: 400; letter-spacing: -.55px;}
 .top_reommend_sec .dosage { display: inline-block; float: left; width: 30%; padding: 7px; font-size: 15px; font-weight: 400; letter-spacing: -.55px; }
@@ -3177,7 +3177,7 @@ img#head-image {
 .nutritional-supplementation-item input[type=radio] { width: 12px; height: 12px; display: inline-block; border-radius: 50px; -webkit-appearance: auto; border: 1px solid #ebebeb; padding: 6px !important; margin-right: 6px;}	
 .nutritional-supplementation-item-time, .nutritional-supplementation-item-type { width: 33%; }	
 #my-plan-tab-button.my-plan-active { background: #00577f url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/blue_star.jpg?v=1652763927) no-repeat 6px 3px; color: #fff;}	
-.recTitles { position: relative; }	
+
 /* .my-plan-button-div { position: absolute; right: 200px; } */
 .my-plan-cb,.intake-time-class,.intake-type-class,.my-plan-cb-fade {	
 padding:10px !important;	
