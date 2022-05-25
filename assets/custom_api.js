@@ -1155,6 +1155,7 @@ function list_my_plan(){
                   var htm_report = $(res.recommendations);
                   htm_report.find('h2').remove();
                   htm_report.find('script').remove();
+                  htm_report.find('style').remove();
                   htm_report.find('p').remove();
                   
                   htm_report.find('#healthscore').remove();

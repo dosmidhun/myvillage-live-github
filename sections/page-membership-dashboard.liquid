@@ -488,7 +488,13 @@
                                             </li>
                                         </ul>
                                     </div>
-                                  <h2 class="top_subtitle" style="margin-top:25px;">{{ customer.first_name }}, Your Custom Recommendations</h2>
+                                  <div class="recommendation"> 
+                                    <h2 class="top_subtitle" style="margin-top:25px;">{{ customer.first_name }}, Your Custom Recommendations</h2>
+                                    <div class=my-plan-button-div>
+                                      <button id=my-plan-tab-button class=my-plan-tab-button>My Plan</button>
+                                    </div>
+                                  </div>
+                                 
                                     <div class="top_reommend_sec">
                                         <div class="personalizd_sec">
                                             {% if section.settings.unlock_personalized != blank %}
