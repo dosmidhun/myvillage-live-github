@@ -3227,7 +3227,11 @@ padding:10px !important;
   text-decoration: none;	
 }
 
-
+.recommendation-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 /********************** Responsive *************************/
