@@ -1976,7 +1976,7 @@ margin-bottom: 25px;
 .recrow .steps { display: inline-block;float: right;  width: auto; text-align: right; padding: 7px;}
 
 #rectable .iconcol { position: relative; width: 35px; float: left; padding-top: 4px; }
-#rectable #recfilter { position: relative; width: 30%; float: right; padding-top: 0px; text-align: right; cursor: pointer; color: #00577F; font-weight: 500; font-size: 13px; display: block;
+#rec-filter #recfilter { position: relative;  padding-top: 0px; text-align: right; cursor: pointer; color: #00577F; font-weight: 500; font-size: 13px; display: block;
  transition-duration: 0.5s; letter-spacing: -.55px;}
 #recseeall { display: none; }
 .recrow .reclink {     color: #00577f;
