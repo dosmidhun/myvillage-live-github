@@ -566,7 +566,7 @@ jQuery( document ).ready(function($) {
 
     // });
 
-    $(".top_reommend_sec").on("click", "ul#reccats li", function () {
+    $(".recommendation-head").on("click", "ul#reccats li", function () {
 
         var c = $(this).attr("rel");
         $('.top_reommend_sec #recfilter #selectedcat').text($(this).text());
