@@ -3178,7 +3178,7 @@ img#head-image {
 .nutritional-supplementation-item input[type=radio] { width: 12px; height: 12px; display: inline-block; border-radius: 50px; -webkit-appearance: auto; border: 1px solid #ebebeb; padding: 6px !important; margin-right: 6px;}	
 .nutritional-supplementation-item-time, .nutritional-supplementation-item-type { width: 33%; }	
 #my-plan-tab-button.my-plan-active { background: #00577f url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/blue_star.jpg?v=1652763927) no-repeat 6px 3px; color: #fff;}	
-
+#my-recomm-tab-button.my-recomm-active{background: #00577f ;}
 /* .my-plan-button-div { position: absolute; right: 200px; } */
 .my-plan-cb,.intake-time-class,.intake-type-class,.my-plan-cb-fade {	
 padding:10px !important;	
