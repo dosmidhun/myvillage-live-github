@@ -2331,7 +2331,7 @@
           "unlock_personalized_popup": "<p>\t<\/p><div class=\"your_score_detail recomd_detail\">\n<a href=\"javascript:void(0)\" data-toggle=\"modal\" data-target=\"#health_qstns_modal\" class=\"complete_qtns\">Complete your Health Questions<\/a>\n<\/div>Your Humanized+ Health Score gives you a baseline for the current state of your body. From there our  cutting edge technology is able to assess what you need to improve your health and avoid potential problems. Personalized recommendations based on your eating habits, lifestyle choices, DNA, toxin exposure, vitamin and mineral deficiencies, blood sugar balance, inflammation levels, and other factors give you actionable steps to make positive changes.<p><\/p>",
           "dashboard_sidebar_title": "HAVE A QUESTION?",
           "call_icon": "shopify:\/\/shop_images\/side_icon1.png",
-          "sidebar_call": "<h3>Call Us<\/h3>\n<p>Call <span>240-335-7365<\/span><br> -7 days a week (9 am to 7 pm EST)  to speak with a nutrition expert.<\/p>",
+          "sidebar_call": "<h3>Call Us<\/h3>\n<p>Call <span>240-335-7365<\/span><br> -6 days a week (10 am to 6 pm EST)  to speak with a nutrition expert.<\/p>",
           "chat_icon": "shopify:\/\/shop_images\/Component_15_1.png",
           "humanized_icon": "shopify:\/\/shop_images\/Podcast-button.png",
           "sidebar_chat": "<h3>Important FAQs<\/h3>\n<p><span>Check out answers<\/span> to some commonly asked questions about Humanized+ <\/p>",
