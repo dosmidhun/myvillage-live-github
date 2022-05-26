@@ -755,6 +755,7 @@ function list_my_plan(){
                             	list_html = list_html + '<div class="nutritional-supplementation-item"><div class="nutritional-supplementation-item-name"><a href="' + recom.url + '">' + recom.recommendation_name + '</a></div><div class="nutritional-supplementation-item-time">' + intake_time_radio + '</div><div class="nutritional-supplementation-item-type">' + intake_type_radio + '</div></div>';
                             }else{
                             var check_box_id="my-plan-cb-recrow-"+ recom.recommendation_id;
+                              console.log(check_box_id);
                               $("#" + check_box_id).removeClass('selected-checkbox');
                               $("#" + check_box_id).attr('title', 'Move to My Plan');
                             }
