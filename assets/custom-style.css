@@ -3609,7 +3609,7 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
 }
 }
 @media (max-width: 767px) {
-  #my-plan-tab-button {
+  #my-plan-tab-button,#my-recomm-tab-button {
     
      display: block; 
      float: none;
