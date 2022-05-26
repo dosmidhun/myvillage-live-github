@@ -294,7 +294,7 @@ Don't forget to close the tag after your loop.
                                     <div class="des lang2">{{ article.excerpt | split: "[lang2]" | last | split: "|" | last }}</div>
                                 {% else %}
                                     <!--<div class="des">{{ article.excerpt | split: "[lang2]" | first | split: "|" | first }}</div>-->
-                                    <div class="des">{{ article.content | truncatewords: 50 }}...</div>
+                                    <div class="des">{{ article.content | truncatewords: 50 | strip_html }}...</div>
                                 {% endif %}
 
                                 {% comment %}
@@ -364,7 +364,7 @@ Don't forget to close the tag after your loop.
                                 <div class="des lang2">{{ article.excerpt | split: "[lang2]" | last | split: "|" | last }}</div>
                             {% else %}
                                 <!--<div class="des">{{ article.excerpt | split: "[lang2]" | first | split: "|" | first }}</div>-->
-                                <div class="des">{{ article.content | truncatewords: 50 }}...</div>
+                                <div class="des">{{ article.content | truncatewords: 50  | strip_html }}...</div>
                             {% endif %}
 
                             {% comment %}
