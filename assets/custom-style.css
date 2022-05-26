@@ -3238,6 +3238,21 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
 
 .my-plan-tab-button {margin-left: 9px;}
 
+#shopify-section-blog-template .list-blog .blog_img { float: left; width: 41%; margin-right: 15px; margin-bottom: 10px; } 
+#shopify-section-blog-template .blog-list .zi-banner-image { display: block; }
+#shopify-section-blog-template .list-blog .des { float: right; width: 56%; }
+
+
+
+
+
+
+
+
+
+
+
+
 /********************** Responsive *************************/
 
 @media (min-width: 1700px) and (max-width: 1799px) {
