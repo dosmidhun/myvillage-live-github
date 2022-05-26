@@ -3610,9 +3610,10 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
 }
 @media (max-width: 767px) {
   .recommendation-head{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
-    flex-direction: column;
+    
     margin-top: 25px;
     align-items: flex-start;
     justify-content: flex-start;
