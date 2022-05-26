@@ -3241,7 +3241,7 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
 #shopify-section-blog-template .list-blog .blog_img { float: left; width: 41%; margin-right: 15px; margin-bottom: 10px; } 
 #shopify-section-blog-template .blog-list .zi-banner-image { display: block; }
 #shopify-section-blog-template .list-blog .des { float: right; width: 56%; }
-
+.content-blog .list-blog .button {  margin: 30px 0 20px; }
 
 
 

@@ -759,6 +759,9 @@ function list_my_plan(){
                               $("#" + check_box_id).attr('title', 'Move to My Plan');
                             }
                           });
+                          $( document ).tooltip({
+                              tooltipClass: "uitooltip"
+                          });
                           
 
                           $('.nutritional-supplementation-body').html(list_html);
