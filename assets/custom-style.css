@@ -3609,6 +3609,12 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
 }
 }
 @media (max-width: 767px) {
+  #my-plan-tab-button {
+    
+     display: block; 
+     float: none;
+    width: 100%;
+  }
   .recommendation-head{
     display: grid;
     grid-template-columns: 1fr;
