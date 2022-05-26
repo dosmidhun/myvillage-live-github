@@ -294,18 +294,20 @@ Don't forget to close the tag after your loop.
                                     <div class="des lang2">{{ article.excerpt | split: "[lang2]" | last | split: "|" | last }}</div>
                                 {% else %}
                                     <!--<div class="des">{{ article.excerpt | split: "[lang2]" | first | split: "|" | first }}</div>-->
-                                    <div class="des">{{ article.content | truncatewords: 50 | strip_html }}...</div>
+                                    <div class="des">{{ article.content | truncatewords: 50 | strip_html }}...
+                                    	<p class="button">
+		                                    <a href="{{ article.url }}"
+		                                       {% if settings.enable_multilang %}data-translate="blogs.article.read_more"{% endif %}
+		                                       class="blog_morebtn">{{ 'blogs.article.read_more' | t }}</a>
+		                                </p>
+                                    </div>
                                 {% endif %}
 
                                 {% comment %}
                                 Show off meta information like number of comments and tags.
                                 {% endcomment %}
 
-                                <p class="button">
-                                    <a href="{{ article.url }}"
-                                       {% if settings.enable_multilang %}data-translate="blogs.article.read_more"{% endif %}
-                                       class="blog_morebtn">{{ 'blogs.article.read_more' | t }}</a>
-                                </p>
+                                
                             </li>
 
                         {% endif %}
