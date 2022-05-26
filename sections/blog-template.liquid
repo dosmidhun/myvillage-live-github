@@ -337,8 +337,8 @@ Don't forget to close the tag after your loop.
 
                                 {% if section.settings.blog_show_date %}
                                     <span class="article__date testt">Post on
-              {{ article.published_at | time_tag: format: 'month_day_year' }}
-            </span>
+						              {{ article.published_at | time_tag: format: 'month_day_year' }}
+						            </span>
                                 {% endif %}
 
                                 {% if section.settings.blog_show_author %}
@@ -364,18 +364,20 @@ Don't forget to close the tag after your loop.
                                 <div class="des lang2">{{ article.excerpt | split: "[lang2]" | last | split: "|" | last }}</div>
                             {% else %}
                                 <!--<div class="des">{{ article.excerpt | split: "[lang2]" | first | split: "|" | first }}</div>-->
-                                <div class="des">{{ article.content | truncatewords: 50  | strip_html }}...</div>
+                                <div class="des">{{ article.content | truncatewords: 50  | strip_html }}...
+                                	<p class="button">
+		                                <a href="{{ article.url }}"
+		                                   {% if settings.enable_multilang %}data-translate="blogs.article.read_more"{% endif %}
+		                                   class="blog_morebtn">{{ 'blogs.article.read_more' | t }}</a>
+		                            </p>
+                                </div>
                             {% endif %}
 
                             {% comment %}
                             Show off meta information like number of comments and tags.
                             {% endcomment %}
 
-                            <p class="button">
-                                <a href="{{ article.url }}"
-                                   {% if settings.enable_multilang %}data-translate="blogs.article.read_more"{% endif %}
-                                   class="blog_morebtn">{{ 'blogs.article.read_more' | t }}</a>
-                            </p>
+                            
                         </li>
                     {% endif %}
                 {% endfor %}
