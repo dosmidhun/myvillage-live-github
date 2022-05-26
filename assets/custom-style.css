@@ -3870,7 +3870,8 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
     #ask_expert .modal-dialog { width: 96%; transform: none; }
     #schedule_btn_in { padding: 20px; height: inherit; }
 
-
+#shopify-section-blog-template .list-blog .blog_img { float: none; width: 100%; margin-right: 0; }
+#shopify-section-blog-template .list-blog .des { float: none; width: 100%;  }
 
 }
 
