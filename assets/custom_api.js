@@ -3463,7 +3463,7 @@ function list_my_plan(){
                         
                       }
                       if(btn_text == 'Shop Now'){
-                        $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id'), rec_name:rec_name, custum_url:'no', url:l}).appendTo(nextStep);
+                        $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id'), rec_name:rec_name, custum_url:'no', url:l, title:'Move to My Plan'}).appendTo(nextStep);
                         
                       }
 
