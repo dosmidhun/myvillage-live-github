@@ -706,7 +706,7 @@ function list_my_plan(){
                               var check_box_id="my-plan-cb-recrow-"+ recom.recommendation_id;
                               $("#" + check_box_id).prop('checked', true);
                               $("#" + check_box_id).addClass('selected-checkbox');
-                              $("#" + check_box_id)..attr('title', 'Remove from My Plan');
+                              $("#" + check_box_id).attr('title', 'Remove from My Plan');
                               var intake_time_radio = '';
                               var intake_time = recom.intake_time;
                               if(intake_time == null){
@@ -756,7 +756,7 @@ function list_my_plan(){
                             }else{
                             var check_box_id="my-plan-cb-recrow-"+ recom.recommendation_id;
                               $("#" + check_box_id).removeClass('selected-checkbox');
-                              $("#" + check_box_id)..attr('title', 'Move to My Plan');
+                              $("#" + check_box_id).attr('title', 'Move to My Plan');
                             }
                           });
                           
