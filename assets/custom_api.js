@@ -760,7 +760,7 @@ function list_my_plan(){
                             }
                           });
                           $( document ).tooltip({
-                              tooltipClass: "ui-tooltip",
+                              tooltipClass: "uitooltip",
                               position: { my: 'left center', at: 'right+10 center' }
                             
                           });
