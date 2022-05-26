@@ -3611,8 +3611,8 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
     h3#member-ship-title-sub { font-size: 26px; }
     #schedule_inner .modal-dialog { width: 96%; }
     #ask_expert .modal-dialog { width: 90%; transform: none; }
-
-
+#shopify-section-blog-template .list-blog .blog_img { float: none; width: 100%; margin-right: 0; }
+#shopify-section-blog-template .list-blog .des { float: none; width: 100%;  }
 
 }
 
