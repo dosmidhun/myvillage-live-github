@@ -3615,6 +3615,9 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
      float: none;
     width: 100%;
   }
+  div#rec-filter{
+    justify-content: flex-start;
+  }
   .recommendation-head{
     display: grid;
     grid-template-columns: 1fr;
