@@ -20,7 +20,7 @@
                                 {% if blog.comments_enabled? %}
                                     <a href="{{ item.url }}#comments"
                                        {% if settings.enable_multilang %}data-translate="blogs.comments.comments_with_count|count:{{ item.comments_count }}"{% endif %}>
-                                        {{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
+                                        {{ 'blogs.comments.comments_with_count' | t: count: item.comments_count }}
                                     </a>
                                     <span class="separator">/</span>
                                 {% endif %}
@@ -35,8 +35,8 @@
                                     <span class="article__author">by {{ item.author }}</span>
                                 {% endif %}
                             </p>
-                            {% if article.image %}
-                                {% assign image_alt = article.title | escape %}
+                            {% if item.image %}
+                                {% assign image_alt = item.title | escape %}
                                 <div class="blog_img zi-banner">
                                     <a href="{{ item.url }}" class="overlay">
                                         <div class="zi-banner-image">
