@@ -47,98 +47,7 @@ Don't forget to close the tag after your loop.
         <div class="content-blog">
             <ul class="list-blog{% if section.settings.layout == "grid" %} blog-grid{% elsif section.settings.layout == "list" %} blog-list{% endif %}">
                 {% for article in blog.articles %}
-                    {% if pageQuerystring contains "type=article" %}
-
-                        {% assign urlparam = pageQuerystring | split: "&" %}
-
-                        {% for urlparamqo in urlparam %}
-
-                            {% if urlparamqo contains "q=" %}
-                                {% assign urlparamqpass = urlparamqo %}
-                            {% endif %}
-                        {% endfor %}
-
-                        {% for urlparamqsingle in urlparamqpass %}
-                            {% assign qonly = urlparamqsingle | split: "=" %}
-                            {% assign urlparamqonly = qonly | slice: 1 %}
-                            {% for qsingle in urlparamqonly %}
-                                {% assign searchstring = qsingle | url_decode %}
-                            {% endfor %}
-                        {% endfor %}
-
-                        {{ searchstring }}
-                        {% if product.title contains searchstring %}
-                            <li class="{% if section.settings.layout == "grid" %}col-sm-6{% else %}item{% endif %}">
-                                <h4>
-                                    <a href="{{ article.url }}">
-                                        {% if settings.enable_multilang %}
-                                            <span class="lang1">{{ article.title | split: '|' | first }}</span>
-                                            <span class="lang2">{{ article.title | split: '|' | last }}</span>
-                                        {% else %}
-                                            {{ article.title | split: '|' | first }}
-                                        {% endif %}
-                                    </a>
-                                </h4>
-
-                                <p class="blog_author">
-                                    {% comment %}
-                                    Don't be fooled, the ? in comments_enabled? is part of the liquid tag.
-                                    {% endcomment %}
-                                    {% if blog.comments_enabled? %}
-                                        <a href="{{ article.url }}#comments"
-                                           {% if settings.enable_multilang %}data-translate="blogs.comments.comments_with_count|count:{{ article.comments_count }}"{% endif %}>
-                                            {{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
-                                        </a>
-                                        <span class="separator">/</span>
-                                    {% endif %}
-
-                                    {% if section.settings.blog_show_date %}
-                                        <span class="article__date testt">Post on
-              {{ article.published_at | time_tag: format: 'month_day_year' }}
-            </span>
-                                    {% endif %}
-
-                                    {% if section.settings.blog_show_author %}
-                                        <span class="article__author">by {{ article.author }}</span>
-                                    {% endif %}
-                                </p>
-                                {% if article.image %}
-                                    {% assign image_alt = article.title | escape %}
-                                    <div class="blog_img zi-banner">
-                                        <a href="{{ article.url }}" class="overlay">
-                                            <div class="zi-banner-image">
-                                                {{ article | img_url: 'master' | img_tag: image_alt }}
-                                            </div>
-                                        </a>
-                                    </div>
-                                {% endif %}
-                                {% comment %}
-                                Add a surrounding div with class 'rte' to anything that will come from the rich text editor.
-                                Since this is just a listing page, you can either use the excerpt or truncate the full article.
-                                {% endcomment %}
-                                {% if settings.enable_multilang %}
-                                    <div class="des lang1">{{ article.excerpt | split: "[lang2]" | first | split: "|" | first }}</div>
-                                    <div class="des lang2">{{ article.excerpt | split: "[lang2]" | last | split: "|" | last }}</div>
-                                {% else %}
-                                    <!--<div class="des">{{ article.excerpt | split: "[lang2]" | first | split: "|" | first }}</div>-->
-                                    <div class="des">{{ article.content | truncatewords: 50 | strip_html }}...
-                                    	<p class="button">
-		                                    <a href="{{ article.url }}"
-		                                       {% if settings.enable_multilang %}data-translate="blogs.article.read_more"{% endif %}
-		                                       class="blog_morebtn">{{ 'blogs.article.read_more' | t }}</a>
-		                                </p>
-                                    </div>
-                                {% endif %}
-
-                                {% comment %}
-                                Show off meta information like number of comments and tags.
-                                {% endcomment %}
-
-                                
-                            </li>
-
-                        {% endif %}
-                    {% else %}
+                    
 
                         <li class="{% if section.settings.layout == "grid" %}col-sm-6{% else %}item{% endif %}">
                             <h4>
@@ -208,7 +117,7 @@ Don't forget to close the tag after your loop.
 
                             
                         </li>
-                    {% endif %}
+                    
                 {% endfor %}
             </ul>
 
