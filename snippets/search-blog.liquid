@@ -35,7 +35,7 @@
                                     <span class="article__author">by {{ item.author }}</span>
                                 {% endif %}
                             </p>
-                            {% if item.image %}
+                            
                                 {% assign image_alt = item.title | escape %}
                                 <div class="blog_img zi-banner">
                                     <a href="{{ item.url }}" class="overlay">
@@ -44,7 +44,7 @@
                                         </div>
                                     </a>
                                 </div>
-                            {% endif %}
+                            
                             {% comment %}
                             Add a surrounding div with class 'rte' to anything that will come from the rich text editor.
                             Since this is just a listing page, you can either use the excerpt or truncate the full article.
