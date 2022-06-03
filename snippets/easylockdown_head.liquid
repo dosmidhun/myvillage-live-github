@@ -13,7 +13,8 @@
 {% assign easylockdownLockedContent = false %}
 {% assign easylockdownHiddenContent = false %}
 {% if template contains "collection" or template contains "product" %}
-{% if product.collections %}{% for c in product.collections %}{% if c.id == 402226938094 %}{% assign easylockdownLockedContent = true %}{% break %}{% endif %}{% endfor %}{% endif %}
+{% if product.collections %}{% for c in product.collections %}{% if c.id == 171816190083 or c.id == 405785575662 or c.id == 402226938094 %}{% assign easylockdownLockedContent = true %}{% break %}{% endif %}{% endfor %}{% endif %}
+{% if collection %}{% if collection.id == 171816190083 or collection.id == 405785575662 or collection.id == 402226938094 %}{% assign easylockdownLockedContent = true %}{% endif %}{% endif %}
 {% endif %}
 {% if easylockdownLockedContent %}
 {% unless customer %}
