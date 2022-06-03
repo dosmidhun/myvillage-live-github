@@ -24,9 +24,13 @@
         {% assign ssw_unite_reviews = shop.metafields.ssw['unite_reviews'] | plus: 0 %}
       {% endif %}
       <div id="ssw-avg-rate-profile-html" class="gw-hide" data-product-id="{{ product.id }}">
+        {% assign gwSettings = shop.metafields.ssw['settings'] %}
+        {% if gwSettings.type == 'json' %}
+          {% assign gwSettings = shop.metafields.ssw['settings'].value %}
+        {% endif %}
         {% assign ssw_reviews_widget_show = 0 %}
-        {% if shop.metafields.ssw.settings %}
-           {% assign ssw_reviews_widget_show = shop.metafields.ssw['settings'].reviews_widget_show | plus: 0 %}
+        {% if gwSettings %}
+           {% assign ssw_reviews_widget_show = gwSettings.reviews_widget_show | plus: 0 %}
         {% endif %}
 
         {% if ssw_review_enabled == 1 %}
@@ -42,12 +46,16 @@
               {% endif %}
             {% endif %}
           {% endif %}
-          {% if product.metafields.ssw[ssw_rate_data_key] %}
-            {% assign ssw_count_rate = product.metafields.ssw[ssw_rate_data_key].count | plus: 0 %}
-            {% assign ssw_avg_rate = product.metafields.ssw[ssw_rate_data_key].avg | plus: 0 %}
+          {% assign gwReviewRateData = product.metafields.ssw[ssw_rate_data_key] %}
+          {% if gwReviewRateData.type == 'json' %}
+            {% assign gwReviewRateData = product.metafields.ssw[ssw_rate_data_key].value %}
+          {% endif %}
+          {% if gwReviewRateData %}
+            {% assign ssw_count_rate = gwReviewRateData.count | plus: 0 %}
+            {% assign ssw_avg_rate = gwReviewRateData.avg | plus: 0 %}
             {% assign ssw_product_id = product.id %}
-            {% if product.metafields.ssw[ssw_rate_data_key].product_id %}
-              {% assign ssw_product_id = product.metafields.ssw[ssw_rate_data_key].product_id | plus: 0 %}
+            {% if gwReviewRateData.product_id %}
+              {% assign ssw_product_id = gwReviewRateData.product_id | plus: 0 %}
             {% endif %}
             {% if ssw_product_id != product.id %}
               {% assign ssw_count_rate  = 0 %}
@@ -113,13 +121,17 @@
               {% else %}
                 {% assign ssw_question_count_key = product.id | append: '_question_count' %}
               {% endif %}
-              {% if product.metafields.ssw[ssw_question_count_key] %}
+              {% assign gwQuestionData = product.metafields.ssw[ssw_question_count_key] %}
+              {% if gwQuestionData.type == 'json' %}
+                {% assign gwQuestionData = product.metafields.ssw[ssw_question_count_key].value %}
+              {% endif %}
+              {% if gwQuestionData %}
                 {% assign ssw_product_id = product.id %}
                 {% if ssw_question_count_key contains 'question_count' %}
-                  {% assign ssw_question_count = product.metafields.ssw[ssw_question_count_key] %}
+                  {% assign ssw_question_count = gwQuestionData %}
                 {% else %}
-                  {% assign ssw_question_count = product.metafields.ssw[ssw_question_count_key].count | plus: 0 %}
-                  {% assign ssw_product_id = product.metafields.ssw[ssw_question_count_key].product_id | plus: 0 %}
+                  {% assign ssw_question_count = gwQuestionData.count | plus: 0 %}
+                  {% assign ssw_product_id = gwQuestionData.product_id | plus: 0 %}
                 {% endif %}
                 {% if ssw_product_id != product.id %}
                   {% assign ssw_question_count = 0 %}
