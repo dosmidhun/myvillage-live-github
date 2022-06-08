@@ -1231,7 +1231,7 @@ function list_my_plan(){
                       $("<div class=custom-recommendation-description><p>Here are your personalized recommendations. Want further guidance ? Speak to one of our nutrition advisors or schedule a nutrition consultation with a nutritionist and let us turn your recommendation into a detailed action plan.</p></div>").insertAfter(".recTitles")
                       //$("#recfilter").prepend("<button id=my-plan-tab-button class=my-plan-tab-button>My Plan</button>");
                         $("#rectable").append("<div id=my-plan-tab-section class=my-plan-tab-section style='display:none'><div class='nutritional-supplementation-section'><div class='nutritional-supplementation-header'><h2>Nutritional Supplementation</h2></div><div class='nutritional-supplementation-body'></div></div><div class='dietery-plan-section'><div class='dietery-plan-header'><h2>Dietery Plans</h2></div><div class='dietery-plan-body'></div></div> </div>");
-
+$("<div class=custom-supplement-description style='display:none'><p>Here are your personalized recommendations. Want further guidance ? Speak to one of our nutrition advisors or schedule a nutrition consultation with a nutritionist and let us turn your recommendation into a detailed action plan.</p></div>").insertAfter(".recTitles")
 //                       $("#my-plan-tab-button").click(function(){
 //                        $(".recrow").toggleClass("hide-row");
 //                         $(".textBtn").toggle();
@@ -1244,7 +1244,8 @@ function list_my_plan(){
                        $(".recrow").addClass("hide-row");
                         $(".textBtn").hide();
                         $(".my-plan-tab-section").show();
-                         $(".custom-recommendation-description").hide();
+                        $(".custom-recommendation-description").hide();
+                    	$(".custom-supplement-description").show();
                         $("#my-plan-tab-button").addClass("my-plan-active");
                     	$("#my-recomm-tab-button").removeClass("my-recomm-active");
 
@@ -1254,9 +1255,10 @@ function list_my_plan(){
                        $(".recrow").removeClass("hide-row");
                         $(".textBtn").show();
                         $(".my-plan-tab-section").hide();
-                         $(".custom-recommendation-description").show();
+                        $(".custom-recommendation-description").show();
+                    	$(".custom-supplement-description").hide();
                         $("#my-plan-tab-button").removeClass("my-plan-active");
-                    $("#my-recomm-tab-button").addClass("my-recomm-active");
+                    	$("#my-recomm-tab-button").addClass("my-recomm-active");
 
                       });
                   $("#recfilter").appendTo("#rec-filter");
