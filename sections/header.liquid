@@ -231,10 +231,10 @@
      {% if customer %}
         {% assign bold_member = false %}
         {% for tag in customer.tags %} 
-        {% if tag=='mvg-membership' %}
-        {% assign bold_member = true %}
-        {% break %}
-        {% endif %}
+          {% if tag=='mvg-membership' %}
+            {% assign bold_member = true %}
+            {% break %}
+          {% endif %}
         {% endfor %}
         {% if bold_member %}
             {% if section.settings.member_only_notice_check  %}
@@ -242,13 +242,13 @@
                 {{ section.settings.member_only_notice }}
              </div> 
             {% endif %}
-        {% endif %} 
         {% else %}
-        {% if section.settings.notice_check  %}
-           <div class="notice_hdr">
-            {{ section.settings.display_notice }}
-           </div>
-       {% endif %}
+          {% if section.settings.notice_check  %}
+             <div class="notice_hdr">
+                {{ section.settings.display_notice }}
+             </div>
+           {% endif %}
+        {% endif %}  
     {% endif %} 
      {% if section.settings.member_banner_top  %}
      <div class="member_banner_top">
