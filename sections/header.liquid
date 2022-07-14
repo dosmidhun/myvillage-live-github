@@ -249,7 +249,13 @@
              </div>
            {% endif %}
         {% endif %}  
-    {% endif %} 
+    {% else %}
+          {% if section.settings.notice_check  %}
+             <div class="notice_hdr">
+                {{ section.settings.display_notice }}
+             </div>
+           {% endif %}
+      {% endif %} 
      {% if section.settings.member_banner_top  %}
      <div class="member_banner_top">
         {{ section.settings.membership_banner }}
