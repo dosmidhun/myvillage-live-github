@@ -3016,7 +3016,10 @@ input#edit-previous {
 
 .smart_questions #intake-wizard-smartquestions-form--2 { display: block; }
 .smart_questions #submitstate #edit-save { padding: 13px 24px; border-radius: 24px;}
-
+.custom_acct_out .errors {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
 
 /*membership consultaions*/
 
