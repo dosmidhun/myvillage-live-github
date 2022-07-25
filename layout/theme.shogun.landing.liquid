@@ -78,7 +78,8 @@ gtag('config', 'G-XW9YMN90D8');
 
   <!-- Header hook for plugins ================================================== -->
   {{ content_for_header }}
-  {%- render 'bold-pr' -%}
+  
+   {{ 'bold-custom.css' | asset_url | stylesheet_tag }}
 {{ 'ndnapps-contactform-script.js' | asset_url | script_tag }}
 
   <!--[if lt IE 9]>
@@ -135,16 +136,26 @@ pintrk('page');
   {% render 'bookthatapp-widgets' %}
   {% include 'aio-script' %}
 
-
   {% render 'shogun-head' %}
+<script type="text/javascript" defer="defer"  src="https://musicplayer.shopifyappexperts.com/js/musicplayer.js"></script>
 </head>
 
 <!-- { % include 'search-autocomplete' %} -->
 {% comment %}
   Add the page template as a class for easy page or template specific styling.
 {% endcomment %}
+{% assign bold_member = false %}
+ 			{% if customer %}
+               
+        		{% for tag in customer.tags %}
+           		 {% if tag == 'mvg-membership' or tag == 'Restricted Users'%}
+               		 {% assign bold_member = true %}
+               		 {% break %}
+            	 {% endif %}
+     {% endfor %}
+  {% endif %}
 
-<body id="{{ page_title | handle }}" class="template-{{ template | split: '.' | first }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
+<body id="{{ page_title | handle }}" class="{% if bold_member %} mvg-member {% endif %} customing-{{template| handleize }} template-{{ template | split: '.' | first }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
   
   
   {{ content_for_layout }}
@@ -163,7 +174,8 @@ pintrk('page');
   if( jQuery('#redirect_home').length )         // use this if you are using id to check
 {
    
-   window.location.href='/pages/signup-landing'
+   /*window.location.href='/pages/signup-landing'*/
+  window.location.href='https://myvillagegreen.com';
 }
   HelpCrunch('init', 'myvillagegreen', {
     applicationId: 1,
