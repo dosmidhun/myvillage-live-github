@@ -6,6 +6,12 @@
 {% if tag == 'blocked' %}{% assign elcTag2 = true %}{% endif %}
 {% if tag == 'restricted users' %}{% assign elcTag3 = true %}{% endif %}
 {% endfor %}
+{% for t in easylockdown_filter_collections.tags %}
+{% assign tag = t | downcase %}
+{% if tag == 'standard process' %}{% assign elpTag1 = true %}{% endif %}
+{% if tag == 'medi-herb' %}{% assign elpTag2 = true %}{% endif %}
+{% if tag == 'standard mediherbs' %}{% assign elpTag3 = true %}{% endif %}
+{% endfor %}
 {% assign easylockdownCollectionsException = false %}
 {% unless easylockdownCollectionsException %}
 {% if easylockdown_filter_collections.id == 171816190083 or easylockdown_filter_collections.id == 405785575662 or easylockdown_filter_collections.id == 402226938094 %}

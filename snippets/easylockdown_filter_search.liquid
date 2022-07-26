@@ -6,8 +6,24 @@
 {% if tag == 'blocked' %}{% assign elcTag2 = true %}{% endif %}
 {% if tag == 'restricted users' %}{% assign elcTag3 = true %}{% endif %}
 {% endfor %}
+{% for t in easylockdown_filter_search.tags %}
+{% assign tag = t | downcase %}
+{% if tag == 'standard process' %}{% assign elpTag1 = true %}{% endif %}
+{% if tag == 'medi-herb' %}{% assign elpTag2 = true %}{% endif %}
+{% if tag == 'standard mediherbs' %}{% assign elpTag3 = true %}{% endif %}
+{% endfor %}
 {% assign easylockdownSearchException = false %}
 {% unless easylockdownSearchException %}
+{% if easylockdown_filter_search.object_type == 'product' %}
+{% if elpTag1 or elpTag2 or elpTag3 %}
+{% unless customer %}
+{% if easylockdownRender %}continue{% endif %}{% continue %}
+{% else %}
+{% unless elcTag1 %}{% if easylockdownRender %}continue{% endif %}{% continue %}{% endunless %}
+{% endunless %}
+
+{% endif %}
+{% endif %}
 {% if easylockdown_filter_search.object_type == 'product' and easylockdown_filter_search.collections %}
 {% assign easylockdownItemOff = false %}
 {% for c in easylockdown_filter_search.collections %}
