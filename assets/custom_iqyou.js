@@ -25,10 +25,10 @@ jQuery(document).ready(function($){
                window.location.href='https://myvillagegreen.com/pages/membership-dashboard';
             } else if (res.message === 'An account already exists with this email address. Please re-enter your email address and password. If you already have an account please login using the above link!') {
                  console.log(res.message);
-				window.location.href='https://myvillagegreen.com/pages/membership-dashboard';
+				
             } else {
                 console.log(res.message);
-				window.location.href='https://myvillagegreen.com/pages/signup-landing';
+				// window.location.href='https://myvillagegreen.com/pages/signup-landing';
                
             }
         });
