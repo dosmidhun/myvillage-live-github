@@ -1275,8 +1275,8 @@ padding-top: 20px;
 .become_btn a.buy_btn { display: inline-block; background: #00577f; height: 57px; line-height: 57px; padding: 0 40px; font-size: 18px; color: #fff; font-weight: 400; font-family: Montserrat; border: 1px solid #9cbbc9;}
 .become_btn a.buy_btn:hover, .become_btn a.buy_btn:focus { text-decoration: none; background: #979500; }
 
-.member_btn { display: inline-block; background: #00577f; height: 57px; line-height: 57px; padding: 0 40px; font-size: 22px; color: #fff; font-weight: 500; font-family: Montserrat; border: 1px solid #9cbbc9; text-transform: capitalize;}
-.member_btn:hover, .member_btn:focus { text-decoration: none; background: #979500; outline: none; border: 1px solid #979500;}
+.become_btn .buy_btn { display: inline-block; background: #00577f; height: 57px; line-height: 57px; padding: 0 40px; font-size: 22px; color: #fff; font-weight: 500; font-family: Montserrat; border: 1px solid #9cbbc9; text-transform: capitalize;}
+.become_btn .buy_btn:hover, .become_btn .buy_btn:focus { text-decoration: none; background: #979500; outline: none; border: 1px solid #979500;}
 
 
 .member_benfits_sec { padding: 55px 0; text-align: center;}
