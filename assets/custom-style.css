@@ -2468,7 +2468,7 @@ div#rectable {
 
 .are_you_sec { margin: 0 -15px; background: #73ADC2; }
 .become_sec { margin: 0 -15px; background: #F3F2F2; min-height: 652px;}
-.are_inner { width: 100%; float: right; padding: 102px 75px; text-align: center;}
+.are_inner { width: 100%; float: right; padding: 99px 75px; text-align: center;}
 .are_inner h2 { font-size: 48px; line-height: 50px; color: #fff; margin-bottom: 40px;}
 .are_inner p { font-size: 20px; line-height: 26px; color: #fff; letter-spacing: -.4px;}
 .become_inner { width: 100%; float: left; padding: 47px 80px 53px 80px; text-align: center; }
