@@ -118,42 +118,42 @@ jQuery(function ($) {
         $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_membership_button_stripe").click();
 
     });
-    $(document).on("keyup keydown paste focusout", "input[name='n_60705']", function () {
+    $(document).on("keyup keydown paste focusout", "input[name='n_66533']", function () {
         $(this).val($(this).val().replace(/[^0-9]/g, ''));
-        $(document).find("#n_60705-error,#n_60705-error-1").remove();
+        $(document).find("#n_66533-error,#n_66533-error-1").remove();
         $(this).removeClass('my-error-class');
         $(this).closest('form').find("input[type=button],input[type=submit]").prop("disabled", false);
         if (parseFloat($(this).val()) > 1000) {
             $(this).addClass('my-error-class');
-            $(this).closest('.bold-form-group').append('<label id="n_60705-error" class="my-error-class" for="n_60705" style="display: block;">Weight not greater than 1000 lbs.</label>');
+            $(this).closest('.bold-form-group').append('<label id="n_66533-error" class="my-error-class" for="n_66533" style="display: block;">Weight not greater than 1000 lbs.</label>');
             $(this).closest('form').find("input[type=button],input[type=submit]").prop("disabled",true);
-            $(this).closest('form').append('<label id="n_60705-error-1" class="my-error-class" style="display:inherit;">Weight not greater than 1000 lbs.</label>');
+            $(this).closest('form').append('<label id="n_66533-error-1" class="my-error-class" style="display:inherit;">Weight not greater than 1000 lbs.</label>');
         }
     });
 
-    $(document).on("keyup keydown paste focusout", "input[name='n_60704']", function () {
+    $(document).on("keyup keydown paste focusout", "input[name='n_66532']", function () {
         $(this).val($(this).val().replace(/[^0-9]/g, ''));
-        $(document).find("#n_60704-error,#n_60704-error-1").remove();
+        $(document).find("#n_66532-error,#n_66532-error-1").remove();
         $(this).removeClass('my-error-class');
         $(this).closest('form').find("input[type=button],input[type=submit]").prop("disabled", false);
         if (parseFloat($(this).val()) > 108) {
             $(this).addClass('my-error-class');
-            $(this).closest('.bold-form-group').append('<label id="n_60704-error" class="my-error-class" for="n_60704" style="display: block;">Height not greater than 108 inch.</label>');
+            $(this).closest('.bold-form-group').append('<label id="n_66532-error" class="my-error-class" for="n_66532" style="display: block;">Height not greater than 108 inch.</label>');
             $(this).closest('form').find("input[type=button],input[type=submit]").prop("disabled", true);
-            $(this).closest('form').append('<label id="n_60704-error-1" class="my-error-class" style="display:inherit;">Height not greater than 108 inch.</label>')
+            $(this).closest('form').append('<label id="n_66532-error-1" class="my-error-class" style="display:inherit;">Height not greater than 108 inch.</label>')
         }
     });
 
-    $(document).on("keyup keydown paste focusout", "input[name='n_60703']", function () {
+    $(document).on("keyup keydown paste focusout", "input[name='n_66531']", function () {
         $(this).val($(this).val().replace(/[^0-9]/g, ''));
-        $(document).find("#n_60703-error,#n_60703-error-1").remove();
+        $(document).find("#n_66531-error,#n_66531-error-1").remove();
         $(this).removeClass('my-error-class');
         $(this).closest('form').find("input[type=button],input[type=submit]").prop("disabled", false);
         if (parseFloat($(this).val()) > 108) {
             $(this).addClass('my-error-class');
-            $(this).closest('.bold-form-group').append('<label id="n_60703-error" class="my-error-class" for="n_60703" style="display: block;">Age not greater than 120.</label>');
+            $(this).closest('.bold-form-group').append('<label id="n_66531-error" class="my-error-class" for="n_66531" style="display: block;">Age not greater than 120.</label>');
             $(this).closest('form').find("input[type=button],input[type=submit]").prop("disabled", true);
-            $(this).closest('form').append('<label id="n_60703-error-1" class="my-error-class" style="display:inherit;">Age not greater than 120.</label>');
+            $(this).closest('form').append('<label id="n_66531-error-1" class="my-error-class" style="display:inherit;">Age not greater than 120.</label>');
         }
     });
 
