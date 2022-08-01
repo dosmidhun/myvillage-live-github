@@ -366,7 +366,59 @@
                     <img src="{{ section.settings.sign_desktop_image | img_url: 'master' }}" />  
                 </div>
                 <div class="health_btm">
-                    {{ section.settings.sign_humani_btm_cont }} 
+                    <div class="health_box_plan">
+                <div class="health_plan quaterly">
+                         <h2>Quarterly</h2> 
+                         <div class="h_price">
+                         	<sup>$</sup>
+                            <span>45.59</span>
+                            <sub>/month*</sub>
+                         </div>
+<!--                          <div class="h_off">
+                         	<span>33% off</span>
+                         </div> -->
+                   		<div class="buy_bow"> 
+                			<a href="javascript:void(0)" class="buy_btn" data-toggle="modal" data-target="#membership_popup">Join Now</a> 
+            	 		</div>
+                 		<div class="h_total">
+                        	*$137.85 billed quaterly
+                        </div>
+                </div>
+                <div class="health_plan annually">
+                         <h2>Annual</h2> 
+                         <div class="h_price">
+                         	<sup>$</sup>
+                            <span>39.95</span>
+                            <sub>/month*</sub>
+                         </div>
+<!--                          <div class="h_off">
+                         	<span>50% off</span>
+                         </div> -->
+                   		<div class="buy_bow"> 
+                			<a href="javascript:void(0)" class="buy_btn" data-toggle="modal" data-target="#membership_popup">Join Now</a> 
+            	 		</div>
+                 		<div class="h_total">
+                        	*$394.80 billed annually
+                        </div>
+                </div>
+                <div class="health_plan monthly">
+                         <h2>Monthly</h2> 
+                         <div class="h_price">
+                         	<sup>$</sup>
+                            <span>54.95</span>
+                            <sub>/month*</sub>
+                         </div>
+<!--                          <div class="h_off">
+                         	<span>33% off</span>
+                         </div> -->
+                   		<div class="buy_bow"> 
+                			<a href="javascript:void(0)" class="buy_btn" data-toggle="modal" data-target="#membership_popup">Join Now</a> 
+            	 		</div>
+                 		<div class="h_total">
+                        	*$54.95 billed monthly
+                        </div>
+                </div>
+   </div>
                 </div> 
             </div>
             <div class="col-sm-6">
@@ -401,7 +453,48 @@
     display: none!important;
 
 }
+.device-wrapper .screen {
+			background-image: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/1slide.jpg?v=1655285938);
+			background-position: center;
+}
+.device-wrapper {
+			max-width: none;
+		}
+
+		.device {
+			z-index: 10;
+		}
+
 {% endstyle %}
+{% javascript %}
+
+var currentBackground = 0;
+var backgrounds = [];
+backgrounds[0] = 'https://cdn.shopify.com/s/files/1/0317/4635/9433/files/1slide.jpg?v=1655285938';
+backgrounds[1] = 'https://cdn.shopify.com/s/files/1/0317/4635/9433/files/2slide.jpg?v=1655285938';
+backgrounds[2] = 'https://cdn.shopify.com/s/files/1/0317/4635/9433/files/3slide.jpg?v=1655285938';
+backgrounds[3] = 'https://cdn.shopify.com/s/files/1/0317/4635/9433/files/4slide.jpg?v=1655285938';
+
+function changeBackground() {
+    currentBackground++;
+    if(currentBackground > 3) currentBackground = 0;
+
+    $('.device-wrapper .screen').fadeOut(100,function() {
+        $('.device-wrapper .screen').css({
+            'background-image' : "url('" + backgrounds[currentBackground] + "')"
+        });
+        $('.device-wrapper .screen').fadeIn(100);
+    });
+
+
+    setTimeout(changeBackground, 4000);
+}
+
+$(document).ready(function() {
+    setTimeout(changeBackground, 4000);        
+});
+
+{% endjavascript %}
 {% schema %}
   {
     "name": " Signup V2 Landing",
