@@ -67,6 +67,7 @@ jQuery(function ($) {
     });
 
     $("#popup_sec .member_btn").on("click", function () {
+      console.log("clicked");
        $('#membership_popup').modal('show');
     
 
