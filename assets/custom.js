@@ -4,7 +4,7 @@ jQuery(function ($) {
     $( document ).ready(function() {
           if($('#create_customer').find('.note.form-error').length){
             console.log("Length");
-            $("#popup_sec .member_btn").click();
+            $("#popup_sec .buy_btn").click();
             $("a.create_acc_btn").click();
           }
           });
