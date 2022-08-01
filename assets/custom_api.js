@@ -691,84 +691,435 @@ jQuery( document ).ready(function($) {
             });
         }
     });
+  function remove_from_my_plan(rec_id){
+    var data = {};
+    data.id = rec_id;
+    data.is_selected_my_plan = false;
+    var url = 'https://app.iqyouhealth.com/api/my-plan_stage?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7';
+    $.ajax({
+
+          url: url,
+          type: 'POST',
+          data:data,
+          crossDomain: true,
+          success:function(res){
+              // $('#' + recommendation_id + ' .nextsteplink').attr('href',custom_url);
+              // $('#' + recommendation_id + ' .nextsteplink').text("Buy Now");
+
+              //window.location=window.location.href;
+            list_my_plan();
+            $(".top_reommend_sec").removeClass('loading');
+          },
+          error:function(xhr,status,err)
+          {
+            console.log(err);
+          }
+      });
+    
+  }
+  function rec_list_html(list){
+    var list_html = '';
+    $.each(list, function (i, recom) {
+      if(recom.is_selected_my_plan == '1'){
+        var check_box_id="my-plan-cb-recrow-"+ recom.recommendation_id;
+        $("#" + check_box_id).prop('checked', true);
+        $("#" + check_box_id).removeAttr('new-id');
+        $("#" + check_box_id).attr('new-id', recom.id);
+        $("#" + check_box_id).addClass('selected-checkbox');
+        $("#" + check_box_id).attr('title', 'Remove from My Plan');
+        var intake_time_radio = '';
+        var intake_time = recom.intake_time;
+        if(intake_time == null){
+          intake_time = '';
+        }
+        console.log(intake_time);
+        if(intake_time.indexOf("AM") !== -1){ 
+          intake_time_radio = intake_time_radio + '<label>AM<input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.id + '[]" value="AM" data-id="' + recom.id + '" checked></label>';
+
+        }else{
+          intake_time_radio = intake_time_radio + '<label>AM<input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.id + '[]" value="AM" data-id="' + recom.id + '"></label>';
+        }
+        if(intake_time.indexOf("Mid") !== -1){ 
+          intake_time_radio = intake_time_radio + '<label>Mid-Day<input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.id + '[]" value="Mid" data-id="' + recom.id + '" checked></label>';
+
+        }else{
+          intake_time_radio = intake_time_radio + '<label>Mid-Day<input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.id + '[]" value="Mid" data-id="' + recom.id + '"></label>';
+        }
+        if(intake_time.indexOf("PM") !== -1){ 
+          intake_time_radio = intake_time_radio + '<label>PM<input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.id + '[]" value="PM" data-id="' + recom.id + '" checked></label>';
+
+        }else{
+          intake_time_radio = intake_time_radio + '<label>PM<input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.id + '[]" value="PM" data-id="' + recom.id + '"></label>';
+        }
+
+        var intake_type_radio = '';
+        var intake_type = recom.intake_type;
+        if(intake_type == null){
+          intake_type = '';
+        }
+        if(intake_type.indexOf("with_food") !== -1){ 
+          intake_type_radio = intake_type_radio + '<label><input type="checkbox" class="intake-type-class" id="with_food" name="intake-type-' + recom.id + '[]" value="with_food" data-id="' + recom.id + '" checked>With Food</label>';
+
+        }else{
+          intake_type_radio = intake_type_radio + '<label><input type="checkbox" class="intake-type-class" id="with_food" name="intake-type-' + recom.id + '[]" value="with_food" data-id="' + recom.id + '">With Food</label>';
+        }
+        if(intake_type.indexOf("without_food") !== -1){ 
+          intake_type_radio = intake_type_radio + '<label><input type="checkbox" class="intake-type-class" id="without_food" name="intake-type-' + recom.id + '[]" value="without_food" data-id="' + recom.id + '" checked>Without Food</label>';
+
+        }else{
+          intake_type_radio = intake_type_radio + '<label><input type="checkbox" class="intake-type-class" id="without_food" name="intake-type-' + recom.id + '[]" value="without_food" data-id="' + recom.id + '">Without Food</label>';
+        }
+        var my_plan_buy_button = '<div class="my-plan-buy"><a href="' + recom.url + '"><button class="my-plan-buy-button">Buy Now</button></a></div>';
+        var intake_dosage_html = '<div class="dosage-items">';
+        var intake_am_dosage_html = '';
+        var intake_mid_dosage_html = '';
+        var intake_pm_dosage_html = '';
+        var intake_dosage = recom.dosage;
+        if(intake_dosage != null){
+
+          intake_dosage = intake_dosage.replace(/\//g, "");
+          intake_dosage = intake_dosage.replace(/['"]+/g, '');
+          intake_dosage = intake_dosage.replace(/[{}]/g, '');
+          var dosage_array = intake_dosage.split(","); 
+          $.each( dosage_array, function( key, value ) {
+            if(value.indexOf("AM_dosage") !== -1){
+
+              var dosage_item = value.split(":"); 
+              if(intake_time.indexOf("AM") !== -1){ 
+                intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-time-outer">';
+                intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.id + '[]" value="AM" data-id="' + recom.id + '" checked>AM</label></div>';
+                intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-div"><label><input type="text" class="am-dosage-input" id="am-dosage-input-' + recom.id +'" name="am-dosage-input-' + recom.id +'" value="' + dosage_item[1] + '"></label></div>';
+                intake_am_dosage_html = intake_am_dosage_html + '</div>';
+              }else{
+                intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-time-outer">';
+                intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.id + '[]" value="AM" data-id="' + recom.id + '">AM</label></div>';
+                intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-div"><label class="hide-m"><input type="text" class="am-dosage-input" id="am-dosage-input-' + recom.id +'" name="am-dosage-input-' + recom.id +'" value="' + dosage_item[1] + '" readonly></label></div>';
+                intake_am_dosage_html = intake_am_dosage_html + '</div>';
+
+              }
+
+            }
+            if(value.indexOf("Midday_dosage") !== -1){
+
+              var dosage_item = value.split(":"); 
+              if(intake_time.indexOf("Mid") !== -1){ 
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-time-outer">';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.id + '[]" value="Mid" data-id="' + recom.id + '" checked>Mid-Day</label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-div"><label><input type="text" class="md-dosage-input" id="md-dosage-input-' + recom.id +'" name="md-dosage-input-' + recom.id +'" value="' + dosage_item[1] + '"></label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
+              }else{
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-time-outer">';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.id + '[]" value="Mid" data-id="' + recom.id + '">Mid-Day</label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-div"><label class="hide-m"><input type="text" class="md-dosage-input" id="md-dosage-input-' + recom.id +'" name="md-dosage-input-' + recom.id +'" value="' + dosage_item[1] + '" readonly></label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
+
+              }
+
+            }
+            if(value.indexOf("PM_dosage") !== -1){
+
+              var dosage_item = value.split(":"); 
+              if(intake_time.indexOf("PM") !== -1){ 
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-time-outer">';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.id + '[]" value="PM" data-id="' + recom.id + '" checked>PM</label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-div"><label><input type="text" class="pm-dosage-input" id="pm-dosage-input-' + recom.id +'" name="pm-dosage-input-' + recom.id +'" value="' + dosage_item[1] + '"></label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
+              }else{
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-time-outer">';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.id + '[]" value="PM" data-id="' + recom.id + '">PM</label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-div"><label class="hide-m"><input type="text" class="pm-dosage-input" id="pm-dosage-input-' + recom.id +'" name="pm-dosage-input-' + recom.id +'" value="' + dosage_item[1] + '" readonly></label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
+
+              }
+
+            }
+          });
+
+
+        }else{
+          if(intake_time.indexOf("AM") !== -1){ 
+
+            intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-time-outer">';
+            intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.id + '[]" value="AM" data-id="' + recom.id + '" checked>AM</label></div>';
+            intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-div"><label><input type="text" class="am-dosage-input" id="am-dosage-input-' + recom.id +'" name="am-dosage-input-' + recom.id +'" value=""></label></div>';
+            intake_am_dosage_html = intake_am_dosage_html + '</div>';
+          }else{
+
+            intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-time-outer">';
+            intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.id + '[]" value="AM" data-id="' + recom.id + '"></label></div>';
+            intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-div"><label class="hide-m"><input type="text" class="am-dosage-input" id="am-dosage-input-' + recom.id +'" name="am-dosage-input-' + recom.id +'" value="" readonly>AM</label></div>';
+            intake_am_dosage_html = intake_am_dosage_html + '</div>';
+          }
+          if(intake_time.indexOf("Mid") !== -1){ 
+
+            intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-time-outer">';
+            intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.id + '[]" value="Mid" data-id="' + recom.id + '" checked>Mid-Day</label></div>';
+            intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-div"><label><input type="text" class="md-dosage-input" id="md-dosage-input-' + recom.id +'" name="md-dosage-input-' + recom.id +'" value=""></label></div>';
+            intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
+          }else{
+
+            intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-time-outer">';
+            intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.id + '[]" value="Mid" data-id="' + recom.id + '">Mid-Day</label></div>';
+            intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-div"><label class="hide-m"><input type="text" class="md-dosage-input" id="md-dosage-input-' + recom.id +'" name="md-dosage-input-' + recom.id +'" value="" readonly></label></div>';
+            intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
+          }
+          if(intake_time.indexOf("PM") !== -1){ 
+
+            intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-time-outer">';
+            intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.id + '[]" value="PM" data-id="' + recom.id + '" checked>PM</label></div>';
+            intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-div"><label><input type="text" class="pm-dosage-input" id="pm-dosage-input-' + recom.id +'" name="pm-dosage-input-' + recom.id +'" value=""></label></div>';
+            intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
+          }else{
+
+            intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-time-outer">';
+            intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.id + '[]" value="PM" data-id="' + recom.id + '">PM</label></div>';
+            intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-div"><label class="hide-m"><input type="text" class="pm-dosage-input" id="pm-dosage-input-' + recom.id +'" name="pm-dosage-input-' + recom.id +'" value="" readonly></label></div>';
+            intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
+          }
+
+        }
+             if(intake_am_dosage_html === ''){
+               if(intake_time.indexOf("AM") !== -1){ 
+
+                 intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-time-outer">';
+                 intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.id + '[]" value="AM" data-id="' + recom.id + '" checked>AM</label></div>';
+                 intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-div"><label><input type="text" class="am-dosage-input" id="am-dosage-input-' + recom.id +'" name="am-dosage-input-' + recom.id +'" value=""></label></div>';
+                 intake_am_dosage_html = intake_am_dosage_html + '</div>';
+               }else{
+
+                 intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-time-outer">';
+                 intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.id + '[]" value="AM" data-id="' + recom.id + '"></label>AM</div>';
+                 intake_am_dosage_html = intake_am_dosage_html + '<div class="intake-dosage-div"><label class="hide-m"><input type="text" class="am-dosage-input" id="am-dosage-input-' + recom.id +'" name="am-dosage-input-' + recom.id +'" value="" readonly></label></div>';
+                 intake_am_dosage_html = intake_am_dosage_html + '</div>';
+               }
+             }
+            if(intake_mid_dosage_html === ''){
+              if(intake_time.indexOf("Mid") !== -1){ 
+
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-time-outer">';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.id + '[]" value="Mid" data-id="' + recom.id + '" checked>Mid-Day</label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-div"><label><input type="text" class="md-dosage-input" id="md-dosage-input-' + recom.id +'" name="md-dosage-input-' + recom.id +'" value=""></label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
+              }else{
+
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-time-outer">';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.id + '[]" value="Mid" data-id="' + recom.id + '">Mid-Day</label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '<div class="intake-dosage-div"><label class="hide-m"><input type="text" class="md-dosage-input" id="md-dosage-input-' + recom.id +'" name="md-dosage-input-' + recom.id +'" value="" readonly></label></div>';
+                intake_mid_dosage_html = intake_mid_dosage_html + '</div>';
+              } 
+            }
+            if(intake_pm_dosage_html === ''){
+              if(intake_time.indexOf("PM") !== -1){ 
+
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-time-outer">';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.id + '[]" value="PM" data-id="' + recom.id + '" checked>Pm</label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-div"><label><input type="text" class="pm-dosage-input" id="pm-dosage-input-' + recom.id +'" name="pm-dosage-input-' + recom.id +'" value=""></label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
+              }else{
+
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-time-outer">';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-time-div"><label><input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.id + '[]" value="PM" data-id="' + recom.id + '">PM</label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '<div class="intake-dosage-div"><label class="hide-m"><input type="text" class="pm-dosage-input" id="pm-dosage-input-' + recom.id +'" name="pm-dosage-input-' + recom.id +'" value="" readonly></label></div>';
+                intake_pm_dosage_html = intake_pm_dosage_html + '</div>';
+              }
+
+            }
+
+        intake_dosage_html = intake_am_dosage_html + intake_mid_dosage_html + intake_pm_dosage_html;
+
+       
+
+        var buy_button_display = '';
+        var update_dosage_html = '<div class="update-dosage"><button class="update-dosage-button" rec-id="' + recom.id + '" rec-custom-id="' + recom.id + '">Update recommendation</button></div>';
+        if(recom.product_name != null && recom.product_name !== 'null' && recom.product_name != null){
+          var product_name = recom.product_name;
+        }else{
+          var product_name = '';
+        }
+        if(recom.note != null && recom.note !== 'null' && recom.note !== ''){
+          var note = recom.note;
+        }else{
+          var note = '';
+        }
+        if(recom.url !== ''){
+         	var url = recom.url;
+        }else{
+          var url = '';
+        }
+        if(recom.url !== '' && recom.product_name !== '' && recom.url !== 'null' && recom.product_name !== 'null' && recom.url !== null && recom.product_name !== null){
+          var buy_button_display = '<div class="nutritional-supplementation-buy-button"><div class="nutritional-supplementation-product-name"><a href="' + recom.url + '">' + product_name + '</a></div>' + my_plan_buy_button + '</div>';
+        }else{
+          
+          if(recom.recommendation_id != null && recom.recommendation_id !== 'null' && recom.recommendation_id !== '' && recom.recommendation_id !== '0' && recom.recommendation_id !== 0){
+            console.log(recom.recommendation_name + " -> " + recom.recommendation_id );
+            var old_href = $('a[rel="' + recom.recommendation_id + '"]').attr('href');
+            var buy_button_display = '<div class="nutritional-supplementation-buy-button"><div class="nutritional-supplementation-product-name"></div><div class="my-plan-buy"><div class="my-plan-buy"><a href="' + old_href + '"><button class="my-plan-buy-button">Shop Now</button></a></div></div></div>';
+          }else{
+            
+            var buy_button_display = '<div class="nutritional-supplementation-buy-button"><div class="nutritional-supplementation-product-name"></div><div class="my-plan-buy"><div class="my-plan-buy"></div></div></div>';
+          }
+          
+
+        }
+         var notes_html = '<div class="update-notes"><label>Notes<textarea  class="notes-input" id="notes-input-' + recom.id +'" name="notes-input-' + recom.id +'">' + note + '</textarea ></label></div>';
+        list_html = list_html + '<div class="nutritional-supplementation-item">';
+        list_html = list_html + '<div class="nutritional-supplementation-timing-outer"><div class="nutritional-supplementation-item-name"><a href="' + url + '" target="_BLANK">' + recom.recommendation_name + '</a><span><a class="remove-recoomendation" rec-id="' + recom.id + '" recommendation-id="' + recom.recommendation_id + '">Remove?</a></span></div>' + buy_button_display + '</div>';
+        list_html = list_html + '<div class="item-left-section">' + intake_dosage_html;
+        list_html = list_html + '<div class="nutritional-supplementation-type-outer">' + update_dosage_html ;
+        list_html = list_html + '<div class="intake-type-outer">' + intake_type_radio + '</div></div></div>';
+        list_html = list_html + '<div class="item-right-section">' + notes_html + '</div>';
+        list_html = list_html + '</div>';
+
+      }else{
+        var check_box_id="my-plan-cb-recrow-"+ recom.recommendation_id;
+        $("#" + check_box_id).removeClass('selected-checkbox');
+        $("#" + check_box_id).attr('title', 'Move to My Plan');
+        $("#" + check_box_id).removeAttr('new-id');
+        $("#" + check_box_id).attr('new-id', recom.id);
+      }
+    });
+    return list_html;
+  
+  }
+  
+  
+  
 function list_my_plan(){
     $.ajax({
 
-                        url: 'https://app.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                        url: 'https://app.iqyouhealth.com/api/my-plan_stage?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
                         type: 'GET',
                         crossDomain: true,
                         success:function(res){
+                          var all_list_html ='';
                           var list = res.list;
+                          var user_list = res.user_list;
+                          all_list_html = all_list_html + rec_list_html(list);
+                          all_list_html = all_list_html + rec_list_html(user_list);
 
-                          var list_html = '';
-                          $.each(list, function (i, recom) {
-                            if(recom.is_selected_my_plan == '1'){
-                              var check_box_id="my-plan-cb-recrow-"+ recom.recommendation_id;
-                              $("#" + check_box_id).prop('checked', true);
-                              $("#" + check_box_id).addClass('selected-checkbox');
-                              $("#" + check_box_id).attr('title', 'Remove from My Plan');
-                              var intake_time_radio = '';
-                              var intake_time = recom.intake_time;
-                              if(intake_time == null){
-                              intake_time = '';
-                              }
-                              console.log(intake_time);
-                              if(intake_time.indexOf("AM") !== -1){ 
-                                intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.recommendation_id + '[]" value="AM" data-id="' + recom.recommendation_id + '" checked><label for="am">AM</label>';
-                                
-                              }else{
-                              intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="am" name="intake-time-' + recom.recommendation_id + '[]" value="AM" data-id="' + recom.recommendation_id + '"><label for="am">AM</label>';
-                              }
-                              if(intake_time.indexOf("Mid") !== -1){ 
-                                intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.recommendation_id + '[]" value="Mid" data-id="' + recom.recommendation_id + '" checked><label for="midday">Midday</label>';
-                                
-                              }else{
-                              intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="midday" name="intake-time-' + recom.recommendation_id + '[]" value="Mid" data-id="' + recom.recommendation_id + '"><label for="midday">Midday</label>';
-                              }
-                              if(intake_time.indexOf("PM") !== -1){ 
-                                intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.recommendation_id + '[]" value="PM" data-id="' + recom.recommendation_id + '" checked><label for="pm">PM</label>';
-                                
-                              }else{
-                              intake_time_radio = intake_time_radio + '<input type="checkbox" class="intake-time-class" id="pm" name="intake-time-' + recom.recommendation_id + '[]" value="PM" data-id="' + recom.recommendation_id + '"><label for="pm">PM</label>';
-                              }
-                              
-                              var intake_type_radio = '';
-                              var intake_type = recom.intake_type;
-                              if(intake_type == null){
-                              intake_type = '';
-                              }
-                              if(intake_type.indexOf("with_food") !== -1){ 
-                                intake_type_radio = intake_type_radio + '<input type="checkbox" class="intake-type-class" id="with_food" name="intake-type-' + recom.recommendation_id + '[]" value="with_food" data-id="' + recom.recommendation_id + '" checked><label for="with_food">With Food</label>';
-                                
-                              }else{
-                              intake_type_radio = intake_type_radio + '<input type="checkbox" class="intake-type-class" id="with_food" name="intake-type-' + recom.recommendation_id + '[]" value="with_food" data-id="' + recom.recommendation_id + '"><label for="with_food">With Food</label>';
-                              }
-                              if(intake_type.indexOf("without_food") !== -1){ 
-                                intake_type_radio = intake_type_radio + '<input type="checkbox" class="intake-type-class" id="without_food" name="intake-type-' + recom.recommendation_id + '[]" value="without_food" data-id="' + recom.recommendation_id + '" checked><label for="without_food">Without Food</label>';
-                                
-                              }else{
-                              intake_type_radio = intake_type_radio + '<input type="checkbox" class="intake-type-class" id="without_food" name="intake-type-' + recom.recommendation_id + '[]" value="without_food" data-id="' + recom.recommendation_id + '"><label for="without_food">Without Food</label>';
-                              }
-                              
-
-
-                            	list_html = list_html + '<div class="nutritional-supplementation-item"><div class="nutritional-supplementation-item-name"><a href="' + recom.url + '">' + recom.recommendation_name + '</a></div><div class="nutritional-supplementation-item-time">' + intake_time_radio + '</div><div class="nutritional-supplementation-item-type">' + intake_type_radio + '</div></div>';
-                            }else{
-                            var check_box_id="my-plan-cb-recrow-"+ recom.recommendation_id;
-                              console.log(check_box_id);
-                              $("#" + check_box_id).removeClass('selected-checkbox');
-                              $("#" + check_box_id).attr('title', 'Move to My Plan');
-                            }
-                          });
+                          
                           $( document ).tooltip({
                               tooltipClass: "uitooltip",
                               position: { my: 'left center', at: 'right+10 center' }
                             
                           });
+                         
+                          $('.nutritional-supplementation-body').html(all_list_html);
                           
+                          $('.add-recommendation').click(function() {
+                            	$('#new_recommendation_modal').modal('show');
+                             });
+                          // $('.save_new_recom').click(function() { 
+                          //   $('#new_recommendation_modal').modal('hide');
+                          //     data = {};
+                          //     data.recommendation_name = $('#new_recom_name').val()
+                          //      $.ajax({
+                          //             url: 'https://app.iqyouhealth.com/api/my-plan_stage?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                          //             type: 'POST',
+                          //             data:data,
+                          //             crossDomain: true,
+                          //             success:function(res){
+                          //               list_my_plan();
+                          //               $(".top_reommend_sec").removeClass('loading');
+                          //             },
+                          //             error:function(xhr,status,err)
+                          //             {
+                          //               console.log(err);
+                          //             }
+                          //        });
+                          //  });
+                            
+                          
+                         $('.remove-recoomendation').each(function(){
+                            $(this).click(function() {
+                              $(".top_reommend_sec").addClass('loading');
+                             	
+                              	var rec_id = $(this).attr('rec-id');
+                              console
+                                if($(this).attr('recommendation-id') === '0'){
+                                  $(".top_reommend_sec").removeClass('loading');
+                                  $('#remove_recommendation_confirm_modal').find('.cancel_remove_recom').removeAttr('data-id');
+                                  $('#remove_recommendation_confirm_modal').find('.confirm_remove_recom').removeAttr('data-id');
+                                  $('#remove_recommendation_confirm_modal').find('.cancel_remove_recom').attr('data-id',rec_id);
+                                  $('#remove_recommendation_confirm_modal').find('.confirm_remove_recom').attr('data-id',rec_id);
+                                  $('#remove_recommendation_confirm_modal').modal('show');
+                                }else{
+                                  remove_from_my_plan(rec_id);
+                                }
+                              	
+                              });
+                            });
+                          // $('.confirm_remove_recom').click(function() {
+                          //     $(".top_reommend_sec").addClass('loading');
+                          //   $('#remove_recommendation_confirm_modal').modal('hide'); 
+                          //     	var rec_id = $(this).attr('data-id');                               
+                          //         remove_from_my_plan(rec_id);                          	
+                          //     });
+                          // $('.cancel_remove_recom').click(function() {
+                          //     $('#remove_recommendation_confirm_modal').modal('hide');                         	
+                          //     });
+                          $('.update-dosage-button').each(function(){
+                            $(this).click(function() {                              
+                              	$(".top_reommend_sec").addClass('loading');
+                               var rec_id = $(this).attr('rec-id');
+                                var AM_dosage = $('#am-dosage-input-' + rec_id).val();
+                                var PM_dosage = $('#pm-dosage-input-' + rec_id).val();
+                                var Midday_dosage = $('#md-dosage-input-' + rec_id).val();
+                                //var custom_url = $('#my-plan-custom-url-input-' + rec_id).val();
+                                var note = $('#notes-input-' + rec_id).val();
+                              
+                                var data = {}; 
+                                //var url_data = {};
+                                
+                                // url_data.rec_id = rec_id;
+                                // url_data.rec_name = $('#my-plan-custom-url-input-' + rec_id).attr('rec_name');
+                                // url_data.custom_url = custom_url;
+                                // url_data.method = 'save';
 
-                          $('.nutritional-supplementation-body').html(list_html);
-                          
+
+
+                                //      $.ajax({
+
+                                //         url: 'https://app.iqyouhealth.com/api/recommendations_stage?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                                //         type: 'POST',
+                                //         data:url_data,
+                                //         crossDomain: true,
+                                //         success:function(res){
+                                //             // $('#' + recommendation_id + ' .nextsteplink').attr('href',custom_url);
+                                //             // $('#' + recommendation_id + ' .nextsteplink').text("Buy Now");
+
+                                //             //window.location=window.location.href;
+
+
+                                //         },
+                                //         error:function(xhr,status,err)
+                                //         {
+                                //           console.log(err);
+                                //         }
+                                //     });
+                                  data.id = rec_id;	                                  
+                                  data.AM_dosage = AM_dosage;  
+                                  data.PM_dosage = PM_dosage;  
+                                  data.Midday_dosage = Midday_dosage;  
+                              	  data.note = note;
+                                 
+                                   $.ajax({
+                                      url: 'https://app.iqyouhealth.com/api/my-plan_stage?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                                      type: 'POST',
+                                      data:data,
+                                      crossDomain: true,
+                                      success:function(res){
+                                        list_my_plan();
+                                        $(".top_reommend_sec").removeClass('loading');
+                                      },
+                                      error:function(xhr,status,err)
+                                      {
+                                        console.log(err);
+                                      }
+                                  });
+                            });
+                            });
+                            
                           $('.intake-time-class').each(function(){
                             $(this).click(function() { 
                               
@@ -777,6 +1128,8 @@ function list_my_plan(){
                               	
                               var check_name = $(this).attr('name');
                               var intake_time = '';
+                              var rec_id = $(this).attr('data-id');
+                              var note = $('#notes-input-' + rec_id).val();
                               $('[name="' + check_name + '"]').each( function (){
                                   if($(this).prop('checked') == true){
                                     if(intake_time === '' ){
@@ -792,12 +1145,26 @@ function list_my_plan(){
 //                                   var rec_id = rec_split[1];
                                   var data = {};                                  
                                   data.intake_time = intake_time;                                 
-                                  data.recommendation_id = $(this).attr('data-id');
-
+                                  data.id = $(this).attr('data-id');
+                                    if(intake_time.indexOf("AM") === -1){ 
+                                       data.AM_dosage = ''; 
+                                       $('#am-dosage-input-' + rec_id).val('');
+                                   
+                                    }
+                                     if(intake_time.indexOf("Mid") === -1){ 
+                                        
+                                        data.Midday_dosage = ''; 
+                                        $('#md-dosage-input-' + rec_id).val('');
+                                    }
+                                    if(intake_time.indexOf("PM") === -1){ 
+                                      data.PM_dosage = ''; 
+                                      $('#pm-dosage-input-' + rec_id).val('');
+                                    }
+                                  data.note = note;
 
                                    $.ajax({
 
-                                      url: 'https://app.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                                      url: 'https://app.iqyouhealth.com/api/my-plan_stage?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
                                       type: 'POST',
                                       data:data,
                                       crossDomain: true,
@@ -806,7 +1173,8 @@ function list_my_plan(){
                                           // $('#' + recommendation_id + ' .nextsteplink').text("Buy Now");
 
                                           //window.location=window.location.href;
-                                        list_my_plan();
+                                        $('.update-dosage-button[rec-id="' + rec_id + '"]').click();
+                                        //list_my_plan();
                                         $(".top_reommend_sec").removeClass('loading');
                                       },
                                       error:function(xhr,status,err)
@@ -825,24 +1193,30 @@ function list_my_plan(){
                               	$(".top_reommend_sec").addClass('loading');
                                   var check_name = $(this).attr('name');
                                   var intake_type = '';
+                                    var rec_id = $(this).attr('data-id');
+                                    var note = $('#notes-input-' + rec_id).val();
+                                     
                                   $('[name="' + check_name + '"]').each( function (){
                                       if($(this).prop('checked') == true){
                                         if(intake_type === '' ){
-                                            intake_type = $(this).val();
+                                          intake_type = $(this).val();
                                         }else{
                                             intake_type = intake_type + ',' +  $(this).val();
                                         }
 
                                       }
                                   });
+                              
                                   var data = {};                                  
                                   data.intake_type = intake_type;                                 
-                                  data.recommendation_id = $(this).attr('data-id');
+                                  data.id = $(this).attr('data-id');
+                                  data.note = note;
+                                 
 
 
                                    $.ajax({
 
-                                      url: 'https://app.iqyouhealth.com/api/my-plan?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                                      url: 'https://app.iqyouhealth.com/api/my-plan_stage?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
                                       type: 'POST',
                                       data:data,
                                       crossDomain: true,
@@ -851,7 +1225,8 @@ function list_my_plan(){
                                           // $('#' + recommendation_id + ' .nextsteplink').text("Buy Now");
 
                                           //window.location=window.location.href;
-                                        list_my_plan();
+                                        $('.update-dosage-button[rec-id="' + rec_id + '"]').click();
+                                        //list_my_plan();
                                         $(".top_reommend_sec").removeClass('loading');
                                       },
                                       error:function(xhr,status,err)
