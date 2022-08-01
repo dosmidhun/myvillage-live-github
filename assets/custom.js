@@ -3,7 +3,7 @@ jQuery(function ($) {
     $("#schedule_popup_now").removeClass('loading');
     $(window).load(function ()  {
           if($('#create_customer').find('.note.form-error').length){
-            console.log("Length");
+            console.log("Test Length");
            $('#membership_popup').modal('show');
             // $("#popup_sec .buy_btn").click();
             //$("a.create_acc_btn").click();
