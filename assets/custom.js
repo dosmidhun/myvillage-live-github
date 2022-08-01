@@ -121,11 +121,11 @@ jQuery(function ($) {
         $(document).find("#n_60705-error,#n_60705-error-1").remove();
         $(this).removeClass('my-error-class');
         $(this).closest('form').find("input[type=button],input[type=submit]").prop("disabled", false);
-        if (parseFloat($(this).val()) > 108) {
-            /*$(this).addClass('my-error-class');
-            $(this).closest('.bold-form-group').append('<label id="n_60705-error" class="my-error-class" for="n_60705" style="display: block;">Height not greater than 108 inch.</label>');
+        if (parseFloat($(this).val()) > 1000) {
+            $(this).addClass('my-error-class');
+            $(this).closest('.bold-form-group').append('<label id="n_60705-error" class="my-error-class" for="n_60705" style="display: block;">Weight not greater than 1000 lbs.</label>');
             $(this).closest('form').find("input[type=button],input[type=submit]").prop("disabled",true);
-            $(this).closest('form').append('<label id="n_60705-error-1" class="my-error-class" style="display:inherit;">Height not greater than 108 inch.</label>')*/
+            $(this).closest('form').append('<label id="n_60705-error-1" class="my-error-class" style="display:inherit;">Weight not greater than 1000 lbs.</label>');
         }
     });
 
