@@ -3682,7 +3682,9 @@ button.save_new_recom {
 #humani_sec .health_plan.quaterly, #humani_sec .health_plan.monthly { margin-top: 0; }
 #humani_sec .health_plan { padding: 25px 15px; }
 #create_customer .form-error .disc li { color: red; }
-
+label.hide-m input {
+    background: #d6d6d6;
+}
 
 
 
