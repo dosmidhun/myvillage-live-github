@@ -4258,5 +4258,44 @@ function list_my_plan(){
 
         }
     }
+
+    $( document ).ready(function() {
+    //         $('.save-custom-url a').click(function(){
+    //             alert("hii");
+    //             alert($(this).attr('rec-id'));
+    //         });
+        // $('.add-recommendation').click(function() {
+        // 	$('#new_recommendation_modal').modal('show');
+        //  });
+      $('.save_new_recom').click(function() { 
+          $('#new_recommendation_modal').modal('hide');
+          data = {};
+          data.recommendation_name = $('#new_recom_name').val()
+        $('#new_recom_name').val('');
+           $.ajax({
+                  url: 'https://app.iqyouhealth.com/api/my-plan_stage?user_key='+window.cus_id+'&api_key=c6701296-5027-4076-b80c-d64a77c2ddc7',
+                  type: 'POST',
+                  data:data,
+                  crossDomain: true,
+                  success:function(res){
+                    list_my_plan();
+                    $(".top_reommend_sec").removeClass('loading');
+                  },
+                  error:function(xhr,status,err)
+                  {
+                    console.log(err);
+                  }
+             });
+       });
+  $('.confirm_remove_recom').click(function() {
+      //$(".top_reommend_sec").addClass('loading');
+    $('#remove_recommendation_confirm_modal').modal('hide'); 
+        var rec_id = $(this).attr('data-id');                               
+          remove_from_my_plan(rec_id);                          	
+      });
+  $('.cancel_remove_recom').click(function() {
+      $('#remove_recommendation_confirm_modal').modal('hide');                         	
+      });
+         });
   
 });
