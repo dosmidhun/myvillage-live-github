@@ -1260,7 +1260,9 @@ padding-top: 20px;
 
 
 /************************************** Signup Landing *****************************/
-
+.errors{
+  color:red!important;
+}
 .get_sec { padding: 50px 0; background: #fff; padding-top: 10px;}
 .get_sec h3 { text-transform: inherit; font-size: 40px; line-height: 50px; font-weight: 400; font-family: Montserrat; color: #434343; margin: 0; text-align: center;} 
 .get_sec h3 span { color: #00577f; font-weight: 500;}
@@ -3247,6 +3249,439 @@ div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
 .content-blog .list-blog .button {  margin: 30px 0 20px; }
 
 
+
+
+/**************Custom Code revision ********************/
+
+.nutritional-supplementation-timing-outer { 
+    margin-bottom:20px;padding-bottom:20px;
+  display: grid; width: 100%; grid-template-columns:1fr 1fr 1fr;padding-bottom: 8px;grid-gap:10px; align-items:center;margin-bottom: 8px;}  
+.dosage-items label{
+    font-size: 13px;
+  line-height: 22px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #434343;
+  margin-bottom: 0px;
+}
+.my-plan-buy {
+    margin-top: 16px;
+}
+
+.nutritional-supplementation-dosage-outer {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.nutritional-supplementation-item-time{
+        display:flex;
+}
+
+
+.nutritional-supplementation-item-type {
+    display: flex;
+}
+/* .nutritional-supplementation-dosage-outer{
+    display: grid; width: 100%; grid-template-columns:1fr 3fr;grid-gap:10px;align-items:center;border-bottom: 1px solid #ededed;
+    margin-bottom:20px;padding-bottom:20px;
+} */
+.nutritional-supplementation-dosage-outer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.recommendation-head {
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 15px;
+}
+button#my-recomm-tab-button {
+    border: 1px solid #e9e9e9;
+    border-bottom: none;
+    font-weight: 600;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 6px 5px;
+}
+button#my-recomm-tab-button {
+    display: inline-block;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    padding: 6px 20px 6px 20px;
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: -5px;
+    border-bottom: none;
+    font-weight: 600;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.dosage-items label {
+    flex-direction: column;
+    display: flex;
+}
+
+.dosage-items {
+    width: 100%;
+}
+.nutritional-supplementation-item-type label input{
+        margin-left: 9px;
+}
+.update-dosage-button,.my-plan-buy-button{
+        border: 1px solid #f2f2f2;
+    padding: 5px 10px;
+    color: #00577F;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.update-dosage-button:hover,.my-plan-buy-button:hover{
+    background:transparent;
+}
+.dosage-items{
+    display:grid;grid-gap:10px;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.dosage-items input{
+    font-size:12px!important;
+}
+.intake-time-class {
+    margin-left: 9px!important;
+}
+.nutritional-supplementation-item-name { font-size: 15px; font-weight: 400; letter-spacing: -.55px; text-transform: capitalize;}    
+.nutritional-supplementation-item-time label, .nutritional-supplementation-item-type label { display: flex;
+    flex-direction: row-reverse; font-size: 13px; font-family:sans-serif; font-weight: 400; letter-spacing: -.55px; text-transform: capitalize;   } 
+.nutritional-supplementation-item input[type=radio] { width: 12px; height: 12px; display: inline-block; border-radius: 50px; -webkit-appearance: auto; border: 1px solid #ebebeb; padding: 6px !important; margin-right: 6px;}  
+
+
+
+#my-plan-tab-button.my-plan-active { background: #00577f url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/blue_star.jpg?v=1650442777) no-repeat 6px 3px; color: #fff;}
+#my-recomm-tab-button.my-recomm-active{background: #00577f;color: #fff;}
+.recTitles { position: relative; }
+
+
+
+/*Laravel*/
+.box_layout.health_quetionnaire_laravel_container {    
+    background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/health_bkgrd.png?v=1626953689) no-repeat 0px 0px;
+    padding: 14px 7px;
+    border: 2px solid #14506b;
+    border-radius: 7px;
+    background-size: cover;
+width: 186px;text-align: center;padding: 20px 20px;
+
+}
+.box_layout.health_quetionnaire_laravel_container a{
+ text-decoration:none; 
+}
+.custom_acct_out .errors {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.hide-me{
+ opacity:0;
+  visibility:hidden;
+}
+
+
+.recommendation-head {
+    display: flex;
+    align-items: center;
+   
+    margin-top: 25px;
+}
+div#rec-filter {display: flex;justify-content: flex-end;flex: 1;}
+
+.update-dosage {
+    order: 2;
+    margin-top: 10px;
+    display: flex;
+    align-self: flex-end;
+}
+
+.dosage-items {
+    order: 3;
+}
+
+.my-plan-buy {
+    order: 1;
+    display: flex;
+    align-self: flex-end;
+  margin-top: 0;
+}
+
+
+
+/******************** My Plan Tab **************************/
+#my-plan-tab-section .nutritional-supplementation-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 14px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+#my-plan-tab-section .nutritional-supplementation-timing-outer {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#my-plan-tab-section .item-left-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+#my-plan-tab-section input[type="text"]{
+    width:100%;
+    font-weight: 400;
+    padding: 5px 8px;
+}
+
+.nutritional-supplementation-type-outer {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.nutritional-supplementation-type-outer {
+    display: flex;
+}
+
+.update-dosage {
+    order: 1;
+    flex-basis: 60%;
+}
+
+.intake-type-outer {
+    order: 2;
+    display: flex;
+}
+
+.intake-type-outer label {
+    display: flex;
+}
+
+#my-plan-tab-section label {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.update-notes textarea {
+    height: 88px;
+    width: 100%;
+}
+
+.nutritional-supplementation-item-name > a {
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+}
+.nutritional-supplementation-product-name {
+    margin-right: 10px;
+    color: #00577F;
+    text-decoration: underline;
+}
+
+
+.nutritional-supplementation-buy-button {
+    justify-self: flex-end;
+  align-items: center;
+    display: flex;
+}
+
+.nutritional-supplementation-body {
+    margin-top: 22px;
+}
+
+.nutritional-supplementation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px 0  0;
+}
+
+#my-plan-tab-section .nutritional-supplementation-header h2 {
+    margin-bottom: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.add-recommendation {
+    color: #00577F;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+.add-recommendation span {
+    font-weight: 700;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 0;
+    align-items: center;
+}
+button.closeit {
+     font-size:34px;
+    background:transparent;
+    border:none;
+    text-align:right;
+    
+    
+}
+.remove_recommendation_confirm_modal .modal-header, .new_recommendation_modal .modal-header{
+     text-align:right;
+}
+
+button.cancel_remove_recom ,button.confirm_remove_recom,button.save_new_recom {
+    border: 1px solid #f2f2f2;
+    padding: 10px 17px;
+    color: #00577F;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    border: none!important;
+    position: relative;
+}
+button.confirm_remove_recom {background: #ffc9c9;color: red;font-weight: 600;}
+
+
+
+input#new_recom_name {
+    width: 85%;
+    display: inline-block;
+}
+
+button.save_new_recom {
+    display: inline-block;
+}
+
+.new_recommendation_modal p.description {
+    font-size:20px;
+    font-weight:500;
+}
+/**** Signup landing page offer box styling*******/
+.health_box_plan {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 12px;
+    justify-content: center;
+}
+
+.health_plan {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px 15px;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 16px 6px #C2C2C2;
+    box-shadow: 5px 5px 16px 6px #d9d8d8;
+}
+
+.health_plan h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.h_price span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.h_price sup {
+    font-size: 15px;
+}
+
+.h_price sub {
+    font-size: 13px;
+    bottom: 1px;
+}
+
+.h_off span {
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    background: #fcb509e6;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.health_plan.monthly .h_off {
+    opacity: 0;
+}
+
+.health_box_plan .buy_bow a.buy_btn {
+    background: #00577f;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 7px;
+    line-height: 17px;
+    padding: 8px 15px!important;
+    height: auto!important;
+}
+
+.h_total {
+    font-size: 10px;
+}
+
+.health_plan.annually .h_price {
+    margin-bottom: 12px;
+}
+
+.health_plan.quaterly,.health_plan.monthly {
+    margin-top: 12px;
+}
+
+.heakth_left_img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.health_plan.annually{
+    position:
+    relative;
+    border: 1px solid #73ADC2;
+}
+.health_plan.annually:before {
+    content:
+    "Best value";
+    position:
+    absolute;
+    top: -30px;
+    left:50%;
+    transform:
+    translateX(-50%);
+    background:#73ADC2;
+    color:#fff;
+    padding:5px 10px;
+    width: 60%;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+#humani_sec .h_price span { font-size: 25px; }
+#humani_sec .health_plan.quaterly, #humani_sec .health_plan.monthly { margin-top: 0; }
+#humani_sec .health_plan { padding: 25px 15px; }
+#create_customer .form-error .disc li { color: red; }
 
 
 
