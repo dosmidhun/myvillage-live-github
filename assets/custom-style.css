@@ -4057,7 +4057,8 @@ label.hide-m input {
     #ask_expert .modal-dialog { width: 90%; transform: none; }
 #shopify-section-blog-template .list-blog .blog_img { float: none; width: 100%; margin-right: 0; }
 #shopify-section-blog-template .list-blog .des { float: none; width: 100%;  }
-
+    .health_box_plan { margin-bottom: 50px; }
+    #humani_sec .health_plan h2 { font-size: 20px; line-height: 40px; }
 }
 
 @media (max-width: 1199px){
@@ -4081,7 +4082,7 @@ label.hide-m input {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    
+    grid-gap: 13px;
     margin-top: 25px;
     align-items: flex-start;
     justify-content: flex-start;
@@ -4101,6 +4102,22 @@ label.hide-m input {
     
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+}
+    div#rec-filter {
+    justify-content: flex-start;
+}
+  .nutritional-supplementation-timing-outer,.nutritional-supplementation-dosage-outer {
+    grid-template-columns:1fr;
+   
+}.dosage-items {
+    grid-template-columns: 1fr;
+}
+.dosage-items label {
+    display: flex;
+    flex-direction: column;
+}
+.nutritional-supplementation-dosage-outer {
+    padding-bottom: 18px;
 }
     .form-type-radios { float: none; width: auto; text-align: left; }
 .questionrow > span{float: none; width: auto;}
