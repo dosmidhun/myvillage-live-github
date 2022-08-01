@@ -2472,7 +2472,11 @@ div#rectable {
 .are_inner h2 { font-size: 48px; line-height: 50px; color: #fff; margin-bottom: 40px;}
 .are_inner p { font-size: 20px; line-height: 26px; color: #fff; letter-spacing: -.4px;}
 .become_inner { width: 100%; float: left; padding: 47px 80px 53px 80px; text-align: center; }
-
+.become_sec {
+    margin: 0 -15px;
+    background: #F3F2F2;
+    min-height: 652px;
+}
 .become_inner h2 { font-size: 34px; line-height: 48px; color: #434343; margin-bottom: 25px; letter-spacing: -.25px;     text-transform: initial;}
 .become_inner h2 span { color: #00577F; font-weight: 600;}
 .become_inner p { font-size: 20px; line-height: 34px; color: #434343; letter-spacing: -.4px; margin-bottom: 15px;}
