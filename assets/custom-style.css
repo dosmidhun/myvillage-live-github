@@ -4337,6 +4337,54 @@ label.hide-m input {
     #humani_sec .health_plan h2 { font-size: 20px; line-height: 40px; }
     #humani_sec .health_plan { width: 240px; margin: 0 auto; margin-bottom: 40px; }
     #humani_sec .health_box_plan { grid-template-columns: 1fr; }
+  .nutritional-supplementation-header {
+    display: block;
+}
+
+#my-plan-tab-section .nutritional-supplementation-header h2, #my-plan-tab-section .dietery-plan-header h2 {
+    font-size: 15px;
+    line-height: 22px;
+    padding-left: 0;
+}
+
+.add-recommendation span {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+}
+
+.nutritional-supplementation-header {
+    padding: 7px;
+}
+
+#my-plan-tab-section .nutritional-supplementation-timing-outer {
+    grid-template-columns: 1fr;
+}
+
+.nutritional-supplementation-buy-button {
+    justify-self: flex-start;
+}
+
+#my-plan-tab-section .nutritional-supplementation-item {
+    grid-template-columns: 1fr;
+}
+
+#my-plan-tab-section .item-left-section {
+    grid-template-columns: 1fr;
+}
+
+.nutritional-supplementation-type-outer {
+    display: grid;
+    grid-gap: 12px;
+}
+
+.intake-type-outer {
+    display: grid;
+}
+
+.nutritional-supplementation-buy-button {
+    display: block;
+}
 }
 
 @media (max-width: 480px) {
@@ -4475,54 +4523,7 @@ label.hide-m input {
 
   .my-plan-button-div { position: static; }
 
-.nutritional-supplementation-header {
-    display: block;
-}
 
-#my-plan-tab-section .nutritional-supplementation-header h2, #my-plan-tab-section .dietery-plan-header h2 {
-    font-size: 15px;
-    line-height: 22px;
-    padding-left: 0;
-}
-
-.add-recommendation span {
-    width: 20px;
-    height: 20px;
-    font-size: 15px;
-}
-
-.nutritional-supplementation-header {
-    padding: 7px;
-}
-
-#my-plan-tab-section .nutritional-supplementation-timing-outer {
-    grid-template-columns: 1fr;
-}
-
-.nutritional-supplementation-buy-button {
-    justify-self: flex-start;
-}
-
-#my-plan-tab-section .nutritional-supplementation-item {
-    grid-template-columns: 1fr;
-}
-
-#my-plan-tab-section .item-left-section {
-    grid-template-columns: 1fr;
-}
-
-.nutritional-supplementation-type-outer {
-    display: grid;
-    grid-gap: 12px;
-}
-
-.intake-type-outer {
-    display: grid;
-}
-
-.nutritional-supplementation-buy-button {
-    display: block;
-}
 }
 
  .modal-body .questn_list.loading:after {
