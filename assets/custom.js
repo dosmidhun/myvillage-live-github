@@ -1,6 +1,13 @@
 jQuery.noConflict();
 jQuery(function ($) {
     $("#schedule_popup_now").removeClass('loading');
+    $( document ).ready(function() {
+          if($('#create_customer').find('.note.form-error').length){
+            console.log("Length");
+            $("#popup_sec .member_btn").click();
+            $("a.create_acc_btn").click();
+          }
+          });
 
    
 
