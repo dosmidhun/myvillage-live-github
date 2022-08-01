@@ -4333,7 +4333,10 @@ label.hide-m input {
 
 #shopify-section-blog-template .list-blog .blog_img { float: none; width: 100%; margin-right: 0; }
 #shopify-section-blog-template .list-blog .des { float: none; width: 100%;  }
-
+    .health_box_plan { margin-bottom: 50px; }
+    #humani_sec .health_plan h2 { font-size: 20px; line-height: 40px; }
+    #humani_sec .health_plan { width: 240px; margin: 0 auto; margin-bottom: 40px; }
+    #humani_sec .health_box_plan { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
@@ -4746,6 +4749,50 @@ div#qstn_smart_modal {
 .mvg_verification, body#labs-amp-dna .add-to-cart-btn, body#lab-tests .add-to-cart-btn,.hide-menu{
 display:none;
 }
+#health-report ul {padding-left: 16px;}
+#health-report li {font-size: 18px;
+    line-height: 24px;    font-family: Montserrat;
+    font-weight: 400;
+    margin-bottom: 15px;}
+#health-report h2 {font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-transform: capitalize;}
+#health-report h2.subhead {background-color: transparent!important;}
+#health-report h3 {font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-transform: capitalize;}
+#health-report div#healthscore {float: right;
+    margin-left: 18px;
+    background: #f6f6f7;
+    padding: 20px 22px 20px 22px;
+    text-align: center;}
+#health-report .caption {font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 0px;}
+#health-report .value {font-weight: 700;
+    color: #00577F;
+    font-size: 37px;
+    line-height: 37px;
+    padding-left: 8px;
+    position: relative;
+    top: 5px;}
+@media (max-width: 480px){
+#health-report div#healthscore {
+    float: none;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+}
+.my-plan-cb,.intake-time-class,.intake-type-class,.my-plan-cb-fade {
+padding:10px !important;
+}
+#whycontent a{
+  text-decoration: none;
+}
+.hide-row{display:none!important;}
 li.item.hide-menu {
     display: none;
 }
