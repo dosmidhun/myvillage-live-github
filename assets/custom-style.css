@@ -3182,7 +3182,7 @@ img#head-image {
 .nutritional-supplementation-header, .dietery-plan-header { background: #f3f2f2; margin: -10px -17px; }	
 #my-plan-tab-section .nutritional-supplementation-header h2, #my-plan-tab-section .dietery-plan-header h2  { font-size: 18px; line-height: 40px; color: #434343; font-weight: 600;  padding-left: 17px;   margin-bottom: 20px;}	
 .nutritional-supplementation-item { border-bottom: 1px solid #ededed; display: flex; width: 100%; flex-direction: row; flex-wrap: nowrap; align-content: center; justify-content: space-between; align-items: center; padding-bottom: 8px; margin-bottom: 8px;}	
-.nutritional-supplementation-item-name { font-size: 15px; font-weight: 400; letter-spacing: -.55px; text-transform: capitalize; width: 33%;}	
+.nutritional-supplementation-item-name { font-size: 15px; font-weight: 400; letter-spacing: -.55px; text-transform: capitalize;}	
 .nutritional-supplementation-item-time label, .nutritional-supplementation-item-type label { font-size: 15px; font-family:sans-serif; font-weight: 400; letter-spacing: -.55px; text-transform: capitalize; margin-right: 13px;  }	
 .nutritional-supplementation-item input[type=radio] { width: 12px; height: 12px; display: inline-block; border-radius: 50px; -webkit-appearance: auto; border: 1px solid #ebebeb; padding: 6px !important; margin-right: 6px;}	
 .nutritional-supplementation-item-time, .nutritional-supplementation-item-type { width: 33%; }	
