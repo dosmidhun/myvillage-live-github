@@ -9,6 +9,7 @@ This file can be re-written at any time.
 
 <head>
   
+{% include 'booster-seo' %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XW9YMN90D8"></script>
@@ -55,11 +56,11 @@ gtag('config', 'G-XW9YMN90D8');
       &ndash; {{ shop.name }}
     {% endunless %}
   {% endcapture %}
-  <title>{{ seo_title }}</title>
+  {% comment %}<title>{{ seo_title }}</title>{% endcomment %}
   
 
   {% if page_description %}
-  <meta name="description" content="{{ page_description | escape }}">
+  {% comment %}<meta name="description" content="{{ page_description | escape }}">{% endcomment %}
   {% endif %}
 
   <!-- Product meta ================================================== -->
@@ -137,7 +138,8 @@ pintrk('page');
   {% include 'aio-script' %}
 
   {% render 'shogun-head' %}
-<script type="text/javascript" defer="defer"  src="https://musicplayer.shopifyappexperts.com/js/musicplayer.js"></script>
+<script type="text/javascript" defer="defer"  src="https://musicplayer.shopifyappexperts.com/js/musicplayer.js"></script>{% include 'swift_core' %} 
+ 
 </head>
 
 <!-- { % include 'search-autocomplete' %} -->
@@ -160,6 +162,7 @@ pintrk('page');
   
   {{ content_for_layout }}
   {{ 'custom.js' | asset_url | script_tag }}
+{{ '//cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/booster-page-speed-optimizer.js?23' | script_tag }}
   <script src="//cdn.codeblackbelt.com/js/modules/frequently-bought-together/main.min.js?shop=myvillagegreen.myshopify.com" defer></script>
 <script data-account="T76UOLihTx" src="https://cdn.userway.org/widget.js"></script>
 <script type="text/javascript">
