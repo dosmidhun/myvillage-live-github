@@ -3844,6 +3844,7 @@ function list_my_plan(){
                         
                       }
                         var search_param_arr = l.split("type=");
+                      console.log("SPPPPLLLLIIIITTTTT TERMMMMM",search_param_arr);
                         var search_term_arr  = search_param_arr[1].split("&");
                       var search_term = search_term_arr[0];
                       console.log("SEARCH TERMMMMM",search_term);
