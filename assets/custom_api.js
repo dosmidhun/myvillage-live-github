@@ -3843,11 +3843,14 @@ function list_my_plan(){
                         $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id'), rec_name:rec_name, custum_url:'no', url:l, title:'Move to My Plan'}).appendTo(nextStep);
                         
                       }
+                      if(l.indexOf("type=")!=='-'){
                         var search_param_arr = l.split("type=");
                       console.log("SPPPPLLLLIIIITTTTT TERMMMMM",search_param_arr);
                         var search_term_arr  = search_param_arr[1].split("&");
                       var search_term = search_term_arr[0];
                       console.log("SEARCH TERMMMMM",search_term);
+                      }
+                        
                         //nextStep.find('a').text(btn_text).prop('href', (action != '' ? 'javascript:void(0)' : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').attr("data-toggle", (action != '' ? 'popover' : ''));
 						nextStep.find('a').text(btn_text).prop('href', (action != '' ? l : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').css("display", (l != '' ? 'inline-block' : 'none'));
 
