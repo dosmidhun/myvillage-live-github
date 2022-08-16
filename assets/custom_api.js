@@ -3844,7 +3844,7 @@ function list_my_plan(){
                         
                       }
                       console.log("INDEX OF TYPE ",l.indexOf("type="));
-                      if(l.indexOf("type=")!=='-1'){
+                      if(l.indexOf("type=")!==-1){
                         var search_param_arr = l.split("type=");
                       console.log("SPPPPLLLLIIIITTTTT TERMMMMM",search_param_arr);
                         var search_term_arr  = search_param_arr[1].split("&");
