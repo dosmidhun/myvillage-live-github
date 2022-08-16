@@ -3843,6 +3843,7 @@ function list_my_plan(){
                         $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id'), rec_name:rec_name, custum_url:'no', url:l, title:'Move to My Plan'}).appendTo(nextStep);
                         
                       }
+                      console.log("INDEX OF TYPE ",l.indexOf("type="));
                       if(l.indexOf("type=")!=='-1'){
                         var search_param_arr = l.split("type=");
                       console.log("SPPPPLLLLIIIITTTTT TERMMMMM",search_param_arr);
