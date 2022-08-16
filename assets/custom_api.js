@@ -3850,6 +3850,8 @@ function list_my_plan(){
                         var search_term_arr  = search_param_arr[1].split("&");
                       var search_term = search_term_arr[0];
                       console.log("SEARCH TERMMMMM",search_term);
+                        l ='';
+                        l = l + 'https://myvillagegreen.com/pages/search-results-page?q=' + search_term;
                       }
                         
                         //nextStep.find('a').text(btn_text).prop('href', (action != '' ? 'javascript:void(0)' : l)).attr('data-content', '<p>' + action + '</p>').attr('target', '_BLANK').attr("data-toggle", (action != '' ? 'popover' : ''));
