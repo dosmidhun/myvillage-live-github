@@ -3843,13 +3843,13 @@ function list_my_plan(){
                         $('<input />', { type: 'checkbox', name:'my-plan-cb' , class:'my-plan-cb' , id: 'my-plan-cb-' + $($(el).closest('.recrow')).attr('id'), value: $($(el).closest('.recrow')).attr('id'), rec_name:rec_name, custum_url:'no', url:l, title:'Move to My Plan'}).appendTo(nextStep);
                         
                       }
-                      console.log("INDEX OF TYPE ",l.indexOf("q="));
+                      
                       if(l.indexOf("type=")!==-1){
                         var search_param_arr = l.split("q=");
-                      console.log("SPPPPLLLLIIIITTTTT TERMMMMM",search_param_arr);
+                      
                         var search_term_arr  = search_param_arr[1].split("&");
                       var search_term = search_term_arr[0];
-                      console.log("SEARCH TERMMMMM",search_term);
+                      
                         l ='';
                         l = l + 'https://myvillagegreen.com/pages/search-results-page?q=' + search_term;
                       }
