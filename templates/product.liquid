@@ -1,3 +1,5 @@
+{% render 'shogun-products', content: product %}
+{{product.metafields.shogun.above}}
 <!-- Bold: Memberships (product) -->
 {% include 'bold_mem_helper' with 'product' %}
 <!-- end Bold code -->
@@ -12,5 +14,5 @@
 
 {% section 'product-template' %}
 
-<div style="clear: both;"><div id="shopify-ali-review" product-id="{{ product.id }}"> {{ shop.metafields.review_collector.review_code }} </div></div> 
-
+<div style="clear: both;"><div id="shopify-ali-review" product-id="{{ product.id }}"> {{ shop.metafields.review_collector.review_code }} </div></div>
+{{product.metafields.shogun.below}}
