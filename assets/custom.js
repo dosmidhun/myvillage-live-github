@@ -10,9 +10,6 @@ jQuery(function ($) {
           }
           });
 
-   
-
-
     $("#schedule_btn_in").click(function () {
 
         $("#call_back_btn button").trigger('click');
