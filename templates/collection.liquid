@@ -1,3 +1,5 @@
+{% render 'shogun-products', content: collection %}
+{{collection.metafields.shogun.above}}
 <!-- Bold: Memberships (collection) -->
 {% include 'bold_mem_helper' with 'collection' %}
 <!-- end Bold code -->
@@ -17,3 +19,4 @@
   </div>
 </div>
  {% render 'aio_product_recommendation' %}
+{{collection.metafields.shogun.below}}
