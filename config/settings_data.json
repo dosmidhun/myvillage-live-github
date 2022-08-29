@@ -1209,7 +1209,7 @@
           "display_header_phone_number": true,
           "header_text_number": "(800) 869 9159",
           "customer_care": "\/pages\/contact-us",
-          "account_btn": "\/account\/login",
+          "account_btn": "\/account",
           "wishlist_btn": "#",
           "blog_btn": "\/blogs\/news\/",
           "header_phone_number_background": "rgba(0,0,0,0)",
