@@ -11,10 +11,10 @@
   {% endif %}
 
  	{% if settings.enable_multilang %}
-  <h1 style="display:none">{{ collection.title }} </h1>
-      <h3> {{ collection.title }}  </h3>
+ 
+      <h1> {{ collection.title }}  </h1>
     {% else %}
-    	<h3>{{ collection.title | split: '|' | first }}</h3>
+    	<h1>{{ collection.title | split: '|' | first }}</h1>
     {% endif %} 
       
 </header>
