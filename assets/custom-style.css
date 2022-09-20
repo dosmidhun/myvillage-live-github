@@ -337,6 +337,8 @@ html { padding-bottom: 20px !important; }
 .template-collection .page-header h1 { position: absolute; bottom: 60px; font-family: Montserrat; font-size: 70px; font-weight: 700; color: #fff; margin: 0; left: 50px; letter-spacing: 0;}
 .template-collection .page-header h3 { position: absolute; bottom: 60px; font-family: Montserrat; font-size: 70px; font-weight: 700; color: #fff; margin: 0; left: 50px; letter-spacing: 0;}
 .template-collection .page-header h3 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'susies_handregular'; position: relative; left: -140px; bottom: -20px;color: #00577f;}
+.template-collection .page-header h1 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'susies_handregular'; position: relative; left: -140px; bottom: -20px;color: #00577f;}
+
 .product-list .short-description { line-height: 24px; font-size: 16px; font-family: Montserrat; margin-bottom: 25px; font-weight: 400; }
 .product-list .product-title { font-weight: 700; font-size: 18px; font-family: Montserrat; }
 .slider-brand-wrapper .slick-arrow { opacity: 1; }
@@ -3944,6 +3946,7 @@ label.hide-m input {
     .excluisve_content ul { margin: 0 30px; }
     .banner-home-bottom ul li.zi-banner-image-1 {  padding-right: 0; }
     .template-collection .page-header h3 span { font-size: 45px; left: -85px; bottom: -3px;}
+    .template-collection .page-header h1 span { font-size: 45px; left: -85px; bottom: -3px;}
     .template-collection .page-header h3 { bottom: 50px; left: 30px; font-size: 40px; }
     .template-collection .page-header h1 { bottom: 50px; left: 30px; font-size: 40px; }
     .more_btn a { padding: 0 65px; font-size: 17px; }
@@ -4158,6 +4161,7 @@ label.hide-m input {
     #shopify-section-header .header-logo { width: 50%; }
     .template-product .product-shop { padding-left: 30px; }
     .template-collection .page-header h3 span { font-size: 40px; left: -85px; bottom: -3px; }
+    .template-collection .page-header h1 span { font-size: 40px; left: -85px; bottom: -3px; }
     .template-collection .page-header h3 { bottom: 50px; left: 20px; font-size: 35px; }
     .template-collection .page-header h1 { bottom: 50px; left: 20px; font-size: 35px; }
     .shopby_page.list_cat .collection-title-wrapper { padding: 0px; }
@@ -4414,6 +4418,7 @@ label.hide-m input {
     .template-collection .page-header h1 { bottom: 18px; left: 20px; font-size: 28px; }
     .products-grid .grid-item, .products-grid .grid-3 { width: 50%; }
     .template-collection .page-header h3 span { font-size: 27px; left: 0;  bottom: 0; font-family: Montserrat; font-weight: 700; text-transform: uppercase;}
+    .template-collection .page-header h1 span { font-size: 27px; left: 0;  bottom: 0; font-family: Montserrat; font-weight: 700; text-transform: uppercase;}
     .toolbar label { margin: 0 5px 0 0; }
     .more_btn a { padding: 0 50px; font-size: 16px; }
     .widget-new-product { padding-bottom: 30px; margin-top: 0; }
