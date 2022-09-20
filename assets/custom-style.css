@@ -334,6 +334,7 @@ html { padding-bottom: 20px !important; }
 
 .collection-des .rte { line-height: 24px; font-size: 16px; font-family: Montserrat; margin-bottom: 25px;}
 .template-collection .page-header { position: relative; }
+.template-collection .page-header h1 { position: absolute; bottom: 60px; font-family: Montserrat; font-size: 70px; font-weight: 700; color: #fff; margin: 0; left: 50px; letter-spacing: 0;}
 .template-collection .page-header h3 { position: absolute; bottom: 60px; font-family: Montserrat; font-size: 70px; font-weight: 700; color: #fff; margin: 0; left: 50px; letter-spacing: 0;}
 .template-collection .page-header h3 span { font-size: 86px; text-transform: capitalize; font-weight: 500; font-family: 'susies_handregular'; position: relative; left: -140px; bottom: -20px;color: #00577f;}
 .product-list .short-description { line-height: 24px; font-size: 16px; font-family: Montserrat; margin-bottom: 25px; font-weight: 400; }
