@@ -3945,6 +3945,7 @@ label.hide-m input {
     .banner-home-bottom ul li.zi-banner-image-1 {  padding-right: 0; }
     .template-collection .page-header h3 span { font-size: 45px; left: -85px; bottom: -3px;}
     .template-collection .page-header h3 { bottom: 50px; left: 30px; font-size: 40px; }
+    .template-collection .page-header h1 { bottom: 50px; left: 30px; font-size: 40px; }
     .more_btn a { padding: 0 65px; font-size: 17px; }
     .cart-list a.remove { padding: 9px 20px; font-size: 12px; }
     .cart-list input.update { padding: 6px 14px; font-size: 12px; }
@@ -4158,6 +4159,7 @@ label.hide-m input {
     .template-product .product-shop { padding-left: 30px; }
     .template-collection .page-header h3 span { font-size: 40px; left: -85px; bottom: -3px; }
     .template-collection .page-header h3 { bottom: 50px; left: 20px; font-size: 35px; }
+    .template-collection .page-header h1 { bottom: 50px; left: 20px; font-size: 35px; }
     .shopby_page.list_cat .collection-title-wrapper { padding: 0px; }
     .shopby_page.list_cat .collection-title h5 { font-size: 15px; }
     .template-list-collections .page-header h4, .page-header h2, .page-header h4 { text-align: center; }
@@ -4409,6 +4411,7 @@ label.hide-m input {
     .template-product .product-shop  { padding-left: 20px; }
     .product-shop .product-title h3 { font-size: 22px; }
     .template-collection .page-header h3 { bottom: 18px; left: 20px; font-size: 28px; }
+    .template-collection .page-header h1 { bottom: 18px; left: 20px; font-size: 28px; }
     .products-grid .grid-item, .products-grid .grid-3 { width: 50%; }
     .template-collection .page-header h3 span { font-size: 27px; left: 0;  bottom: 0; font-family: Montserrat; font-weight: 700; text-transform: uppercase;}
     .toolbar label { margin: 0 5px 0 0; }
