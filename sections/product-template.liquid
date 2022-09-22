@@ -450,8 +450,8 @@
             <input type="submit" name="add" {% if content_for_header contains '.mageworx.com\/groupedproducts\/source.js?' and product.tags contains 'mw_grouped_product' %}disabled="disabled"{% endif %} class="btn" {% if settings.enable_multilang %}data-translate="products.product.add_to_cart"{%endif%} id="product-add-to-cart" value="{{ 'products.product.add_to_cart' | t }}">
             {% else %} 
             <input type="submit" name="add" {% if content_for_header contains '.mageworx.com\/groupedproducts\/source.js?' and product.tags contains 'mw_grouped_product' %}disabled="disabled"{% endif %} class="btn" {% if settings.enable_multilang %}data-translate="products.product.unavailable"{%endif%} id="product-add-to-cart" disabled value="{{ 'products.product.unavailable' | t }}">          
-            {% endif %}
-            <div id="ods-bis"></div>
+             <div id="ods-bis"></div> {% endif %}
+          
             {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}
             {% unless the_snippet_fave contains 'Liquid error' %}
             {{ the_snippet_fave }}
