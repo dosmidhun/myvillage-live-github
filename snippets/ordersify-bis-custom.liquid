@@ -20,6 +20,7 @@
         if (!variantID) {
           variantID = window.ORDERSIFY_BIS.currentVariant.id;
         }
+        console.log({ variantID });
         var event = new CustomEvent('OrdersifyFormChange', { detail: { variantID } })
         document.body.dispatchEvent(event)
       }, 200);
