@@ -493,18 +493,18 @@ function changeBackground() {
     currentBackground++;
     if(currentBackground > 3) currentBackground = 0;
 
-    $('.device-wrapper .screen').fadeOut(100,function() {
-        $('.device-wrapper .screen').css({
+    jQuery('.device-wrapper .screen').fadeOut(100,function() {
+        jQuery('.device-wrapper .screen').css({
             'background-image' : "url('" + backgrounds[currentBackground] + "')"
         });
-        $('.device-wrapper .screen').fadeIn(100);
+        jQuery('.device-wrapper .screen').fadeIn(100);
     });
 
 
     setTimeout(changeBackground, 4000);
 }
 
-$(document).ready(function() {
+jQuery(document).ready(function($) {
     setTimeout(changeBackground, 4000);        
 });
 
