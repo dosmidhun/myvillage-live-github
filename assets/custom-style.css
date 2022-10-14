@@ -3693,6 +3693,33 @@ label.hide-m input {
 
 
 
+#sign_two_blk .row {
+    display:
+    grid;
+    grid-template-columns: 1fr 1fr;
+}
+#sign_two_blk .row:before,
+#sign_two_blk .row:after{
+    display:none;
+}
+#sign_two_blk .row > div{
+   width:100%
+}
+#sign_two_blk .row > div:first-child{
+       background: #73ADC2;
+}
+#sign_two_blk .row > div:last-child{
+      background: #F3F2F2;
+}
+@media(max-width:991px){
+   
+   #sign_two_blk .row {
+    display:
+    grid;
+    grid-template-columns: 1fr;
+}
+   
+}
 
 
 
