@@ -88,33 +88,33 @@ jQuery(function ($) {
     });
 
 
-    // $("#membership_popup .next_step_btn").on("click", function () {
+    $("#membership_popup .next_step_btn").on("click", function () {
 
-    //     var er = 0;
-    //     $("#mvg-membership_membership_container").find("#form_mvg-membership .step1").each(function () {
+        var er = 0;
+        $("#mvg-membership_membership_container").find("#form_mvg-membership .step1").each(function () {
 
-    //         var v = $(this).find("input").val();
-    //         if (v == "") {
-    //             er = 1;
-    //             $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_membership_button_stripe").click();
-    //             return false;
-    //         }
+            var v = $(this).find("input").val();
+            if (v == "") {
+                er = 1;
+                $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_membership_button_stripe").click();
+                return false;
+            }
 
-    //     });
+        });
 
-    //     if (er == 0) {
-    //         $("#mvg-membership_membership_container").find("#form_mvg-membership .step1").hide();
-    //         $("#mvg-membership_membership_container").find("#form_mvg-membership .step2").show();
-    //         $("#membership_popup .step1").hide();
-    //         $("#membership_popup .step2").show();
-    //     }
-    // });
+        if (er == 0) {
+            $("#mvg-membership_membership_container").find("#form_mvg-membership .step1").hide();
+            $("#mvg-membership_membership_container").find("#form_mvg-membership .step2").show();
+            $("#membership_popup .step1").hide();
+            $("#membership_popup .step2").show();
+        }
+    });
 
-    // $("#membership_popup .pay_btn").on("click", function () {
+    $("#membership_popup .pay_btn").on("click", function () {
 
-    //     $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_membership_button_stripe").click();
+        $("#mvg-membership_membership_container").find("#form_mvg-membership #mvg-membership_membership_button_stripe").click();
 
-    // });
+    });
     $(document).on("keyup keydown paste focusout", "input[name='n_66533']", function () {
         $(this).val($(this).val().replace(/[^0-9]/g, ''));
         $(document).find("#n_66533-error,#n_66533-error-1").remove();
