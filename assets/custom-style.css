@@ -4640,9 +4640,9 @@ label.hide-m input {
 p.pdf-link a {
     color: #00577f;
 }
- #mvg-membership_membership_button_free{
+/*  #mvg-membership_membership_button_free{
   display:inline-block!important;
-} 
+}  */
 .qstn_confirm_modal_inner {
     text-align:center;
 }
