@@ -2,38 +2,68 @@ jQuery.noConflict();
 jQuery(function ($) {
     $("#schedule_popup_now").removeClass('loading');
 
+  MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+        var observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                if (mutation.attributeName === 'style') {
+
+                 console.log('Mutation------',$(".bta-product-widget"));
+                    // if ($('#call_back_btn .bta-product-widget').css('display') == 'none') {
 
 
-  setTimeout(function () {  
-console.log('Running');
-    $("#call_back_btn").click(function () {
 
-     console.log('Find Outside------',$(".bta-product-widget"));
-        setTimeout(function () {
+                    //     $('#schedule_call_btn').modal('hide');
+                    // }
+                }
+            });
+        });
 
-          $('#schedule_inner').modal('hide');
+        // Notify me of style changes
+        var observerConfig = {
+            attributes: true,
+            attributeFilter: ["style"]
+        };
+
+
+        
+
+            var targetNode = $("#call_back_btn")[0];
+
+            observer.observe(targetNode, observerConfig);
+
+       
+
+
+//   setTimeout(function () {  
+// console.log('Running');
+//     $("#call_back_btn").click(function () {
+
+//      console.log('Find Outside------',$(".bta-product-widget"));
+//         setTimeout(function () {
+
+//           $('#schedule_inner').modal('hide');
 
           
-            var targetNode = $(".bta-product-widget")[0];
-            //$('#schedule_inner .modal-body').empty();
-            $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
-            $(".bta-product-widget  iframe").removeAttr("title");
-            $(".bta-product-widget  iframe").tooltip().tooltip("disable");
+//             var targetNode = $(".bta-product-widget")[0];
+//             //$('#schedule_inner .modal-body').empty();
+//             $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
+//             $(".bta-product-widget  iframe").removeAttr("title");
+//             $(".bta-product-widget  iframe").tooltip().tooltip("disable");
 
-            $('#schedule_call_btn .modal-body').append($(".bta-product-widget"));
+//             $('#schedule_call_btn .modal-body').append($(".bta-product-widget"));
 
 
 
-            $('#schedule_call_btn').modal('show');
-             console.log('Find------',$(".bta-product-widget"));
-            }, 500);
+//             $('#schedule_call_btn').modal('show');
+//              console.log('Find------',$(".bta-product-widget"));
+//             }, 500);
 
         
 
 
-    });
+//     });
 
-}, 1500);
+// }, 1500);
       
 
   
