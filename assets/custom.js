@@ -52,6 +52,36 @@ jQuery(function ($) {
 
     // });
 
+    $("#call_back_btn").click(function () {
+
+      MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+        var observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                if (mutation.attributeName === 'style') {
+                  console.log('Find------',$(".bta-product-widget"));
+
+                    
+                }
+            });
+        });
+
+        // Notify me of style changes
+        var observerConfig = {
+            attributes: true,
+            attributeFilter: ["style"]
+        };
+
+
+        setTimeout(function () {
+
+            var targetNode = $(".bta-product-widget")[0];
+
+            observer.observe(targetNode, observerConfig);
+
+        }, 500);
+
+
+    });
 
 
     $(document).on('keyup keydown paste focusout keypress', '#customFields_mvg-membership input[name=n_60701]', function (e) {
