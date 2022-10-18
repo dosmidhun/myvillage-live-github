@@ -250,7 +250,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="sign_benfits_pack">
                     <a href="javascript:void(0)" data-toggle="modal" data-target="#benefit_pack1">
                     <img src="{{ section.settings.benefit_pack1 | img_url: 'master' }}" /> 
@@ -271,7 +271,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="sign_benfits_pack">
                     <a href="javascript:void(0)" data-toggle="modal" data-target="#benefit_pack2">
                     <img src="{{ section.settings.benefit_pack2 | img_url: 'master' }}" /> 
@@ -292,7 +292,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="sign_benfits_pack">
                     <a href="javascript:void(0)" data-toggle="modal" data-target="#benefit_pack3">
                     <img src="{{ section.settings.benefit_pack3 | img_url: 'master' }}" /> 
@@ -313,6 +313,32 @@
                     </div> 
                 </div>
             </div>
+            <div class="col-sm-3">
+                <div class="sign_benfits_pack">
+                    <a href="javascript:void(0)" data-toggle="modal" data-target="#benefit_pack4">
+                    <img src="{{ section.settings.benefit_pack3 | img_url: 'master' }}" /> 
+                    <h3>{{ section.settings.benefit_pack3_title }}</h3>
+                    {{ section.settings.benefit_pack3_cont }}
+                    </a>
+                    <div class="modal fade score_sec" id="benefit_pack4" role="dialog" style="display: none;">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                                </div>
+                                <div class="modal-body guidance_cont">
+                                    {{ section.settings.personalized_popup }}  
+                                </div> 
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+
+
+
+  
         </div>
     </div>
 </div>
@@ -663,6 +689,29 @@ jQuery(document).ready(function($) {
             "type": "html",
             "id": "personalized_popup",
             "label": "Personalized Guidance popup",
+            "default": "Content"
+        },
+      {
+            "type": "image_picker",
+            "id": "benefit_pack4",
+            "label": "Image" 
+        },
+        {
+            "type": "text",
+            "id": "benefit_pack4_title",
+            "label": "Text",
+            "default": "Text"
+        },
+        {
+            "type": "html",
+            "id": "benefit_pack4_cont",
+            "label": "Content",
+            "default": "Content"
+        },
+        {
+            "type": "html",
+            "id": "freeship_popup",
+            "label": "Free Shipping popup",
             "default": "Content"
         },
         {
