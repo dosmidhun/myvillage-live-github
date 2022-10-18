@@ -2491,7 +2491,7 @@ div#rectable {
 .sign_benfits_pack img { margin-bottom: 20px;width: 60%; }
 .sign_benfits_pack h3 { font-size: 18px; line-height: 20px; font-weight: 700; color: #434343; margin-bottom: 13px; text-transform: uppercase; }
 .sign_benfits_pack p { font-size: 16px; line-height: 24px; font-weight: 400; color: #434343; margin-bottom: 0px; }
-.sign_benfits_pack { padding: 0 45px; }
+.sign_benfits_pack { padding: 0 0px; }
 
 .sign_why_right_inner {   }
 .sign_why_right_inner img { width: 100%; }
@@ -4074,7 +4074,7 @@ label.hide-m input {
     #sign_question_sec h2 { font-size: 30px; }
     #sign_question_sec ul li.call_us a { padding: 0 35px; font-size: 20px; }
     #sign_why .col-sm-6, #sign_three_blk .col-sm-4, #sign_two_blk .col-sm-6, .signup_banner .col-sm-6, #humani_sec .col-sm-6{ width: 100%; }
-    .sign_benfits_pack { padding: 0 20%; margin-bottom: 35px;}
+    .sign_benfits_pack { padding: 0 0; margin-bottom: 35px;}
     .sign_benfits_pack img { width: 25%; }
     #sign_three_blk { padding: 50px 0; }
     .are_inner h2 { font-size: 40px !important; }
@@ -4346,7 +4346,7 @@ label.hide-m input {
     #sign_question_sec h2 { font-size: 30px; }
     #sign_question_sec ul li.call_us a { padding: 0 35px; font-size: 20px; }
     #sign_why .col-sm-6, #sign_three_blk .col-sm-4, #sign_two_blk .col-sm-6, .signup_banner .col-sm-6, #humani_sec .col-sm-6{ width: 100%; }
-    .sign_benfits_pack { padding: 0 20px; margin-bottom: 35px;}
+    .sign_benfits_pack { padding: 0 0px; margin-bottom: 35px;}
     .sign_benfits_pack img { width: 25%; }
     #sign_three_blk { padding: 50px 0; }
     .are_inner h2 { font-size: 28px !important; }
