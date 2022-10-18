@@ -2383,7 +2383,7 @@
           "benefit_pack4": "shopify:\/\/shop_images\/free-shipping.png",
           "benefit_pack4_title": "FREE SHIPPING",
           "benefit_pack4_cont": "Free shipping on all orders (Continental US only)",
-          "freeship_popup": "Free shipping on all orders (Continental US only)",
+          "freeship_popup": "<h3>Free shipping <\/h3>\nFree shipping on all orders (Continental US only)",
           "sign_why_sec": "<h2>Why Become a Member? <\/h2>\n<p>We passionately believe that each person deserves their own personalized plan for protecting and optimizing their health. Wherever you are on your healing journey, pursuing your goals is a lot easier when you have the right tools for success. That’s why we created Humanized+, a membership program designed to educate, support, and empower individuals in their pursuit of healthy living.<\/p>\n<a href=\"javascript:void(0)\" class=\"member_btn\" data-toggle=\"modal\" data-target=\"#membership_popup\">Sign Up Now<\/a>",
           "sign_why_image": "shopify:\/\/shop_images\/right_dcc745ee-0f84-47df-ac9b-f7c836053914.jpg",
           "join_title": "Join Humanized+ to Receive:",
