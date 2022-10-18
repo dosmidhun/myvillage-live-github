@@ -20,8 +20,7 @@ jQuery(function ($) {
 
         // Notify me of style changes
         var observerConfig = {
-            attributes: true,
-            attributeFilter: ["style"]
+            subtree: true, childList: true
         };
 
 
