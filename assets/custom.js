@@ -10,47 +10,47 @@ jQuery(function ($) {
           }
           });
   
-    $("#schedule_btn_in").click(function () {
+    // $("#schedule_btn_in").click(function () {
 
-        $("#call_back_btn button").trigger('click');
-
-
-        $("#call_back_btn button").hide();
-        $('#schedule_call_btn').modal('show');
-        $('#schedule_inner').modal('hide');
-        MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
-        var observer = new MutationObserver(function (mutations) {
-            mutations.forEach(function (mutation) {
-                if (mutation.attributeName === 'style') {
+    //     $("#call_back_btn button").trigger('click');
 
 
-                    if ($('#call_back_btn .bta-product-widget').css('display') == 'none') {
+    //     $("#call_back_btn button").hide();
+    //     $('#schedule_call_btn').modal('show');
+    //     $('#schedule_inner').modal('hide');
+    //     MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+    //     var observer = new MutationObserver(function (mutations) {
+    //         mutations.forEach(function (mutation) {
+    //             if (mutation.attributeName === 'style') {
+
+
+    //                 if ($('#call_back_btn .bta-product-widget').css('display') == 'none') {
 
 
 
-                        $('#schedule_call_btn').modal('hide');
-                    }
-                }
-            });
-        });
+    //                     $('#schedule_call_btn').modal('hide');
+    //                 }
+    //             }
+    //         });
+    //     });
 
-        // Notify me of style changes
-        var observerConfig = {
-            attributes: true,
-            attributeFilter: ["style"]
-        };
-
-
-        setTimeout(function () {
-
-            var targetNode = $("#call_back_btn .bta-widget-modal-back")[0];
-
-            observer.observe(targetNode, observerConfig);
-
-        }, 1000);
+    //     // Notify me of style changes
+    //     var observerConfig = {
+    //         attributes: true,
+    //         attributeFilter: ["style"]
+    //     };
 
 
-    });
+    //     setTimeout(function () {
+
+    //         var targetNode = $("#call_back_btn .bta-widget-modal-back")[0];
+
+    //         observer.observe(targetNode, observerConfig);
+
+    //     }, 1000);
+
+
+    // });
 
 
 
