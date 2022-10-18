@@ -26,7 +26,7 @@ console.log('Running');
 
             $('#schedule_call_btn').modal('show');
              console.log('Find------',$(".bta-product-widget"));
-            }, 1500);
+            }, 500);
 
         
 
