@@ -13,6 +13,7 @@ console.log('Running');
 
             var targetNode = $(".bta-product-widget")[0];
             $('#schedule_inner .modal-body').empty();
+            $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
             $('#schedule_inner .modal-body').append($(".bta-product-widget"));
              console.log('Find------',$(".bta-product-widget"));
             }, 1500);
