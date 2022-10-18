@@ -3166,7 +3166,7 @@ img#head-image {
 #ask_expert .modal-dialog { width: 900px; }
 #schedule_btn_in { display: inline-block; height: 72px; color: #fff; padding: 20px 60px 20px 60px; font-size: 23px; line-height: 24px; font-weight: 500; text-align: center; border-radius: 4px; background-color: #005880; width: auto;  border: none; }
 #schedule_btn_in:hover { background-color: #95af0d; }
-#schedule_call_btn .modal-header { display: none; }
+/* #schedule_call_btn .modal-header { display: none; } */
 #schedule_call_btn .bta-widget-modal-back { position: static; height: auto; }
 #schedule_call_btn .bta-widget-modal { width: 100%; max-height: initial;  position: static; left: 0; top: 0; transform: none; padding: 0; display: block; margin: 0 auto; border: none;}
 .bta-widget-modal .bta-widget-container { padding-bottom: 0 !important; }
