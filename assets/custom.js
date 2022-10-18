@@ -7,7 +7,28 @@ jQuery(function ($) {
            $('#membership_popup').modal('show');
             // $("#popup_sec .buy_btn").click();
             //$("a.create_acc_btn").click();
+
           }
+
+setTimeout(function () {
+    $("#call_back_btn button").click(function () {
+
+     console.log('Find Outside------',$(".bta-product-widget"));
+        
+
+            var targetNode = $(".bta-product-widget")[0];
+            $('#schedule_inner .modal-body').empty();
+            $('#schedule_inner .modal-body').append($(".bta-product-widget"));
+             console.log('Find------',$(".bta-product-widget"));
+            
+
+        
+
+
+    });
+}, 1500);
+
+      
           });
   
     // $("#schedule_btn_in").click(function () {
@@ -51,23 +72,7 @@ jQuery(function ($) {
 
 
     // });
-setTimeout(function () {
-    $("#call_back_btn button").click(function () {
 
-     console.log('Find Outside------',$(".bta-product-widget"));
-        
-
-            var targetNode = $(".bta-product-widget")[0];
-            $('#schedule_inner .modal-body').empty();
-            $('#schedule_inner .modal-body').append($(".bta-product-widget"));
-             console.log('Find------',$(".bta-product-widget"));
-            
-
-        
-
-
-    });
-}, 1500);
 
     $(document).on('keyup keydown paste focusout keypress', '#customFields_mvg-membership input[name=n_60701]', function (e) {
         $(this).attr('maxlength', 10);
