@@ -1,10 +1,10 @@
 jQuery.noConflict();
 jQuery(function ($) {
     $("#schedule_popup_now").removeClass('loading');
-  $(window).load(function ()  {
 
 
-    
+
+  setTimeout(function () {  
 console.log('Running');
     $("#call_back_btn button").click(function () {
 
@@ -22,9 +22,9 @@ console.log('Running');
 
     });
 
-
+}, 1500);
       
-});
+
   
     $(window).load(function ()  {
           if($('#create_customer').find('.note.form-error').length){
