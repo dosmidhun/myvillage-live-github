@@ -22,7 +22,7 @@ console.log('Mutation------',$(".bta-product-widget"));
 
         // Notify me of style changes
         var observerConfig = {
-            subtree: true, childList: true
+             childList: true
         };
 
 
