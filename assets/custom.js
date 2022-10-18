@@ -7,16 +7,39 @@ jQuery(function ($) {
             mutations.forEach(function (mutation) {
 
 console.log('Mutation------',$(".bta-product-widget"));
-                if (mutation.attributeName === 'style') {
 
-                 //console.log('Mutation------',$(".bta-product-widget"));
-                    // if ($('#call_back_btn .bta-product-widget').css('display') == 'none') {
+  setTimeout(function () {  
+console.log('Running');
+    $("#call_back_btn").click(function () {
+
+     console.log('Find Outside------',$(".bta-product-widget"));
+        setTimeout(function () {
+
+          $('#schedule_inner').modal('hide');
+
+          
+            var targetNode = $(".bta-product-widget")[0];
+            //$('#schedule_inner .modal-body').empty();
+            $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
+            $(".bta-product-widget  iframe").removeAttr("title");
+            $(".bta-product-widget  iframe").tooltip().tooltip("disable");
+
+            $('#schedule_call_btn .modal-body').append($(".bta-product-widget"));
 
 
 
-                    //     $('#schedule_call_btn').modal('hide');
-                    // }
-                }
+            $('#schedule_call_btn').modal('show');
+             console.log('Find------',$(".bta-product-widget"));
+            }, 500);
+
+        
+
+
+    });
+
+}, 500);
+
+              
             });
         });
 
