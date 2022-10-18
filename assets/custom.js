@@ -4,7 +4,7 @@ jQuery(function ($) {
   $(window).load(function ()  {
 
 
-    setTimeout(function () {
+    
 console.log('Running');
     $("#call_back_btn button").click(function () {
 
@@ -21,7 +21,7 @@ console.log('Running');
 
 
     });
-}, 1500);
+
 
       
 });
