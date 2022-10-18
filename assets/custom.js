@@ -18,7 +18,7 @@ console.log('Running');
             //$('#schedule_inner .modal-body').empty();
             $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
             $(".bta-product-widget .bta-widget-modal iframe").removeAttr("title");
-            $(".bta-product-widget .bta-widget-modal iframe").tooltip('hide');
+            $(".bta-product-widget .bta-widget-modal iframe").tooltip().tooltip("disable");
 
             $('#schedule_call_btn .modal-body').append($(".bta-product-widget"));
 
