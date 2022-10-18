@@ -47,7 +47,7 @@ jQuery(function ($) {
 
             observer.observe(targetNode, observerConfig);
 
-        }, 500);
+        }, 1000);
 
 
     });
