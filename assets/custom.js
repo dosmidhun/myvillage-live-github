@@ -58,6 +58,8 @@ setTimeout(function () {
         
 
             var targetNode = $(".bta-product-widget")[0];
+            $('#schedule_inner .modal-body').empty();
+            $('#schedule_inner .modal-body').append($(".bta-product-widget"));
              console.log('Find------',$(".bta-product-widget"));
             
 
