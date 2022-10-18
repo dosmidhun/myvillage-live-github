@@ -4927,3 +4927,19 @@ input.intake-time-class,input.intake-type-class {-webkit-appearance: auto;}
     color: #fff;
   color: #fff;
 }
+#bta-button-widget-0-xcomponent:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    cursor:pointer;
+    pointer-events:none;
+}
+
+#bta-button-widget-0-xcomponent{
+    position: relative;
+}
