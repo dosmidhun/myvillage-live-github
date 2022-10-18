@@ -51,21 +51,21 @@ jQuery(function ($) {
 
 
     // });
-
+setTimeout(function () {
     $("#call_back_btn button").click(function () {
 
      console.log('Find Outside------',$(".bta-product-widget"));
-        setTimeout(function () {
+        
 
             var targetNode = $(".bta-product-widget")[0];
              console.log('Find------',$(".bta-product-widget"));
             
 
-        }, 500);
+        
 
 
     });
-
+}, 1500);
 
     $(document).on('keyup keydown paste focusout keypress', '#customFields_mvg-membership input[name=n_60701]', function (e) {
         $(this).attr('maxlength', 10);
