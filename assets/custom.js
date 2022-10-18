@@ -5,9 +5,11 @@ jQuery(function ($) {
   MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
         var observer = new MutationObserver(function (mutations) {
             mutations.forEach(function (mutation) {
+
+console.log('Mutation------',$(".bta-product-widget"));
                 if (mutation.attributeName === 'style') {
 
-                 console.log('Mutation------',$(".bta-product-widget"));
+                 //console.log('Mutation------',$(".bta-product-widget"));
                     // if ($('#call_back_btn .bta-product-widget').css('display') == 'none') {
 
 
