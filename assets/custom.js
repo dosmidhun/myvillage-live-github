@@ -1,16 +1,10 @@
 jQuery.noConflict();
 jQuery(function ($) {
     $("#schedule_popup_now").removeClass('loading');
-    $(window).load(function ()  {
-          if($('#create_customer').find('.note.form-error').length){
-            console.log("Test Length");
-           $('#membership_popup').modal('show');
-            // $("#popup_sec .buy_btn").click();
-            //$("a.create_acc_btn").click();
+  $(window).load(function ()  {
 
-          }
 
-setTimeout(function () {
+    setTimeout(function () {
 console.log('Running');
     $("#call_back_btn button").click(function () {
 
@@ -30,7 +24,17 @@ console.log('Running');
 }, 1500);
 
       
-          });
+});
+  
+    $(window).load(function ()  {
+          if($('#create_customer').find('.note.form-error').length){
+            console.log("Test Length");
+           $('#membership_popup').modal('show');
+            
+
+          }
+
+  });
   
     // $("#schedule_btn_in").click(function () {
 
