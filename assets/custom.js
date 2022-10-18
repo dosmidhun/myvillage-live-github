@@ -11,10 +11,17 @@ console.log('Running');
      console.log('Find Outside------',$(".bta-product-widget"));
         setTimeout(function () {
 
+          $('#schedule_inner').modal('hide');
+
+          
             var targetNode = $(".bta-product-widget")[0];
-            $('#schedule_inner .modal-body').empty();
+            //$('#schedule_inner .modal-body').empty();
             $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
-            $('#schedule_inner .modal-body').append($(".bta-product-widget"));
+            $('#schedule_call_btn .modal-body').append($(".bta-product-widget"));
+
+
+
+            $('#schedule_call_btn').modal('show');
              console.log('Find------',$(".bta-product-widget"));
             }, 1500);
 
