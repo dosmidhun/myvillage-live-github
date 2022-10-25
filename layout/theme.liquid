@@ -237,8 +237,15 @@ pintrk('page');
 {
    
    /*window.location.href='/pages/signup-landing'*/
-console.log(window.location);
+//console.log(window.location);
   //window.location.href='https://myvillagegreen.com';
+
+  if(window.location.pathname=="/pages/thirty-minute-consultation"){
+     window.location.href='https://myvillagegreen.com/account/login?redir=https://myvillagegreen.com/pages/thirty-minute-consultation';
+  }
+  else{
+    window.location.href='https://myvillagegreen.com';
+  }
 }
   HelpCrunch('init', 'myvillagegreen', {
     applicationId: 1,
