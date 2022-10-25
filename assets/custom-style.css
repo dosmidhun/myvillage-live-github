@@ -4943,7 +4943,7 @@ input.intake-time-class,input.intake-type-class {-webkit-appearance: auto;}
 #schedule_call_btn #bta-button-widget-0-xcomponent{
     position: relative;
 }
-#thirty-minute-consultation .bta-product-widget{
+#thirty-minute-consultation .bta-product-widget,#thirty-holder{
 display:none;
 }
 #thirty-minute-consultation #thirty-holder .bta-product-widget{
