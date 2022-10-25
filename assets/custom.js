@@ -64,7 +64,7 @@ var observer2 = new MutationObserver(function (mutations) {
 console.log('Mutation------',$(".bta-product-widget"));
 
   setTimeout(function () {  
-console.log('Running third');
+console.log('Running third',mutation);
  
     $("#thirty-holder button").click(function () {
 
@@ -91,7 +91,7 @@ console.log('Running third');
 
 
     });
-    jQuery("#thirty-holder button").trigger('click');
+    
 
 }, 500);
 
