@@ -113,7 +113,10 @@ observer2.observe(targetNode2, observerConfig);
 console.log('Mutation Else 76187--');
  
   }
-
+  
+$( window ).load(function() {
+   $("#thirty-holder button").click();
+});
 
 
 
