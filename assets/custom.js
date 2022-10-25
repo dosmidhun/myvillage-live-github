@@ -112,13 +112,13 @@ console.log('Mutation If 76187--');
 observer2.observe(targetNode2, observerConfig);
 console.log('Mutation Else 76187--');
     setTimeout(function () {
-   jQuery("#thirty-holder button").click();
+   //jQuery("#thirty-holder button").click();
   }, 1500);
  
   }
   
 jQuery( window ).load(function() {
-   
+   jQuery("#thirty-holder button").click();
 });
 
 
