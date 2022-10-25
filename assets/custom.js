@@ -104,6 +104,9 @@ if(targetNode2  === "undefined"){
 observer2.observe(targetNode2, observerConfig);
 console.log('Mutation--');
 }
+  else{
+    console.log('Else Mutation--');
+  }
 }); 
 
 
