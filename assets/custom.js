@@ -89,9 +89,10 @@ console.log('Running third',mutation);
 
         // Notify me of style changes
         var observerConfig2 = {
-            childList: true,   
-            attributes: true,
-             attributeFilter: ["style"]
+            childList: true, 
+          subtree: true,
+            attributes: true
+             
         };
 
 
