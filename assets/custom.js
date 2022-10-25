@@ -65,7 +65,7 @@ console.log('Mutation------',$(".bta-product-widget"));
 
   setTimeout(function () {  
 console.log('Running third',mutation);
-    if (mutation.attributeName === 'style') {
+    if (mutation.type === 'childList') {
 
 
                  if ($('.bta-widget-show-button').css('display') == 'block') {
