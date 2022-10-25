@@ -101,7 +101,7 @@ console.log('Running third');
 
         
 var targetNode2 = $("div[data-id='76187']")[0];
-if(targetNode  === "undefined"){
+if(targetNode2  === "undefined"){
 observer2.observe(targetNode2, observerConfig);
 console.log('Mutation--');
 }
