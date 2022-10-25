@@ -67,10 +67,10 @@ console.log('Mutation------',$(".bta-product-widget"));
 console.log('Running third',mutation);
     if (mutation.type === 'childList') {
 
-
+ console.log('Online Css.....',$('.bta-widget-show-button').css('display'));
                  if ($('.bta-widget-show-button').css('display') == 'block') {
                    
-                        console.log('Online.....',mutation);
+                        console.log('Online If.....',mutation);
                      }
                  }
  
