@@ -15,19 +15,15 @@ console.log('Running');
      console.log('Find Outside------',$(".bta-product-widget"));
         setTimeout(function () {
 
-          $('#schedule_inner').modal('hide');
-
           
+
+            $('#schedule_inner').modal('hide');
             var targetNode = $(".bta-product-widget")[0];
             //$('#schedule_inner .modal-body').empty();
             $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
             $(".bta-product-widget  iframe").removeAttr("title");
             $(".bta-product-widget  iframe").tooltip().tooltip("disable");
-
             $('#schedule_call_btn .modal-body').append($(".bta-product-widget"));
-
-
-
             $('#schedule_call_btn').modal('show');
              console.log('Find------',$(".bta-product-widget"));
             }, 500);
@@ -52,8 +48,10 @@ console.log('Running');
         
 
             var targetNode = $("#call_back_btn")[0];
-
-            observer.observe(targetNode, observerConfig);
+            if(targetNode  === "undefined"){
+               observer.observe(targetNode, observerConfig);
+            }
+           
 
        
 
