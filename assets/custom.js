@@ -15,15 +15,19 @@ console.log('Running');
      console.log('Find Outside------',$(".bta-product-widget"));
         setTimeout(function () {
 
-          
+          $('#schedule_inner').modal('hide');
 
-            $('#schedule_inner').modal('hide');
+          
             var targetNode = $(".bta-product-widget")[0];
             //$('#schedule_inner .modal-body').empty();
             $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
             $(".bta-product-widget  iframe").removeAttr("title");
             $(".bta-product-widget  iframe").tooltip().tooltip("disable");
+
             $('#schedule_call_btn .modal-body').append($(".bta-product-widget"));
+
+
+
             $('#schedule_call_btn').modal('show');
              console.log('Find------',$(".bta-product-widget"));
             }, 500);
@@ -44,16 +48,67 @@ console.log('Running');
              childList: true
         };
 
+var targetNode = $("div[data-id='60284']")[0];
+if(targetNode  != "undefined"){
+  observer.observe(targetNode, observerConfig);
+}
+
+
+var observer2 = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+
+console.log('Mutation------',$(".bta-product-widget"));
+
+  setTimeout(function () {  
+console.log('Running third');
+    $("#thirty-holder button").click(function () {
+
+     console.log('Third modal Outside------',$(".bta-product-widget"));
+        setTimeout(function () {
+
+          // $('#schedule_inner').modal('hide');
+
+          
+            var targetNode2 = $(".bta-product-widget")[0];
+            //$('#schedule_inner .modal-body').empty();
+            $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
+            $(".bta-product-widget  iframe").removeAttr("title");
+            $(".bta-product-widget  iframe").tooltip().tooltip("disable");
+
+            $('#thirty-holder').append($(".bta-product-widget"));
+
+
+
+          
+            }, 500);
 
         
 
-            var targetNode = $("#call_back_btn")[0];
-            if(targetNode  === "undefined"){
-               observer.observe(targetNode, observerConfig);
-            }
-           
 
-       
+    });
+
+}, 500);
+
+              
+            });
+        });
+
+        // Notify me of style changes
+        var observerConfig = {
+             childList: true
+        };
+
+$( window ).load(function() {
+  var targetNode2 = $("div[data-id='76187']")[0];
+if(targetNode2  != "undefined"){
+observer2.observe(targetNode2, observerConfig);
+console.log('Mutation--');
+}
+  else{
+    console.log('Mutation--');
+  }
+}); 
+
 
 
 //   setTimeout(function () {  
