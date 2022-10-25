@@ -65,6 +65,7 @@ console.log('Mutation------',$(".bta-product-widget"));
 
   setTimeout(function () {  
 console.log('Running third');
+ jQuery("#thirty-holder button").trigger('click');
     $("#thirty-holder button").click(function () {
 
      console.log('Third modal Outside------',$(".bta-product-widget"));
