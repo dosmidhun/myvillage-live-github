@@ -68,7 +68,7 @@ console.log('Running third',mutation);
     if (mutation.type === 'childList') {
 
  console.log('Online Css.....',$('.bta-widget-show-button').css('display'));
-                 if ($('.bta-widget-show-button').css('display') == 'none') {
+                 if ($('.bta-widget-show-button').css('display') == 'block') {
                        setTimeout(function () { 
                         jQuery("#thirty-holder button").trigger('click');
                           var targetNode2 = $(".bta-product-widget")[0];
