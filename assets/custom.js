@@ -48,12 +48,11 @@ console.log('Running');
              childList: true
         };
 
+var targetNode = $("div[data-id='60284']")[0];
+if(targetNode  === "undefined"){
+  observer.observe(targetNode, observerConfig);
+}
 
-        
-
-            var targetNode = $("div[data-id='60284']")[0];
-
-            observer.observe(targetNode, observerConfig);
 
 var observer2 = new MutationObserver(function (mutations) {
             mutations.forEach(function (mutation) {
@@ -101,11 +100,11 @@ console.log('Running third');
 
 
         
+var targetNode2 = $("div[data-id='76187']")[0];
+if(targetNode  === "undefined"){
+observer2.observe(targetNode2, observerConfig);
 
-            var targetNode2 = $("div[data-id='76187']")[0];
-
-            observer2.observe(targetNode2, observerConfig);
-
+}
 
 //   setTimeout(function () {  
 // console.log('Running');
