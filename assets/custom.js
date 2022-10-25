@@ -65,8 +65,11 @@ console.log('Mutation------',$(".bta-product-widget"));
 
   setTimeout(function () {  
 console.log('Running third',mutation);
- 
-    $("#thirty-holder button").click(function () {
+    if (mutation.attributeName === 'style') {
+
+
+                 if ($('.bta-widget-show-button').css('display') == 'block') {
+$("#thirty-holder button").click(function () {
 
      console.log('Third modal Outside------',$(".bta-product-widget"));
         setTimeout(function () {
@@ -91,6 +94,10 @@ console.log('Running third',mutation);
 
 
     });
+                     }
+                 }
+ 
+    
     
 
 }, 500);
@@ -100,8 +107,9 @@ console.log('Running third',mutation);
         });
 
         // Notify me of style changes
-        var observerConfig = {
-             childList: true
+        var observerConfig2 = {
+             attributes: true,
+             attributeFilter: ["style"]
         };
 
 
@@ -111,7 +119,7 @@ if(typeof targetNode2  === "undefined"){
 console.log('Mutation If 76187--');
 }
   else{
-observer2.observe(targetNode2, observerConfig);
+observer2.observe(targetNode2, observerConfig2);
 console.log('Mutation Else 76187--');
    
  
