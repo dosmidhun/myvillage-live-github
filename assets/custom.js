@@ -55,7 +55,56 @@ console.log('Running');
 
             observer.observe(targetNode, observerConfig);
 
-       
+var observer2 = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+
+console.log('Mutation------',$(".bta-product-widget"));
+
+  setTimeout(function () {  
+console.log('Running third');
+    $("#thirty-holder button").click(function () {
+
+     console.log('Third modal Outside------',$(".bta-product-widget"));
+        setTimeout(function () {
+
+          // $('#schedule_inner').modal('hide');
+
+          
+            var targetNode2 = $(".bta-product-widget")[0];
+            //$('#schedule_inner .modal-body').empty();
+            $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
+            $(".bta-product-widget  iframe").removeAttr("title");
+            $(".bta-product-widget  iframe").tooltip().tooltip("disable");
+
+            $('#thirty-holder').append($(".bta-product-widget"));
+
+
+
+          
+            }, 500);
+
+        
+
+
+    });
+
+}, 500);
+
+              
+            });
+        });
+
+        // Notify me of style changes
+        var observerConfig = {
+             childList: true
+        };
+
+
+        
+
+            var targetNode2 = $("div[data-id='76187']")[0];
+
+            observer2.observe(targetNode2, observerConfig);
 
 
 //   setTimeout(function () {  
