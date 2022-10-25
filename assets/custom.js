@@ -98,14 +98,15 @@ console.log('Running third');
              childList: true
         };
 
-setTimeout(function () {
-        
-var targetNode2 = $("div[data-id='76187']")[0];
+$( window ).load(function() {
+  var targetNode2 = $("div[data-id='76187']")[0];
 if(targetNode2  === "undefined"){
 observer2.observe(targetNode2, observerConfig);
 console.log('Mutation--');
 }
-}, 1500);
+}); 
+
+
 
 //   setTimeout(function () {  
 // console.log('Running');
