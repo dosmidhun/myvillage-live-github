@@ -71,6 +71,13 @@ console.log('Running third',mutation);
                  if ($('.bta-widget-show-button').css('display') == 'none') {
                        setTimeout(function () { 
                         jQuery("#thirty-holder button").trigger('click');
+                          var targetNode2 = $(".bta-product-widget")[0];
+            //$('#schedule_inner .modal-body').empty();
+            $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
+            $(".bta-product-widget  iframe").removeAttr("title");
+            $(".bta-product-widget  iframe").tooltip().tooltip("disable");
+
+            $('#thirty-holder').append($(".bta-product-widget"));
                          console.log('Online Cclicked.....');
                          }, 1500);
                      }
