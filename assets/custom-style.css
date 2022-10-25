@@ -4927,7 +4927,7 @@ input.intake-time-class,input.intake-type-class {-webkit-appearance: auto;}
     color: #fff;
   color: #fff;
 }
-#bta-button-widget-0-xcomponent:before {
+#schedule_call_btn #bta-button-widget-0-xcomponent:before {
     content: '';
     position: absolute;
     right: 0;
@@ -4940,6 +4940,6 @@ input.intake-time-class,input.intake-type-class {-webkit-appearance: auto;}
     pointer-events:none;
 }
 
-#bta-button-widget-0-xcomponent{
+#schedule_call_btn #bta-button-widget-0-xcomponent{
     position: relative;
 }
