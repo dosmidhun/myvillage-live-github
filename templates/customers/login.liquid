@@ -14,7 +14,7 @@
 {% endcomment %}
 {% capture redir  %}{%- render 'querystring', param: "redir" -%}{% endcapture %}
 {%assign value = redir| url_decode%}
-{{ value }}
+
 {% layout settings.customer_layout %}
 
 {% include 'breadcrumb' %}
