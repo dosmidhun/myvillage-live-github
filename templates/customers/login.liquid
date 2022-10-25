@@ -12,7 +12,9 @@
     - There are two instances of inline JS below. Best practices advise separating this
       into an external JS file.
 {% endcomment %}
-
+{% capture redir  %}{%- render 'querystring', param: "redir" -%}{% endcapture %}
+{%assign value = redir| url_decode%}
+{{ value }}
 {% layout settings.customer_layout %}
 
 {% include 'breadcrumb' %}
