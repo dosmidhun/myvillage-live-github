@@ -69,31 +69,8 @@ console.log('Running third',mutation);
 
 
                  if ($('.bta-widget-show-button').css('display') == 'block') {
-$("#thirty-holder button").click(function () {
-
-     console.log('Third modal Outside------',$(".bta-product-widget"));
-        setTimeout(function () {
-
-          // $('#schedule_inner').modal('hide');
-
-          
-            var targetNode2 = $(".bta-product-widget")[0];
-            //$('#schedule_inner .modal-body').empty();
-            $(".bta-product-widget .bta-widget-modal").removeClass('bta-widget-modal');
-            $(".bta-product-widget  iframe").removeAttr("title");
-            $(".bta-product-widget  iframe").tooltip().tooltip("disable");
-
-            $('#thirty-holder').append($(".bta-product-widget"));
-
-
-
-          
-            }, 500);
-
-        
-
-
-    });
+                   
+                        console.log('Online.....',mutation);
                      }
                  }
  
