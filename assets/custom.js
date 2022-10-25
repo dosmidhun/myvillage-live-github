@@ -71,6 +71,7 @@ console.log('Running third',mutation);
                  if ($('.bta-widget-show-button').css('display') == 'none') {
                        setTimeout(function () { 
                         jQuery("#thirty-holder button").trigger('click');
+                         console.log('Online Cclicked.....');
                          }, 1500);
                      }
                  }
