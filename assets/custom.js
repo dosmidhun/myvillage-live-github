@@ -102,7 +102,7 @@ console.log('Running third');
              childList: true
         };
 
-$( window ).load(function() {
+
   var targetNode2 = $("div[data-id='76187']")[0];
 if(typeof targetNode2  === "undefined"){
 
@@ -113,7 +113,7 @@ observer2.observe(targetNode2, observerConfig);
 console.log('Mutation Else 76187--');
  
   }
-}); 
+
 
 
 
