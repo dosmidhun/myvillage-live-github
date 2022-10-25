@@ -78,6 +78,7 @@ console.log('Running third',mutation);
             $(".bta-product-widget  iframe").tooltip().tooltip("disable");
 
             $('#bta-product-holder').append($(".bta-product-widget"));
+           $('#bta-product-holder').removeClass('loading');
                          console.log('Online Cclicked.....');
                          }, 1500);
 
