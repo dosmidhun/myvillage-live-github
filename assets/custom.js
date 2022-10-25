@@ -49,10 +49,14 @@ console.log('Running');
         };
 
 var targetNode = $("div[data-id='60284']")[0];
-if(targetNode  != "undefined"){
-  observer.observe(targetNode, observerConfig);
+if(typeof targetNode  === "undefined"){
+  console.log('Mutation if 60284--');
 }
-
+else{
+observer.observe(targetNode, observerConfig);
+console.log('Mutation Else 60284--');
+ 
+  }
 
 var observer2 = new MutationObserver(function (mutations) {
             mutations.forEach(function (mutation) {
@@ -100,12 +104,14 @@ console.log('Running third');
 
 $( window ).load(function() {
   var targetNode2 = $("div[data-id='76187']")[0];
-if(targetNode2  != "undefined"){
-observer2.observe(targetNode2, observerConfig);
-console.log('Mutation--');
+if(typeof targetNode2  === "undefined"){
+
+console.log('Mutation If 76187--');
 }
   else{
-    console.log('Mutation--');
+observer2.observe(targetNode2, observerConfig);
+console.log('Mutation Else 76187--');
+ 
   }
 }); 
 
