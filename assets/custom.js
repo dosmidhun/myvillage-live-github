@@ -68,9 +68,10 @@ console.log('Running third',mutation);
     if (mutation.type === 'childList') {
 
  console.log('Online Css.....',$('.bta-widget-show-button').css('display'));
-                 if ($('.bta-widget-show-button').css('display') == 'block') {
-                   
-                        console.log('Online If.....',mutation);
+                 if ($('.bta-widget-show-button').css('display') == 'none') {
+                       setTimeout(function () { 
+                        jQuery("#thirty-holder button").trigger('click');
+                         }, 1500);
                      }
                  }
  
