@@ -118,7 +118,7 @@ console.log('Mutation Else 76187--');
   }
   
 jQuery( window ).load(function() {
-   jQuery("#thirty-holder button").click();
+   jQuery("#thirty-holder button").trigger('click');
 });
 
 
