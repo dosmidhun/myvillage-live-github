@@ -11,11 +11,12 @@
 {% if tag == 'standard process' %}{% assign elpTag1 = true %}{% endif %}
 {% if tag == 'medi-herb' %}{% assign elpTag2 = true %}{% endif %}
 {% if tag == 'standard mediherbs' %}{% assign elpTag3 = true %}{% endif %}
+{% if tag == 'standard medi-herb' %}{% assign elpTag4 = true %}{% endif %}
 {% endfor %}
 {% assign easylockdownSearchException = false %}
 {% unless easylockdownSearchException %}
 {% if easylockdown_filter_search.object_type == 'product' %}
-{% if elpTag1 or elpTag2 or elpTag3 %}
+{% if elpTag1 or elpTag2 or elpTag3 or elpTag4 %}
 {% unless customer %}
 {% if easylockdownRender %}continue{% endif %}{% continue %}
 {% else %}

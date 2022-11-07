@@ -14,6 +14,7 @@
 {% if tag == 'standard process' %}{% assign elpTag1 = true %}{% endif %}
 {% if tag == 'medi-herb' %}{% assign elpTag2 = true %}{% endif %}
 {% if tag == 'standard mediherbs' %}{% assign elpTag3 = true %}{% endif %}
+{% if tag == 'standard medi-herb' %}{% assign elpTag4 = true %}{% endif %}
 {% endfor %}
 {% unless easylockdownON or easylockdownSuperPage or template == 'customers/register' %}
 {% assign easylockdownLockedContent = false %}
@@ -22,7 +23,7 @@
 {% if product.collections %}{% for c in product.collections %}{% if c.id == 171816190083 or c.id == 405785575662 or c.id == 402226938094 %}{% assign easylockdownLockedContent = true %}{% break %}{% endif %}{% endfor %}{% endif %}
 {% if collection %}{% if collection.id == 171816190083 or collection.id == 405785575662 or collection.id == 402226938094 %}{% assign easylockdownLockedContent = true %}{% endif %}{% endif %}
 {% endif %}
-{% if template contains "product" and product %}{% if elpTag1 or elpTag2 or elpTag3 %}{% assign easylockdownLockedContent = true %}{% endif %}{% endif %}
+{% if template contains "product" and product %}{% if elpTag1 or elpTag2 or elpTag3 or elpTag4 %}{% assign easylockdownLockedContent = true %}{% endif %}{% endif %}
 {% if easylockdownLockedContent %}
 {% unless customer %}
 {% assign easylockdownON = true %}
