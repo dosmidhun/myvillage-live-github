@@ -1548,11 +1548,13 @@ function list_my_plan(){
     				
                   $(htm_report).find('li').hide();
                   $(htm_report).find('li:lt(5)').show();
+                  $(htm_report).find('h3').text('Possible Contributing Factors:');
                   //console.log("iuciiiufivisfvisvfisvisvisvisviusviusviusvsdvsivui",htm_report);
                  	$('#health-report').html(htm_report);
                   $('#health-report').find('h2').remove();
                   $('#health-report').find('#explanation').remove();
                   $('#health-report').find('#banner').remove();
+
                   $('.your_score_detail').next('p').text("Your health score is a scientific measurement of your overall health and can serve as a directional indicator on how your health is evolving. It takes into account all of the numerous factors in your life, including your demographics, health conditions, family history, diet and lifestyle habits, lab results, and DNA. The more data you provide, the more accurate your health score will be. Based on a scale of 0-100, a higher score is suggestive of better health. As you make positive health changes and improve your lab values, remember to update your health questionnaire so that your health score can reflect your progress. ");
                   $('<p>Schedule a nutrition consultation for an in-depth look into your health score and the steps you can take to help improve your health</p>').insertAfter('#whycontent').find('ul');
 //                   $(".colorbox-load").each(function(idx) {
