@@ -1546,8 +1546,8 @@ function list_my_plan(){
                   htm_report.find('.dash').remove();
                   htm_report.find('.pct').remove();
     				
-                  //$(htm_report).find('li').hide();
-                  //$(htm_report).find('li:lt(10)').show();
+                  $(htm_report).find('li').hide();
+                  $(htm_report).find('li:lt(5)').show();
                   //console.log("iuciiiufivisfvisvfisvisvisvisviusviusviusvsdvsivui",htm_report);
                  	$('#health-report').html(htm_report);
                   $('#health-report').find('h2').remove();
