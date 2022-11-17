@@ -1507,7 +1507,7 @@ function list_my_plan(){
                     $("#toxin_score .your_score_detail h2 span").text(toxinsscore);
                     $("#toxin_score .your_score_detail .complete_qtns").remove();
                     $("#toxin_score .your_score_detail .complete_qtns").text('See Detailed Info on IQYou');
-                    console.log("TEXT FOUNFD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",$("#toxin_score .your_score_detail").next('p'));
+                    console.log("TEXT FOUNFD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",$("#toxin_score .your_score_detail").next().find('p').text());
                     if (res.dna_reports.has_report) {
                         $('#lap_report .lap_table').html('<div style="background: #eee; padding: 10px;"><span style="color: #222">DNA:</span> <strong>' +
                             res.dna_reports.name + '</strong>&nbsp;&nbsp; <a href="#" class="view-dna-reports">View</a>' +
