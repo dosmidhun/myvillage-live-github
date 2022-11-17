@@ -374,7 +374,7 @@
   "shopify": {
     "checkout": {
       "shipping": {
-        "shipping_method_title": "Please note: Standard shipping orders generally ship within 24 hours (Monday-Friday) from the time the order is placed. ----- UPS 2nd Day Air, or Next Day Air orders placed after 12:00 pm do not process until next business day. All orders received over the weekend from Friday to Sunday will not be processed until Monday morning, then will be shipped within 24 hrs."
+        "shipping_method_title": "<strong>Please note: <\/strong>Standard shipping orders generally ship within 24 hours (Monday-Friday) from the time the order is placed. ----- UPS 2nd Day Air, or Next Day Air orders placed after 12:00 pm do not process until next business day. All orders received over the weekend from Friday to Sunday will not be processed until Monday morning, then will be shipped within 24 hrs."
       }
     }
   },
