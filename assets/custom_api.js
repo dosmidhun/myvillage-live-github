@@ -1507,7 +1507,7 @@ function list_my_plan(){
                     $("#toxin_score .your_score_detail h2 span").text(toxinsscore);
                     $("#toxin_score .your_score_detail .complete_qtns").remove();
                     $("#toxin_score .your_score_detail .complete_qtns").text('See Detailed Info on IQYou');
-                    console.log("TEXT FOUNFD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",$("#toxin_score .your_score_detail").next('p').text());
+                    $("#toxin_score .your_score_detail").next('p').html('Based on a scale from 0 (higher risk) to 100 (lower risk), your toxin score is a calculation of your estimated exposure to environmental toxins, as well as your body’s unique ability to detoxify pollutants, chemicals and other toxins. This score factors in all the information you provided, including your answers to the health questionnaire, your lab values, DNA results, as well as data gathered from air and water quality in your area. You can work to improve your toxin score by making the recommended changes to your diet and lifestyle, which can help to reduce your exposure to toxins as well as enhance your detoxification pathways.<br>Your biggest toxic risks include:');
                     if (res.dna_reports.has_report) {
                         $('#lap_report .lap_table').html('<div style="background: #eee; padding: 10px;"><span style="color: #222">DNA:</span> <strong>' +
                             res.dna_reports.name + '</strong>&nbsp;&nbsp; <a href="#" class="view-dna-reports">View</a>' +
