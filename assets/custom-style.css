@@ -3846,15 +3846,9 @@ label.hide-m input {
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .my-plan-button-div {
-    
-    right: unset;
-}
-.box_layout ul {
-    
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
+
+    .my-plan-button-div {  right: unset; }
+    .box_layout ul { grid-template-columns: 1fr 1fr; grid-gap: 10px; }
     .no-access { width: 90%; }
     h1#inner-content, h1.inner-caption { font-size: 60px; line-height: 70px; }
     .menu-block div { color: #00577f !important; }
@@ -3950,6 +3944,12 @@ label.hide-m input {
     #schedule_inner .modal-dialog { width: 96%; }
     #ask_expert .modal-dialog {  transform: none;}
 
+    .save_month h4 { font-size: 16px; }
+    .extra-save-inner p, .save_month_desc p { font-size: 15px; }
+    .new_mem_consult_outer .memberconsult_right ul li { font-size: 16px; }
+    .new_mem_consult_outer h2#member-ship-title { font-size: 40px; }
+
+
 
 
 
@@ -3958,15 +3958,9 @@ label.hide-m input {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .my-plan-button-div {
-    
-    right: unset;
-}
-.box_layout ul {
-    
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-}
+
+    .my-plan-button-div { right: unset; }
+    .box_layout ul { grid-template-columns: 1fr 1fr; grid-gap: 10px; }
     .no-access { width: 90%; }
     .menu-block div { color: #00577f !important; }
     .header-panel-top, .header-mobile { background: #73adc2 !important; }
@@ -4023,11 +4017,9 @@ label.hide-m input {
     .third_right_cont {  padding-left: 10px; }
     .interest_sec a.cons_btn { padding: 20px 20px 20px 50px; font-size: 20px; }
     .interest_sec .interest_left a.cons_btn {
-        background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/book_icon_e4629834-7e56-4c86-ba2c-38be775157ca.png?v=1583322231) no-repeat 9px 22px;
-    }
+        background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/book_icon_e4629834-7e56-4c86-ba2c-38be775157ca.png?v=1583322231) no-repeat 9px 22px; }
     .interest_sec .interest_right a.cons_btn {
-        background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/phn_icon_3b23f577-6636-4cdf-ac9b-d0f93cda8fb6.png?v=1583322241) no-repeat 20px 20px;
-    }
+        background: url(https://cdn.shopify.com/s/files/1/0319/0960/9603/files/phn_icon_3b23f577-6636-4cdf-ac9b-d0f93cda8fb6.png?v=1583322241) no-repeat 20px 20px; }
     .second-section { margin-top: 35px; margin-bottom: 35px; }
     #shopify-section-rx-advantage .upload-pdf { width: 100%; padding: 30px 8px; }
     .upload-pdf h4 {  font-size: 17px; }
@@ -4110,30 +4102,41 @@ label.hide-m input {
     h3#member-ship-title-sub { font-size: 26px; }
     #schedule_inner .modal-dialog { width: 96%; }
     #ask_expert .modal-dialog { width: 90%; transform: none; }
-#shopify-section-blog-template .list-blog .blog_img { float: none; width: 100%; margin-right: 0; }
-#shopify-section-blog-template .list-blog .des { float: none; width: 100%;  }
+    #shopify-section-blog-template .list-blog .blog_img { float: none; width: 100%; margin-right: 0; }
+    #shopify-section-blog-template .list-blog .des { float: none; width: 100%;  }
     .health_box_plan { margin-bottom: 50px; }
     #humani_sec .health_plan h2 { font-size: 20px; line-height: 40px; }
+
+    .save_month h4 { font-size: 16px; }
+    .extra-save-inner p, .save_month_desc p { font-size: 15px; }
+    .new_mem_consult_outer .memberconsult_right ul li { font-size: 16px; }
+    .new_mem_consult_outer h2#member-ship-title { font-size: 36px; }
+    .new_mem_consult_outer .memberconsult_right h3#member-ship-title-sub { font-size: 18px; }
+    .extra-save-inner h3 { font-size: 20px; line-height: 22px; }
+    #extra-save-pack a#member-ship-link { font-size: 16px; padding: 12px 12px; }
+
+
+
+
 }
 
-@media (max-width: 1199px){
-  .recommendation-head {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
+@media (max-width: 1199px) {
+
+  .recommendation-head { display: grid; grid-template-columns: 1fr 1fr; text-align: center; }
 }
-}
+
 @media (max-width: 767px) {
-  #my-plan-tab-button,#my-recomm-tab-button {
-    
-     display: block; 
-     float: none;
+
+    #my-plan-tab-button,#my-recomm-tab-button { 
+    display: block; 
+    float: none;
     width: 100%;
-  }
-  div#rec-filter{
+    }
+
+    div#rec-filter{
     justify-content: flex-start;
-  }
-  .recommendation-head{
+    }
+    .recommendation-head{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -4141,41 +4144,41 @@ label.hide-m input {
     margin-top: 25px;
     align-items: flex-start;
     justify-content: flex-start;
-  }
-  #my-plan-tab-button{
+    }
+    #my-plan-tab-button{
     margin-left: 0px;
-  }
-  .my-plan-button-div {
+    }
+    .my-plan-button-div {
     margin-bottom: 14px;
-}
-  .nutritional-supplementation-item {display: block;}
+    }
+    .nutritional-supplementation-item {display: block;}
 
-.nutritional-supplementation-item >div {width: 100%;}
+    .nutritional-supplementation-item >div {width: 100%;}
 
-.nutritional-supplementation-item-name {margin-bottom: 15px;}
-  .box_layout ul {
-    
+    .nutritional-supplementation-item-name {margin-bottom: 15px;}
+    .box_layout ul {
+
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-}
+    }
     div#rec-filter {
     justify-content: flex-start;
-}
-  .nutritional-supplementation-timing-outer,.nutritional-supplementation-dosage-outer {
+    }
+    .nutritional-supplementation-timing-outer,.nutritional-supplementation-dosage-outer {
     grid-template-columns:1fr;
-   
-}.dosage-items {
+
+    }.dosage-items {
     grid-template-columns: 1fr;
-}
-.dosage-items label {
-    display: flex;
-    flex-direction: column;
-}
-.nutritional-supplementation-dosage-outer {
-    padding-bottom: 18px;
-}
+    }
+    .dosage-items label {
+        display: flex;
+        flex-direction: column;
+    }
+    .nutritional-supplementation-dosage-outer {
+        padding-bottom: 18px;
+    }
     .form-type-radios { float: none; width: auto; text-align: left; }
-.questionrow > span{float: none; width: auto;}
+    .questionrow > span{float: none; width: auto;}
     .top-cart .icon .fa-shopping-cart { font-size: 0; }
     .menu-block div { color: #00577f !important; }
     .header-mobile { display: none; }
@@ -4388,60 +4391,70 @@ label.hide-m input {
     #ask_expert .modal-dialog { width: 96%; transform: none; }
     #schedule_btn_in { padding: 20px; height: inherit; }
 
-#shopify-section-blog-template .list-blog .blog_img { float: none; width: 100%; margin-right: 0; }
-#shopify-section-blog-template .list-blog .des { float: none; width: 100%;  }
+    #shopify-section-blog-template .list-blog .blog_img { float: none; width: 100%; margin-right: 0; }
+    #shopify-section-blog-template .list-blog .des { float: none; width: 100%;  }
     .health_box_plan { margin-bottom: 50px; }
     #humani_sec .health_plan h2 { font-size: 20px; line-height: 40px; }
     #humani_sec .health_plan { width: 240px; margin: 0 auto; margin-bottom: 40px; }
     #humani_sec .health_box_plan { grid-template-columns: 1fr; }
-  .nutritional-supplementation-header {
-    display: block;
-}
+    .nutritional-supplementation-header { display: block; } 
+    #my-plan-tab-section .nutritional-supplementation-header h2, #my-plan-tab-section .dietery-plan-header h2 {
+        font-size: 15px;
+        line-height: 22px;
+        padding-left: 0;
+    }
 
-#my-plan-tab-section .nutritional-supplementation-header h2, #my-plan-tab-section .dietery-plan-header h2 {
-    font-size: 15px;
-    line-height: 22px;
-    padding-left: 0;
-}
+    .add-recommendation span {
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+    }
 
-.add-recommendation span {
-    width: 20px;
-    height: 20px;
-    font-size: 15px;
-}
+    .nutritional-supplementation-header {
+        padding: 7px;
+    }
 
-.nutritional-supplementation-header {
-    padding: 7px;
-}
+    #my-plan-tab-section .nutritional-supplementation-timing-outer {
+        grid-template-columns: 1fr;
+    }
 
-#my-plan-tab-section .nutritional-supplementation-timing-outer {
-    grid-template-columns: 1fr;
-}
+    .nutritional-supplementation-buy-button {
+        justify-self: flex-start;
+    }
 
-.nutritional-supplementation-buy-button {
-    justify-self: flex-start;
-}
+    #my-plan-tab-section .nutritional-supplementation-item {
+        grid-template-columns: 1fr;
+    }
 
-#my-plan-tab-section .nutritional-supplementation-item {
-    grid-template-columns: 1fr;
-}
+    #my-plan-tab-section .item-left-section {
+        grid-template-columns: 1fr;
+    }
 
-#my-plan-tab-section .item-left-section {
-    grid-template-columns: 1fr;
-}
+    .nutritional-supplementation-type-outer {
+        display: grid;
+        grid-gap: 12px;
+    }
 
-.nutritional-supplementation-type-outer {
-    display: grid;
-    grid-gap: 12px;
-}
+    .intake-type-outer {
+        display: grid;
+    }
 
-.intake-type-outer {
-    display: grid;
-}
+    .nutritional-supplementation-buy-button { display: block; }
 
-.nutritional-supplementation-buy-button {
-    display: block;
-}
+    .save_month h4 { font-size: 16px; }
+    .extra-save-inner p, .save_month_desc p { font-size: 15px; }
+    .new_mem_consult_outer .memberconsult_right ul li { font-size: 16px; }
+    .new_mem_consult_outer h2#member-ship-title { font-size: 33px; line-height: 40px; }
+    .new_mem_consult_outer .memberconsult_right h3#member-ship-title-sub { font-size: 18px; }
+    .extra-save-inner h3 { font-size: 20px; line-height: 22px; }
+    #extra-save-pack a#member-ship-link { font-size: 16px; padding: 12px 12px; }
+    #hum-nutri-consult h2#member-ship-title { font-size: 20px; }
+    #hum-nutri-consult #member-ship-desc { padding: 20px 10px; }
+    #hum-nutri-consult a#member-ship-link { width: 90%; padding: 15px 20px; }
+    .extra-save-box { margin-bottom: 15px; }
+
+
+
 }
 
 @media (max-width: 480px) {
@@ -4578,9 +4591,12 @@ label.hide-m input {
     #sign_question_sec ul li.call_us a { padding: 0 20px; font-size: 16px; }
     .membership-consultation .page-header h3 { bottom: 30px; font-size: 16px; left: 12px; text-transform: capitalize; }
     h2#member-ship-title, h3#member-ship-title-sub { font-size: 20px; line-height: 30px; }
-    #schedule_btn_in {  padding: 20px 15px; height: inherit;  font-size: 16px; }
+    #schedule_btn_in {  padding: 20px 15px; height: inherit;  font-size: 16px; } 
+    .my-plan-button-div { position: static; }
 
-  .my-plan-button-div { position: static; }
+    .new_mem_consult_outer h2#member-ship-title { font-size: 23px; line-height: 30px; }
+    .new_mem_consult_outer .memberconsult_right ul li { background-size: 20px;  padding-left: 35px; }
+
 
 
 }
