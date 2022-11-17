@@ -3722,7 +3722,32 @@ label.hide-m input {
 }
 
 
+/********************** Member-consultations *************************/
 
+
+.new_mem_consult_outer h2#member-ship-title { text-transform: none; font-size: 46px; line-height: 54px; letter-spacing: -0.50px; color: #434343; }
+.new_mem_consult_outer .memberconsult_right h3#member-ship-title-sub { font-size: 21px; line-height: 30px; color: #434343; letter-spacing: -0.40px; font-weight: 600; margin-bottom: 24px; }
+.new_mem_consult_outer .memberconsult_right ul li { background: url(https://cdn.shopify.com/s/files/1/0317/4635/9433/files/blue_tick.png?v=1630072148) no-repeat 0px 3px; padding-left: 50px; font-size: 18px; line-height: 28px;  letter-spacing: -0.40px; color: #434343; list-style: none; padding-bottom: 20px;}
+
+.new_mem_consult_outer .memberconsult_right p { font-size: 18px; line-height: 28px;  letter-spacing: -0.40px; color: #434343; }
+.hum-nutri-inner { border: 1px solid #707070; text-align: center; padding-bottom: 20px;}
+#hum-nutri-consult h2#member-ship-title { color: #434343; font-size: 24px; line-height: 28px;  letter-spacing: -0.40px; background: #F3F2F2; padding: 11px 0; font-weight: 600; margin: 0;}
+#hum-nutri-consult #member-ship-desc { padding: 20px 0; padding-bottom: 0; }
+#hum-nutri-consult #member-ship-desc p { font-size: 18px; line-height: 26px;  letter-spacing: -0.40px; color: #434343; margin-bottom: 14px; }
+#hum-nutri-consult a#member-ship-link { margin: 0 auto; margin-top: 20px; padding: 20px 25px; width: 40%; font-size: 18px;}
+
+#extra-save-pack { padding: 45px 0; }
+.extra-save-inner h3 { color: #434343; font-size: 24px; line-height: 26px;  letter-spacing: -0.40px; font-weight: 600; margin-bottom: 25px; }
+.extra-save-inner p, .save_month_desc p { font-size: 18px; line-height: 28px;  letter-spacing: -0.40px; color: #434343; margin-bottom: 14px; }
+.extra-save-inner #member-ship-desc { margin-bottom: 30px; }
+.extra-save-box { border: 1px solid #707070; padding: 18px 22px;}
+.save_month { background: #F3F2F2; padding: 18px 22px; margin: -18px -22px; padding-bottom: 18px; margin-bottom: 18px; }
+.save_month h4 { font-size: 21px; line-height: 28px; color: #434343; letter-spacing: -0.40px; font-weight: 600; margin-bottom: 0; }
+.save_month h4 span { color: #00577F; display: block; font-weight: 400;}
+.save_month_desc p { margin-bottom: 8px; }
+#extra-save-pack  a#member-ship-link { width: 100%; font-size: 18px; line-height: 18px; letter-spacing: -0.25px; margin-top: 15px; padding: 20px 25px;}
+
+#member-ship-nutritionist.new_mem_consult_outer { border-top: none; padding-top: 0; }
 
 
 /********************** Responsive *************************/
