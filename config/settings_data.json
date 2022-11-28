@@ -2440,7 +2440,15 @@
       "1501581507779",
       "1490604451368",
       "1581499456875"
-    ]
+    ],
+    "blocks": {
+      "3475573022091160205": {
+        "type": "shopify:\/\/apps\/blockify-ip-block\/blocks\/app-embed\/2e3e0ba5-0e70-447a-9ec5-3bf76b5ef12e",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
