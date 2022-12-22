@@ -1,7 +1,16 @@
+{% assign sswFontelloUrl = '/' %}
+{% if shop.metafields.ssw['assets_manifest'].value['ssw-fontello.woff'] %}
+  {% assign sswFontelloFileName = shop.metafields.ssw['assets_manifest'].value['ssw-fontello.woff'] %}
+  {% if shop.metafields.ssw['env'] == 'dev' %}
+    {% assign sswFontelloUrl = shop.metafields.ssw['ssw_domain'] | append: '/public/assets/build/' | append: sswFontelloFileName | append: '?shop=' | append: shop.url %}
+  {% else %}
+    {% assign sswFontelloUrl = 'https://static.socialshopwave.com/' | append: shop.metafields.ssw['env'] | append: '-assets/' | append: sswFontelloFileName %}
+  {% endif %}
+{% endif %}
 <style>
   @font-face {
     font-family: "Ssw Fontello";
-    src: url("https://static.socialshopwave.com/images/faqs/ssw-fontello.woff") format("woff");
+    src: url("{{ sswFontelloUrl }}");
     font-weight: 400;
     font-style: normal;
     font-display: fallback;
