@@ -23,7 +23,7 @@ gtag('config', 'G-XW9YMN90D8');
 </script>
 {% include 'easylockdown_head' %}
 {% include 'gtmtrackinghead' %}
-
+{% include 'dataLayer-allPages' %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -140,7 +140,9 @@ pintrk('page');
 <script type="text/javascript" defer="defer"  src="https://musicplayer.shopifyappexperts.com/js/musicplayer.js"></script>{% include 'swift_core' %} 
  
   {% render 'bookthatapp-widgets' %}
-</head>
+
+                        {% include 'otRegion' %}            
+                        </head>
 <!-- { % include 'search-autocomplete' %} -->
 {% comment %}
   Add the page template as a class for easy page or template specific styling.
