@@ -4124,9 +4124,17 @@ label.hide-m input {
 
   .recommendation-head { display: grid; grid-template-columns: 1fr 1fr; text-align: center; }
 }
-
+.header-search.mobile {
+ display: none;
+}
 @media (max-width: 767px) {
 
+    .header-search.mobile {
+    display: block;
+    float: none;
+    width: 100%;
+      margin-bottom:20px;
+}
     #my-plan-tab-button,#my-recomm-tab-button { 
     display: block; 
     float: none;
@@ -4990,11 +4998,7 @@ display:none;
 #thirty-minute-consultation #thirty-holder .bta-product-widget{
 display:block;
 }
-  .header-search.mobile {
-    display: block;
-    float: none;
-    width: 100%;
-}
+
 
 .header-search.mobile a {
     display: block!important;
