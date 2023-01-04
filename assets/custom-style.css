@@ -4990,4 +4990,21 @@ display:none;
 #thirty-minute-consultation #thirty-holder .bta-product-widget{
 display:block;
 }
-  
+  .header-search.mobile {
+    display: block;
+    float: none;
+    width: 100%;
+}
+
+.header-search.mobile a {
+    display: block!important;
+    width: 100%;
+}
+
+.header-search.mobile ul li {
+    display: block;
+}
+
+.header-search.mobile ul {
+    padding: 0;
+}
