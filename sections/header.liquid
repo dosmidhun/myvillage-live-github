@@ -166,6 +166,29 @@
     <div class="container header-panel-bottom">
     <div class="row">
       <div class="header-panel">
+        {% if customer %}
+                <div class="mem_dashbd_pag">
+                  {% for tag in customer.tags %}
+                    
+                  {% if tag=='mvg-membership' %}
+                        {% assign bold_member = true %}
+                         {% break %}
+                  {% endif %}
+                  {% endfor %}
+                  {% if bold_member %}
+                    <a class="mem_dashbtn" href="/pages/membership-dashboard">Humanized+ Member Dashboard</a>
+                  {% else %}
+                     <a class="mem_dashbtn" href="/pages/signup-landing">Become a Humanized+ Member</a>
+                  {% endif %}
+                </div>
+                {% else %}
+                     <div class="mem_dashbd_pag">
+                        <a class="mem_dashbtn" href="/pages/signup-landing">Become a Humanized+ Member</a>
+                    </div> 
+                {% endif %}
+
+      </div>
+      <div class="header-panel">
        
           <div class="top-header "> {% include 'header-top-cart' %} </div> <!-- End Top Header --> 
         {% include 'customer_links' %}
