@@ -165,9 +165,10 @@
     </div>  
     <div class="container header-panel-bottom">
     <div class="row">
-      <div class="header-panel">
+      <div class="header-search mobile">
+        <ul>
         {% if customer %}
-                <div class="mem_dashbd_pag">
+                <li class="mem_dashbd_pag">
                   {% for tag in customer.tags %}
                     
                   {% if tag=='mvg-membership' %}
@@ -180,13 +181,14 @@
                   {% else %}
                      <a class="mem_dashbtn" href="/pages/signup-landing">Become a Humanized+ Member</a>
                   {% endif %}
-                </div>
+                </li>
                 {% else %}
-                     <div class="mem_dashbd_pag">
+                     <li class="mem_dashbd_pag">
                         <a class="mem_dashbtn" href="/pages/signup-landing">Become a Humanized+ Member</a>
-                    </div> 
+                    </li> 
                 {% endif %}
 
+      </ul>
       </div>
       <div class="header-panel">
        
