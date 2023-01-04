@@ -4182,7 +4182,7 @@ label.hide-m input {
     .top-cart .icon .fa-shopping-cart { font-size: 0; }
     .menu-block div { color: #00577f !important; }
     .header-mobile { display: none; }
-    #shopify-section-header { padding-top: 20px; }
+    #shopify-section-header { padding-top: 0px; }
     .nav-search-mb { padding: 20px 0 20px; }
     .home-slideshow .top_message { font-size: 10px; position: static;}
     .home-slideshow .slide-heading { line-height: 50px; margin: 0; color: #fff !important; font-size: 36px !important;}
