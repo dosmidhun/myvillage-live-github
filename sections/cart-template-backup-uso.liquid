@@ -61,10 +61,7 @@
             <p class="size">  
               {% if item.product.variants.size != 0 %}
               {% unless item.variant.title contains 'Default' %}
-              <small>{{ item.variant.title }}
-  <span class="saso-cart-item-discount-notes" data-key="{{item.key}}"></span>
-  <span class="saso-cart-item-upsell-notes" data-key="{{item.key}}"></span>
-                                  </small>
+              <small>{{ item.variant.title }}</small>
               {% endunless %}
               {% endif %}
             </p>
@@ -113,13 +110,9 @@
             {% endif %}
 
             {% comment %}
-            <p class="price">
-<span class="saso-cart-item-price" data-key="{{item.key}}">{{ item.price | money }}</span>
-</p>
+            <p class="price">{{ item.price | money }}</p>
             {% endcomment %}
-            <p class="price"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{item.key}}" style="display:none !important;"></span>
-<span class="saso-cart-item-line-price" data-key="{{item.key}}">{{ item.line_price | money }}</span>
-</p>
+            <p class="price"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{item.key}}" style="display:none !important;"></span>{{ item.line_price | money }}</p>
 
             {% comment %}
               Added data-id for the ajax cart implementation only.
@@ -144,10 +137,7 @@
     <div class="cart-row col-xs-4">
       <div class="total-price">
       	<h6 {% if settings.enable_multilang %}data-translate="cart.general.subtotal"{%endif%}>{{ 'cart.general.subtotal' | t }}</h6>
-         
-<span class="saso-cart-original-total"><p class="price money" data-cart-total>{{ cart.total_price | money }}</p></span>
-<span class="saso-cart-total"></span>
-
+         <p class="price money" data-cart-total>{{ cart.total_price | money }}</p>
       </div>
 
       {% comment %}
