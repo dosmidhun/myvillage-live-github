@@ -1294,7 +1294,7 @@
           "show_desc": "no-show",
           "display_subtotal": false,
           "display_product_detail_tag": false,
-          "display_product_detail_share": true,
+          "display_product_detail_share": false,
           "addthis-code": "<script type=\"text\/javascript\" src=\"\/\/s7.addthis.com\/js\/300\/addthis_widget.js#pubid=ra-595b0ea2fb9c5869\"><\/script>",
           "show_tab": "horizontal",
           "display_product_detail_description": true,
