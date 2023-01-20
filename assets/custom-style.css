@@ -5012,3 +5012,742 @@ display:block;
 .header-search.mobile ul {
     padding: 0;
 }
+/*Sales landing*/
+body#sales-landing-page p{
+  color:#111928;
+}
+body#sales-landing-page .main-content{
+width:100%;
+padding: 0;
+}
+body#sales-landing-page .shopify-section.signup_banner {
+  background-image: url('https://cdn.shopify.com/s/files/1/0317/4635/9433/files/Intersect.jpg?v=1674116755');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  min-height: 804px;
+  padding: 60px 20px;
+}
+body#sales-landing-page .sign_banner_right img {
+  width: auto;
+}
+
+a.sale-button {
+  background: #1A56DB;
+  border-radius: 50px;
+  height: auto;
+  padding: 12px 25px;
+  line-height: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+body#sales-landing-page .sales-head-intro{
+
+font-family: Montserrat;
+font-size: 30px;
+font-weight: 600;
+line-height: 45px;
+color: #00577F;
+
+
+}
+a.sale-button {
+  background: #1A56DB;
+  border-radius: 50px;
+  height: auto;
+  padding: 10px 25px;
+  line-height: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.sale-button-green {
+  background: #3AB548;
+  border-radius: 5px;
+  height: auto;
+  padding: 12px 25px;
+  line-height: 20px;
+  border: 8px solid #fff;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color:#fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+a.sale-button:hover {
+  background: #3AB548;
+}
+body#sales-landing-page .signup_banner .sign_banner_right {
+  margin-top: 125px;
+}
+
+body#sales-landing-page #sign_two_blk .row {
+  display: block;
+  
+}
+
+body#sales-landing-page #sign_two_blk .become_sec,body#sales-landing-page #sign_two_blk .row > div:last-child,body#sales-landing-page .are_you_sec,body#sales-landing-page #sign_two_blk .row > div:first-child {
+  background: none;
+  float: none;
+}
+body#sales-landing-page .col-sm-12.are-you {
+  text-align: center;
+  margin-top: 60px;
+}
+body#sales-landing-page .are-you-head {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  color:#00577F;
+}
+body#sales-landing-page .col-sm-12.are-you p{
+ 
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+
+}
+body#sales-landing-page #sign_two_blk  .row.split {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
+.row.split .are_inner {
+  padding: 20px;
+}
+body#sales-landing-page  .become_sec {
+  min-height: unset;
+}
+
+body#sales-landing-page #sign_three_blk {
+  background-image: url('https://cdn.shopify.com/s/files/1/0317/4635/9433/files/inter-bottom.jpg?v=1674128971');
+background-position: bottom center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 646px;
+padding: 60px 20px;
+}
+body#sales-landing-page #sign_three_blk_top {
+  background-image: url('https://cdn.shopify.com/s/files/1/0317/4635/9433/files/inter-upper.jpg?v=1674130010');
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 406px;
+padding: 60px 20px;
+}
+body#sales-landing-page .sign_benfits_pack{
+  padding: 0 0px;
+}
+body#sales-landing-page.sign_benfits_pack h3 {
+  display:none;
+}
+
+body#sales-landing-page .membership-title {
+ 
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  color:#00577F;
+  text-align: center;
+  
+}
+body#sales-landing-page #sign_three_blk_top {
+  padding-top: 95px;
+  padding-bottom: 0;
+}
+#sign_three_blk_top p {
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+body#sales-landing-page #sign_three_blk_top ul {
+ 
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+body#sales-landing-page #sign_why {
+  background: none;
+}
+
+body#sales-landing-page  .sign_why_inner h2{
+
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 600;
+line-height: 54px;
+letter-spacing: 0em;
+text-align: center;
+color: #00577F;
+}
+body#sales-landing-page  .sign_why_inner p{
+
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+  
+
+}
+
+body#sales-landing-page  .row.bottom-member ul {
+
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#00577F;
+  padding-left:0;
+}
+
+body#sales-landing-page  .row.bottom-member h3 {
+
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 600;
+line-height: 54px;
+letter-spacing: 0em;
+text-align: center;
+color:#00577F;
+
+}
+body#sales-landing-page  .row.bottom-member a{
+  text-align: center;
+display: inline-block;
+  width: auto;
+  margin: 0 auto;
+}
+body#sales-landing-page  .sign_why_right_inner img {
+  width:auto;
+}
+.button-align{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+body#sales-landing-page .sign_why_inner {
+  
+  padding: 0px 20px;
+}
+body#sales-landing-page #sign_why {
+  padding: 60px 20px;
+}
+body#sales-landing-page .health_cont_bottom {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body#sales-landing-page .health_cont_bottom li{
+  margin-bottom:15px;
+}
+
+body#sales-landing-page #humani_sec p {
+
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+body#sales-landing-page #humani_sec {
+  background-image: url('https://cdn.shopify.com/s/files/1/0317/4635/9433/files/inter-upper.jpg?v=1674130010');
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 406px;
+padding: 60px 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+body#sales-landing-page .health_plan {
+  background: #fff;
+  box-shadow: 5px 5px 16px 6px #B0C6DD;
+}
+ @media (min-width: 992px) and (max-width: 1199px){
+body#sales-landing-page  .become_sec {
+  min-height: unset;
+}
+ }
+
+@media(max-width:991px){
+body#sales-landing-page .shopify-section.signup_banner{
+    padding: 0px 20px 40px;
+  }
+body#sales-landing-page .signup_banner .sign_banner_right {
+  margin-top: 0;
+}
+body#sales-landing-page a.sale-button{
+    
+  line-height: 20px;
+  font-size: 16px;
+    
+  height: auto;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  }
+body#sales-landing-page .sale-button-green{
+    line-height: 20px;
+    font-size: 16px;
+  }
+body#sales-landing-page .are-you-head {
+  font-size: 28px;
+  line-height: 32px;
+  text-align: left;
+}
+body#sales-landing-page .col-sm-12.are-you p{
+    font-size: 18px;
+font-weight: 400;
+line-height: 20px;
+    text-align: left;
+  }
+body#sales-landing-page .membership-title, body#sales-landing-private .membership-title,body#sales-landing-private .sign_why_inner h2,body#sales-landing-private .row.bottom-member h3{
+    font-size: 28px;
+  line-height: 32px;
+    text-align: left;
+  }
+body#sales-landing-page #sign_two_blk .row.split{
+    grid-template-columns: 1fr;
+  }
+body#sales-landing-page #sign_three_blk_top p,body#sales-landing-private .sign_why_inner p, body#sales-landing-private #humani_sec p{
+    font-size: 16px;
+
+    line-height: 20px;
+
+    margin-top: 15px;
+  }
+body#sales-landing-page .shopify-section h2{
+     font-size: 20px;
+
+    line-height: 24px;
+     text-align: left;
+  }
+body#sales-landing-page #sign_three_blk_top ul,body#sales-landing-private .row.bottom-member ul,body#sales-landing-private .health_cont ul{
+     font-size: 16px;
+    margin-top:20px;
+    line-height: 20px;
+  }
+body#sales-landing-page  #sign_three_blk .row .col-sm-3 {
+  width: 100%;
+  float: none;
+}
+body#sales-landing-page #sign_three_blk{
+    min-height: 608px;
+    padding: 0px 20px;
+    text-align: left;
+  }
+  .button-align{
+    justify-content: flex-start;
+  }
+body#sales-landing-page .row.bottom-member a{
+    margin: 0;
+  }
+  .are_inner, .become_inner{
+    padding:15px;
+  }
+body#sales-landing-page .shopify-section .sales-head-intro {
+    text-align:center;
+}
+}
+
+/*Sales Landing Private*/
+/*Sales landing*/
+body#sales-landing-private p{
+  color:#111928;
+}
+body#sales-landing-private .main-content{
+width:100%;
+padding: 0;
+}
+body#sales-landing-private .shopify-section.signup_banner {
+  background-image: url('https://cdn.shopify.com/s/files/1/0317/4635/9433/files/Intersect.jpg?v=1674116755');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  min-height: 804px;
+  padding: 60px 20px;
+}
+body#sales-landing-private .sign_banner_right img {
+  width: auto;
+}
+
+a.sale-button {
+  background: #1A56DB;
+  border-radius: 50px;
+  height: auto;
+  padding: 12px 25px;
+  line-height: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+body#sales-landing-private .sales-head-intro{
+
+font-family: Montserrat;
+font-size: 30px;
+font-weight: 600;
+line-height: 45px;
+color: #00577F;
+
+
+}
+a.sale-button {
+  background: #1A56DB;
+  border-radius: 50px;
+  height: auto;
+  padding: 10px 25px;
+  line-height: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.sale-button-green {
+  background: #3AB548;
+  border-radius: 5px;
+  height: auto;
+  padding: 12px 25px;
+  line-height: 20px;
+  border: 8px solid #fff;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color:#fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+a.sale-button:hover {
+  background: #3AB548;
+}
+body#sales-landing-private .signup_banner .sign_banner_right {
+  margin-top: 125px;
+}
+
+body#sales-landing-private #sign_two_blk .row {
+  display: block;
+  
+}
+
+body#sales-landing-private #sign_two_blk .become_sec,body#sales-landing-private #sign_two_blk .row > div:last-child,body#sales-landing-private .are_you_sec,body#sales-landing-private #sign_two_blk .row > div:first-child {
+  background: none;
+  float: none;
+}
+body#sales-landing-private .col-sm-12.are-you {
+  text-align: center;
+  margin-top: 60px;
+}
+body#sales-landing-private .are-you-head {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  color:#00577F;
+}
+body#sales-landing-private .col-sm-12.are-you p{
+ 
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+
+}
+body#sales-landing-private #sign_two_blk  .row.split {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
+.row.split .are_inner {
+  padding: 20px;
+}
+body#sales-landing-private  .become_sec {
+  min-height: unset;
+}
+
+body#sales-landing-private #sign_three_blk {
+  background-image: url('https://cdn.shopify.com/s/files/1/0317/4635/9433/files/inter-bottom.jpg?v=1674128971');
+background-position: bottom center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 646px;
+padding: 60px 20px;
+}
+body#sales-landing-private #sign_three_blk_top {
+  background-image: url('https://cdn.shopify.com/s/files/1/0317/4635/9433/files/inter-upper.jpg?v=1674130010');
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 406px;
+padding: 60px 20px;
+}
+body#sales-landing-private .sign_benfits_pack{
+  padding: 0 0px;
+}
+body#sales-landing-private.sign_benfits_pack h3 {
+  display:none;
+}
+
+body#sales-landing-private .membership-title {
+ 
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  color:#00577F;
+  text-align: center;
+  
+}
+body#sales-landing-private #sign_three_blk_top {
+  padding-top: 95px;
+  padding-bottom: 0;
+}
+#sign_three_blk_top p {
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+body#sales-landing-private #sign_three_blk_top ul {
+ 
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+body#sales-landing-private #sign_why {
+  background: none;
+}
+
+body#sales-landing-private  .sign_why_inner h2{
+
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 600;
+line-height: 54px;
+letter-spacing: 0em;
+text-align: center;
+color: #00577F;
+}
+body#sales-landing-private  .sign_why_inner p{
+
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+  
+
+}
+
+body#sales-landing-private  .row.bottom-member ul {
+
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#00577F;
+  padding-left:0;
+}
+
+body#sales-landing-private  .row.bottom-member h3 {
+
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 600;
+line-height: 54px;
+letter-spacing: 0em;
+text-align: center;
+color:#00577F;
+
+}
+body#sales-landing-private  .row.bottom-member a{
+  text-align: center;
+display: inline-block;
+  width: auto;
+  margin: 0 auto;
+}
+body#sales-landing-private  .sign_why_right_inner img {
+  width:auto;
+}
+.button-align{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+body#sales-landing-private .sign_why_inner {
+  
+  padding: 0px 20px;
+}
+body#sales-landing-private #sign_why {
+  padding: 60px 20px;
+}
+body#sales-landing-private .health_cont_bottom {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body#sales-landing-private .health_cont_bottom li{
+  margin-bottom:15px;
+}
+
+body#sales-landing-private #humani_sec p {
+
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+body#sales-landing-private #humani_sec {
+  background-image: url('https://cdn.shopify.com/s/files/1/0317/4635/9433/files/inter-upper.jpg?v=1674130010');
+background-position: top center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 406px;
+padding: 60px 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+body#sales-landing-private .health_plan {
+  background: #fff;
+  box-shadow: 5px 5px 16px 6px #B0C6DD;
+}
+body#sales-landing-private #sign_why_top {
+  margin: 60px 20px;
+}
+body#sales-landing-private .image-align {
+  display: flex;
+  justify-content: center;
+}
+ @media (min-width: 992px) and (max-width: 1199px){
+body#sales-landing-private  .become_sec {
+  min-height: unset;
+}
+
+   
+ }
+
+@media(max-width:991px){
+  body#sales-landing-private .shopify-section.signup_banner{
+    padding: 0px 20px 40px;
+  }
+  body#sales-landing-private .signup_banner .sign_banner_right {
+  margin-top: 0;
+}
+  body#sales-landing-private a.sale-button{
+    
+  line-height: 20px;
+  font-size: 16px;
+    
+  height: auto;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  }
+  body#sales-landing-private .sale-button-green{
+    line-height: 20px;
+    font-size: 16px;
+  }
+  body#sales-landing-private .are-you-head {
+  font-size: 28px;
+  line-height: 32px;
+  text-align: left;
+}
+  body#sales-landing-private .col-sm-12.are-you p{
+    font-size: 18px;
+font-weight: 400;
+line-height: 20px;
+    text-align: left;
+  }
+  body#sales-landing-private .membership-title, body#sales-landing-private .membership-title,body#sales-landing-private .sign_why_inner h2,body#sales-landing-private .row.bottom-member h3{
+    font-size: 28px;
+  line-height: 32px;
+    text-align: left;
+  }
+  body#sales-landing-private #sign_two_blk .row.split{
+    grid-template-columns: 1fr;
+  }
+  body#sales-landing-private #sign_three_blk_top p,body#sales-landing-private .sign_why_inner p, body#sales-landing-private #humani_sec p{
+    font-size: 16px;
+
+    line-height: 20px;
+
+    margin-top: 15px;
+  }
+  body#sales-landing-private .shopify-section h2{
+     font-size: 20px;
+
+    line-height: 24px;
+     text-align: left;
+  }
+  body#sales-landing-private #sign_three_blk_top ul,body#sales-landing-private .row.bottom-member ul,body#sales-landing-private .health_cont ul{
+     font-size: 16px;
+    margin-top:20px;
+    line-height: 20px;
+  }
+  body#sales-landing-private  #sign_three_blk .row .col-sm-3 {
+  width: 100%;
+  float: none;
+}
+  body#sales-landing-private #sign_three_blk{
+    min-height: 608px;
+    padding: 0px 20px;
+    text-align: left;
+  }
+  .button-align{
+    justify-content: flex-start;
+  }
+  body#sales-landing-private .row.bottom-member a{
+    margin: 0;
+  }
+  .are_inner, .become_inner{
+    padding:15px;
+  }
+  body#sales-landing-private .shopify-section .sales-head-intro {
+    text-align:center;
+}
+}
