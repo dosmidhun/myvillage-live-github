@@ -5032,15 +5032,17 @@ body#sales-landing-page .sign_banner_right img {
   width: auto;
 }
 
-a.sale-button {
+body#sales-landing-page a.sale-button {
   background: #1A56DB;
   border-radius: 50px;
   height: auto;
-  padding: 12px 25px;
+  padding: 10px 25px;
   line-height: 20px;
   line-height: 30px;
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 body#sales-landing-page .sales-head-intro{
@@ -5053,19 +5055,8 @@ color: #00577F;
 
 
 }
-a.sale-button {
-  background: #1A56DB;
-  border-radius: 50px;
-  height: auto;
-  padding: 10px 25px;
-  line-height: 20px;
-  line-height: 30px;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.sale-button-green {
+
+body#sales-landing-page .sale-button-green {
   background: #3AB548;
   border-radius: 5px;
   height: auto;
@@ -5079,7 +5070,7 @@ a.sale-button {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-a.sale-button:hover {
+body#sales-landing-page a.sale-button:hover {
   background: #3AB548;
 }
 body#sales-landing-page .signup_banner .sign_banner_right {
@@ -5398,15 +5389,17 @@ body#sales-landing-private .sign_banner_right img {
   width: auto;
 }
 
-a.sale-button {
+body#sales-landing-private a.sale-button {
   background: #1A56DB;
   border-radius: 50px;
   height: auto;
-  padding: 12px 25px;
+  padding: 10px 25px;
   line-height: 20px;
   line-height: 30px;
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 body#sales-landing-private .sales-head-intro{
@@ -5419,19 +5412,8 @@ color: #00577F;
 
 
 }
-a.sale-button {
-  background: #1A56DB;
-  border-radius: 50px;
-  height: auto;
-  padding: 10px 25px;
-  line-height: 20px;
-  line-height: 30px;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.sale-button-green {
+
+body#sales-landing-private  .sale-button-green {
   background: #3AB548;
   border-radius: 5px;
   height: auto;
@@ -5445,7 +5427,7 @@ a.sale-button {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-a.sale-button:hover {
+body#sales-landing-private  a.sale-button:hover {
   background: #3AB548;
 }
 body#sales-landing-private .signup_banner .sign_banner_right {
