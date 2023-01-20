@@ -5013,6 +5013,9 @@ display:block;
     padding: 0;
 }
 /*Sales landing*/
+body#sales-landing-page #shopify-section-navigation,body#sales-landing-private #shopify-section-navigation{
+  margin-bottom: 30px;
+}
 body#sales-landing-page p{
   color:#111928;
 }
@@ -5371,7 +5374,7 @@ body#sales-landing-page .shopify-section .sales-head-intro {
 }
 
 /*Sales Landing Private*/
-/*Sales landing*/
+
 body#sales-landing-private p{
   color:#111928;
 }
