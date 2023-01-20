@@ -1,3 +1,5 @@
+{% comment %}
+
 {% assign bold_member = false %}
 {% if customer %}
   {% for tag in customer.tags %}
@@ -7,9 +9,9 @@
     {% endif %}
   {% endfor %}
   {% if bold_member %}
-   
-      <script>window.location='/pages/membership-dashboard';</script>
-    
+    <script>window.location='/pages/membership-dashboard';</script>
   {% endif %}
+  
 {% endif %}
+{% endcomment %}
 {% section 'page-sales-landing-private' %}
