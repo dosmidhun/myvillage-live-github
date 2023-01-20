@@ -2426,6 +2426,42 @@
           "six_month_content": "<!-- Practice Better Booking Widget: start -->\n<style>.better-inline-booking-widget{position:relative;overflow:hidden}.better-inline-booking-widget iframe{position:absolute;top:0;left:0;width:100%;height:100%}<\/style>\n<div class=\"better-inline-booking-widget\" data-url=\"https:\/\/my.practicebetter.io\" data-package=\"6365e47c022189a814bfff3e\" data-hash=\"608b0c932a8326079004eea6\" data-theme=\"1b788b\" data-theme-accent=\"91b000\" style=\"width:100%;max-width:550px;height:800px;\" data-scrollbar-visible=\"false\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/cdn.practicebetter.io\/assets\/js\/booking.widget.js\"><\/script>\n<!-- Practice Better Booking Widget: end —>-->",
           "twelve_month_content": "<!-- Practice Better Booking Widget: start -->\n<style>.better-inline-booking-widget{position:relative;overflow:hidden}.better-inline-booking-widget iframe{position:absolute;top:0;left:0;width:100%;height:100%}<\/style>\n<div class=\"better-inline-booking-widget\" data-url=\"https:\/\/my.practicebetter.io\" data-package=\"6365e525022189a814c004cb\" data-hash=\"608b0c932a8326079004eea6\" data-theme=\"1b788b\" data-theme-accent=\"91b000\" style=\"width:100%;max-width:550px;height:800px;\" data-scrollbar-visible=\"false\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/cdn.practicebetter.io\/assets\/js\/booking.widget.js\"><\/script>\n<!-- Practice Better Booking Widget: end -->"
         }
+      },
+      "page-sales-landing": {
+        "type": "page-sales-landing",
+        "settings": {
+          "enable": true,
+          "signup_banner_cont": "<h2 class=\"sales-head-intro\">Introducing<\/h2>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0317\/4635\/9433\/files\/sign_banner_logo.png?v=1630049340\">\n<h1>A new personalized health membership program.<\/h1>\n<a href=\"javascript:void(0)\" class=\"member_btn sale-button\" data-toggle=\"modal\" data-target=\"#membership_popup\">Start your 30-day FREE trial!<\/a> \n<a href=\"\/account\/login\" class=\"member_btn sale-button\">If you're already a member, click here<\/a>\n<div class=\"sale-button-green\">First 100 new members will receive a\n FREE 30-minute introductory consult !<\/div>",
+          "are_you_sec": "Content",
+          "become_sec": "Content",
+          "member_popup_title": "Title",
+          "member_popup_form": "Form Steps",
+          "member_popup_thankyou": "Thankyou Steps",
+          "goto_member_btn": "Button",
+          "goto_member_link": "",
+          "member_popup_note": "Member Popup Note",
+          "benefit_title": "Text",
+          "benefit_pack1_title": "Text",
+          "benefit_pack1_cont": "Content",
+          "deep_discounts": "Content",
+          "benefit_pack2_title": "Text",
+          "benefit_pack2_cont": "Content",
+          "vip_support": "Content",
+          "benefit_pack3_title": "Text",
+          "benefit_pack3_cont": "Content",
+          "personalized_popup": "Content",
+          "benefit_pack4_title": "Text",
+          "benefit_pack4_cont": "Content",
+          "freeshipping_popup": "Content",
+          "sign_why_sec": "Content",
+          "join_title": "Text",
+          "join_content": "Content",
+          "sign_humani_content": "Content",
+          "sign_humani_btm_cont": "Content",
+          "sign_humani_right_cont": "Content",
+          "sign_qtn_title": "Text",
+          "sign_qtn_content": "Content"
+        }
       }
     },
     "content_for_index": [
