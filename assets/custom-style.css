@@ -5039,6 +5039,8 @@ body#sales-landing-page a.sale-button {
   padding: 10px 25px;
   line-height: 20px;
   line-height: 30px;
+  color: #fff;
+  display: inline-block;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -5400,6 +5402,8 @@ body#sales-landing-private a.sale-button {
   font-weight: 700;
   margin-bottom: 10px;
   margin-top: 10px;
+  color: #fff;
+  display: inline-block;
 }
 
 body#sales-landing-private .sales-head-intro{
