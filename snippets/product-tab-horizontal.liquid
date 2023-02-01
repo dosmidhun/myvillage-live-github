@@ -121,7 +121,7 @@
       {% unless the_snippet_reviews contains 'Liquid error' %}
       {{ the_snippet_reviews }}
       {% endunless %}    
-      
+      {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
 <!--       <div id="shopify-ali-review" product-id="{{ product.id }}"> {{ shop.metafields.review_collector.review_code }} </div> -->
       {% comment %}
       Add product review widget, must install Product Review App:
