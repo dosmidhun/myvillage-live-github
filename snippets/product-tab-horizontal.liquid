@@ -115,7 +115,7 @@
     {% endif %}
 
      {% if section.settings.display_product_reviews %}       
-    <div id="collapse-tab4" class="tab-pane fade">
+    <div data-test id="collapse-tab4" class="tab-pane fade">
       
       {% capture the_snippet_reviews %}{% render 'socialshopwave-widget-recommends' with 1 %}{% endcapture %}
       {% unless the_snippet_reviews contains 'Liquid error' %}
