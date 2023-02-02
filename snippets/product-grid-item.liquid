@@ -106,7 +106,7 @@
         {% else %}
         {{ product.title | split: '|' | first }}
         {% endif %}
-         <div style="height: 24px!important">
+         <div style="height: 14px!important">
         {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
         </div>
         {% if product.metafields.ns-description2.description2 !='' %}
