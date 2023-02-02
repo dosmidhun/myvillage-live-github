@@ -116,7 +116,9 @@
 
      {% if section.settings.display_product_reviews %}       
     <div data-test id="collapse-tab4" class="tab-pane fade">
+      <div style="height: 24px!important">
       {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+        </div>
       {% capture the_snippet_reviews %}{% render 'socialshopwave-widget-recommends' with 1 %}{% endcapture %}
       {% unless the_snippet_reviews contains 'Liquid error' %}
       {{ the_snippet_reviews }}
