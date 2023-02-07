@@ -43,9 +43,10 @@
   		
     {% endif %}
   {% endif %}
-  var cust = {{ customer }};
-  console.log("CUSTOMER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",cust);
+
+  
   {% if customer.metafields.global.iqyou_has_account %}
+    
     window.cus_id = "{{ customer.metafields.global.iqyou_user_key }}";
      var storage_local_string=window.localStorage.getItem('cus_row');
    var storage_local_json = JSON.parse(storage_local_string);
