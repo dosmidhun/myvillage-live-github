@@ -1,6 +1,6 @@
 {
   "current": {
-    "enable_multilang": true,
+    "enable_multilang": false,
     "lange_1": "English",
     "lange_2": "German",
     "google_font_name": "Roboto, Montserrat, Roboto Condensed, Raleway, Tinos, Arial, Arimo, Poppins, Oswald, Lato",
