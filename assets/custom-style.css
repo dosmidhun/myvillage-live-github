@@ -3579,7 +3579,7 @@ button.save_new_recom {
     /* display: flex; */
     /* flex-wrap: wrap; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 12px;
     justify-content: center;
 }
