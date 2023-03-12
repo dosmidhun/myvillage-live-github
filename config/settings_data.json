@@ -1622,9 +1622,9 @@
           "1501570258326-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner2_2100x_cd3c3867-7757-4506-a7b8-ee0fa59fcd3b.jpg",
+              "image": "shopify:\/\/shop_images\/SpringSale2023banner.jpg",
               "alignment": "right",
-              "title": "Helping you live your<br> healthiest life",
+              "title": "",
               "heading_color": "#000000",
               "heading_size": "40",
               "subheading": "",
@@ -1676,7 +1676,7 @@
           "message_box3": "<h2>Sinus Survival<\/h2>\n<p>Sinus Survival was developed to identify and eliminate the root causes of your sinus symptoms and to heal inflammation.<\/p>",
           "link3": "shopify:\/\/collections\/sinus-survival",
           "box3_image": "shopify:\/\/shop_images\/9_large_d305a5da-59d6-4876-9091-40eb833bc6b6.jpg",
-          "mob_banner_image": "shopify:\/\/shop_images\/mainmobile.jpg",
+          "mob_banner_image": "shopify:\/\/shop_images\/SpringSale2023-mobile.jpg",
           "mob_link": "https:\/\/myvillagegreen.com\/pages\/shop-by-brands"
         }
       },
