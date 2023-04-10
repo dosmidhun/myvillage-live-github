@@ -154,6 +154,10 @@ pintrk('page');
             	 {% endif %}
      {% endfor %}
   {% endif %}
+
+<!--   SAVEDBY -->
+  <script async src="https://savedby.ngrok.io/proxy/3000/static/js/widget.js?shop={{ shop.permanent_domain }}"></script>
+<!--   SAVEDBY -->
 <body id="{{ page_title | handle }}" class="{% if bold_member %} mvg-member {% endif %} customing-{{template| handleize }} template-{{ template | split: '.' | first }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
 {% capture the_snippet_content %}{% render 'socialshopwave-helper' %}{% endcapture %}
             {% unless the_snippet_content contains 'Liquid error' %}
