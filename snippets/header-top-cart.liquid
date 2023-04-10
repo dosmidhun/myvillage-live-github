@@ -48,6 +48,7 @@
           <span class="price"><span class="money" data-cart-total>{{cart.total_price | money}}</span></span> 
         </p>
       </div>
+      <savedby-widget side-cart></savedby-widget>
       <div class="actions">
         <form method="post" action="/checkout" enctype="multipart/form-data">
 			{%comment%}
