@@ -16,6 +16,13 @@
   </a>
   {% endif %}
 </header>
+
+  {%  liquid
+    assign cartCount = cart.items | where: "vendor", "SavedBy"
+    
+  
+  %}
+  <script>console.log(">>>","{{ cartCount }}")</script>
  
 
 {% if cart.item_count > 0 %}
