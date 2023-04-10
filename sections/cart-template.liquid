@@ -18,7 +18,7 @@
 </header>
 
   {%  liquid
-    assign cartCount = cart.items | where: "vendor", "SavedBy"
+    assign cartCount = cart.items | where: "vendor", "SavedBy" | count
     
   
   %}
