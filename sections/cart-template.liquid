@@ -37,7 +37,7 @@
         Loop through products in the cart
       {% endcomment %}
       {% for item in cart.items %}
-        {% if item.vendor == "SavedBy" %}{% continue %}{% endif %}
+
 {%- include 'bold-cart-item' with item -%}
         <li>
           <a class="product-img" href="{{ item.url | within: collections.all }}">
