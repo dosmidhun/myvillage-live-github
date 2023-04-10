@@ -135,7 +135,7 @@
 
             <div class="quantity">
               <label {% if settings.enable_multilang %}data-translate="cart.label.quantity"{%endif%}>{{ 'cart.label.quantity' | t }}</label>
-              <input class="qty" type="number" name="updates[]" id="updates_{{ item.id }}" value="{{ item.quantity }}" min="0" data-id="{{ item.id }}">
+              <input class="qty" type="number" name="updates[{{ item.key }}]" id="updates_{{ item.id }}" value="{{ item.quantity }}" min="0" data-id="{{ item.id }}">
               
               {% comment %}
                 To remove an item from the cart, reload the page with the following parameters.
