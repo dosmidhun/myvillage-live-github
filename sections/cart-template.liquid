@@ -17,13 +17,7 @@
   {% endif %}
 </header>
 
-  {%  liquid
-    assign cartCount = cart.items | where: "vendor", "SavedBy" | count
-    
-  
-  %}
-  <script>console.log(">>>","{{ cartCount }}")</script>
- 
+
 
 {% if cart.item_count > 0 %}
 <div id="shappify-qty-cart-msg"></div>
