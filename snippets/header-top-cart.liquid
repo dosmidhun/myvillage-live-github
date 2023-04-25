@@ -14,7 +14,7 @@
     <div class="has-items">
       <ol class="mini-products-list">  
         {% for item in cart.items %}
-          {% if item.vendor == "SavedBy" %}{% continue %}{% endif %}
+
         <li class="item" id="cart-item-{{item.id}}">
           <a href="{{item.url}}" class="product-image">
             <img src="{{ item.image | product_img_url: 'small' }}" alt="{{item.title}}">
