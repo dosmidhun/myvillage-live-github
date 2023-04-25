@@ -75,7 +75,7 @@ Don't forget to close the tag after your loop.
 
                                 {% if section.settings.blog_show_date %}
                                     <span class="article__date testt">Post on
-						              {{ article.published_at | time_tag: date: "%Y-%m-%d %H:%M" }}
+						              {{ article.published_at | time_tag: format: 'month_day_year' }}
 						            </span>
                                 {% endif %}
 
