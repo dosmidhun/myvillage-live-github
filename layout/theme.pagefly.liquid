@@ -158,5 +158,7 @@ pintrk('page');
             	 {% endif %}
      {% endfor %}
   {% endif %}
+
+
 <body id="{{ page_title | handle }}" class="{% if bold_member %} mvg-member {% endif %} customing-{{template| handleize }} template-{{ template | split: '.' | first }} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" ><div class="pagefly-container">{{ content_for_layout }}</div></body>
 </html>
