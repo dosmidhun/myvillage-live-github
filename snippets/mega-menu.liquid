@@ -38,61 +38,66 @@
       
       
       {% assign bold_member = false %}
- 			{% if customer %}
-               
-        		{% for tag in customer.tags %}
-           		 {% if tag == 'mvg-membership' or tag == 'Restricted Users'%}
-               		 {% assign bold_member = true %}
-               		 {% break %}
-            	 {% endif %}
-        	{% endfor %}
-            {% if bold_member %}
-          
-         		 {% if child_l.title=='Designs for Health*' %}
-
-      				 <li class="show-menu">
-       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
-          					{% include 'multilang' with child_l.title %}
-        				 </a>
-      				 </li>
-      
-         		 {% else %}
-          			 <li>
-       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
-          					{% include 'multilang' with child_l.title %}
-        				 </a>
-      				 </li>
-            	 {% endif %}
-                    
-          
-          
-            {% else %}
-					{% if child_l.title=='Designs for Health*' %}
-
-      				 
-      
-         		 {% else %}
-          			 <li>
-       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
-          					{% include 'multilang' with child_l.title %}
-        				 </a>
-      				 </li>
-            	 {% endif %}
-            {% endif %}
-               
-    	   {% else %}
-				 {% if child_l.title=='Designs for Health*' %}
-
-      				 
-      
-         		 {% else %}
-          			 <li>
-       					 <a href="{{ child_l.url }}" {% if child_l.active %}class="current"{% endif %}>
-          					{% include 'multilang' with child_l.title %}
-        				 </a>
-      				 </li>
-            	 {% endif %}
+{% if customer %}
+  
+  {% if bold_member %}
+    {% if slink.title == 'Designs for Health*' %}
+      <li class="show-menu">
+        <a
+          href="{{ slink.url }}"
+          {% if slink.active %}
+            class="current"
           {% endif %}
+        >
+          {{ slink.title }}
+        </a>
+      </li>
+
+    {% else %}
+      <li>
+        <a
+          href="{{ slink.url }}"
+          {% if slink.active %}
+            class="current"
+          {% endif %}
+        >
+          {{ slink.title }}
+        </a>
+      </li>
+    {% endif %}
+
+  {% else %}
+    {% if slink.title == 'Designs for Health*' %}
+    {% else %}
+      <li>
+        <a
+          href="{{ slink.url }}"
+          {% if slink.active %}
+            class="current"
+          {% endif %}
+        >
+          {{ slink.title }}
+        </a>
+      </li>
+    {% endif %}
+  {% endif %}
+
+{% else %}
+  {% if slink.title == 'Designs for Health*' %}
+  {% else %}
+    <li>
+      <a
+        href="{{ slink.url }}"
+        {% if slink.active %}
+          class="current"
+        {% endif %}
+      >
+        {{ slink.title }}
+      </a>
+    </li>
+  {% endif %}
+{% endif %}
+
       
       
       
