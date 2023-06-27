@@ -3,8 +3,10 @@
 {% for t in customer.tags %}
 {% assign tag = t | downcase %}
 {% if tag == 'mvg-membership' %}{% assign elcTag1 = true %}{% endif %}
-{% if tag == 'blocked' %}{% assign elcTag2 = true %}{% endif %}
-{% if tag == 'restricted users' %}{% assign elcTag3 = true %}{% endif %}
+{% if tag == 'mvg-membership-gold' %}{% assign elcTag2 = true %}{% endif %}
+{% if tag == 'mvg-platinum' %}{% assign elcTag3 = true %}{% endif %}
+{% if tag == 'blocked' %}{% assign elcTag4 = true %}{% endif %}
+{% if tag == 'restricted users' %}{% assign elcTag5 = true %}{% endif %}
 {% endfor %}
 {% for t in easylockdown_filter_collection.tags %}
 {% assign tag = t | downcase %}
@@ -19,7 +21,7 @@
 {% unless customer %}
 {% if easylockdownRender %}continue{% endif %}{% continue %}
 {% else %}
-{% unless elcTag1 %}{% if easylockdownRender %}continue{% endif %}{% continue %}{% endunless %}
+{% unless elcTag1 or elcTag2 or elcTag3 %}{% if easylockdownRender %}continue{% endif %}{% continue %}{% endunless %}
 {% endunless %}
 {% endif %}
 {% if easylockdown_filter_collection.collections %}
@@ -34,7 +36,7 @@
 {% unless customer %}
 {% if easylockdownRender %}continue{% endif %}{% continue %}
 {% else %}
-{% unless elcTag1 %}{% if easylockdownRender %}continue{% endif %}{% continue %}{% endunless %}
+{% unless elcTag1 or elcTag2 or elcTag3 %}{% if easylockdownRender %}continue{% endif %}{% continue %}{% endunless %}
 {% endunless %}
 {% endif %}
 {% endif %}
@@ -53,7 +55,7 @@
 {% unless customer %}
 {% if easylockdownRender %}continue{% endif %}{% continue %}
 {% else %}
-{% unless elcTag3 %}{% if easylockdownRender %}continue{% endif %}{% continue %}{% endunless %}
+{% unless elcTag5 %}{% if easylockdownRender %}continue{% endif %}{% continue %}{% endunless %}
 {% endunless %}
 {% endif %}
 {% endif %}
