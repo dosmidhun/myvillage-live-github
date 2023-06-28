@@ -64,8 +64,8 @@
 {% assign easylockdownLockedContent = false %}
 {% assign easylockdownHiddenContent = false %}
 {% if template contains "collection" or template contains "product" %}
-{% if product.collections %}{% for c in product.collections %}{% if c.id == 171815075971 or c.id == 171820286083 or c.id == 171816812675 or c.id == 171816190083 or c.id == 171825463427 or c.id == 171816124547 or c.id == 171822743683 or c.id == 171820351619 or c.id == 171815338115 or c.id == 217221103765 %}{% assign easylockdownLockedContent = true %}{% break %}{% endif %}{% endfor %}{% endif %}
-{% if collection %}{% if collection.id == 171815075971 or collection.id == 171820286083 or collection.id == 171816812675 or collection.id == 171816190083 or collection.id == 171825463427 or collection.id == 171816124547 or collection.id == 171822743683 or collection.id == 171815338115 or collection.id == 217221103765 %}{% assign easylockdownLockedContent = true %}{% endif %}{% endif %}
+{% if product.collections %}{% for c in product.collections %}{% if c.id == 171815075971 or c.id == 413153231086 or c.id == 171820286083 or c.id == 171816812675 or c.id == 171816190083 or c.id == 171825463427 or c.id == 171816124547 or c.id == 171822743683 or c.id == 171815338115 or c.id == 217221103765 %}{% assign easylockdownLockedContent = true %}{% break %}{% endif %}{% endfor %}{% endif %}
+{% if collection %}{% if collection.id == 171815075971 or collection.id == 413153231086 or collection.id == 171820286083 or collection.id == 171816812675 or collection.id == 171816190083 or collection.id == 171825463427 or collection.id == 171816124547 or collection.id == 171822743683 or collection.id == 171815338115 or collection.id == 217221103765 %}{% assign easylockdownLockedContent = true %}{% endif %}{% endif %}
 {% endif %}
 {% if easylockdownLockedContent %}
 {% unless customer %}
