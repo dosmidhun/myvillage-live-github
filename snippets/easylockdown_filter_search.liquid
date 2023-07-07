@@ -14,11 +14,17 @@
 {% if tag == 'medi-herb' %}{% assign elpTag2 = true %}{% endif %}
 {% if tag == 'standard mediherbs' %}{% assign elpTag3 = true %}{% endif %}
 {% if tag == 'standard medi-herb' %}{% assign elpTag4 = true %}{% endif %}
+{% if tag == 'standard process' %}{% assign elpTag5 = true %}{% endif %}
+{% if tag == 'standard mediherbs' %}{% assign elpTag6 = true %}{% endif %}
+{% if tag == 'medi-herb' %}{% assign elpTag7 = true %}{% endif %}
+{% if tag == 'standard mediherb' %}{% assign elpTag8 = true %}{% endif %}
+{% if tag == 'dr hauschka' %}{% assign elpTag9 = true %}{% endif %}
+{% if tag == 'dr. hauschka skin care' %}{% assign elpTag10 = true %}{% endif %}
 {% endfor %}
 {% assign easylockdownSearchException = false %}
 {% unless easylockdownSearchException %}
 {% if easylockdown_filter_search.object_type == 'product' %}
-{% if elpTag1 or elpTag2 or elpTag3 or elpTag4 %}
+{% if elpTag1 or elpTag2 or elpTag3 or elpTag4 or elpTag5 or elpTag6 or elpTag7 or elpTag8 or elpTag9 or elpTag10 %}
 {% unless customer %}
 {% if easylockdownRender %}continue{% endif %}{% continue %}
 {% else %}
