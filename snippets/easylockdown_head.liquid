@@ -90,15 +90,6 @@
 {% endunless %}
 {% endif %}
 {% endunless %}
-{% unless customer %}
-<script type='text/javascript'>easylockdown.hideLinks.push('*[href$="/collections/4-life"],*[data-eld-collection-handle="4-life"],*[href$="/collections/algaecal"],*[data-eld-collection-handle="algaecal"],*[href$="/collections/apex-energetics"],*[data-eld-collection-handle="apex-energetics"],*[href$="/collections/nutrafol"],*[data-eld-collection-handle="nutrafol"],*[href$="/collections/metagenics"],*[data-eld-collection-handle="metagenics"],*[href$="/collections/designs-for-health"],*[data-eld-collection-handle="designs-for-health"],*[href$="/collections/douglas-labs"],*[data-eld-collection-handle="douglas-labs"],*[href$="/collections/next-to-nature"],*[data-eld-collection-handle="next-to-nature"],*[href$="/collections/ortho-molecular"],*[data-eld-collection-handle="ortho-molecular"]');</script>
-{% else %}
-{% assign easylockdownHideLinks = false %}{% unless elcTag5 %}{% assign easylockdownHideLinks = true %}{% endunless %}
-{% if easylockdownHideLinks %}
-<script type='text/javascript'>easylockdown.hideLinks.push('*[href$="/collections/4-life"],*[data-eld-collection-handle="4-life"],*[href$="/collections/algaecal"],*[data-eld-collection-handle="algaecal"],*[href$="/collections/apex-energetics"],*[data-eld-collection-handle="apex-energetics"],*[href$="/collections/nutrafol"],*[data-eld-collection-handle="nutrafol"],*[href$="/collections/metagenics"],*[data-eld-collection-handle="metagenics"],*[href$="/collections/designs-for-health"],*[data-eld-collection-handle="designs-for-health"],*[href$="/collections/douglas-labs"],*[data-eld-collection-handle="douglas-labs"],*[href$="/collections/next-to-nature"],*[data-eld-collection-handle="next-to-nature"],*[href$="/collections/ortho-molecular"],*[data-eld-collection-handle="ortho-molecular"]');</script>
-{% endif %}
-{% endunless %}
-
 
 {% if easylockdownON or easylockdownPasswordProtectedContent %}<meta name="robots" content="noindex,nofollow">{% endif %}
 
