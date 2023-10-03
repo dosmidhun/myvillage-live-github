@@ -48,15 +48,6 @@
 {% endunless %}
 {% endif %}
 {% endunless %}
-{% unless customer %}
-<script type='text/javascript'>easylockdown.hideLinks.push('*[href$="/collections/dr-hauschka-skin-care"],*[data-eld-collection-handle="dr-hauschka-skin-care"],*[href$="/collections/standard-mediherbs"],*[data-eld-collection-handle="standard-mediherbs"],*[href$="/collections/standard-process"],*[data-eld-collection-handle="standard-process"]');</script>
-{% else %}
-{% assign easylockdownHideLinks = false %}{% unless elcTag1 or elcTag2 or elcTag3 %}{% assign easylockdownHideLinks = true %}{% endunless %}
-{% if easylockdownHideLinks %}
-<script type='text/javascript'>easylockdown.hideLinks.push('*[href$="/collections/dr-hauschka-skin-care"],*[data-eld-collection-handle="dr-hauschka-skin-care"],*[href$="/collections/standard-mediherbs"],*[data-eld-collection-handle="standard-mediherbs"],*[href$="/collections/standard-process"],*[data-eld-collection-handle="standard-process"]');</script>
-{% endif %}
-{% endunless %}
-
 
 {% unless easylockdownON or easylockdownSuperPage or template == 'customers/register' or template contains 'page' and page.id == 50920226947 %}
 {% assign easylockdownLockedContent = false %}
