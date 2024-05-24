@@ -53,6 +53,16 @@
 {% endunless %}
 {% assign easylockdownSearchException = false %}
 {% unless easylockdownSearchException %}
+{% if easylockdown_filter_search.object_type == 'product' %}
+{% if easylockdown_filter_search.id == 6210491744405 %}
+{% unless customer %}
+{% if easylockdownRender %}continue{% endif %}{% continue %}
+{% else %}
+{% unless elcTag5 %}{% if easylockdownRender %}continue{% endif %}{% continue %}{% endunless %}
+{% endunless %}
+
+{% endif %}
+{% endif %}
 {% if easylockdown_filter_search.object_type == 'product' and easylockdown_filter_search.collections %}
 {% assign easylockdownItemOff = false %}
 {% for c in easylockdown_filter_search.collections %}
